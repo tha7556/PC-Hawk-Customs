@@ -57,6 +57,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <param name="newPrice">The new Price for the Part</param>
         public void SetPrice(double newPrice) {
+            string[] query = PrimaryQueries.Query("Call setPartPrice(" + partNumber + "," + newPrice + ")");
             price = newPrice;
         }
         /// <summary>
