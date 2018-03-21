@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{51B375BE-0A2C-40D8-B85E-D757F7C7226D}</ProjectGuid>
+    <ProjectGuid>{9E601E87-4D31-452D-9CE0-E5AA7823B1C6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BackendConsoleTest</RootNamespace>
-    <AssemblyName>BackendConsoleTest</AssemblyName>
+    <RootNamespace>PrimaryQueries</RootNamespace>
+    <AssemblyName>PrimaryQueries</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,7 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Part.cs" />
     <Compile Include="PrimaryQueries.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

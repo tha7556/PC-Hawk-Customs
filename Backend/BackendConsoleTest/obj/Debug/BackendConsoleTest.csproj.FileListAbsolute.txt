@@ -1,7 +1,0 @@
-E:\ComputerScience\Github\PC-Hawk-Customs\Backend\BackendConsoleTest\bin\Debug\BackendConsoleTest.exe.config
-E:\ComputerScience\Github\PC-Hawk-Customs\Backend\BackendConsoleTest\bin\Debug\BackendConsoleTest.exe
-E:\ComputerScience\Github\PC-Hawk-Customs\Backend\BackendConsoleTest\bin\Debug\BackendConsoleTest.pdb
-E:\ComputerScience\Github\PC-Hawk-Customs\Backend\BackendConsoleTest\obj\Debug\BackendConsoleTest.csprojResolveAssemblyReference.cache
-E:\ComputerScience\Github\PC-Hawk-Customs\Backend\BackendConsoleTest\obj\Debug\BackendConsoleTest.csproj.CoreCompileInputs.cache
-E:\ComputerScience\Github\PC-Hawk-Customs\Backend\BackendConsoleTest\obj\Debug\BackendConsoleTest.exe
-E:\ComputerScience\Github\PC-Hawk-Customs\Backend\BackendConsoleTest\obj\Debug\BackendConsoleTest.pdb

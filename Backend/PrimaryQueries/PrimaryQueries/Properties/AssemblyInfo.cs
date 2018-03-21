@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BackendConsoleTest")]
+[assembly: AssemblyTitle("PrimaryQueries")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BackendConsoleTest")]
+[assembly: AssemblyProduct("PrimaryQueries")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("51b375be-0a2c-40d8-b85e-d757f7c7226d")]
+[assembly: Guid("9e601e87-4d31-452d-9ce0-e5aa7823b1c6")]
 
 // Version information for an assembly consists of the following four values:
 //

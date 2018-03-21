@@ -4,11 +4,16 @@ using System.Net;
 using System.Text;
 
 namespace PrimaryQueries {
+    ///<summary>
+    ///Class used to query the MySQL PCHawkCustoms Database
+    ///</summary>
     class PrimaryQueries {
-        PrimaryQueries() {
-        }
-        //sends data to php
-        public static string Query(string query) {
+        /// <summary>
+        /// Sends a Query to the Database
+        /// </summary>
+        /// <param name="query">The MySQL query to perform</param>
+        /// <returns>A string[] containing each result of the query</returns>
+        public static string[] Query(string query) {
             string url = "http://satoshi.cis.uncw.edu/~tha7556/test.php";
             string postData = "query=" + query;
             string webpageContent = string.Empty;
@@ -29,15 +34,21 @@ namespace PrimaryQueries {
                     }
                 }
             }
-            catch(Exception e) {
+            catch (Exception e) {
                 Console.WriteLine(e.StackTrace);
             }
-            return webpageContent;
+            string[] lines = webpageContent.Split('\n');
+            string[] result = new string[lines.Length - 4];
+            Array.Copy(lines, 2, result, 0, lines.Length - 4);
+            return result;
         }
         static void Main(string[] args) {
-            string data = Query("SELECT * FROM customer");
-            Console.WriteLine(data);
-            while(true) {
+            string[] data = Query("SELECT * FROM customer");
+            foreach (string s in data) {
+                Console.WriteLine(s);
+            }
+            Console.WriteLine(data.Length);
+            while (true) {
                 continue;
             }
         }
