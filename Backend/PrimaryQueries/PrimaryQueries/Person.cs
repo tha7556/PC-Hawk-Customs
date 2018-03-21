@@ -48,6 +48,9 @@ namespace PrimaryQueries {
         /// Adds the Person to the Database
         /// </summary>
         public abstract void AddToDatabase();
+        /// <summary>
+        /// Removes the Person from the Database
+        /// </summary>
         public abstract void DeleteFromDatabase();
     }
 }
