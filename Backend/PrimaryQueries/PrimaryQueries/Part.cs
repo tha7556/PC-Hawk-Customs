@@ -79,6 +79,20 @@ namespace PrimaryQueries {
             return parts;
         }
         /// <summary>
+        /// Sets this Part to be compatable with another
+        /// </summary>
+        /// <param name="other">The other Part to be compatable with</param>
+        public void SetCompatableWith(Part other) {
+            SetCompatableWith(other.GetPartNumber());
+        }
+        /// <summary>
+        /// Sets this Part to be compatable with another based on the Part's ID
+        /// </summary>
+        /// <param name="otherPartId">The other Part number to be compatable with</param>
+        public void SetCompatableWith(int otherPartId) {
+            PrimaryQueries.Query("CALL setCompatable(" + partNumber + "," + otherPartId + ")");
+        }
+        /// <summary>
         /// Creates a string representation of the Part
         /// </summary>
         /// <returns>The string representation of the Part</returns>
