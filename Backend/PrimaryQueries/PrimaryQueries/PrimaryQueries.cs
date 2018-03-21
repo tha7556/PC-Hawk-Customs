@@ -4,7 +4,7 @@ using System.Net;
 using System.Text;
 //TODO: Connect to frontend
 //TODO: Populate all databases
-//TODO: Prebuilt stuff
+//TODO: Prebuilt computers
 namespace PrimaryQueries {
     ///<summary>
     ///Class used to query the MySQL PCHawkCustoms Database
@@ -15,14 +15,16 @@ namespace PrimaryQueries {
         /// Sends a Query to the Database. Returns a string[] of the result, with \0 seperating each column
         /// </summary>
         /// <param name="query">The MySQL query to perform</param>
+        /// <param name="printQuery">True to write the query to console, false otherwise</param>
         /// <returns>A string[] containing each result of the query</returns>
-        public static string[] Query(string query) {
+        public static string[] Query(string query, Boolean printQuery) {
             if(query.ToUpper().Contains("DROP TABLE")) {
                 Console.WriteLine("Please don't drop any tables from here...please");
                 return new string[0];
             }
             string postData = "query=" + query;
-            //Console.WriteLine(postData);
+            if(printQuery)
+                Console.WriteLine(query);
             string webpageContent = string.Empty;
             try {
                 byte[] byteArray = Encoding.UTF8.GetBytes(postData);
@@ -56,6 +58,14 @@ namespace PrimaryQueries {
                     Console.WriteLine(webpageContent);
             }
             return result;
+        }
+        /// <summary>
+        /// Overloaded Query which defaults to printQuery=false. Returns a string[] of the result, with \0 seperating each column
+        /// </summary>
+        /// <param name="query">The MySQL query to perform</param>
+        /// <returns>A string[] containing each result of the query</returns>
+        public static string[] Query(string query) {
+            return Query(query, false);
         }
         static void Main(string[] args) {
             string[] data = Query("SELECT * FROM employee WHERE `first name` = 'Tyler'");
