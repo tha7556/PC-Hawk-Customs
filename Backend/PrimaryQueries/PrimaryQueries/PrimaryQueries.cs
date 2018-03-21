@@ -2,7 +2,7 @@
 using System.IO;
 using System.Net;
 using System.Text;
-
+//TODO: Connect to frontend
 namespace PrimaryQueries {
     ///<summary>
     ///Class used to query the MySQL PCHawkCustoms Database
@@ -56,17 +56,12 @@ namespace PrimaryQueries {
             return result;
         }
         static void Main(string[] args) {
-            string[] data = Query("SELECT * FROM employee");
+            string[] data = Query("SELECT * FROM employee WHERE `first name` = 'Tyler'");
             foreach (string s in data) {
                 Console.WriteLine(s);
             }
-            Customer e = new Customer("Marisa", "Moore", "mmoore@uncw.edu","123 Foolish Ln","Foolsville","NC",27265,"fool");
-            e.AddToDatabase();
-            Console.WriteLine(data.Length);
-            Part p = Part.GetPart(1);
-            foreach(Part par in p.getCompatableParts()) {
-                Console.WriteLine(par);
-            }
+            Employee e = Employee.GetEmployee("tha7556@uncw.edu");
+            e.GetOrders();
             while (true) {
                 continue;
             }

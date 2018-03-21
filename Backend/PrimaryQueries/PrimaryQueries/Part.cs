@@ -1,4 +1,8 @@
-﻿
+﻿//TODO: Extend Part into Subparts
+//TODO: Part description
+//TODO: Part images?
+//TODO: Add Part to database
+//TODO: Change setPrice to modify database
 namespace PrimaryQueries {
     /// <summary>
     /// An individual Part of a computer

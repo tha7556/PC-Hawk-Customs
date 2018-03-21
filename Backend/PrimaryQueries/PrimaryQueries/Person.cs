@@ -1,4 +1,10 @@
-﻿
+﻿//TODO: Password encryption
+//TODO: Have Change email modify database
+//TODO: Have Change password modify database
+//TODO: Verification for passwords
+//TODO: Ensure that People can't be made with emails already in database
+//TODO: Based on password, isEmployee or isCustomer
+//TODO: ToString
 namespace PrimaryQueries {
     /// <summary>
     /// An abstract Person to represent either an Employee or a Customer
@@ -59,6 +65,27 @@ namespace PrimaryQueries {
         /// <param name="newPassword">The new Password to change to</param>
         public void ChangePassword(string newPassword) {
             password = newPassword;
+        }
+        /// <summary>
+        /// Gets all orders from the Person it is called from. Can only be called for either Employee or Customer 
+        /// </summary>
+        /// <returns></returns>
+        public Order[] GetOrders() {
+            string[] result = { };
+            if (this is Employee) {
+                result = PrimaryQueries.Query("CALL getOrdersFromEmployee(" + email + ")");
+            }
+            else if(this is Customer) {
+                result = PrimaryQueries.Query("CALL getOrdersFromCustomer(" + email + ")");
+            }
+            else {
+                System.Console.WriteLine("Can only call GetOrders() on a Customer or Employee object");
+            }
+            Order[] orders = new Order[result.Length];
+            for (int i = 0; i < result.Length; i++) {
+                orders[i] = Order.GetOrderFromQuery(result[i]);
+            }
+            return orders;
         }
         /// <summary>
         /// Adds the Person to the Database

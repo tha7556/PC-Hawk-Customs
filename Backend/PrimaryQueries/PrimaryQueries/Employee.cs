@@ -1,4 +1,4 @@
-﻿
+﻿//TODO: What can employees do while online? Admin priveleges?
 namespace PrimaryQueries {
     /// <summary>
     /// An Employee at PCHawkCustoms. Extends the Person class
@@ -43,6 +43,18 @@ namespace PrimaryQueries {
         public static Employee GetEmployeeFromQuery(string result) {
             string[] line = result.Split('\0');
             return new Employee(line[1], line[2], line[0],line[3]);
+        }
+        /// <summary>
+        /// Gets an Employee based on their email from the database
+        /// </summary>
+        /// <param name="email">The Employee's email</param>
+        /// <returns>The Employee with the given email</returns>
+        public static Employee GetEmployee(string email) {
+            string[] result = PrimaryQueries.Query("SELECT * FROM `employee` WHERE `email` = '" + email+"'");
+            if(result.Length > 0) {
+                return GetEmployeeFromQuery(result[0]);
+            }
+            return null;
         }
     }
 }

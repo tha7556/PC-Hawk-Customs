@@ -1,4 +1,7 @@
-﻿
+﻿//TODO: Confirmation email upon order completion
+//TODO: Multiple Parts in an Order?
+//TODO: Execute Order
+//TODO: Check (not store) Payment method
 namespace PrimaryQueries {
     /// <summary>
     /// An Order for a Part
@@ -48,6 +51,15 @@ namespace PrimaryQueries {
         /// <returns>The Customer making the order</returns>
         public Customer GetCustomer() {
             return customer;
+        }
+        /// <summary>
+        /// Converts a MySql query result into an Order
+        /// </summary>
+        /// <param name="result">The MySql query result</param>
+        /// <returns>An Order made from the query</returns>
+        public static Order GetOrderFromQuery(string result) {
+            string[] line = result.Split('\0');
+            return new Order (int.Parse(line[0]),Part.GetPart(int.Parse(line[1])),Employee.GetEmployee(line[2]),Customer.GetCustomer(line[3]));
         }
     }
 }

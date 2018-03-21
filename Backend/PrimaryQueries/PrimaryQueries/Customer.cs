@@ -1,4 +1,7 @@
-﻿
+﻿//TODO: A cart for customers
+//TODO: Check that zipcode is in the state?
+//TODO: Check that the state exists
+//TODO: Check that the City exists?
 namespace PrimaryQueries {
     /// <summary>
     /// A customer of PCHawkCustoms
@@ -94,6 +97,18 @@ namespace PrimaryQueries {
         public static Customer GetCustomerFromQuery(string result) {
             string[] line = result.Split('\0');
             return new Customer(line[1], line[2], line[0], line[3], line[4],line[5].ToUpper(),int.Parse(line[6]),line[7]);
+        }
+        /// <summary>
+        /// Gets a Customer based on their email from the database
+        /// </summary>
+        /// <param name="email">The Customer's email</param>
+        /// <returns>The Customer with the given email</returns>
+        public static Customer GetCustomer(string email) {
+            string[] result = PrimaryQueries.Query("SELECT * FROM `customer` WHERE `email`=" + email);
+            if (result.Length > 0) {
+                return GetCustomerFromQuery(result[0]);
+            }
+            return null;
         }
     }
 }
