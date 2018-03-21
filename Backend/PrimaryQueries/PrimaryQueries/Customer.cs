@@ -16,7 +16,8 @@ namespace PrimaryQueries {
         /// <param name="city">The Customer's city</param>
         /// <param name="state">The Customer's state</param>
         /// <param name="zipcode">The Customer's zipcode</param>
-        public Customer(string firstName, string lastName, string email, string streetAddress, string city, string state, int zipcode) : base(firstName,lastName,email) {
+        /// <param name="password">The Customer's password</param>
+        public Customer(string firstName, string lastName, string email, string streetAddress, string city, string state, int zipcode, string password) : base(firstName,lastName,email,password) {
             this.streetAddress = streetAddress;
             this.city = city;
             this.state = state;
@@ -68,8 +69,8 @@ namespace PrimaryQueries {
         /// </summary>
         override
         public void AddToDatabase() {
-            PrimaryQueries.Query("INSERT INTO `customer` (`email`, `first name`, `last name`, `street addess`, `city`, `state`, `zipcode`) " +
-                "VALUES ('"+email+"', '"+firstName+"', '"+lastName+"', '"+streetAddress+"', '"+city+"', '"+state+"', "+zipcode+");");
+            PrimaryQueries.Query("INSERT INTO `customer` (`email`, `first name`, `last name`, `street addess`, `city`, `state`, `zipcode`, `password`) " +
+                "VALUES ('"+email+"', '"+firstName+"', '"+lastName+"', '"+streetAddress+"', '"+city+"', '"+state+"', "+zipcode+",'"+password+"');");
         }
         /// <summary>
         /// Deletes a Customer from the Database
@@ -92,7 +93,7 @@ namespace PrimaryQueries {
         /// <returns>A Customer from the query</returns>
         public static Customer GetCustomerFromQuery(string result) {
             string[] line = result.Split('\0');
-            return new Customer(line[1], line[2], line[0], line[3], line[4],line[5].ToUpper(),int.Parse(line[6]));
+            return new Customer(line[1], line[2], line[0], line[3], line[4],line[5].ToUpper(),int.Parse(line[6]),line[7]);
         }
     }
 }

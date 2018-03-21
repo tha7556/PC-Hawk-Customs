@@ -56,11 +56,11 @@ namespace PrimaryQueries {
             return result;
         }
         static void Main(string[] args) {
-            string[] data = Query("SELECT * FROM customer");
+            string[] data = Query("SELECT * FROM employee");
             foreach (string s in data) {
                 Console.WriteLine(s);
             }
-            Customer e = new Customer("Marisa", "Moore", "mmoore@uncw.edu","123 Foolish Ln","Foolsville","NC",27265);
+            Customer e = new Customer("Marisa", "Moore", "mmoore@uncw.edu","123 Foolish Ln","Foolsville","NC",27265,"fool");
             e.AddToDatabase();
             Console.WriteLine(data.Length);
             Part p = Part.GetPart(1);

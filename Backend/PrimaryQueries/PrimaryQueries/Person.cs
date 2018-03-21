@@ -4,17 +4,19 @@ namespace PrimaryQueries {
     /// An abstract Person to represent either an Employee or a Customer
     /// </summary>
     abstract class Person {
-        protected string firstName, lastName, email;
+        protected string firstName, lastName, email, password;
         /// <summary>
         /// Creates a new Person
         /// </summary>
         /// <param name="firstName">The Person's first name</param>
         /// <param name="lastName">The Person's last name</param>
         /// <param name="email">The Person's email address</param>
-        public Person(string firstName, string lastName, string email) {
+        /// <param name="password">The Person's password</param>
+        public Person(string firstName, string lastName, string email, string password) {
             this.firstName = firstName;
             this.lastName = lastName;
             this.email = email;
+            this.password = password;
         }
         /// <summary>
         /// Gets the Person's first name
@@ -43,6 +45,20 @@ namespace PrimaryQueries {
         /// <param name="newEmail">The new email address</param>
         public void ChangeEmail(string newEmail) {
             this.email = newEmail;
+        }
+        /// <summary>
+        /// Gets the Person's Password
+        /// </summary>
+        /// <returns>The Person's Password</returns>
+        public string getPassword() {
+            return password;
+        }
+        /// <summary>
+        /// Changes the Person's Password
+        /// </summary>
+        /// <param name="newPassword">The new Password to change to</param>
+        public void changePassword(string newPassword) {
+            password = newPassword;
         }
         /// <summary>
         /// Adds the Person to the Database
