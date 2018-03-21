@@ -8,7 +8,7 @@ namespace PrimaryQueries {
     ///Class used to query the MySQL PCHawkCustoms Database
     ///</summary>
     class PrimaryQueries {
-        public static string url = "http://satoshi.cis.uncw.edu/~tha7556/test.php";
+        public static string url = "http://satoshi.cis.uncw.edu/~tha7556/Backend.php";
         /// <summary>
         /// Sends a Query to the Database. Returns a string[] of the result, with \0 seperating each column
         /// </summary>
