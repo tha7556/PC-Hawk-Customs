@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace PrimaryQueries {
     /// <summary>
     /// An abstract Person to represent either an Employee or a Customer
     /// </summary>
     abstract class Person {
-        private string firstName, lastName, email;
+        protected string firstName, lastName, email;
         /// <summary>
         /// Creates a new Person
         /// </summary>
