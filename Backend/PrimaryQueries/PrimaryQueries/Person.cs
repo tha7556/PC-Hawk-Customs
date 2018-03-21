@@ -25,28 +25,28 @@ namespace PrimaryQueries {
         /// Gets the Person's first name
         /// </summary>
         /// <returns>The Person's first name</returns>
-        public string getFirstName() {
+        public string GetFirstName() {
             return firstName;
         }
         /// <summary>
         /// Gets the Person's last name
         /// </summary>
         /// <returns>The Person's last name</returns>
-        public string getLastName() {
+        public string GetLastName() {
             return lastName;
         }
         /// <summary>
         /// Gets the Person's email address
         /// </summary>
         /// <returns>The Person's email address</returns>
-        public string getEmail() {
+        public string GetEmail() {
             return email;
         }
         /// <summary>
         /// Changes the Person's email address
         /// </summary>
         /// <param name="newEmail">The new email address</param>
-        public void changeEmail(string newEmail) {
+        public void ChangeEmail(string newEmail) {
             this.email = newEmail;
         }
     }
