@@ -63,10 +63,27 @@ namespace PrimaryQueries {
             state = newState;
             zipcode = newZipcode;
         }
+        /// <summary>
+        /// Adds the Customer to the Database
+        /// </summary>
         override
         public void AddToDatabase() {
             PrimaryQueries.Query("INSERT INTO `customer` (`email`, `first name`, `last name`, `street addess`, `city`, `state`, `zipcode`) " +
                 "VALUES ('"+email+"', '"+firstName+"', '"+lastName+"', '"+streetAddress+"', '"+city+"', '"+state+"', "+zipcode+");");
+        }
+        /// <summary>
+        /// Deletes a Customer from the Database
+        /// </summary>
+        override
+        public void DeleteFromDatabase() {
+            PrimaryQueries.Query("DELETE FROM `customer` WHERE `customer`.`email` = '" + email + "'");
+        }
+        /// <summary>
+        /// Deletes a specific Customer from the Database
+        /// </summary>
+        /// <param name="email">The email of the Customer to delete</param>
+        public static void DeleteFromDatabase(string email) {
+            PrimaryQueries.Query("DELETE FROM `customer` WHERE `customer`.`email` = '" + email + "'");
         }
     }
 }

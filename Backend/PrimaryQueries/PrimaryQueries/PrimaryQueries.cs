@@ -16,7 +16,7 @@ namespace PrimaryQueries {
         public static string[] Query(string query) {
             string url = "http://satoshi.cis.uncw.edu/~tha7556/test.php";
             string postData = "query=" + query;
-            Console.WriteLine(postData);
+            //Console.WriteLine(postData);
             string webpageContent = string.Empty;
             try {
                 byte[] byteArray = Encoding.UTF8.GetBytes(postData);

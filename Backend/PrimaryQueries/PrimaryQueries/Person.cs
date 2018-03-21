@@ -44,6 +44,10 @@ namespace PrimaryQueries {
         public void ChangeEmail(string newEmail) {
             this.email = newEmail;
         }
+        /// <summary>
+        /// Adds the Person to the Database
+        /// </summary>
         public abstract void AddToDatabase();
+        public abstract void DeleteFromDatabase();
     }
 }
