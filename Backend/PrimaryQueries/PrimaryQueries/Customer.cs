@@ -20,6 +20,7 @@ namespace PrimaryQueries {
             this.streetAddress = streetAddress;
             this.city = city;
             this.state = state;
+            this.zipcode = zipcode;
         }
         /// <summary>
         /// Gets the Street Address of the Customer
@@ -61,6 +62,11 @@ namespace PrimaryQueries {
             city = newCity;
             state = newState;
             zipcode = newZipcode;
+        }
+        override
+        public void AddToDatabase() {
+            PrimaryQueries.Query("INSERT INTO `customer` (`email`, `first name`, `last name`, `street addess`, `city`, `state`, `zipcode`) " +
+                "VALUES ('"+email+"', '"+firstName+"', '"+lastName+"', '"+streetAddress+"', '"+city+"', '"+state+"', "+zipcode+");");
         }
     }
 }

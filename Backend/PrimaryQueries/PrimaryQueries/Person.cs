@@ -44,5 +44,6 @@ namespace PrimaryQueries {
         public void ChangeEmail(string newEmail) {
             this.email = newEmail;
         }
+        public abstract void AddToDatabase();
     }
 }
