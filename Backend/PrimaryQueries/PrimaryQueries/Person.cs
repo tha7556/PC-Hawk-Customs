@@ -50,14 +50,14 @@ namespace PrimaryQueries {
         /// Gets the Person's Password
         /// </summary>
         /// <returns>The Person's Password</returns>
-        public string getPassword() {
+        public string GetPassword() {
             return password;
         }
         /// <summary>
         /// Changes the Person's Password
         /// </summary>
         /// <param name="newPassword">The new Password to change to</param>
-        public void changePassword(string newPassword) {
+        public void ChangePassword(string newPassword) {
             password = newPassword;
         }
         /// <summary>
