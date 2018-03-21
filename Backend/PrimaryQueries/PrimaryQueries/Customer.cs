@@ -85,5 +85,14 @@ namespace PrimaryQueries {
         public static void DeleteFromDatabase(string email) {
             PrimaryQueries.Query("DELETE FROM `customer` WHERE `customer`.`email` = '" + email + "'");
         }
+        /// <summary>
+        /// Converts a MySQL query result into a Customer object
+        /// </summary>
+        /// <param name="result">The MySQL query result</param>
+        /// <returns>A Customer from the query</returns>
+        public static Customer GetCustomerFromQuery(string result) {
+            string[] line = result.Split('\0');
+            return new Customer(line[1], line[2], line[0], line[3], line[4],line[5].ToUpper(),int.Parse(line[6]));
+        }
     }
 }

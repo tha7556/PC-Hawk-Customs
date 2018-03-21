@@ -34,5 +34,14 @@ namespace PrimaryQueries {
         public static void DeleteFromDatabase(string email) {
             PrimaryQueries.Query("DELETE FROM `employee` WHERE `employee`.`email` = '" + email + "'");
         }
+        /// <summary>
+        /// Converts a MySQL query result into an Employee object
+        /// </summary>
+        /// <param name="result">The MySQL query result</param>
+        /// <returns>An Employee from the query</returns>
+        public static Employee GetEmployeeFromQuery(string result) {
+            string[] line = result.Split('\0');
+            return new Employee(line[1], line[2], line[0]);
+        }
     }
 }

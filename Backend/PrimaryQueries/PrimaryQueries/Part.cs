@@ -88,8 +88,8 @@ namespace PrimaryQueries {
         /// <summary>
         /// Converts a MySQL query result into a Part object. Query must return the form: partNumber\0name\0price\0componentType
         /// </summary>
-        /// <param name="result"></param>
-        /// <returns></returns>
+        /// <param name="result">The MySQL query result</param>
+        /// <returns>The Part object from the query</returns>
         public static Part GetPartFromQuery(string result) {
             string[] line = result.Split('\0');
             return new Part(int.Parse(line[0]), line[1], line[3], double.Parse(line[2]));
