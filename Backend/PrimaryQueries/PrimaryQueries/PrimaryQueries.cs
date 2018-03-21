@@ -3,6 +3,8 @@ using System.IO;
 using System.Net;
 using System.Text;
 //TODO: Connect to frontend
+//TODO: Populate all databases
+//TODO: Prebuilt stuff
 namespace PrimaryQueries {
     ///<summary>
     ///Class used to query the MySQL PCHawkCustoms Database
