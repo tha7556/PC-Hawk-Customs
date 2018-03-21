@@ -15,6 +15,10 @@ namespace PrimaryQueries {
         /// <param name="query">The MySQL query to perform</param>
         /// <returns>A string[] containing each result of the query</returns>
         public static string[] Query(string query) {
+            if(query.ToUpper().Contains("DROP TABLE")) {
+                Console.WriteLine("Please don't drop any tables from here...please");
+                return new string[0];
+            }
             string postData = "query=" + query;
             //Console.WriteLine(postData);
             string webpageContent = string.Empty;
