@@ -72,6 +72,10 @@ namespace PrimaryQueries {
                 return GetPartFromQuery(query[0]);
             return null;
         }
+
+        public void getNerdType(){
+            componentType = "This is a test NerD!!!DD!!";
+        }
         /// <summary>
         /// Gets an array of Parts compatable with this one
         /// </summary>
