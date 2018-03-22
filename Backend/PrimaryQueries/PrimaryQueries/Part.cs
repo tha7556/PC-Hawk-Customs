@@ -3,6 +3,7 @@
 //TODO: Part images?
 //TODO: Add Part to database
 //TODO: Change setPrice to modify database
+//TODO: Part ratings
 namespace PrimaryQueries {
     /// <summary>
     /// An individual Part of a computer

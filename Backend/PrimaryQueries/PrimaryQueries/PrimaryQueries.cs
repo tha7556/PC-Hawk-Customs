@@ -7,7 +7,7 @@ using System.Text;
 //TODO: Prebuilt computers
 namespace PrimaryQueries {
     ///<summary>
-    ///Class used to query the MySQL PCHawkCustoms Database
+    ///Class used to query the MySQL PCHawkCustoms Database.
     ///</summary>
     class PrimaryQueries {
         public static string url = "http://satoshi.cis.uncw.edu/~tha7556/Backend.php";
@@ -67,13 +67,82 @@ namespace PrimaryQueries {
         public static string[] Query(string query) {
             return Query(query, false);
         }
-        static void Main(string[] args) {
-            string[] data = Query("SELECT * FROM employee WHERE `first name` = 'Tyler'");
-            foreach (string s in data) {
-                Console.WriteLine(s);
+        public static void PopulateTable() {
+            string current = "motherboard";
+            if (current.Equals("cpu")) {
+                string content = System.IO.File.ReadAllText("C://Users//Tyler//Desktop//cpu.html");
+                while (content.IndexOf("<tr>") != -1) {
+                    content = content.Substring(content.IndexOf("<tr>") + 2);
+                    string sub = content.Substring(0, content.IndexOf("</tr>"));
+                    sub = sub.Substring(sub.IndexOf("a href"));
+                    sub = sub.Substring(sub.IndexOf(">") + 1);
+                    string name = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("name: " + name);
+                    sub = sub.Substring(sub.IndexOf(";\"") + 3);
+                    string speed = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("speed: " + speed);
+                    sub = sub.Substring(sub.IndexOf(";\"") + 3);
+                    string cores = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("cores: " + cores);
+                    sub = sub.Substring(sub.IndexOf(";\"") + 3);
+                    string tdp = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("tdp: " + tdp);
+                    sub = sub.Substring(sub.IndexOf("price") + 8);
+                    string price = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("price: " + price + "\n-----------------");
+                }
             }
-            Employee e = Employee.GetEmployee("tha7556@uncw.edu");
-            e.GetOrders();
+            else if(current.Equals("fan")) {
+                string content = System.IO.File.ReadAllText("C://Users//Tyler//Desktop//fans.html");
+                while (content.IndexOf("<tr>") != -1) {
+                    content = content.Substring(content.IndexOf("<tr>") + 2);
+                    string sub = content.Substring(0, content.IndexOf("</tr>"));
+                    sub = sub.Substring(sub.IndexOf("a href"));
+                    sub = sub.Substring(sub.IndexOf(">") + 1);
+                    string name = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("name: " + name);
+                    sub = sub.Substring(sub.IndexOf(";\"") + 3);
+                    string speed = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("rpm: " + speed);
+                    sub = sub.Substring(sub.IndexOf(";\"") + 3);
+                    string cores = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("noise level: " + cores);
+                    sub = sub.Substring(sub.IndexOf("price") + 8);
+                    string price = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("price: " + price + "\n-----------------");
+                }
+            }
+            else if (current.Equals("motherboard")) {
+                string content = System.IO.File.ReadAllText("C://Users//Tyler//Desktop//motherboard.html");
+                while (content.IndexOf("<tr>") != -1) {
+                    content = content.Substring(content.IndexOf("<tr>") + 2);
+                    string sub = content.Substring(0, content.IndexOf("</tr>"));
+                    sub = sub.Substring(sub.IndexOf("a href"));
+                    sub = sub.Substring(sub.IndexOf(">") + 1);
+                    string name = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("name: " + name);
+                    sub = sub.Substring(sub.IndexOf("<td>") + 4);
+                    string socket = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("socket: " + socket);
+                    sub = sub.Substring(sub.IndexOf("<td>") + 4);
+                    string form = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("form: " + form);
+                    sub = sub.Substring(sub.IndexOf("<td>") + 4);
+                    sub = sub.Substring(sub.IndexOf(";")+3);
+                    string slots = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("slots: " + slots);
+                    sub = sub.Substring(sub.IndexOf(";") + 3);
+                    string maxRam = sub.Substring(0,sub.IndexOf("<"));
+                    Console.WriteLine("max ram: " + maxRam);
+                    sub = sub.Substring(sub.IndexOf("price") + 8);
+                    string price = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("price: " + price + "\n-----------------");
+                    
+                }
+            }
+        } 
+        static void Main(string[] args) {
+            PopulateTable();
             while (true) {
                 continue;
             }
