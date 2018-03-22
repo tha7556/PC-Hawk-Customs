@@ -10,7 +10,7 @@ namespace PrimaryQueries {
     /// </summary>
     class Part {
         private int partNumber;
-        private string name, componentType;
+        private string name
         private double price;
         /// <summary>
         /// Creates a new Part object
@@ -19,10 +19,9 @@ namespace PrimaryQueries {
         /// <param name="name">The name of the Part</param>
         /// <param name="componentType">The type of Part that it is</param>
         /// <param name="price">The price of the Part</param>
-        public Part(int partNumber, string name, string componentType, double price) {
+        public Part(int partNumber, string name, double price) {
             this.partNumber = partNumber;
             this.name = name;
-            this.componentType = componentType;
             this.price = price;
         }
         /// <summary>
@@ -39,13 +38,7 @@ namespace PrimaryQueries {
         public string GetName() {
             return name;
         }
-        /// <summary>
-        /// Gets the type of Part it is
-        /// </summary>
-        /// <returns>The type of Part this is</returns>
-        public string GetComponentType() {
-            return componentType;
-        }
+ 
         /// <summary>
         /// Gets the price of the Part
         /// </summary>
@@ -80,7 +73,7 @@ namespace PrimaryQueries {
         /// Gets an array of Parts compatable with this one
         /// </summary>
         /// <returns>An array of Parts compatable with this one</returns>
-        public Part[] getCompatableParts() {
+        public Part[] GetCompatableParts() {
             string[] result = PrimaryQueries.Query("Call getCompatability(" + partNumber + ")");
             Part[] parts = new Part[result.Length];
             for(int i = 0; i < result.Length; i++) {
