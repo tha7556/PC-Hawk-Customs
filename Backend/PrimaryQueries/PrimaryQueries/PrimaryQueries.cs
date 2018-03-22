@@ -67,10 +67,9 @@ namespace PrimaryQueries {
         public static string[] Query(string query) {
             return Query(query, false);
         }
-        public static void PopulateTable() {
-            string current = "case";
+        public static void PopulateTable(string current) {
+            string content = System.IO.File.ReadAllText("..//..//part data//" + current + ".html");
             if (current.Equals("cpu")) {
-                string content = System.IO.File.ReadAllText("C://Users//Tyler//Desktop//cpu.html");
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -93,7 +92,6 @@ namespace PrimaryQueries {
                 }
             }
             else if (current.Equals("fan")) {
-                string content = System.IO.File.ReadAllText("C://Users//Tyler//Desktop//fans.html");
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -113,7 +111,6 @@ namespace PrimaryQueries {
                 }
             }
             else if (current.Equals("motherboard")) {
-                string content = System.IO.File.ReadAllText("C://Users//Tyler//Desktop//motherboard.html");
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -140,7 +137,6 @@ namespace PrimaryQueries {
                 }
             }
             else if (current.Equals("memory")) {
-                string content = System.IO.File.ReadAllText("C://Users//Tyler//Desktop//memory.html");
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -170,7 +166,6 @@ namespace PrimaryQueries {
                 }
             }
             else if (current.Equals("storage")) {
-                string content = System.IO.File.ReadAllText("C://Users//Tyler//Desktop//storage.html");
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -200,7 +195,6 @@ namespace PrimaryQueries {
                 }
             }
             else if (current.Equals("graphicsCard")) {
-                string content = System.IO.File.ReadAllText("C://Users//Tyler//Desktop//graphicsCard.html");
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -228,7 +222,6 @@ namespace PrimaryQueries {
                 }
             }
             else if (current.Equals("power")) {
-                string content = System.IO.File.ReadAllText("C://Users//Tyler//Desktop//power.html");
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -258,7 +251,6 @@ namespace PrimaryQueries {
                 }
             }
             else if (current.Equals("case")) {
-                string content = System.IO.File.ReadAllText("C://Users//Tyler//Desktop//case.html");
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -288,7 +280,7 @@ namespace PrimaryQueries {
 
         } 
         static void Main(string[] args) {
-            PopulateTable();
+            PopulateTable("cpu");
             while (true) {
                 continue;
             }
