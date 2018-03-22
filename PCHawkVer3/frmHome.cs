@@ -16,14 +16,22 @@ namespace PCHawkVer3
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// takes user to the free build page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bttnFreeBuild_Click(object sender, EventArgs e)
         {
             freeBuildForm free = new freeBuildForm();
             free.Show();
             this.Close();
         }
-
+        /// <summary>
+        /// exits the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bttnExit_Click(object sender, EventArgs e)
         {
 
@@ -37,7 +45,11 @@ namespace PCHawkVer3
             }
         }
 
-        //button 1 is logout button
+        /// <summary>
+        /// logs user out of the applicatiion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             const string message = "Are you sure that you would like to logout?";
@@ -51,13 +63,21 @@ namespace PCHawkVer3
                 this.Close();
             }
         }
-
+        /// <summary>
+        /// shows help menu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnHelp_Click(object sender, EventArgs e)
         {
             helpForm help = new helpForm();
             help.Show();
         }
-
+        /// <summary>
+        /// takes user to the preBuild page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bttnPreBuild_Click(object sender, EventArgs e)
         {
             preBuildForm prebuild = new preBuildForm();
@@ -65,14 +85,22 @@ namespace PCHawkVer3
             this.Close();
 
         }
-
+        /// <summary>
+        /// view user account
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bttnAccount_Click(object sender, EventArgs e)
         {
             accountForm account = new accountForm();
             account.Show();
             this.Close();
         }
-
+        /// <summary>
+        /// view user cart
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bttnCart_Click(object sender, EventArgs e)
         {
             cartForm cart = new cartForm();

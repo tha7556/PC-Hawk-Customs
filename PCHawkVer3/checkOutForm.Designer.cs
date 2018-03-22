@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bttnHome = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bttnAccount = new System.Windows.Forms.Button();
             this.bttnLogout = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.bttnExit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cartContentsBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.totalBox = new System.Windows.Forms.TextBox();
+            this.totalBoxPrice = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBoxFirst = new System.Windows.Forms.TextBox();
             this.txtBoxLast = new System.Windows.Forms.TextBox();
@@ -48,18 +49,25 @@
             this.txtBoxZip = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtBoxFirstBilling = new System.Windows.Forms.TextBox();
+            this.txtBoxLastBilling = new System.Windows.Forms.TextBox();
+            this.txtBoxAddressBilling = new System.Windows.Forms.TextBox();
+            this.txtBoxCityBilling = new System.Windows.Forms.TextBox();
+            this.txtBoxStateBilling = new System.Windows.Forms.TextBox();
+            this.txtBoxZipBilling = new System.Windows.Forms.TextBox();
             this.bttnSame = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtBoxFirstPay = new System.Windows.Forms.TextBox();
+            this.txtBoxLastPay = new System.Windows.Forms.TextBox();
+            this.txtBoxCardNum = new System.Windows.Forms.TextBox();
+            this.txtBoxExpiration = new System.Windows.Forms.TextBox();
+            this.txtBoxSvv = new System.Windows.Forms.TextBox();
+            this.bttnOrdered = new System.Windows.Forms.Button();
+            this.toolTipHelp = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipPower = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipHome = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipAccount = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipLogOut = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -90,7 +98,18 @@
             this.bttnHome.Name = "bttnHome";
             this.bttnHome.Size = new System.Drawing.Size(67, 66);
             this.bttnHome.TabIndex = 10;
+            this.toolTipHome.SetToolTip(this.bttnHome, "Home");
             this.bttnHome.UseVisualStyleBackColor = false;
+            this.bttnHome.Click += new System.EventHandler(this.bttnHome_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PCHawkVer3.Properties.Resources.banner;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(509, 153);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // bttnAccount
             // 
@@ -104,7 +123,9 @@
             this.bttnAccount.Name = "bttnAccount";
             this.bttnAccount.Size = new System.Drawing.Size(65, 66);
             this.bttnAccount.TabIndex = 11;
+            this.toolTipAccount.SetToolTip(this.bttnAccount, "View Account");
             this.bttnAccount.UseVisualStyleBackColor = false;
+            this.bttnAccount.Click += new System.EventHandler(this.bttnAccount_Click);
             // 
             // bttnLogout
             // 
@@ -118,7 +139,9 @@
             this.bttnLogout.Name = "bttnLogout";
             this.bttnLogout.Size = new System.Drawing.Size(69, 66);
             this.bttnLogout.TabIndex = 12;
+            this.toolTipLogOut.SetToolTip(this.bttnLogout, "Logout");
             this.bttnLogout.UseVisualStyleBackColor = false;
+            this.bttnLogout.Click += new System.EventHandler(this.bttnLogout_Click);
             // 
             // btnHelp
             // 
@@ -132,7 +155,9 @@
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(65, 66);
             this.btnHelp.TabIndex = 4;
+            this.toolTipHelp.SetToolTip(this.btnHelp, "Help");
             this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // bttnExit
             // 
@@ -146,16 +171,9 @@
             this.bttnExit.Name = "bttnExit";
             this.bttnExit.Size = new System.Drawing.Size(69, 66);
             this.bttnExit.TabIndex = 6;
+            this.toolTipPower.SetToolTip(this.bttnExit, "Exit Application");
             this.bttnExit.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PCHawkVer3.Properties.Resources.banner;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(509, 153);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.bttnExit.Click += new System.EventHandler(this.bttnExit_Click);
             // 
             // panel2
             // 
@@ -186,13 +204,14 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "TOTAL COST:";
             // 
-            // totalBox
+            // totalBoxPrice
             // 
-            this.totalBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalBox.Location = new System.Drawing.Point(133, 521);
-            this.totalBox.Name = "totalBox";
-            this.totalBox.Size = new System.Drawing.Size(185, 23);
-            this.totalBox.TabIndex = 6;
+            this.totalBoxPrice.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalBoxPrice.Location = new System.Drawing.Point(133, 521);
+            this.totalBoxPrice.Name = "totalBoxPrice";
+            this.totalBoxPrice.ReadOnly = true;
+            this.totalBoxPrice.Size = new System.Drawing.Size(185, 23);
+            this.totalBoxPrice.TabIndex = 6;
             // 
             // label2
             // 
@@ -210,7 +229,6 @@
             this.txtBoxFirst.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxFirst.Location = new System.Drawing.Point(405, 214);
             this.txtBoxFirst.Name = "txtBoxFirst";
-            this.txtBoxFirst.ReadOnly = true;
             this.txtBoxFirst.Size = new System.Drawing.Size(145, 26);
             this.txtBoxFirst.TabIndex = 8;
             this.txtBoxFirst.Text = "First Name";
@@ -282,60 +300,59 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "Billing Address:";
             // 
-            // textBox1
+            // txtBoxFirstBilling
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(405, 378);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(145, 26);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.Text = "First Name";
+            this.txtBoxFirstBilling.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxFirstBilling.Location = new System.Drawing.Point(405, 378);
+            this.txtBoxFirstBilling.Name = "txtBoxFirstBilling";
+            this.txtBoxFirstBilling.Size = new System.Drawing.Size(145, 26);
+            this.txtBoxFirstBilling.TabIndex = 18;
+            this.txtBoxFirstBilling.Text = "First Name";
             // 
-            // textBox2
+            // txtBoxLastBilling
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(556, 378);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(145, 26);
-            this.textBox2.TabIndex = 19;
-            this.textBox2.Text = "Last Name";
+            this.txtBoxLastBilling.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxLastBilling.Location = new System.Drawing.Point(556, 378);
+            this.txtBoxLastBilling.Name = "txtBoxLastBilling";
+            this.txtBoxLastBilling.Size = new System.Drawing.Size(145, 26);
+            this.txtBoxLastBilling.TabIndex = 19;
+            this.txtBoxLastBilling.Text = "Last Name";
             // 
-            // textBox3
+            // txtBoxAddressBilling
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(405, 410);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(296, 26);
-            this.textBox3.TabIndex = 20;
-            this.textBox3.Text = "Address";
+            this.txtBoxAddressBilling.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxAddressBilling.Location = new System.Drawing.Point(405, 410);
+            this.txtBoxAddressBilling.Name = "txtBoxAddressBilling";
+            this.txtBoxAddressBilling.Size = new System.Drawing.Size(296, 26);
+            this.txtBoxAddressBilling.TabIndex = 20;
+            this.txtBoxAddressBilling.Text = "Address";
             // 
-            // textBox4
+            // txtBoxCityBilling
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(405, 442);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(296, 26);
-            this.textBox4.TabIndex = 21;
-            this.textBox4.Text = "City";
+            this.txtBoxCityBilling.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxCityBilling.Location = new System.Drawing.Point(405, 442);
+            this.txtBoxCityBilling.Name = "txtBoxCityBilling";
+            this.txtBoxCityBilling.Size = new System.Drawing.Size(296, 26);
+            this.txtBoxCityBilling.TabIndex = 21;
+            this.txtBoxCityBilling.Text = "City";
             // 
-            // textBox5
+            // txtBoxStateBilling
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(405, 474);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(145, 26);
-            this.textBox5.TabIndex = 22;
-            this.textBox5.Text = "State";
+            this.txtBoxStateBilling.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxStateBilling.Location = new System.Drawing.Point(405, 474);
+            this.txtBoxStateBilling.Name = "txtBoxStateBilling";
+            this.txtBoxStateBilling.Size = new System.Drawing.Size(145, 26);
+            this.txtBoxStateBilling.TabIndex = 22;
+            this.txtBoxStateBilling.Text = "State";
             // 
-            // textBox6
+            // txtBoxZipBilling
             // 
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(556, 474);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(144, 26);
-            this.textBox6.TabIndex = 23;
-            this.textBox6.Text = "Zip Code";
+            this.txtBoxZipBilling.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxZipBilling.Location = new System.Drawing.Point(556, 474);
+            this.txtBoxZipBilling.Name = "txtBoxZipBilling";
+            this.txtBoxZipBilling.Size = new System.Drawing.Size(144, 26);
+            this.txtBoxZipBilling.TabIndex = 23;
+            this.txtBoxZipBilling.Text = "Zip Code";
             // 
             // bttnSame
             // 
@@ -348,6 +365,7 @@
             this.bttnSame.TabIndex = 24;
             this.bttnSame.Text = "Same as Shipping";
             this.bttnSame.UseVisualStyleBackColor = true;
+            this.bttnSame.Click += new System.EventHandler(this.bttnSame_Click);
             // 
             // label5
             // 
@@ -360,42 +378,64 @@
             this.label5.TabIndex = 25;
             this.label5.Text = "Payment Information:";
             // 
-            // textBox7
+            // txtBoxFirstPay
             // 
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(743, 214);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(145, 26);
-            this.textBox7.TabIndex = 26;
-            this.textBox7.Text = "First Name";
+            this.txtBoxFirstPay.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxFirstPay.Location = new System.Drawing.Point(743, 214);
+            this.txtBoxFirstPay.Name = "txtBoxFirstPay";
+            this.txtBoxFirstPay.ReadOnly = true;
+            this.txtBoxFirstPay.Size = new System.Drawing.Size(145, 26);
+            this.txtBoxFirstPay.TabIndex = 26;
+            this.txtBoxFirstPay.Text = "First Name";
             // 
-            // textBox8
+            // txtBoxLastPay
             // 
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(894, 214);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(145, 26);
-            this.textBox8.TabIndex = 27;
-            this.textBox8.Text = "Last Name";
+            this.txtBoxLastPay.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxLastPay.Location = new System.Drawing.Point(894, 214);
+            this.txtBoxLastPay.Name = "txtBoxLastPay";
+            this.txtBoxLastPay.Size = new System.Drawing.Size(145, 26);
+            this.txtBoxLastPay.TabIndex = 27;
+            this.txtBoxLastPay.Text = "Last Name";
             // 
-            // textBox9
+            // txtBoxCardNum
             // 
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(743, 246);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(296, 26);
-            this.textBox9.TabIndex = 28;
-            this.textBox9.Text = "Card Number";
+            this.txtBoxCardNum.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxCardNum.Location = new System.Drawing.Point(743, 246);
+            this.txtBoxCardNum.Name = "txtBoxCardNum";
+            this.txtBoxCardNum.Size = new System.Drawing.Size(296, 26);
+            this.txtBoxCardNum.TabIndex = 28;
+            this.txtBoxCardNum.Text = "Card Number";
             // 
-            // textBox10
+            // txtBoxExpiration
             // 
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(743, 278);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(145, 26);
-            this.textBox10.TabIndex = 29;
-            this.textBox10.Text = "Expriation Date";
+            this.txtBoxExpiration.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxExpiration.Location = new System.Drawing.Point(743, 278);
+            this.txtBoxExpiration.Name = "txtBoxExpiration";
+            this.txtBoxExpiration.Size = new System.Drawing.Size(145, 26);
+            this.txtBoxExpiration.TabIndex = 29;
+            this.txtBoxExpiration.Text = "Expriation Date";
+            // 
+            // txtBoxSvv
+            // 
+            this.txtBoxSvv.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxSvv.Location = new System.Drawing.Point(894, 278);
+            this.txtBoxSvv.Name = "txtBoxSvv";
+            this.txtBoxSvv.Size = new System.Drawing.Size(145, 26);
+            this.txtBoxSvv.TabIndex = 30;
+            this.txtBoxSvv.Text = "SVV ";
+            // 
+            // bttnOrdered
+            // 
+            this.bttnOrdered.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnOrdered.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnOrdered.ForeColor = System.Drawing.Color.Yellow;
+            this.bttnOrdered.Location = new System.Drawing.Point(743, 310);
+            this.bttnOrdered.Name = "bttnOrdered";
+            this.bttnOrdered.Size = new System.Drawing.Size(296, 62);
+            this.bttnOrdered.TabIndex = 31;
+            this.bttnOrdered.Text = "Submit Order";
+            this.bttnOrdered.UseVisualStyleBackColor = true;
+            this.bttnOrdered.Click += new System.EventHandler(this.bttnOrdered_Click);
             // 
             // checkOutForm
             // 
@@ -403,18 +443,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1054, 600);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.bttnOrdered);
+            this.Controls.Add(this.txtBoxSvv);
+            this.Controls.Add(this.txtBoxExpiration);
+            this.Controls.Add(this.txtBoxCardNum);
+            this.Controls.Add(this.txtBoxLastPay);
+            this.Controls.Add(this.txtBoxFirstPay);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.bttnSame);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxZipBilling);
+            this.Controls.Add(this.txtBoxStateBilling);
+            this.Controls.Add(this.txtBoxCityBilling);
+            this.Controls.Add(this.txtBoxAddressBilling);
+            this.Controls.Add(this.txtBoxLastBilling);
+            this.Controls.Add(this.txtBoxFirstBilling);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBoxZip);
@@ -424,7 +466,7 @@
             this.Controls.Add(this.txtBoxLast);
             this.Controls.Add(this.txtBoxFirst);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.totalBox);
+            this.Controls.Add(this.totalBoxPrice);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cartContentsBox);
             this.Controls.Add(this.panel1);
@@ -451,7 +493,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ListBox cartContentsBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox totalBox;
+        private System.Windows.Forms.TextBox totalBoxPrice;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtBoxFirst;
         private System.Windows.Forms.TextBox txtBoxLast;
@@ -461,17 +503,24 @@
         private System.Windows.Forms.TextBox txtBoxZip;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtBoxFirstBilling;
+        private System.Windows.Forms.TextBox txtBoxLastBilling;
+        private System.Windows.Forms.TextBox txtBoxAddressBilling;
+        private System.Windows.Forms.TextBox txtBoxCityBilling;
+        private System.Windows.Forms.TextBox txtBoxStateBilling;
+        private System.Windows.Forms.TextBox txtBoxZipBilling;
         private System.Windows.Forms.Button bttnSame;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtBoxFirstPay;
+        private System.Windows.Forms.TextBox txtBoxLastPay;
+        private System.Windows.Forms.TextBox txtBoxCardNum;
+        private System.Windows.Forms.TextBox txtBoxExpiration;
+        private System.Windows.Forms.TextBox txtBoxSvv;
+        private System.Windows.Forms.Button bttnOrdered;
+        private System.Windows.Forms.ToolTip toolTipHelp;
+        private System.Windows.Forms.ToolTip toolTipPower;
+        private System.Windows.Forms.ToolTip toolTipHome;
+        private System.Windows.Forms.ToolTip toolTipAccount;
+        private System.Windows.Forms.ToolTip toolTipLogOut;
     }
 }

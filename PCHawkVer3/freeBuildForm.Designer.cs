@@ -236,6 +236,7 @@
             this.bttnAddPart.TabIndex = 9;
             this.bttnAddPart.Text = "Add To Build";
             this.bttnAddPart.UseVisualStyleBackColor = true;
+            this.bttnAddPart.Click += new System.EventHandler(this.bttnAddPart_Click);
             // 
             // priceTxtBox
             // 
@@ -277,6 +278,7 @@
             this.bttnAddCart.TabIndex = 13;
             this.bttnAddCart.Text = "Add To Cart";
             this.bttnAddCart.UseVisualStyleBackColor = true;
+            this.bttnAddCart.Click += new System.EventHandler(this.bttnAddCart_Click);
             // 
             // freeBuildForm
             // 

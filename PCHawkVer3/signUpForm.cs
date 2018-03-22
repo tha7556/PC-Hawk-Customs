@@ -16,7 +16,11 @@ namespace PCHawkVer3
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// creates user account
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bttnCreateAcc_Click(object sender, EventArgs e)
         {
             this.Hide();

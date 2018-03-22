@@ -97,5 +97,16 @@ namespace PCHawkVer3
                 
             }
         }
+        /// <summary>
+        /// brings user to checkout page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bttnCheckOut_Click(object sender, EventArgs e)
+        {
+            checkOutForm checkOut = new checkOutForm();
+            checkOut.Show();
+            this.Close();
+        }
     }
 }

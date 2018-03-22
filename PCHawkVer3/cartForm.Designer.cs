@@ -30,6 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bttnHome = new System.Windows.Forms.Button();
+            this.bttnAccount = new System.Windows.Forms.Button();
+            this.bttnLogout = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.bttnExit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cartContentsBox = new System.Windows.Forms.ListBox();
             this.totalBox = new System.Windows.Forms.TextBox();
@@ -44,12 +50,6 @@
             this.toolTipAccount = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipLogout = new System.Windows.Forms.ToolTip(this.components);
-            this.bttnHome = new System.Windows.Forms.Button();
-            this.bttnAccount = new System.Windows.Forms.Button();
-            this.bttnLogout = new System.Windows.Forms.Button();
-            this.btnHelp = new System.Windows.Forms.Button();
-            this.bttnExit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +67,95 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(855, 163);
             this.panel1.TabIndex = 0;
+            // 
+            // bttnHome
+            // 
+            this.bttnHome.BackColor = System.Drawing.Color.Black;
+            this.bttnHome.FlatAppearance.BorderSize = 0;
+            this.bttnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnHome.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnHome.ForeColor = System.Drawing.Color.White;
+            this.bttnHome.Image = global::PCHawkVer3.Properties.Resources.home__1_;
+            this.bttnHome.Location = new System.Drawing.Point(582, 88);
+            this.bttnHome.Name = "bttnHome";
+            this.bttnHome.Size = new System.Drawing.Size(67, 66);
+            this.bttnHome.TabIndex = 10;
+            this.toolTipHome.SetToolTip(this.bttnHome, "Home");
+            this.bttnHome.UseVisualStyleBackColor = false;
+            this.bttnHome.Click += new System.EventHandler(this.bttnHome_Click);
+            // 
+            // bttnAccount
+            // 
+            this.bttnAccount.BackColor = System.Drawing.Color.Black;
+            this.bttnAccount.FlatAppearance.BorderSize = 0;
+            this.bttnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnAccount.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnAccount.ForeColor = System.Drawing.Color.White;
+            this.bttnAccount.Image = global::PCHawkVer3.Properties.Resources.user;
+            this.bttnAccount.Location = new System.Drawing.Point(677, 88);
+            this.bttnAccount.Name = "bttnAccount";
+            this.bttnAccount.Size = new System.Drawing.Size(65, 66);
+            this.bttnAccount.TabIndex = 11;
+            this.toolTipHome.SetToolTip(this.bttnAccount, "View Account");
+            this.bttnAccount.UseVisualStyleBackColor = false;
+            this.bttnAccount.Click += new System.EventHandler(this.bttnAccount_Click);
+            // 
+            // bttnLogout
+            // 
+            this.bttnLogout.BackColor = System.Drawing.Color.Black;
+            this.bttnLogout.FlatAppearance.BorderSize = 0;
+            this.bttnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnLogout.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnLogout.ForeColor = System.Drawing.Color.White;
+            this.bttnLogout.Image = global::PCHawkVer3.Properties.Resources.exit;
+            this.bttnLogout.Location = new System.Drawing.Point(769, 88);
+            this.bttnLogout.Name = "bttnLogout";
+            this.bttnLogout.Size = new System.Drawing.Size(69, 66);
+            this.bttnLogout.TabIndex = 12;
+            this.toolTipLogout.SetToolTip(this.bttnLogout, "Logout");
+            this.bttnLogout.UseVisualStyleBackColor = false;
+            this.bttnLogout.Click += new System.EventHandler(this.bttnLogout_Click);
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.BackColor = System.Drawing.Color.Black;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.ForeColor = System.Drawing.Color.White;
+            this.btnHelp.Image = global::PCHawkVer3.Properties.Resources.info;
+            this.btnHelp.Location = new System.Drawing.Point(666, 3);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(76, 66);
+            this.btnHelp.TabIndex = 4;
+            this.toolTipHelp.SetToolTip(this.btnHelp, "Help");
+            this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // bttnExit
+            // 
+            this.bttnExit.BackColor = System.Drawing.Color.Black;
+            this.bttnExit.FlatAppearance.BorderSize = 0;
+            this.bttnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnExit.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnExit.ForeColor = System.Drawing.Color.White;
+            this.bttnExit.Image = global::PCHawkVer3.Properties.Resources.power_button__2_;
+            this.bttnExit.Location = new System.Drawing.Point(769, 3);
+            this.bttnExit.Name = "bttnExit";
+            this.bttnExit.Size = new System.Drawing.Size(69, 66);
+            this.bttnExit.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.bttnExit, "Exit Application");
+            this.bttnExit.UseVisualStyleBackColor = false;
+            this.bttnExit.Click += new System.EventHandler(this.bttnExit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PCHawkVer3.Properties.Resources.banner;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(509, 153);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -165,95 +254,7 @@
             this.bttnCheckOut.TabIndex = 9;
             this.bttnCheckOut.Text = "Check Out";
             this.bttnCheckOut.UseVisualStyleBackColor = true;
-            // 
-            // bttnHome
-            // 
-            this.bttnHome.BackColor = System.Drawing.Color.Black;
-            this.bttnHome.FlatAppearance.BorderSize = 0;
-            this.bttnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnHome.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnHome.ForeColor = System.Drawing.Color.White;
-            this.bttnHome.Image = global::PCHawkVer3.Properties.Resources.home__1_;
-            this.bttnHome.Location = new System.Drawing.Point(582, 88);
-            this.bttnHome.Name = "bttnHome";
-            this.bttnHome.Size = new System.Drawing.Size(67, 66);
-            this.bttnHome.TabIndex = 10;
-            this.toolTipHome.SetToolTip(this.bttnHome, "Home");
-            this.bttnHome.UseVisualStyleBackColor = false;
-            this.bttnHome.Click += new System.EventHandler(this.bttnHome_Click);
-            // 
-            // bttnAccount
-            // 
-            this.bttnAccount.BackColor = System.Drawing.Color.Black;
-            this.bttnAccount.FlatAppearance.BorderSize = 0;
-            this.bttnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnAccount.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnAccount.ForeColor = System.Drawing.Color.White;
-            this.bttnAccount.Image = global::PCHawkVer3.Properties.Resources.user;
-            this.bttnAccount.Location = new System.Drawing.Point(677, 88);
-            this.bttnAccount.Name = "bttnAccount";
-            this.bttnAccount.Size = new System.Drawing.Size(65, 66);
-            this.bttnAccount.TabIndex = 11;
-            this.toolTipHome.SetToolTip(this.bttnAccount, "View Account");
-            this.bttnAccount.UseVisualStyleBackColor = false;
-            this.bttnAccount.Click += new System.EventHandler(this.bttnAccount_Click);
-            // 
-            // bttnLogout
-            // 
-            this.bttnLogout.BackColor = System.Drawing.Color.Black;
-            this.bttnLogout.FlatAppearance.BorderSize = 0;
-            this.bttnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnLogout.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnLogout.ForeColor = System.Drawing.Color.White;
-            this.bttnLogout.Image = global::PCHawkVer3.Properties.Resources.exit;
-            this.bttnLogout.Location = new System.Drawing.Point(769, 88);
-            this.bttnLogout.Name = "bttnLogout";
-            this.bttnLogout.Size = new System.Drawing.Size(69, 66);
-            this.bttnLogout.TabIndex = 12;
-            this.toolTipLogout.SetToolTip(this.bttnLogout, "Logout");
-            this.bttnLogout.UseVisualStyleBackColor = false;
-            this.bttnLogout.Click += new System.EventHandler(this.bttnLogout_Click);
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.BackColor = System.Drawing.Color.Black;
-            this.btnHelp.FlatAppearance.BorderSize = 0;
-            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHelp.ForeColor = System.Drawing.Color.White;
-            this.btnHelp.Image = global::PCHawkVer3.Properties.Resources.info;
-            this.btnHelp.Location = new System.Drawing.Point(666, 3);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(76, 66);
-            this.btnHelp.TabIndex = 4;
-            this.toolTipHelp.SetToolTip(this.btnHelp, "Help");
-            this.btnHelp.UseVisualStyleBackColor = false;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
-            // 
-            // bttnExit
-            // 
-            this.bttnExit.BackColor = System.Drawing.Color.Black;
-            this.bttnExit.FlatAppearance.BorderSize = 0;
-            this.bttnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnExit.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnExit.ForeColor = System.Drawing.Color.White;
-            this.bttnExit.Image = global::PCHawkVer3.Properties.Resources.power_button__2_;
-            this.bttnExit.Location = new System.Drawing.Point(769, 3);
-            this.bttnExit.Name = "bttnExit";
-            this.bttnExit.Size = new System.Drawing.Size(69, 66);
-            this.bttnExit.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.bttnExit, "Exit Application");
-            this.bttnExit.UseVisualStyleBackColor = false;
-            this.bttnExit.Click += new System.EventHandler(this.bttnExit_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PCHawkVer3.Properties.Resources.banner;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(509, 153);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.bttnCheckOut.Click += new System.EventHandler(this.bttnCheckOut_Click);
             // 
             // cartForm
             // 
