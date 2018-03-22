@@ -67,8 +67,12 @@ namespace PrimaryQueries {
         public static string[] Query(string query) {
             return Query(query, false);
         }
+        /// <summary>
+        /// A function for grabbing part info off of pcpart picker
+        /// </summary>
+        /// <param name="current">The Current table to populate</param>
         public static void PopulateTable(string current) {
-            string content = System.IO.File.ReadAllText("..//..//part data//" + current + ".html");
+            string content = File.ReadAllText("..//..//part data//" + current + ".html");
             if (current.Equals("cpu")) {
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
