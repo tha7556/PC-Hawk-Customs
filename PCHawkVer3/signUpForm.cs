@@ -58,5 +58,16 @@ namespace PCHawkVer3
             helpForm help = new helpForm();
             help.Show();
         }
+        /// <summary>
+        /// yeah dont delete this either made this on accident and need to find location in source code to properly remove
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtBoxFirst_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

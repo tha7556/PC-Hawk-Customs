@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bttnHelp = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bttnCreateAcc = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.txtBoxCity = new System.Windows.Forms.TextBox();
             this.txtBoxState = new System.Windows.Forms.TextBox();
             this.txtBoxZip = new System.Windows.Forms.TextBox();
-            this.bttnHelp = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +59,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(887, 160);
             this.panel1.TabIndex = 0;
+            // 
+            // bttnHelp
+            // 
+            this.bttnHelp.BackColor = System.Drawing.Color.Black;
+            this.bttnHelp.FlatAppearance.BorderSize = 0;
+            this.bttnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnHelp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnHelp.ForeColor = System.Drawing.Color.White;
+            this.bttnHelp.Image = global::PCHawkVer3.Properties.Resources.info;
+            this.bttnHelp.Location = new System.Drawing.Point(38, 40);
+            this.bttnHelp.Name = "bttnHelp";
+            this.bttnHelp.Size = new System.Drawing.Size(105, 81);
+            this.bttnHelp.TabIndex = 11;
+            this.bttnHelp.UseVisualStyleBackColor = false;
+            this.bttnHelp.Click += new System.EventHandler(this.bttnHelp_Click);
             // 
             // button1
             // 
@@ -133,6 +148,7 @@
             this.txtBoxFirst.Size = new System.Drawing.Size(201, 26);
             this.txtBoxFirst.TabIndex = 5;
             this.txtBoxFirst.Text = "First Name";
+            this.txtBoxFirst.TextChanged += new System.EventHandler(this.txtBoxFirst_TextChanged);
             // 
             // welcomeLab
             // 
@@ -180,21 +196,6 @@
             this.txtBoxZip.Size = new System.Drawing.Size(124, 26);
             this.txtBoxZip.TabIndex = 10;
             this.txtBoxZip.Text = "Zip";
-            // 
-            // bttnHelp
-            // 
-            this.bttnHelp.BackColor = System.Drawing.Color.Black;
-            this.bttnHelp.FlatAppearance.BorderSize = 0;
-            this.bttnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnHelp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnHelp.ForeColor = System.Drawing.Color.White;
-            this.bttnHelp.Image = global::PCHawkVer3.Properties.Resources.info;
-            this.bttnHelp.Location = new System.Drawing.Point(38, 40);
-            this.bttnHelp.Name = "bttnHelp";
-            this.bttnHelp.Size = new System.Drawing.Size(105, 81);
-            this.bttnHelp.TabIndex = 11;
-            this.bttnHelp.UseVisualStyleBackColor = false;
-            this.bttnHelp.Click += new System.EventHandler(this.bttnHelp_Click);
             // 
             // signUpForm
             // 
