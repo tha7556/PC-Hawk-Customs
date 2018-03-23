@@ -40,6 +40,8 @@
             this.chkBoxPass = new System.Windows.Forms.CheckBox();
             this.toolTipHelp = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipQuit = new System.Windows.Forms.ToolTip(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +66,7 @@
             this.bttnHelp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnHelp.ForeColor = System.Drawing.Color.White;
             this.bttnHelp.Image = global::PCHawkVer3.Properties.Resources.info;
-            this.bttnHelp.Location = new System.Drawing.Point(677, 38);
+            this.bttnHelp.Location = new System.Drawing.Point(57, 45);
             this.bttnHelp.Name = "bttnHelp";
             this.bttnHelp.Size = new System.Drawing.Size(91, 81);
             this.bttnHelp.TabIndex = 5;
@@ -80,9 +82,9 @@
             this.bttnExit.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnExit.ForeColor = System.Drawing.Color.White;
             this.bttnExit.Image = global::PCHawkVer3.Properties.Resources.power_button__2_;
-            this.bttnExit.Location = new System.Drawing.Point(798, 38);
+            this.bttnExit.Location = new System.Drawing.Point(756, 45);
             this.bttnExit.Name = "bttnExit";
-            this.bttnExit.Size = new System.Drawing.Size(99, 81);
+            this.bttnExit.Size = new System.Drawing.Size(91, 81);
             this.bttnExit.TabIndex = 4;
             this.toolTipQuit.SetToolTip(this.bttnExit, "Exit Application");
             this.bttnExit.UseVisualStyleBackColor = false;
@@ -91,9 +93,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PCHawkVer3.Properties.Resources.banner;
-            this.pictureBox1.Location = new System.Drawing.Point(141, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(202, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(512, 154);
+            this.pictureBox1.Size = new System.Drawing.Size(501, 160);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -104,16 +106,14 @@
             this.txtBoxEmail.Name = "txtBoxEmail";
             this.txtBoxEmail.Size = new System.Drawing.Size(300, 26);
             this.txtBoxEmail.TabIndex = 1;
-            this.txtBoxEmail.Text = "Email";
             // 
             // txtBoxPass
             // 
             this.txtBoxPass.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxPass.Location = new System.Drawing.Point(307, 297);
+            this.txtBoxPass.Location = new System.Drawing.Point(307, 318);
             this.txtBoxPass.Name = "txtBoxPass";
             this.txtBoxPass.Size = new System.Drawing.Size(300, 26);
             this.txtBoxPass.TabIndex = 2;
-            this.txtBoxPass.Text = "Password";
             this.txtBoxPass.TextChanged += new System.EventHandler(this.txtBoxPass_TextChanged);
             // 
             // bttnLogin
@@ -121,7 +121,7 @@
             this.bttnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnLogin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnLogin.ForeColor = System.Drawing.Color.White;
-            this.bttnLogin.Location = new System.Drawing.Point(307, 329);
+            this.bttnLogin.Location = new System.Drawing.Point(307, 350);
             this.bttnLogin.Name = "bttnLogin";
             this.bttnLogin.Size = new System.Drawing.Size(140, 57);
             this.bttnLogin.TabIndex = 3;
@@ -134,7 +134,7 @@
             this.bttnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnSignUp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnSignUp.ForeColor = System.Drawing.Color.White;
-            this.bttnSignUp.Location = new System.Drawing.Point(467, 329);
+            this.bttnSignUp.Location = new System.Drawing.Point(467, 350);
             this.bttnSignUp.Name = "bttnSignUp";
             this.bttnSignUp.Size = new System.Drawing.Size(140, 57);
             this.bttnSignUp.TabIndex = 4;
@@ -150,7 +150,7 @@
             this.chkBoxPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkBoxPass.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkBoxPass.ForeColor = System.Drawing.Color.White;
-            this.chkBoxPass.Location = new System.Drawing.Point(613, 297);
+            this.chkBoxPass.Location = new System.Drawing.Point(613, 318);
             this.chkBoxPass.Name = "chkBoxPass";
             this.chkBoxPass.Size = new System.Drawing.Size(132, 24);
             this.chkBoxPass.TabIndex = 5;
@@ -158,12 +158,36 @@
             this.chkBoxPass.UseVisualStyleBackColor = true;
             this.chkBoxPass.CheckedChanged += new System.EventHandler(this.chkBoxPass_CheckedChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(304, 244);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 18);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Email:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(304, 294);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 18);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Password:";
+            // 
             // SignInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(900, 445);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.chkBoxPass);
             this.Controls.Add(this.bttnSignUp);
             this.Controls.Add(this.bttnLogin);
@@ -195,6 +219,8 @@
         private System.Windows.Forms.CheckBox chkBoxPass;
         private System.Windows.Forms.ToolTip toolTipHelp;
         private System.Windows.Forms.ToolTip toolTipQuit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

@@ -28,6 +28,11 @@ namespace PCHawkVer3
             home.Show();
 
         }
+        /// <summary>
+        /// leaving application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -42,6 +47,16 @@ namespace PCHawkVer3
 
 
             }
+        }
+        /// <summary>
+        /// Displays the help screen
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bttnHelp_Click(object sender, EventArgs e)
+        {
+            helpForm help = new helpForm();
+            help.Show();
         }
     }
 }
