@@ -24,5 +24,9 @@ namespace PrimaryQueries {
         public string GetCache() {
             return cache;
         }
+        public void AddToDatabase() {
+            PrimaryQueries.Query("INSERT INTO `storage` (`part number`, `name`, `price`, `capacity`, `cache`, `series`) VALUES " +
+                "("+partNumber+", '"+name+"', "+price+", '"+capacity+"', '"+cache+"', '"+series+"')");
+        }
     }
 }

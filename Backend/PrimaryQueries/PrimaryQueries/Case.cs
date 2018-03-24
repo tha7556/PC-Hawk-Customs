@@ -44,5 +44,9 @@ namespace PrimaryQueries {
         public int GetInternalSize() {
             return internalSize;
         }
+        public void AddToDatabase() {
+            PrimaryQueries.Query("INSERT INTO `pc case` (`part number`, `name`, `price`, `type`, `external size`, `internal size`, `power supply`)" +
+                " VALUES (" + partNumber + ", '" + name + "', " + price + ", '" + type + "', "+externalSize+", "+internalSize+", '"+powerSupply+"')");
+        }
     }
 }

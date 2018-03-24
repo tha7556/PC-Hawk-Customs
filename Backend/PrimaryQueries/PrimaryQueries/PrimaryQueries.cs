@@ -11,6 +11,8 @@ namespace PrimaryQueries {
     ///</summary>
     class PrimaryQueries {
         public static string url = "http://satoshi.cis.uncw.edu/~tha7556/Backend.php";
+        public static int partNumber = 1;
+        //public static int partNumber = 1;
         /// <summary>
         /// Sends a Query to the Database. Returns a string[] of the result, with \0 seperating each column
         /// </summary>
@@ -73,7 +75,6 @@ namespace PrimaryQueries {
         /// <param name="current">The Current table to populate</param>
         public static void PopulateTable(string current) {
             string content = File.ReadAllText("..//..//part data//" + current + ".html");
-            int partNumber = 1;
             if (current.Equals("cpu")) {
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
@@ -177,27 +178,22 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     string series = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("series: " + series);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string form = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("form: " + form);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string type = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("type: " + type);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string capacity = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("capacity: " + capacity);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string cache = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("cache: " + cache);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
                     Storage storage = new Storage(partNumber, name, double.Parse(price), series, form, type, capacity, cache);
+                    storage.AddToDatabase();
+                    partNumber++;
                 }
             }
             else if (current.Equals("graphicsCard")) {
@@ -207,25 +203,27 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     string series = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("series: " + series);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string chipset = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("chipset: " + chipset);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string memory = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("memory: " + memory);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string coreclock = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("coreclock: " + coreclock);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
-                    GraphicsCard graphicsCard = new GraphicsCard(partNumber, name, double.Parse(price), series, chipset, memory, coreclock);
+                    GraphicsCard graphicsCard;
+                    try { //Some have no price, ignore those
+                        graphicsCard = new GraphicsCard(partNumber, name, double.Parse(price), series, chipset, memory, coreclock);
+                    }
+                    catch(Exception e) {
+                        continue;
+                    }
+                    graphicsCard.AddToDatabase();
+                    partNumber++;
                 }
             }
             else if (current.Equals("power")) {
@@ -235,27 +233,28 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     string series = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("series: " + series);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string form = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("form: " + form);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string efficiency = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("efficiency: " + efficiency);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string watts = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("watts: " + watts);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string modular = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("modular: " + modular);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
-                    PowerSupply powerSupply = new PowerSupply(partNumber, name, double.Parse(price), series, form, efficiency, watts, modular);
+                    PowerSupply powerSupply;
+                    try { //Some have no price, ignore those
+                        powerSupply = new PowerSupply(partNumber, name, double.Parse(price), series, form, efficiency, watts, modular);
+                    }
+                    catch(Exception e) {
+                        continue;
+                    }
+                    powerSupply.AddToDatabase();
+                    partNumber++;
                 }
             }
             else if (current.Equals("case")) {
@@ -265,31 +264,36 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string type = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("type: " + type);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string ext514 = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("ext 5 1/4: " + ext514);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string in312 = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("in 3 1/2: " + in312);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string powersupply = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("power supply: " + powersupply);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
-                    Case pcCase = new Case(partNumber, name, double.Parse(price), type, int.Parse(ext514), int.Parse(in312), powersupply);
+                    Case pcCase;
+                    try { //Some have no price, just ignore those
+                        pcCase = new Case(partNumber, name, double.Parse(price), type, int.Parse(ext514), int.Parse(in312), powersupply);
+                    }
+                    catch(Exception e) {
+                        continue;
+                    }
+                    pcCase.AddToDatabase();
+                    partNumber++;
                 }
             }
 
         } 
         static void Main(string[] args) {
-            PopulateTable("cpu");
+            PopulateTable("case");
+            PopulateTable("storage");
+            PopulateTable("graphicsCard");
+            PopulateTable("power");
             while (true) {
                 continue;
             }

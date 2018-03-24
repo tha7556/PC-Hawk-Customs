@@ -9,9 +9,9 @@ namespace PrimaryQueries {
     /// An individual Part of a computer
     /// </summary>
     class Part {
-        private int partNumber;
-        private string name;
-        private double price;
+        protected int partNumber;
+        protected string name;
+        protected double price;
         /// <summary>
         /// Creates a new Part object
         /// </summary>

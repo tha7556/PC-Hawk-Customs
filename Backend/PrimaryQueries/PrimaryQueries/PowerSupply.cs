@@ -24,5 +24,9 @@ namespace PrimaryQueries {
         public string GetModular() {
             return modular;
         }
+        public void AddToDatabase() {
+            PrimaryQueries.Query("INSERT INTO `powersupply` (`part number`, `name`, `price`, `series`, `form`, `efficiency`, `watts`, `modular`) " +
+                "VALUES ("+partNumber+", '"+name+"', "+price+", '"+series+"', '"+form+"', '"+efficiency+"', '"+watts+"', '"+modular+"');");
+        }
     }
 }

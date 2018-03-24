@@ -21,5 +21,9 @@ namespace PrimaryQueries {
         public string GetCoreClock() {
             return coreClock;
         }
+        public void AddToDatabase() {
+            PrimaryQueries.Query("INSERT INTO `graphicscard` (`part number`, `name`, `price`, `series`, `chipset`, `memory`, `core clock`)" +
+                " VALUES ("+partNumber+", '"+name+"', "+price+", '"+series+"', '"+chipSet+"', '"+memory+"', '"+coreClock+"')");
+        }
     }
 }
