@@ -44,15 +44,27 @@ namespace PrimaryQueries {
         public int GetInternalSize() {
             return internalSize;
         }
+        /// <summary>
+        /// Adds this Part to the pcCase and Part databases
+        /// </summary>
         public new void AddToDatabase() {
             base.AddToDatabase();
             PrimaryQueries.Query("INSERT INTO `pc case` (`part number`, `name`, `price`, `type`, `external size`, `internal size`, `power supply`)" +
                 " VALUES (" + partNumber + ", '" + name + "', " + price + ", '" + type + "', "+externalSize+", "+internalSize+", '"+powerSupply+"')");
         }
+        /// <summary>
+        /// Converts a MySQL query into a Case object
+        /// </summary>
+        /// <param name="query">The MySQL query result</param>
+        /// <returns>The Case created from the MySQL query</returns>
         public static Case GetFromQuery(string query) {
             string[] result = query.Split('\0');
             return new Case(int.Parse(result[0]), result[1], double.Parse(result[2]), result[3], int.Parse(result[4]), int.Parse(result[5]), result[6]);
         }
+        /// <summary>
+        /// Gets all Cases from the pcCase database
+        /// </summary>
+        /// <returns>A Case[] of all Cases in the database</returns>
         public static Case[] GetAll() {
             string[] result = PrimaryQueries.Query("SELECT * FROM `pc case`");
             Case[] arr = new Case[result.Length];
