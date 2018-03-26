@@ -272,9 +272,9 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(456, 380);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(208, 23);
+            this.label6.Size = new System.Drawing.Size(280, 23);
             this.label6.TabIndex = 16;
-            this.label6.Text = "Quality Management";
+            this.label6.Text = "Quality Assurance/Marketing";
             // 
             // label7
             // 
