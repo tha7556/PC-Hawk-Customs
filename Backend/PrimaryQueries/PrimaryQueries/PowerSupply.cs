@@ -29,5 +29,17 @@ namespace PrimaryQueries {
             PrimaryQueries.Query("INSERT INTO `powersupply` (`part number`, `name`, `price`, `series`, `form`, `efficiency`, `watts`, `modular`) " +
                 "VALUES ("+partNumber+", '"+name+"', "+price+", '"+series+"', '"+form+"', '"+efficiency+"', '"+watts+"', '"+modular+"');");
         }
+        public static PowerSupply GetFromQuery(string query) {
+            string[] result = query.Split('\0');
+            return new PowerSupply(int.Parse(result[0]), result[1], double.Parse(result[2]), result[3], result[4], result[5], result[6], result[7]);
+        }
+        public static PowerSupply[] GetAll() {
+            string[] result = PrimaryQueries.Query("SELECT * FROM `powersupply`");
+            PowerSupply[] arr = new PowerSupply[result.Length];
+            for (int i = 0; i < result.Length; i++) {
+                arr[i] = GetFromQuery(result[i]);
+            }
+            return arr;
+        }
     }
 }

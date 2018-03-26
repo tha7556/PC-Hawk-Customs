@@ -49,5 +49,17 @@ namespace PrimaryQueries {
             PrimaryQueries.Query("INSERT INTO `pc case` (`part number`, `name`, `price`, `type`, `external size`, `internal size`, `power supply`)" +
                 " VALUES (" + partNumber + ", '" + name + "', " + price + ", '" + type + "', "+externalSize+", "+internalSize+", '"+powerSupply+"')");
         }
+        public static Case GetFromQuery(string query) {
+            string[] result = query.Split('\0');
+            return new Case(int.Parse(result[0]), result[1], double.Parse(result[2]), result[3], int.Parse(result[4]), int.Parse(result[5]), result[6]);
+        }
+        public static Case[] GetAll() {
+            string[] result = PrimaryQueries.Query("SELECT * FROM `pc case`");
+            Case[] arr = new Case[result.Length];
+            for (int i = 0; i < result.Length; i++) {
+                arr[i] = GetFromQuery(result[i]);
+            }
+            return arr;
+        }
     }
 }

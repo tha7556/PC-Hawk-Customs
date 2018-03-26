@@ -2,7 +2,6 @@
 //TODO: Part description
 //TODO: Part images?
 //TODO: Add Part to database
-//TODO: Change setPrice to modify database
 //TODO: Part ratings
 namespace PrimaryQueries {
     /// <summary>
@@ -51,6 +50,7 @@ namespace PrimaryQueries {
         /// <param name="newPrice">The new Price for the Part</param>
         public void SetPrice(double newPrice) {
             price = newPrice;
+            AddToDatabase();
         }
         /// <summary>
         /// Gets the Part in the Database with the given partNumber. NOTE: Only returns the first Part found if there are more than one with the same number.
@@ -104,6 +104,20 @@ namespace PrimaryQueries {
         public static Part GetPartFromQuery(string result) {
             string[] line = result.Split('\0');
             return new Part(int.Parse(line[0]), line[1], double.Parse(line[2]));
+        }
+        public static Part[] GetAllParts() {
+            Storage[] storages = Storage.GetAll();
+            GraphicsCard[] cards = GraphicsCard.GetAll();
+            Case[] cases = Case.GetAll();
+            PowerSupply[] supplies = PowerSupply.GetAll();
+            int length = storages.Length + cards.Length + cases.Length + supplies.Length;
+            Part[] parts = new Part[length];
+            storages.CopyTo(parts, 0);
+            cards.CopyTo(parts, storages.Length);
+            cases.CopyTo(parts, cards.Length+storages.Length);
+            supplies.CopyTo(parts, cases.Length+ cards.Length + storages.Length);
+            return parts;
+
         }
         public void AddToDatabase() {
             string type = "";
