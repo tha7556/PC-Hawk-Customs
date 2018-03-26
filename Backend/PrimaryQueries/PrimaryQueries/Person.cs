@@ -95,5 +95,8 @@ namespace PrimaryQueries {
         /// Removes the Person from the Database
         /// </summary>
         public abstract void DeleteFromDatabase();
+        public override string ToString() {
+            return GetType() + ": " + firstName + " " + lastName + ", " + email;
+        }
     }
 }
