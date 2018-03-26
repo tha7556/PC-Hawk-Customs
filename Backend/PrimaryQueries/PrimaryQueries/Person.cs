@@ -3,7 +3,7 @@
 //TODO: Have Change password modify database
 //TODO: Verification for passwords
 //TODO: Ensure that People can't be made with emails already in database
-//TODO: Based on password, isEmployee or isCustomer
+//TODO: Based on email, isEmployee or isCustomer
 //TODO: ToString
 namespace PrimaryQueries {
     /// <summary>
