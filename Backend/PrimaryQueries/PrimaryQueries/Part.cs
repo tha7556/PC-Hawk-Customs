@@ -53,17 +53,6 @@ namespace PrimaryQueries {
             AddToDatabase();
         }
         /// <summary>
-        /// Gets the Part in the Database with the given partNumber. NOTE: Only returns the first Part found if there are more than one with the same number.
-        /// </summary>
-        /// <param name="partNumber">The partNumber of the desired Part</param>
-        /// <returns>The Part found by the query</returns>
-        public static Part GetPart(int partNumber) {
-            string[] query = PrimaryQueries.Query("SELECT * FROM part WHERE `part number` = " + partNumber);
-            if(query.Length > 0)
-                return GetPartFromQuery(query[0]);
-            return null;
-        }
-        /// <summary>
         /// Gets an array of Parts compatable with this one
         /// </summary>
         /// <returns>An array of Parts compatable with this one</returns>
@@ -105,6 +94,10 @@ namespace PrimaryQueries {
             string[] line = result.Split('\0');
             return new Part(int.Parse(line[0]), line[1], double.Parse(line[2]));
         }
+        /// <summary>
+        /// Gets all Parts in the Part database
+        /// </summary>
+        /// <returns>A Part[] containing all Parts in the database</returns>
         public static Part[] GetAllParts() {
             Storage[] storages = Storage.GetAll();
             GraphicsCard[] cards = GraphicsCard.GetAll();
@@ -117,8 +110,44 @@ namespace PrimaryQueries {
             cases.CopyTo(parts, cards.Length+storages.Length);
             supplies.CopyTo(parts, cases.Length+ cards.Length + storages.Length);
             return parts;
-
         }
+        /// <summary>
+        /// Gets a Part with the given part number
+        /// </summary>
+        /// <param name="partNumber">The number of the desired Part</param>
+        /// <returns>The Part with the given part number</returns>
+        public static Part GetPart(int partNumber) {
+            string[] result = PrimaryQueries.Query("SELECT * FROM `part` WHERE `part number` = " + partNumber);
+            if (result.Length > 0) {
+                string[] p = result[0].Split('\0');
+                string type = p[1].ToLower();
+                if (type.Equals("graphics card"))
+                    type = "graphicscard";
+                else if (type.Equals("power supply"))
+                    type = "powersupply";
+                else if (type.Equals("case"))
+                    type = "pc case";
+                result = PrimaryQueries.Query("SELECT * FROM `" + type + "` WHERE `part number` = " + partNumber);
+                if(result.Length > 0) {
+                    switch(type) {
+                        case "storage":
+                            return Storage.GetFromQuery(result[0]);
+                        case "graphicscard":
+                            return GraphicsCard.GetFromQuery(result[0]);
+                        case "pc case":
+                            return Case.GetFromQuery(result[0]);
+                        case "powersupply":
+                            return PowerSupply.GetFromQuery(result[0]);
+                        default:
+                            return null;
+                    }
+                }
+            }
+            return null;
+        }
+        /// <summary>
+        /// Adds this Part to the Part database
+        /// </summary>
         public void AddToDatabase() {
             string type = "";
             if(this is Storage) {
