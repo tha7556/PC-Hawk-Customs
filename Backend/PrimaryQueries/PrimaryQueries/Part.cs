@@ -105,5 +105,21 @@ namespace PrimaryQueries {
             string[] line = result.Split('\0');
             return new Part(int.Parse(line[0]), line[1], double.Parse(line[2]));
         }
+        public void AddToDatabase() {
+            string type = "";
+            if(this is Storage) {
+                type = "Storage";
+            }
+            else if(this is GraphicsCard) {
+                type = "Graphics Card";
+            }
+            else if(this is Case) {
+                type = "Case";
+            }
+            else if(this is PowerSupply) {
+                type = "Power Supply";
+            }
+            PrimaryQueries.Query("INSERT INTO `part` (`part number`, `component type`) VALUES ("+partNumber+", '"+type+"');"); ;
+        }
     }
 }
