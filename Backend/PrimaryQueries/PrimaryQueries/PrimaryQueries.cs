@@ -11,8 +11,10 @@ namespace PrimaryQueries {
     ///</summary>
     class PrimaryQueries {
         public static string url = "http://satoshi.cis.uncw.edu/~tha7556/Backend.php";
-        public static int partNumber = 1;
-        //public static int partNumber = 1;
+        public static int partNumber = 1000;
+        public enum CurrentType {
+            storage, graphicsCard, pcCase, powerSupply, cpu, fan, motherboard, memory
+        }
         /// <summary>
         /// Sends a Query to the Database. Returns a string[] of the result, with \0 seperating each column
         /// </summary>
@@ -73,9 +75,9 @@ namespace PrimaryQueries {
         /// A function for grabbing part info off of pcpart picker
         /// </summary>
         /// <param name="current">The Current table to populate</param>
-        public static void PopulateTable(string current) {
+        public static void PopulateTable(CurrentType current) {
             string content = File.ReadAllText("..//..//part data//" + current + ".html");
-            if (current.Equals("cpu")) {
+            if (current == CurrentType.cpu) {
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -97,7 +99,7 @@ namespace PrimaryQueries {
                     Console.WriteLine("price: " + price + "\n-----------------");
                 }
             }
-            else if (current.Equals("fan")) {
+            else if (current == CurrentType.fan) {
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -116,7 +118,7 @@ namespace PrimaryQueries {
                     Console.WriteLine("price: " + price + "\n-----------------");
                 }
             }
-            else if (current.Equals("motherboard")) {
+            else if (current == CurrentType.motherboard) {
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -142,7 +144,7 @@ namespace PrimaryQueries {
                     Console.WriteLine("price: " + price + "\n-----------------");
                 }
             }
-            else if (current.Equals("memory")) {
+            else if (current == CurrentType.memory) {
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -171,7 +173,7 @@ namespace PrimaryQueries {
                     Console.WriteLine("price: " + price + "\n-----------------");
                 }
             }
-            else if (current.Equals("storage")) {
+            else if (current == CurrentType.storage) {
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -196,7 +198,7 @@ namespace PrimaryQueries {
                     partNumber++;
                 }
             }
-            else if (current.Equals("graphicsCard")) {
+            else if (current == CurrentType.graphicsCard) {
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -219,14 +221,14 @@ namespace PrimaryQueries {
                     try { //Some have no price, ignore those
                         graphicsCard = new GraphicsCard(partNumber, name, double.Parse(price), series, chipset, memory, coreclock);
                     }
-                    catch(Exception e) {
+                    catch (Exception e) {
                         continue;
                     }
                     graphicsCard.AddToDatabase();
                     partNumber++;
                 }
             }
-            else if (current.Equals("power")) {
+            else if (current == CurrentType.powerSupply) {
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -250,14 +252,14 @@ namespace PrimaryQueries {
                     try { //Some have no price, ignore those
                         powerSupply = new PowerSupply(partNumber, name, double.Parse(price), series, form, efficiency, watts, modular);
                     }
-                    catch(Exception e) {
+                    catch (Exception e) {
                         continue;
                     }
                     powerSupply.AddToDatabase();
                     partNumber++;
                 }
             }
-            else if (current.Equals("case")) {
+            else if (current == CurrentType.pcCase) {
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
                     string sub = content.Substring(0, content.IndexOf("</tr>"));
@@ -280,20 +282,28 @@ namespace PrimaryQueries {
                     try { //Some have no price, just ignore those
                         pcCase = new Case(partNumber, name, double.Parse(price), type, int.Parse(ext514), int.Parse(in312), powersupply);
                     }
-                    catch(Exception e) {
+                    catch (Exception e) {
                         continue;
                     }
                     pcCase.AddToDatabase();
                     partNumber++;
                 }
             }
+            else
+                Console.WriteLine("invalid input: " + current);
 
         } 
         static void Main(string[] args) {
-            PopulateTable("case");
-            PopulateTable("storage");
-            PopulateTable("graphicsCard");
-            PopulateTable("power");
+            PopulateTable(CurrentType.storage);
+            PopulateTable(CurrentType.graphicsCard);
+            PopulateTable(CurrentType.pcCase);
+            PopulateTable(CurrentType.powerSupply);
+            Part[] parts = Part.GetAllParts();
+            Console.WriteLine(parts.Length);
+            Console.WriteLine("start");
+            foreach (Part p in parts) {
+                Console.WriteLine(p.GetPartNumber());
+            }
             while (true) {
                 continue;
             }
