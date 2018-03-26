@@ -87,5 +87,17 @@ namespace PrimaryQueries {
             }
             return arr;
         }
+        /// <summary>
+        /// Gets a PowerSupply object with the given part number
+        /// </summary>
+        /// <param name="partNumber">The identifying part number</param>
+        /// <returns>The PowerSupply object with the part number</returns>
+        public static PowerSupply Get(int partNumber) {
+            string[] result = PrimaryQueries.Query("SELECT * FROM `storage` WHERE `powersupply` = " + partNumber);
+            if (result.Length > 0) {
+                return GetFromQuery(result[0]);
+            }
+            return null;
+        }
     }
 }

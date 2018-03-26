@@ -79,5 +79,17 @@ namespace PrimaryQueries {
             }
             return arr;
         }
+        /// <summary>
+        /// Gets a GraphicsCard object with the given part number
+        /// </summary>
+        /// <param name="partNumber">The identifying part number</param>
+        /// <returns>The GraphicsCard object with the part number</returns>
+        public static GraphicsCard Get(int partNumber) {
+            string[] result = PrimaryQueries.Query("SELECT * FROM `graphicscard` WHERE `part number` = " + partNumber);
+            if (result.Length > 0) {
+                return GetFromQuery(result[0]);
+            }
+            return null;
+        }
     }
 }

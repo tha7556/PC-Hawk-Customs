@@ -73,5 +73,17 @@ namespace PrimaryQueries {
             }
             return arr;
         }
+        /// <summary>
+        /// Gets a Case object with the given part number
+        /// </summary>
+        /// <param name="partNumber">The identifying part number</param>
+        /// <returns>The Case object with the part number</returns>
+        public static Case Get(int partNumber) {
+            string[] result = PrimaryQueries.Query("SELECT * FROM `storage` WHERE `pc case` = " + partNumber);
+            if (result.Length > 0) {
+                return GetFromQuery(result[0]);
+            }
+            return null;
+        }
     }
 }

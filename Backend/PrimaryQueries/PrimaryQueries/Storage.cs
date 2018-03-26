@@ -87,5 +87,17 @@ namespace PrimaryQueries {
             }
             return arr;
         }
+        /// <summary>
+        /// Gets a Storage object with the given part number
+        /// </summary>
+        /// <param name="partNumber">The identifying part number</param>
+        /// <returns>The Storage object with the part number</returns>
+        public static Storage Get(int partNumber) {
+            string[] result = PrimaryQueries.Query("SELECT * FROM `storage` WHERE `part number` = " + partNumber);
+            if(result.Length > 0) {
+                return GetFromQuery(result[0]);
+            }
+            return null;
+        }
     }
 }
