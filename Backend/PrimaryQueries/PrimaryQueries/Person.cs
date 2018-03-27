@@ -1,10 +1,7 @@
 ﻿//TODO: Password encryption
 //TODO: Have Change email modify database
-//TODO: Have Change password modify database
 //TODO: Verification for passwords
 //TODO: Ensure that People can't be made with emails already in database
-//TODO: Based on email, isEmployee or isCustomer
-//TODO: ToString
 namespace PrimaryQueries {
     /// <summary>
     /// An abstract Person to represent either an Employee or a Customer

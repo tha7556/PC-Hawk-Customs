@@ -2,7 +2,7 @@
 //TODO: Part description?
 //TODO: Part images?
 //TODO: Add Part to database
-//TODO: Part ratings
+//TODO: Part ratings?
 namespace PrimaryQueries {
     /// <summary>
     /// An individual Part of a computer
