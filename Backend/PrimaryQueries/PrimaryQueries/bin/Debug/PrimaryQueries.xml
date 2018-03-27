@@ -558,6 +558,31 @@
             Class used to query the MySQL PCHawkCustoms Database.
             </summary>
         </member>
+        <member name="T:PrimaryQueries.Queries.LogLevel">
+            <summary>
+            The Level used to categorize logs
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.DEBUG">
+            <summary>
+            Used for misc debug statements
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.WARNING">
+            <summary>
+            Used to warn that something may have gone wrong, but wouldn't throw an error
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.ERROR">
+            <summary>
+            Used to log error details
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.SQLQUERY">
+            <summary>
+            Used to log queries made to the database
+            </summary>
+        </member>
         <member name="M:PrimaryQueries.Queries.Query(System.String,System.Boolean)">
             <summary>
             Sends a Query to the Database. Returns a string[] of the result, with \0 seperating each column

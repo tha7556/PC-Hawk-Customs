@@ -10,13 +10,31 @@ namespace PrimaryQueries {
     ///Class used to query the MySQL PCHawkCustoms Database.
     ///</summary>
     public class Queries {
-        public static string url = "http://satoshi.cis.uncw.edu/~tha7556/Backend.php";
-        public static int partNumber = 1000;
-        public enum CurrentType {
+        private static string url = "http://satoshi.cis.uncw.edu/~tha7556/Backend.php";
+        private static int partNumber = 1000;
+        private enum CurrentType {
             storage, graphicsCard, pcCase, powerSupply, cpu, fan, motherboard, memory
         }
+        /// <summary>
+        /// The Level used to categorize logs
+        /// </summary>
         public enum LogLevel {
-            DEBUG, WARNING, ERROR, SQLQUERY
+            /// <summary>
+            /// Used for misc debug statements
+            /// </summary>
+            DEBUG,
+            /// <summary>
+            /// Used to warn that something may have gone wrong, but wouldn't throw an error
+            /// </summary>
+            WARNING,
+            /// <summary>
+            /// Used to log error details
+            /// </summary>
+            ERROR,
+            /// <summary>
+            /// Used to log queries made to the database
+            /// </summary>
+            SQLQUERY
         }
         private static string logFile = "..//..//Log data//log1.log";
         private static StreamWriter writer;
@@ -86,7 +104,7 @@ namespace PrimaryQueries {
         /// A function for grabbing part info off of pcpart picker
         /// </summary>
         /// <param name="current">The Current table to populate</param>
-        public static void PopulateTable(CurrentType current) {
+        private static void PopulateTable(CurrentType current) {
             string content = File.ReadAllText("..//..//part data//" + current + ".html");
             if (current == CurrentType.cpu) {
                 while (content.IndexOf("<tr>") != -1) {
