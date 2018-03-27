@@ -2,6 +2,8 @@
 //TODO: Check that zipcode is in the state?
 //TODO: Check that the state exists
 //TODO: Check that the City exists?
+using System.Net;
+
 namespace PrimaryQueries {
     /// <summary>
     /// A customer of PCHawkCustoms
@@ -122,6 +124,21 @@ namespace PrimaryQueries {
                 arr[i] = GetFromQuery(result[i]);
             }
             return arr;
+        }
+        /// <summary>
+        /// Checks to see if a zipcode is valid by checking if it is 5 digits, and then checking online (can be slow)
+        /// </summary>
+        /// <param name="zipcode">The zipcode to check</param>
+        /// <returns>True if it is a valid zipcode</returns>
+        public static bool IsZipcode(int zipcode) {
+            if (zipcode.ToString().Length == 5) {
+                WebClient client = new WebClient();
+                //string content = client.DownloadString("https://www.melissadata.com/lookups/ZipCityPhone.asp?InData=" + zipcode);
+                string content = client.DownloadString("http://www.zip-info.com/cgi-local/zipsrch.exe?zip="+zipcode+"&Go=Go");
+                if (content != null && !content.Contains("not currently assigned"))
+                    return true;
+            }
+            return false;
         }
     }
 }

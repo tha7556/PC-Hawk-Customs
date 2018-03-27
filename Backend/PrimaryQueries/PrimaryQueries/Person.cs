@@ -109,6 +109,11 @@ namespace PrimaryQueries {
         /// Removes the Person from the Database
         /// </summary>
         public abstract void DeleteFromDatabase();
+        /// <summary>
+        /// Returns a string representation in the form: 
+        /// {Employee/Customer}: {first name} {last name}, {email}
+        /// </summary>
+        /// <returns>{Employee/Customer}: {first name} {last name}, {email}</returns>
         public override string ToString() {
             return GetType() + ": " + firstName + " " + lastName + ", " + email;
         }

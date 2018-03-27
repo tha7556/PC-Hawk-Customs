@@ -145,6 +145,13 @@
             </summary>
             <returns>A Customer[] containing all customers from the database</returns>
         </member>
+        <member name="M:PrimaryQueries.Customer.IsZipcode(System.Int32)">
+            <summary>
+            Checks to see if a zipcode is valid by checking if it is 5 digits, and then checking online (can be slow)
+            </summary>
+            <param name="zipcode">The zipcode to check</param>
+            <returns>True if it is a valid zipcode</returns>
+        </member>
         <member name="T:PrimaryQueries.Employee">
             <summary>
             An Employee at PCHawkCustoms. Extends the Person class
@@ -393,6 +400,13 @@
             <summary>
             Removes the Person from the Database
             </summary>
+        </member>
+        <member name="M:PrimaryQueries.Person.ToString">
+            <summary>
+            Returns a string representation in the form: 
+            {Employee/Customer}: {first name} {last name}, {email}
+            </summary>
+            <returns>{Employee/Customer}: {first name} {last name}, {email}</returns>
         </member>
         <member name="T:PrimaryQueries.Part">
             <summary>
