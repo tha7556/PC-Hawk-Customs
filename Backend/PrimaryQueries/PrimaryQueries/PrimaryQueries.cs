@@ -15,6 +15,12 @@ namespace PrimaryQueries {
         public enum CurrentType {
             storage, graphicsCard, pcCase, powerSupply, cpu, fan, motherboard, memory
         }
+        public enum LogLevel {
+            DEBUG, WARNING, ERROR, SQLQUERY
+        }
+        private static string logFile = "..//..//Log data//log1.log";
+        private static StreamWriter writer;
+        private static DateTime startTime = DateTime.Now;
         /// <summary>
         /// Sends a Query to the Database. Returns a string[] of the result, with \0 seperating each column
         /// </summary>
@@ -26,6 +32,7 @@ namespace PrimaryQueries {
                 Console.WriteLine("Please don't drop any tables from here...please");
                 return new string[0];
             }
+            Log(LogLevel.SQLQUERY, query);
             string postData = "query=" + query;
             if(printQuery)
                 Console.WriteLine(query);
@@ -48,6 +55,7 @@ namespace PrimaryQueries {
                 }
             }
             catch (Exception e) {
+                Log(LogLevel.ERROR, e.StackTrace);
                 Console.WriteLine(e.StackTrace);
             }
              
@@ -58,8 +66,11 @@ namespace PrimaryQueries {
                 Array.Copy(lines, 2, result, 0, lines.Length - 4);
             }
             else {
-                if (webpageContent.Contains("Error"))
-                    Console.WriteLine(webpageContent);
+                if (webpageContent.Contains("Error")) {
+                    Log(LogLevel.ERROR, webpageContent.Substring(webpageContent.IndexOf("Error") + 7));
+                }
+                else if (webpageContent.Contains("Warning"))
+                    Log(LogLevel.WARNING, webpageContent.Substring(webpageContent.IndexOf("Warning") + 9));
             }
             return result;
         }
@@ -222,6 +233,7 @@ namespace PrimaryQueries {
                         graphicsCard = new GraphicsCard(partNumber, name, double.Parse(price), series, chipset, memory, coreclock);
                     }
                     catch (Exception e) {
+                        Log(LogLevel.ERROR, e.StackTrace);
                         continue;
                     }
                     graphicsCard.AddToDatabase();
@@ -253,6 +265,7 @@ namespace PrimaryQueries {
                         powerSupply = new PowerSupply(partNumber, name, double.Parse(price), series, form, efficiency, watts, modular);
                     }
                     catch (Exception e) {
+                        Log(LogLevel.ERROR, e.StackTrace);
                         continue;
                     }
                     powerSupply.AddToDatabase();
@@ -283,6 +296,7 @@ namespace PrimaryQueries {
                         pcCase = new Case(partNumber, name, double.Parse(price), type, int.Parse(ext514), int.Parse(in312), powersupply);
                     }
                     catch (Exception e) {
+                        Log(LogLevel.ERROR, e.StackTrace);
                         continue;
                     }
                     pcCase.AddToDatabase();
@@ -291,19 +305,41 @@ namespace PrimaryQueries {
             }
             else
                 Console.WriteLine("invalid input: " + current);
-
-        } 
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="level"></param>
+        /// <param name="message"></param>
+        public static void Log(LogLevel level, string message) {
+            TimeSpan time = DateTime.Now.Subtract(startTime);
+            string log = String.Format( "{0,20}\t" + message, "<" + level + " " + (int)time.TotalMinutes + ":" + time.Seconds + ":" + time.Milliseconds + ">: ");
+            Console.WriteLine(log);
+            if (writer == null) {
+                writer = new StreamWriter(logFile,false);
+                writer.WriteLine(log);
+                writer.Close();
+                writer = new StreamWriter(logFile, true);
+            }
+            else
+                writer.WriteLine(log);
+        }
+        public static void CloseLog() {
+            writer.Close();
+        }
         static void Main(string[] args) {
-            PopulateTable(CurrentType.storage);
+            /*PopulateTable(CurrentType.storage);
             PopulateTable(CurrentType.graphicsCard);
             PopulateTable(CurrentType.pcCase);
             PopulateTable(CurrentType.powerSupply);
+            Log(LogLevel.DEBUG, "Populated Table");*/
             Part[] parts = Part.GetAllParts();
-            Console.WriteLine(parts.Length);
-            Console.WriteLine("start");
             foreach (Part p in parts) {
-                Console.WriteLine(p.GetPartNumber());
+                //Console.WriteLine(p.GetPartNumber());
             }
+            Query("SELECT * FROM `part`");
+            Log(LogLevel.DEBUG, "Finished Program");
+            CloseLog();
             while (true) {
                 continue;
             }
