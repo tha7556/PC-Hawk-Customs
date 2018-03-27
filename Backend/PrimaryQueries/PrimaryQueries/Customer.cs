@@ -1,6 +1,4 @@
 ﻿//TODO: A cart for customers
-//TODO: Check that zipcode is in the state?
-//TODO: Check that the state exists
 //TODO: Check that the City exists?
 using System.Net;
 
@@ -11,6 +9,7 @@ namespace PrimaryQueries {
     public class Customer : Person {
         private string streetAddress, city, state;
         private int zipcode;
+        private static string stateCodes = "|AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MP|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|";
         /// <summary>
         /// Creates a new Customer
         /// </summary>
@@ -139,6 +138,14 @@ namespace PrimaryQueries {
                     return true;
             }
             return false;
+        }
+        /// <summary>
+        /// Checks whether or not a US State code is valid
+        /// </summary>
+        /// <param name="state">The state code to check</param>
+        /// <returns>True if it is a valid State</returns>
+        public static bool IsState(string state) {
+            return state.Length == 2 && stateCodes.Contains(state.ToUpper());
         }
     }
 }
