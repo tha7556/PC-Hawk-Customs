@@ -25,7 +25,7 @@ if(!$result) {
 	die("Error:\n".mysqli_error($con));
 }
 //Displaying results
-if(is_a($result, 'mysqli') and mysqli_num_rows($result) > 0) {
+if(is_a($result, 'mysqli_result') and mysqli_num_rows($result) > 0) {
 	$keys = mysqli_fetch_fields($result);
 	while($row = mysqli_fetch_assoc($result)) {
 		foreach($keys as $key) {
@@ -33,6 +33,9 @@ if(is_a($result, 'mysqli') and mysqli_num_rows($result) > 0) {
 		}
 		echo "\n";
 	}
+}
+else {
+	echo mysqli_error($con);
 }
 //Close connection
 mysqli_close($con);
