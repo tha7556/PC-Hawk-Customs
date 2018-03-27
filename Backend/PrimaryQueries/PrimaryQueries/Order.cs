@@ -61,6 +61,9 @@ namespace PrimaryQueries {
         public Customer GetCustomer() {
             return customer;
         }
+        /// <summary>
+        /// Adds this Order to the Database
+        /// </summary>
         public void AddToDatabase() {
             string num = orderNumber.ToString();
             if (orderNumber == -1)

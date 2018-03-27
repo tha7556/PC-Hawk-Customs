@@ -7,7 +7,22 @@ namespace PrimaryQueries {
     /// An abstract Person to represent either an Employee or a Customer
     /// </summary>
     public abstract class Person {
-        protected string firstName, lastName, email, password, table;
+        /// <summary>
+        /// The Name of the Person
+        /// </summary>
+        protected string firstName, lastName;
+        /// <summary>
+        /// The Person's email address
+        /// </summary>
+        protected string email;
+        /// <summary>
+        /// The Person's login password
+        /// </summary>
+        protected string password;
+        /// <summary>
+        /// The table in the database to find this Person
+        /// </summary>
+        protected string table;
         /// <summary>
         /// Creates a new Person
         /// </summary>
