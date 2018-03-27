@@ -332,11 +332,11 @@ namespace PrimaryQueries {
             writer.Close();
         }
         static void Main(string[] args) {
-            PopulateTable(CurrentType.storage);
+           /* PopulateTable(CurrentType.storage);
             PopulateTable(CurrentType.graphicsCard);
             PopulateTable(CurrentType.pcCase);
             PopulateTable(CurrentType.powerSupply);
-            Log(LogLevel.DEBUG, "Populated Table");
+            Log(LogLevel.DEBUG, "Populated Table");*/
             Part p = Part.GetPart(1001);
             CloseLog();
             Console.WriteLine("\n\nPress any key to close");

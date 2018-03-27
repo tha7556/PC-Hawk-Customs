@@ -50,11 +50,8 @@ namespace PrimaryQueries {
         /// </summary>
         /// <param name="newPrice">The new Price for the Part</param>
         public void SetPrice(double newPrice) {
-<<<<<<< HEAD
             string[] query = PrimaryQueries.Query("Call setPartPrice(" + partNumber + "," + newPrice + ")");
-=======
             double oldPrice = price;
->>>>>>> Tyler-Backend
             price = newPrice;
             PrimaryQueries.Query("UPDATE `"+table+"` SET `price` = '"+price+"' WHERE `"+table+"`.`part number` = "+partNumber+";");
             PrimaryQueries.Log(PrimaryQueries.LogLevel.DEBUG, "Changed Price of Part [" + partNumber + "] from: $"+oldPrice + " to: $" + newPrice);
