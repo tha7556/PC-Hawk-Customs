@@ -1,16 +1,13 @@
 ﻿//TODO: Password encryption
 //TODO: Have Change email modify database
-//TODO: Have Change password modify database
 //TODO: Verification for passwords
 //TODO: Ensure that People can't be made with emails already in database
-//TODO: Based on password, isEmployee or isCustomer
-//TODO: ToString
 namespace PrimaryQueries {
     /// <summary>
     /// An abstract Person to represent either an Employee or a Customer
     /// </summary>
-    abstract class Person {
-        protected string firstName, lastName, email, password;
+    public abstract class Person {
+        protected string firstName, lastName, email, password, table;
         /// <summary>
         /// Creates a new Person
         /// </summary>
@@ -65,6 +62,7 @@ namespace PrimaryQueries {
         /// <param name="newPassword">The new Password to change to</param>
         public void ChangePassword(string newPassword) {
             password = newPassword;
+            Queries.Query("UPDATE `" + table + "` SET `password` = '" + password + "' WHERE `" + table + "`.`email` = " + email + ";");
         }
         /// <summary>
         /// Gets all orders from the Person it is called from. Can only be called for either Employee or Customer 
@@ -73,10 +71,10 @@ namespace PrimaryQueries {
         public Order[] GetOrders() {
             string[] result = { };
             if (this is Employee) {
-                result = PrimaryQueries.Query("CALL getOrdersFromEmployee(" + email + ")");
+                result = Queries.Query("CALL getOrdersFromEmployee(" + email + ")");
             }
             else if(this is Customer) {
-                result = PrimaryQueries.Query("CALL getOrdersFromCustomer(" + email + ")");
+                result = Queries.Query("CALL getOrdersFromCustomer(" + email + ")");
             }
             else {
                 System.Console.WriteLine("Can only call GetOrders() on a Customer or Employee object");
@@ -88,6 +86,22 @@ namespace PrimaryQueries {
             return orders;
         }
         /// <summary>
+        /// Checks to see if the Person with the given email is a Customer
+        /// </summary>
+        /// <param name="email">The Email to check</param>
+        /// <returns>True if the email matches a Customer</returns>
+        public static bool IsCustomer(string email) {
+            return !(Customer.Get(email) == null);
+        }
+        /// <summary>
+        /// Checks to see if the Person with the given email is an Employee
+        /// </summary>
+        /// <param name="email">The Email to check</param>
+        /// <returns>True if the email matches an Employee</returns>
+        public static bool IsEmployee(string email) {
+            return !(Employee.Get(email) == null);
+        }
+        /// <summary>
         /// Adds the Person to the Database
         /// </summary>
         public abstract void AddToDatabase();
@@ -95,5 +109,8 @@ namespace PrimaryQueries {
         /// Removes the Person from the Database
         /// </summary>
         public abstract void DeleteFromDatabase();
+        public override string ToString() {
+            return GetType() + ": " + firstName + " " + lastName + ", " + email;
+        }
     }
 }
