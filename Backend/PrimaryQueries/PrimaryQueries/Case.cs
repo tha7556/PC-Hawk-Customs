@@ -21,6 +21,7 @@ namespace PrimaryQueries {
             this.powerSupply = powerSupply;
             this.externalSize = externalSize;
             this.internalSize = internalSize;
+            table = "pc case";
         }
         /// <summary>
         /// Gets the type of Case

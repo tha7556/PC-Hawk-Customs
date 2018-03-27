@@ -22,6 +22,7 @@ namespace PrimaryQueries {
             this.efficiency = efficiency;
             this.watts = watts;
             this.modular = modular;
+            table = "powersupply";
         }
         /// <summary>
         /// Gets the series that the Power Supply belongs to

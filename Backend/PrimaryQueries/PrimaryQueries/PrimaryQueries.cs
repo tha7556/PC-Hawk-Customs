@@ -61,16 +61,16 @@ namespace PrimaryQueries {
              
             string[] lines = webpageContent.Split('\n');
             string[] result = { };
-            if (!webpageContent.Contains("Error") && !webpageContent.Contains("Warning")) {
+            if (!webpageContent.ToLower().Contains("error") && !webpageContent.ToLower().Contains("warning")) {
                  result = new string[lines.Length - 4];
                 Array.Copy(lines, 2, result, 0, lines.Length - 4);
             }
             else {
-                if (webpageContent.Contains("Error")) {
-                    Log(LogLevel.ERROR, webpageContent.Substring(webpageContent.IndexOf("Error") + 7));
+                if (webpageContent.ToLower().Contains("error")) {
+                    Log(LogLevel.ERROR, webpageContent.Substring(webpageContent.ToLower().IndexOf("error") + 7));
                 }
-                else if (webpageContent.Contains("Warning"))
-                    Log(LogLevel.WARNING, webpageContent.Substring(webpageContent.IndexOf("Warning") + 9));
+                else if (webpageContent.ToLower().Contains("warning"))
+                    Log(LogLevel.WARNING, webpageContent.Substring(webpageContent.ToLower().IndexOf("warning") + 9));
             }
             return result;
         }
@@ -307,10 +307,10 @@ namespace PrimaryQueries {
                 Console.WriteLine("invalid input: " + current);
         }
         /// <summary>
-        /// 
+        /// Logs a message to the log file
         /// </summary>
-        /// <param name="level"></param>
-        /// <param name="message"></param>
+        /// <param name="level">The Severity of the Message. <para>DEBUG</para><para>SQLQUERY</para><para>WARNING</para><para>ERROR</para></param>
+        /// <param name="message">The message to log</param>
         public static void Log(LogLevel level, string message) {
             TimeSpan time = DateTime.Now.Subtract(startTime);
             string log = String.Format( "{0,20}\t" + message, "<" + level + " " + (int)time.TotalMinutes + ":" + time.Seconds + ":" + time.Milliseconds + ">: ");
@@ -324,25 +324,23 @@ namespace PrimaryQueries {
             else
                 writer.WriteLine(log);
         }
+        /// <summary>
+        /// Closes the StreamWriter and logs "Finished Program"
+        /// </summary>
         public static void CloseLog() {
+            Log(LogLevel.DEBUG, "Finished Program");
             writer.Close();
         }
         static void Main(string[] args) {
-            /*PopulateTable(CurrentType.storage);
+            PopulateTable(CurrentType.storage);
             PopulateTable(CurrentType.graphicsCard);
             PopulateTable(CurrentType.pcCase);
             PopulateTable(CurrentType.powerSupply);
-            Log(LogLevel.DEBUG, "Populated Table");*/
-            Part[] parts = Part.GetAllParts();
-            foreach (Part p in parts) {
-                //Console.WriteLine(p.GetPartNumber());
-            }
-            Query("SELECT * FROM `part`");
-            Log(LogLevel.DEBUG, "Finished Program");
+            Log(LogLevel.DEBUG, "Populated Table");
+            Part p = Part.GetPart(1001);
             CloseLog();
-            while (true) {
-                continue;
-            }
+            Console.WriteLine("\n\nPress any key to close");
+            Console.ReadKey();
         }
     }
 }

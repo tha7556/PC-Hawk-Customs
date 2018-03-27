@@ -22,6 +22,8 @@ namespace PrimaryQueries {
             this.type = type;
             this.capacity = capacity;
             this.cache = cache;
+            table = "storage";
+            PrimaryQueries.Log(PrimaryQueries.LogLevel.DEBUG, "Storage(" + partNumber + "," + name + "," + series + "," + form + "," + type + "," + capacity + "," + cache + ");");
         }
         /// <summary>
         /// Gets the series of the hard drive

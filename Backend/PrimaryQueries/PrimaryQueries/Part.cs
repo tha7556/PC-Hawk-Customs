@@ -1,5 +1,5 @@
 ﻿//TODO: Extend Part into Subparts
-//TODO: Part description
+//TODO: Part description?
 //TODO: Part images?
 //TODO: Add Part to database
 //TODO: Part ratings
@@ -9,7 +9,7 @@ namespace PrimaryQueries {
     /// </summary>
     class Part {
         protected int partNumber;
-        protected string name;
+        protected string name, table;
         protected double price;
         /// <summary>
         /// Creates a new Part object
@@ -21,6 +21,7 @@ namespace PrimaryQueries {
             this.partNumber = partNumber;
             this.name = name;
             this.price = price;
+            table = "part";
         }
         /// <summary>
         /// Gets the Part's identifying number
@@ -49,8 +50,10 @@ namespace PrimaryQueries {
         /// </summary>
         /// <param name="newPrice">The new Price for the Part</param>
         public void SetPrice(double newPrice) {
+            double oldPrice = price;
             price = newPrice;
-            AddToDatabase();
+            PrimaryQueries.Query("UPDATE `"+table+"` SET `price` = '"+price+"' WHERE `"+table+"`.`part number` = "+partNumber+";");
+            PrimaryQueries.Log(PrimaryQueries.LogLevel.DEBUG, "Changed Price of Part [" + partNumber + "] from: $"+oldPrice + " to: $" + newPrice);
         }
         /// <summary>
         /// Gets an array of Parts compatable with this one

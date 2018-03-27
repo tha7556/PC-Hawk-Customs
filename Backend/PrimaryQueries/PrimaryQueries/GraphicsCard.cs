@@ -21,6 +21,7 @@ namespace PrimaryQueries {
             this.chipSet = chipSet;
             this.memory = memory;
             this.coreClock = coreClock;
+            table = "graphicscard";
         }
         /// <summary>
         /// Gets the series that the Graphics Card belongs to
