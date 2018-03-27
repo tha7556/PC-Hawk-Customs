@@ -25,6 +25,7 @@ namespace PrimaryQueries {
             this.city = city;
             this.state = state;
             this.zipcode = zipcode;
+            PrimaryQueries.Log(PrimaryQueries.LogLevel.DEBUG, "Customer(" + firstName + "," + lastName + "," + email + "," + streetAddress + "," + city + "," + state + "," + zipcode + "," + password + ");");
         }
         /// <summary>
         /// Gets the Street Address of the Customer
@@ -94,7 +95,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <param name="result">The MySQL query result</param>
         /// <returns>A Customer from the query</returns>
-        public static Customer GetCustomerFromQuery(string result) {
+        public static Customer GetFromQuery(string result) {
             string[] line = result.Split('\0');
             return new Customer(line[1], line[2], line[0], line[3], line[4],line[5].ToUpper(),int.Parse(line[6]),line[7]);
         }
@@ -103,12 +104,24 @@ namespace PrimaryQueries {
         /// </summary>
         /// <param name="email">The Customer's email</param>
         /// <returns>The Customer with the given email</returns>
-        public static Customer GetCustomer(string email) {
+        public static Customer Get(string email) {
             string[] result = PrimaryQueries.Query("SELECT * FROM `customer` WHERE `email`=" + email);
             if (result.Length > 0) {
-                return GetCustomerFromQuery(result[0]);
+                return GetFromQuery(result[0]);
             }
             return null;
+        }
+        /// <summary>
+        /// Gets all Customers in the Database
+        /// </summary>
+        /// <returns>A Customer[] containing all customers from the database</returns>
+        public static Customer[] GetAll() {
+            string[] result = PrimaryQueries.Query("SELECT * FROM `customer`;");
+            Customer[] arr = new Customer[result.Length];
+            for(int i = 0; i < result.Length; i++) {
+                arr[i] = GetFromQuery(result[i]);
+            }
+            return arr;
         }
     }
 }
