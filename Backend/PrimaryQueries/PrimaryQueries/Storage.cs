@@ -3,7 +3,7 @@ namespace PrimaryQueries {
     /// <summary>
     /// The hard drive of the Computer
     /// </summary>
-    class Storage : Part {
+    public class Storage : Part {
         private string series, form, type, capacity, cache;
         /// <summary>
         /// Creates a new Storage Part
@@ -23,7 +23,7 @@ namespace PrimaryQueries {
             this.capacity = capacity;
             this.cache = cache;
             table = "storage";
-            PrimaryQueries.Log(PrimaryQueries.LogLevel.DEBUG, "Storage(" + partNumber + "," + name + "," + series + "," + form + "," + type + "," + capacity + "," + cache + ");");
+            Queries.Log(Queries.LogLevel.DEBUG, "Storage(" + partNumber + "," + name + "," + series + "," + form + "," + type + "," + capacity + "," + cache + ");");
         }
         /// <summary>
         /// Gets the series of the hard drive
@@ -65,7 +65,7 @@ namespace PrimaryQueries {
         /// </summary>
         public new void AddToDatabase() {
             base.AddToDatabase();
-            PrimaryQueries.Query("INSERT INTO `storage` (`part number`, `name`, `price`, `series`, `form`, `type`, `capacity`, `cache`) " +
+            Queries.Query("INSERT INTO `storage` (`part number`, `name`, `price`, `series`, `form`, `type`, `capacity`, `cache`) " +
                 "VALUES ("+partNumber+", '"+name+"', "+price+", '"+series+"', '"+form+"', '"+type+"', '"+capacity+"', '"+cache+"');");
         }
         /// <summary>
@@ -82,7 +82,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <returns>A Storage[] containing all Parts in the Storage database</returns>
         public static Storage[] GetAll() {
-            string[] result = PrimaryQueries.Query("SELECT * FROM `storage`");
+            string[] result = Queries.Query("SELECT * FROM `storage`");
             Storage[] arr = new Storage[result.Length];
             for(int i = 0; i < result.Length; i++) {
                 arr[i] = GetFromQuery(result[i]);
@@ -95,7 +95,7 @@ namespace PrimaryQueries {
         /// <param name="partNumber">The identifying part number</param>
         /// <returns>The Storage object with the part number</returns>
         public static Storage Get(int partNumber) {
-            string[] result = PrimaryQueries.Query("SELECT * FROM `storage` WHERE `part number` = " + partNumber);
+            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `part number` = " + partNumber);
             if(result.Length > 0) {
                 return GetFromQuery(result[0]);
             }

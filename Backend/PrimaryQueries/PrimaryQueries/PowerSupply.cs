@@ -3,7 +3,7 @@ namespace PrimaryQueries {
     /// <summary>
     /// A Power Supply for the Computer
     /// </summary>
-    class PowerSupply : Part {
+    public class PowerSupply : Part {
         private string series, form, efficiency, watts, modular;
         /// <summary>
         /// Creates a new Power Supply
@@ -64,7 +64,7 @@ namespace PrimaryQueries {
         /// </summary>
         public new void AddToDatabase() {
             base.AddToDatabase();
-            PrimaryQueries.Query("INSERT INTO `powersupply` (`part number`, `name`, `price`, `series`, `form`, `efficiency`, `watts`, `modular`) " +
+            Queries.Query("INSERT INTO `powersupply` (`part number`, `name`, `price`, `series`, `form`, `efficiency`, `watts`, `modular`) " +
                 "VALUES ("+partNumber+", '"+name+"', "+price+", '"+series+"', '"+form+"', '"+efficiency+"', '"+watts+"', '"+modular+"');");
         }
         /// <summary>
@@ -81,7 +81,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <returns>A PowerSupply[] of all PowerSupplies in the database</returns>
         public static PowerSupply[] GetAll() {
-            string[] result = PrimaryQueries.Query("SELECT * FROM `powersupply`");
+            string[] result = Queries.Query("SELECT * FROM `powersupply`");
             PowerSupply[] arr = new PowerSupply[result.Length];
             for (int i = 0; i < result.Length; i++) {
                 arr[i] = GetFromQuery(result[i]);
@@ -94,7 +94,7 @@ namespace PrimaryQueries {
         /// <param name="partNumber">The identifying part number</param>
         /// <returns>The PowerSupply object with the part number</returns>
         public static PowerSupply Get(int partNumber) {
-            string[] result = PrimaryQueries.Query("SELECT * FROM `storage` WHERE `powersupply` = " + partNumber);
+            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `powersupply` = " + partNumber);
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }

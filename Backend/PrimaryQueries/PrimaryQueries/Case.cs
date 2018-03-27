@@ -3,7 +3,7 @@ namespace PrimaryQueries {
     /// <summary>
     /// A Case for a Computer
     /// </summary>
-    class Case : Part {
+    public class Case : Part {
         private string type, powerSupply;
         private int externalSize, internalSize;
         /// <summary>
@@ -50,7 +50,7 @@ namespace PrimaryQueries {
         /// </summary>
         public new void AddToDatabase() {
             base.AddToDatabase();
-            PrimaryQueries.Query("INSERT INTO `pc case` (`part number`, `name`, `price`, `type`, `external size`, `internal size`, `power supply`)" +
+            Queries.Query("INSERT INTO `pc case` (`part number`, `name`, `price`, `type`, `external size`, `internal size`, `power supply`)" +
                 " VALUES (" + partNumber + ", '" + name + "', " + price + ", '" + type + "', "+externalSize+", "+internalSize+", '"+powerSupply+"')");
         }
         /// <summary>
@@ -67,7 +67,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <returns>A Case[] of all Cases in the database</returns>
         public static Case[] GetAll() {
-            string[] result = PrimaryQueries.Query("SELECT * FROM `pc case`");
+            string[] result = Queries.Query("SELECT * FROM `pc case`");
             Case[] arr = new Case[result.Length];
             for (int i = 0; i < result.Length; i++) {
                 arr[i] = GetFromQuery(result[i]);
@@ -80,7 +80,7 @@ namespace PrimaryQueries {
         /// <param name="partNumber">The identifying part number</param>
         /// <returns>The Case object with the part number</returns>
         public static Case Get(int partNumber) {
-            string[] result = PrimaryQueries.Query("SELECT * FROM `storage` WHERE `pc case` = " + partNumber);
+            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `pc case` = " + partNumber);
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }

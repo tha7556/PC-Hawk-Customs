@@ -9,7 +9,7 @@ namespace PrimaryQueries {
     ///<summary>
     ///Class used to query the MySQL PCHawkCustoms Database.
     ///</summary>
-    class PrimaryQueries {
+    public class Queries {
         public static string url = "http://satoshi.cis.uncw.edu/~tha7556/Backend.php";
         public static int partNumber = 1000;
         public enum CurrentType {
@@ -331,16 +331,16 @@ namespace PrimaryQueries {
             Log(LogLevel.DEBUG, "Finished Program");
             writer.Close();
         }
-        static void Main(string[] args) {
+        /*static void Main(string[] args) {
            /* PopulateTable(CurrentType.storage);
             PopulateTable(CurrentType.graphicsCard);
             PopulateTable(CurrentType.pcCase);
             PopulateTable(CurrentType.powerSupply);
-            Log(LogLevel.DEBUG, "Populated Table");*/
+            Log(LogLevel.DEBUG, "Populated Table");
             Part p = Part.GetPart(1001);
             CloseLog();
             Console.WriteLine("\n\nPress any key to close");
             Console.ReadKey();
-        }
+        }*/
     }
 }

@@ -4,7 +4,7 @@ namespace PrimaryQueries {
     /// <summary>
     /// The Graphics Card of the Computer
     /// </summary>
-    class GraphicsCard : Part {
+    public class GraphicsCard : Part {
         private string series, chipSet, memory, coreClock;
         /// <summary>
         /// Creates a Graphics Card
@@ -56,7 +56,7 @@ namespace PrimaryQueries {
         /// </summary>
         public new void AddToDatabase() {
             base.AddToDatabase();
-            PrimaryQueries.Query("INSERT INTO `graphicscard` (`part number`, `name`, `price`, `series`, `chipset`, `memory`, `core clock`)" +
+            Queries.Query("INSERT INTO `graphicscard` (`part number`, `name`, `price`, `series`, `chipset`, `memory`, `core clock`)" +
                 " VALUES ("+partNumber+", '"+name+"', "+price+", '"+series+"', '"+chipSet+"', '"+memory+"', '"+coreClock+"')");
         }
         /// <summary>
@@ -73,7 +73,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <returns>A GraphicsCard[] of all Graphics Cards in the database</returns>
         public static GraphicsCard[] GetAll() {
-            string[] result = PrimaryQueries.Query("SELECT * FROM `graphicscard`");
+            string[] result = Queries.Query("SELECT * FROM `graphicscard`");
             GraphicsCard[] arr = new GraphicsCard[result.Length];
             for (int i = 0; i < result.Length; i++) {
                 arr[i] = GetFromQuery(result[i]);
@@ -86,7 +86,7 @@ namespace PrimaryQueries {
         /// <param name="partNumber">The identifying part number</param>
         /// <returns>The GraphicsCard object with the part number</returns>
         public static GraphicsCard Get(int partNumber) {
-            string[] result = PrimaryQueries.Query("SELECT * FROM `graphicscard` WHERE `part number` = " + partNumber);
+            string[] result = Queries.Query("SELECT * FROM `graphicscard` WHERE `part number` = " + partNumber);
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }

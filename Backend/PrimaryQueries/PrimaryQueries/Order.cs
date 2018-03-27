@@ -6,7 +6,7 @@ namespace PrimaryQueries {
     /// <summary>
     /// An Order for a Part
     /// </summary>
-    class Order {
+    public class Order {
         private int orderNumber;
         private Part part;
         private Employee employee;
@@ -65,7 +65,7 @@ namespace PrimaryQueries {
             string num = orderNumber.ToString();
             if (orderNumber == -1)
                 num = "NULL";
-            PrimaryQueries.Query("INSERT INTO `order` (`order number`, `employee email`, `part number`, `customer email`) VALUES " +
+            Queries.Query("INSERT INTO `order` (`order number`, `employee email`, `part number`, `customer email`) VALUES " +
                 "("+num+", '"+employee.GetEmail()+"', "+part.GetPartNumber()+", '"+customer.GetEmail()+"');");
         }
         /// <summary>

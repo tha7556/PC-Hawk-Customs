@@ -6,7 +6,7 @@ namespace PrimaryQueries {
     /// <summary>
     /// A customer of PCHawkCustoms
     /// </summary>
-    class Customer : Person {
+    public class Customer : Person {
         private string streetAddress, city, state;
         private int zipcode;
         /// <summary>
@@ -25,7 +25,7 @@ namespace PrimaryQueries {
             this.city = city;
             this.state = state;
             this.zipcode = zipcode;
-            PrimaryQueries.Log(PrimaryQueries.LogLevel.DEBUG, "Customer(" + firstName + "," + lastName + "," + email + "," + streetAddress + "," + city + "," + state + "," + zipcode + "," + password + ");");
+            Queries.Log(Queries.LogLevel.DEBUG, "Customer(" + firstName + "," + lastName + "," + email + "," + streetAddress + "," + city + "," + state + "," + zipcode + "," + password + ");");
         }
         /// <summary>
         /// Gets the Street Address of the Customer
@@ -73,7 +73,7 @@ namespace PrimaryQueries {
         /// </summary>
         override
         public void AddToDatabase() {
-            PrimaryQueries.Query("INSERT INTO `customer` (`email`, `first name`, `last name`, `street addess`, `city`, `state`, `zipcode`, `password`) " +
+            Queries.Query("INSERT INTO `customer` (`email`, `first name`, `last name`, `street addess`, `city`, `state`, `zipcode`, `password`) " +
                 "VALUES ('"+email+"', '"+firstName+"', '"+lastName+"', '"+streetAddress+"', '"+city+"', '"+state+"', "+zipcode+",'"+password+"');");
         }
         /// <summary>
@@ -81,14 +81,14 @@ namespace PrimaryQueries {
         /// </summary>
         override
         public void DeleteFromDatabase() {
-            PrimaryQueries.Query("DELETE FROM `customer` WHERE `customer`.`email` = '" + email + "'");
+            Queries.Query("DELETE FROM `customer` WHERE `customer`.`email` = '" + email + "'");
         }
         /// <summary>
         /// Deletes a specific Customer from the Database
         /// </summary>
         /// <param name="email">The email of the Customer to delete</param>
         public static void DeleteFromDatabase(string email) {
-            PrimaryQueries.Query("DELETE FROM `customer` WHERE `customer`.`email` = '" + email + "'");
+            Queries.Query("DELETE FROM `customer` WHERE `customer`.`email` = '" + email + "'");
         }
         /// <summary>
         /// Converts a MySQL query result into a Customer object
@@ -105,7 +105,7 @@ namespace PrimaryQueries {
         /// <param name="email">The Customer's email</param>
         /// <returns>The Customer with the given email</returns>
         public static Customer Get(string email) {
-            string[] result = PrimaryQueries.Query("SELECT * FROM `customer` WHERE `email`=" + email);
+            string[] result = Queries.Query("SELECT * FROM `customer` WHERE `email`=" + email);
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }
@@ -116,7 +116,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <returns>A Customer[] containing all customers from the database</returns>
         public static Customer[] GetAll() {
-            string[] result = PrimaryQueries.Query("SELECT * FROM `customer`;");
+            string[] result = Queries.Query("SELECT * FROM `customer`;");
             Customer[] arr = new Customer[result.Length];
             for(int i = 0; i < result.Length; i++) {
                 arr[i] = GetFromQuery(result[i]);

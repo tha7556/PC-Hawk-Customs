@@ -6,7 +6,7 @@ namespace PrimaryQueries {
     /// <summary>
     /// An abstract Person to represent either an Employee or a Customer
     /// </summary>
-    abstract class Person {
+    public abstract class Person {
         protected string firstName, lastName, email, password, table;
         /// <summary>
         /// Creates a new Person
@@ -62,7 +62,7 @@ namespace PrimaryQueries {
         /// <param name="newPassword">The new Password to change to</param>
         public void ChangePassword(string newPassword) {
             password = newPassword;
-            PrimaryQueries.Query("UPDATE `" + table + "` SET `password` = '" + password + "' WHERE `" + table + "`.`email` = " + email + ";");
+            Queries.Query("UPDATE `" + table + "` SET `password` = '" + password + "' WHERE `" + table + "`.`email` = " + email + ";");
         }
         /// <summary>
         /// Gets all orders from the Person it is called from. Can only be called for either Employee or Customer 
@@ -71,10 +71,10 @@ namespace PrimaryQueries {
         public Order[] GetOrders() {
             string[] result = { };
             if (this is Employee) {
-                result = PrimaryQueries.Query("CALL getOrdersFromEmployee(" + email + ")");
+                result = Queries.Query("CALL getOrdersFromEmployee(" + email + ")");
             }
             else if(this is Customer) {
-                result = PrimaryQueries.Query("CALL getOrdersFromCustomer(" + email + ")");
+                result = Queries.Query("CALL getOrdersFromCustomer(" + email + ")");
             }
             else {
                 System.Console.WriteLine("Can only call GetOrders() on a Customer or Employee object");
