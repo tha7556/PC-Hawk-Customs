@@ -1,0 +1,4 @@
+<SQLQUERY 0:0:249>: 	SELECT * FROM `part` WHERE `part number` = 1001
+<SQLQUERY 0:0:971>: 	SELECT * FROM `storage` WHERE `part number` = 1001
+   <DEBUG 0:0:991>: 	Storage(1001,Seagate ST2000DM006,Barracuda,3.5",7200RPM,2TB,64MB);
+   <DEBUG 0:0:991>: 	Finished Program

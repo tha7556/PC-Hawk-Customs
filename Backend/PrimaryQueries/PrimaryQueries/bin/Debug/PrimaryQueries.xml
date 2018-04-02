@@ -1,0 +1,782 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PrimaryQueries</name>
+    </assembly>
+    <members>
+        <member name="T:PrimaryQueries.Case">
+            <summary>
+            A Case for a Computer
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Case.#ctor(System.Int32,System.String,System.Double,System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            Creates a new Case
+            </summary>
+            <param name="partNumber">The identifying number for the part</param>
+            <param name="name">The name of the case</param>
+            <param name="price">The price of the part</param>
+            <param name="type">The type of case</param>
+            <param name="externalSize">TODO</param>
+            <param name="internalSize">TODO</param>
+            <param name="powerSupply">Watts of the built in powerSupply if there is one</param>
+        </member>
+        <member name="M:PrimaryQueries.Case.GetCaseType">
+            <summary>
+            Gets the type of Case
+            </summary>
+            <returns>The type of Case</returns>
+        </member>
+        <member name="M:PrimaryQueries.Case.GetPowerSupply">
+            <summary>
+            Gets the Watts of the built in powerSupply if there is one
+            </summary>
+            <returns>The Watts of the built in powerSupply if there is one</returns>
+        </member>
+        <member name="M:PrimaryQueries.Case.GetExternalSize">
+            <summary>
+            Gets the External Size
+            </summary>
+            <returns>Gets the External Size</returns>
+        </member>
+        <member name="M:PrimaryQueries.Case.GetInternalSize">
+            <summary>
+            Gets the Internal Size
+            </summary>
+            <returns>The Internal Size</returns>
+        </member>
+        <member name="M:PrimaryQueries.Case.AddToDatabase">
+            <summary>
+            Adds this Part to the pcCase and Part databases
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Case.GetFromQuery(System.String)">
+            <summary>
+            Converts a MySQL query into a Case object
+            </summary>
+            <param name="query">The MySQL query result</param>
+            <returns>The Case created from the MySQL query</returns>
+        </member>
+        <member name="M:PrimaryQueries.Case.GetAll">
+            <summary>
+            Gets all Cases from the pcCase database
+            </summary>
+            <returns>A Case[] of all Cases in the database</returns>
+        </member>
+        <member name="M:PrimaryQueries.Case.Get(System.Int32)">
+            <summary>
+            Gets a Case object with the given part number
+            </summary>
+            <param name="partNumber">The identifying part number</param>
+            <returns>The Case object with the part number</returns>
+        </member>
+        <member name="T:PrimaryQueries.Customer">
+            <summary>
+            A customer of PCHawkCustoms
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Customer.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Creates a new Customer
+            </summary>
+            <param name="firstName">The Customer's first name</param>
+            <param name="lastName">The Customer's last name</param>
+            <param name="email">The Customer's email address</param>
+            <param name="streetAddress">The Customer's street address</param>
+            <param name="city">The Customer's city</param>
+            <param name="state">The Customer's state</param>
+            <param name="zipcode">The Customer's zipcode</param>
+            <param name="password">The Customer's password</param>
+        </member>
+        <member name="M:PrimaryQueries.Customer.GetStreetAddress">
+            <summary>
+            Gets the Street Address of the Customer
+            </summary>
+            <returns>The Street Address of the Customer</returns>
+        </member>
+        <member name="M:PrimaryQueries.Customer.GetCity">
+            <summary>
+            Gets the City of the Customer
+            </summary>
+            <returns>The City of the Customer</returns>
+        </member>
+        <member name="M:PrimaryQueries.Customer.GetState">
+            <summary>
+            Gets the State of the Customer
+            </summary>
+            <returns>The State the Customer lives in</returns>
+        </member>
+        <member name="M:PrimaryQueries.Customer.GetZipcode">
+            <summary>
+            Gets the Zipcode of the Customer
+            </summary>
+            <returns>The Zipcode of the Customer</returns>
+        </member>
+        <member name="M:PrimaryQueries.Customer.ChangeAddress(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Changes the Customer's Address
+            </summary>
+            <param name="newStreetAddress">The new Street Address of the Customer</param>
+            <param name="newCity">The new City of the Customer</param>
+            <param name="newState">The new State of the Customer</param>
+            <param name="newZipcode">The new Zipcode of the Customer</param>
+        </member>
+        <member name="M:PrimaryQueries.Customer.AddToDatabase">
+            <summary>
+            Adds the Customer to the Database
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Customer.DeleteFromDatabase">
+            <summary>
+            Deletes a Customer from the Database
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Customer.DeleteFromDatabase(System.String)">
+            <summary>
+            Deletes a specific Customer from the Database
+            </summary>
+            <param name="email">The email of the Customer to delete</param>
+        </member>
+        <member name="M:PrimaryQueries.Customer.GetFromQuery(System.String)">
+            <summary>
+            Converts a MySQL query result into a Customer object
+            </summary>
+            <param name="result">The MySQL query result</param>
+            <returns>A Customer from the query</returns>
+        </member>
+        <member name="M:PrimaryQueries.Customer.Get(System.String)">
+            <summary>
+            Gets a Customer based on their email from the database
+            </summary>
+            <param name="email">The Customer's email</param>
+            <returns>The Customer with the given email</returns>
+        </member>
+        <member name="M:PrimaryQueries.Customer.GetAll">
+            <summary>
+            Gets all Customers in the Database
+            </summary>
+            <returns>A Customer[] containing all customers from the database</returns>
+        </member>
+        <member name="M:PrimaryQueries.Customer.IsZipcode(System.Int32)">
+            <summary>
+            Checks to see if a zipcode is valid by checking if it is 5 digits, and then checking online (can be slow)
+            </summary>
+            <param name="zipcode">The zipcode to check</param>
+            <returns>True if it is a valid zipcode</returns>
+        </member>
+        <member name="M:PrimaryQueries.Customer.IsState(System.String)">
+            <summary>
+            Checks whether or not a US State code is valid
+            </summary>
+            <param name="state">The state code to check</param>
+            <returns>True if it is a valid State</returns>
+        </member>
+        <member name="T:PrimaryQueries.Employee">
+            <summary>
+            An Employee at PCHawkCustoms. Extends the Person class
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Employee.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates an Employee
+            </summary>
+            <param name="firstName">The Employee's first name</param>
+            <param name="lastName">The Employee's last name</param>
+            <param name="email">The Employee's email address</param>
+            <param name="password">The Employee's password</param>
+        </member>
+        <member name="M:PrimaryQueries.Employee.AddToDatabase">
+            <summary>
+            Adds the Employee to the Database
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Employee.DeleteFromDatabase">
+            <summary>
+            Deletes the Employee from the Database
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Employee.DeleteFromDatabase(System.String)">
+            <summary>
+            Deletes a specific Employee from the Database
+            </summary>
+            <param name="email">The email of the Employee to delete</param>
+        </member>
+        <member name="M:PrimaryQueries.Employee.GetFromQuery(System.String)">
+            <summary>
+            Converts a MySQL query result into an Employee object
+            </summary>
+            <param name="result">The MySQL query result</param>
+            <returns>An Employee from the query</returns>
+        </member>
+        <member name="M:PrimaryQueries.Employee.Get(System.String)">
+            <summary>
+            Gets an Employee based on their email from the database
+            </summary>
+            <param name="email">The Employee's email</param>
+            <returns>The Employee with the given email</returns>
+        </member>
+        <member name="M:PrimaryQueries.Employee.GetAll">
+            <summary>
+            Gets all Employees in the Database
+            </summary>
+            <returns>A Employee[] containing all employees from the database</returns>
+        </member>
+        <member name="T:PrimaryQueries.GraphicsCard">
+            <summary>
+            The Graphics Card of the Computer
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.GraphicsCard.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates a Graphics Card
+            </summary>
+            <param name="partNumber">The identifying Part Number</param>
+            <param name="name">The name of the Part</param>
+            <param name="price">The price of the Part</param>
+            <param name="series">The series that the Graphics Card belongs to</param>
+            <param name="chipSet">The chipset used in the Graphics Card</param>
+            <param name="memory">The amount of memory the Graphics Card has</param>
+            <param name="coreClock">The speed of the clock on the Graphics Card</param>
+        </member>
+        <member name="M:PrimaryQueries.GraphicsCard.GetSeries">
+            <summary>
+            Gets the series that the Graphics Card belongs to
+            </summary>
+            <returns>The series of the Graphics Card</returns>
+        </member>
+        <member name="M:PrimaryQueries.GraphicsCard.GetChipSet">
+            <summary>
+            Gets the chipset used in the Graphics Card
+            </summary>
+            <returns>The chipset of the Graphics Card</returns>
+        </member>
+        <member name="M:PrimaryQueries.GraphicsCard.GetMemory">
+            <summary>
+            Gets the amount of memory in the Graphics Card
+            </summary>
+            <returns>The amount of memory in the Graphics Card</returns>
+        </member>
+        <member name="M:PrimaryQueries.GraphicsCard.GetCoreClock">
+            <summary>
+            Gets the speed of the clock
+            </summary>
+            <returns>The speed of the clock</returns>
+        </member>
+        <member name="M:PrimaryQueries.GraphicsCard.AddToDatabase">
+            <summary>
+            Adds this Part to the GraphicsCard and Part databases
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.GraphicsCard.GetFromQuery(System.String)">
+            <summary>
+            Converts a MySQL query result into a GraphicsCard
+            </summary>
+            <param name="query">The MySQL query result</param>
+            <returns>The Graphics Card created from the MySQL query</returns>
+        </member>
+        <member name="M:PrimaryQueries.GraphicsCard.GetAll">
+            <summary>
+            Gets all Parts in the GraphicsCard database
+            </summary>
+            <returns>A GraphicsCard[] of all Graphics Cards in the database</returns>
+        </member>
+        <member name="M:PrimaryQueries.GraphicsCard.Get(System.Int32)">
+            <summary>
+            Gets a GraphicsCard object with the given part number
+            </summary>
+            <param name="partNumber">The identifying part number</param>
+            <returns>The GraphicsCard object with the part number</returns>
+        </member>
+        <member name="T:PrimaryQueries.Order">
+            <summary>
+            An Order for a Part
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Order.#ctor(System.Int32,PrimaryQueries.Part,PrimaryQueries.Employee,PrimaryQueries.Customer)">
+            <summary>
+            Creates a new Order for a Part
+            </summary>
+            <param name="orderNumber">The number identifying the Order</param>
+            <param name="part">The Part being ordered</param>
+            <param name="employee">The Employee involved in the Order</param>
+            <param name="customer">The Customer making the Order</param>
+        </member>
+        <member name="M:PrimaryQueries.Order.#ctor(PrimaryQueries.Part,PrimaryQueries.Employee,PrimaryQueries.Customer)">
+            <summary>
+            Creates a new Order with -1 as Order Number. When added to the database, it automatically sets it to the next number
+            </summary>
+            <param name="part">The Part being ordered</param>
+            <param name="employee">The Employee involved in the Order</param>
+            <param name="customer">The Customer making the Order</param>
+        </member>
+        <member name="M:PrimaryQueries.Order.GetOrderNumber">
+            <summary>
+            Gets the number identifying the Order
+            </summary>
+            <returns>The order number</returns>
+        </member>
+        <member name="M:PrimaryQueries.Order.GetPart">
+            <summary>
+            Gets the Part being ordered
+            </summary>
+            <returns>The Part being ordered</returns>
+        </member>
+        <member name="M:PrimaryQueries.Order.GetEmployee">
+            <summary>
+            Gets the Employee involved in the Order
+            </summary>
+            <returns>The Employee involved in the Order</returns>
+        </member>
+        <member name="M:PrimaryQueries.Order.GetCustomer">
+            <summary>
+            Gets the Customer making the order
+            </summary>
+            <returns>The Customer making the order</returns>
+        </member>
+        <member name="M:PrimaryQueries.Order.AddToDatabase">
+            <summary>
+            Adds this Order to the Database
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Order.GetOrderFromQuery(System.String)">
+            <summary>
+            Converts a MySql query result into an Order
+            </summary>
+            <param name="result">The MySql query result</param>
+            <returns>An Order made from the query</returns>
+        </member>
+        <member name="T:PrimaryQueries.Person">
+            <summary>
+            An abstract Person to represent either an Employee or a Customer
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Person.firstName">
+            <summary>
+            The Name of the Person
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Person.lastName">
+            <summary>
+            The Name of the Person
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Person.email">
+            <summary>
+            The Person's email address
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Person.password">
+            <summary>
+            The Person's login password
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Person.table">
+            <summary>
+            The table in the database to find this Person
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Person.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates a new Person
+            </summary>
+            <param name="firstName">The Person's first name</param>
+            <param name="lastName">The Person's last name</param>
+            <param name="email">The Person's email address</param>
+            <param name="password">The Person's password</param>
+        </member>
+        <member name="M:PrimaryQueries.Person.GetFirstName">
+            <summary>
+            Gets the Person's first name
+            </summary>
+            <returns>The Person's first name</returns>
+        </member>
+        <member name="M:PrimaryQueries.Person.GetLastName">
+            <summary>
+            Gets the Person's last name
+            </summary>
+            <returns>The Person's last name</returns>
+        </member>
+        <member name="M:PrimaryQueries.Person.GetEmail">
+            <summary>
+            Gets the Person's email address
+            </summary>
+            <returns>The Person's email address</returns>
+        </member>
+        <member name="M:PrimaryQueries.Person.ChangeEmail(System.String)">
+            <summary>
+            Changes the Person's email address
+            </summary>
+            <param name="newEmail">The new email address</param>
+        </member>
+        <member name="M:PrimaryQueries.Person.GetPassword">
+            <summary>
+            Gets the Person's Password
+            </summary>
+            <returns>The Person's Password</returns>
+        </member>
+        <member name="M:PrimaryQueries.Person.ChangePassword(System.String)">
+            <summary>
+            Changes the Person's Password
+            </summary>
+            <param name="newPassword">The new Password to change to</param>
+        </member>
+        <member name="M:PrimaryQueries.Person.GetOrders">
+            <summary>
+            Gets all orders from the Person it is called from. Can only be called for either Employee or Customer 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PrimaryQueries.Person.IsCustomer(System.String)">
+            <summary>
+            Checks to see if the Person with the given email is a Customer
+            </summary>
+            <param name="email">The Email to check</param>
+            <returns>True if the email matches a Customer</returns>
+        </member>
+        <member name="M:PrimaryQueries.Person.IsEmployee(System.String)">
+            <summary>
+            Checks to see if the Person with the given email is an Employee
+            </summary>
+            <param name="email">The Email to check</param>
+            <returns>True if the email matches an Employee</returns>
+        </member>
+        <member name="M:PrimaryQueries.Person.EncryptPassword(System.String)">
+            <summary>
+            Encrypts the Person's password
+            </summary>
+            <param name="password">The password to encrypt</param>
+        </member>
+        <member name="M:PrimaryQueries.Person.AddToDatabase">
+            <summary>
+            Adds the Person to the Database
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Person.DeleteFromDatabase">
+            <summary>
+            Removes the Person from the Database
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Person.ToString">
+            <summary>
+            Returns a string representation in the form: 
+            {Employee/Customer}: {first name} {last name}, {email}
+            </summary>
+            <returns>{Employee/Customer}: {first name} {last name}, {email}</returns>
+        </member>
+        <member name="T:PrimaryQueries.Part">
+            <summary>
+            An individual Part of a computer
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Part.partNumber">
+            <summary>
+            The identifying Part Number
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Part.name">
+            <summary>
+            The Name of the part
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Part.table">
+            <summary>
+            The table in the database where this Part is stored
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Part.price">
+            <summary>
+            The Price of the Part
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Part.#ctor(System.Int32,System.String,System.Double)">
+            <summary>
+            Creates a new Part object
+            </summary>
+            <param name="partNumber">The identifying Part number</param>
+            <param name="name">The name of the Part</param>
+            <param name="price">The price of the Part</param>
+        </member>
+        <member name="M:PrimaryQueries.Part.GetPartNumber">
+            <summary>
+            Gets the Part's identifying number
+            </summary>
+            <returns>The Part's identifying number</returns>
+        </member>
+        <member name="M:PrimaryQueries.Part.GetName">
+            <summary>
+            Gets the name of the Part
+            </summary>
+            <returns>The name of the Part</returns>
+        </member>
+        <member name="M:PrimaryQueries.Part.GetPrice">
+            <summary>
+            Gets the price of the Part
+            </summary>
+            <returns>The price of the Part</returns>
+        </member>
+        <member name="M:PrimaryQueries.Part.SetPrice(System.Double)">
+            <summary>
+            Changes the Part's price to a new Price
+            </summary>
+            <param name="newPrice">The new Price for the Part</param>
+        </member>
+        <member name="M:PrimaryQueries.Part.GetCompatableParts">
+            <summary>
+            Gets an array of Parts compatable with this one
+            </summary>
+            <returns>An array of Parts compatable with this one</returns>
+        </member>
+        <member name="M:PrimaryQueries.Part.SetCompatableWith(PrimaryQueries.Part)">
+            <summary>
+            Sets this Part to be compatable with another
+            </summary>
+            <param name="other">The other Part to be compatable with</param>
+        </member>
+        <member name="M:PrimaryQueries.Part.SetCompatableWith(System.Int32)">
+            <summary>
+            Sets this Part to be compatable with another based on the Part's ID
+            </summary>
+            <param name="otherPartId">The other Part number to be compatable with</param>
+        </member>
+        <member name="M:PrimaryQueries.Part.ToString">
+            <summary>
+            Creates a string representation of the Part
+            </summary>
+            <returns>The string representation of the Part</returns>
+        </member>
+        <member name="M:PrimaryQueries.Part.GetPartFromQuery(System.String)">
+            <summary>
+            Converts a MySQL query result into a Part object. Query must return the form: partNumber\0name\0price\0componentType
+            </summary>
+            <param name="result">The MySQL query result</param>
+            <returns>The Part object from the query</returns>
+        </member>
+        <member name="M:PrimaryQueries.Part.GetAllParts">
+            <summary>
+            Gets all Parts in the Part database
+            </summary>
+            <returns>A Part[] containing all Parts in the database</returns>
+        </member>
+        <member name="M:PrimaryQueries.Part.GetPart(System.Int32)">
+            <summary>
+            Gets a Part with the given part number
+            </summary>
+            <param name="partNumber">The number of the desired Part</param>
+            <returns>The Part with the given part number</returns>
+        </member>
+        <member name="M:PrimaryQueries.Part.AddToDatabase">
+            <summary>
+            Adds this Part to the Part database
+            </summary>
+        </member>
+        <member name="T:PrimaryQueries.PowerSupply">
+            <summary>
+            A Power Supply for the Computer
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.PowerSupply.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates a new Power Supply
+            </summary>
+            <param name="partNumber">The identifying Part Number</param>
+            <param name="name">The Name of the Part</param>
+            <param name="price">The Price of the Part</param>
+            <param name="series">The series that the Power Supply belongs to</param>
+            <param name="form">The form of the Power Supply</param>
+            <param name="efficiency">The efficiency rating of the Power Supply</param>
+            <param name="watts">The wattage of the Power Supply</param>
+            <param name="modular">The degree of modularity of the Power Supply</param>
+        </member>
+        <member name="M:PrimaryQueries.PowerSupply.GetSeries">
+            <summary>
+            Gets the series that the Power Supply belongs to
+            </summary>
+            <returns>The name of the series of the Power Supply</returns>
+        </member>
+        <member name="M:PrimaryQueries.PowerSupply.GetForm">
+            <summary>
+            Gets the form of the Power Supply
+            </summary>
+            <returns>The Form of the Power Supply</returns>
+        </member>
+        <member name="M:PrimaryQueries.PowerSupply.GetEfficiency">
+            <summary>
+            Gets the efficiency rating of the Power Supply
+            </summary>
+            <returns>The efficiency rating of the Power Supply</returns>
+        </member>
+        <member name="M:PrimaryQueries.PowerSupply.GetWatts">
+            <summary>
+            Gets the wattage of the Power Supply
+            </summary>
+            <returns>The Power Supply wattage</returns>
+        </member>
+        <member name="M:PrimaryQueries.PowerSupply.GetModular">
+            <summary>
+            Gets the degree of modularity of the Power Supply
+            </summary>
+            <returns>The degree of modularity</returns>
+        </member>
+        <member name="M:PrimaryQueries.PowerSupply.AddToDatabase">
+            <summary>
+            Adds this Part to the PowerSupply and Part databases
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.PowerSupply.GetFromQuery(System.String)">
+            <summary>
+            Converts a MySQL query result into a PowerSupply
+            </summary>
+            <param name="query">The MySQL query result</param>
+            <returns>The PowerSupply created from the query result</returns>
+        </member>
+        <member name="M:PrimaryQueries.PowerSupply.GetAll">
+            <summary>
+            Gets all PowerSupplies from the database
+            </summary>
+            <returns>A PowerSupply[] of all PowerSupplies in the database</returns>
+        </member>
+        <member name="M:PrimaryQueries.PowerSupply.Get(System.Int32)">
+            <summary>
+            Gets a PowerSupply object with the given part number
+            </summary>
+            <param name="partNumber">The identifying part number</param>
+            <returns>The PowerSupply object with the part number</returns>
+        </member>
+        <member name="T:PrimaryQueries.Queries">
+            <summary>
+            Class used to query the MySQL PCHawkCustoms Database.
+            </summary>
+        </member>
+        <member name="T:PrimaryQueries.Queries.LogLevel">
+            <summary>
+            The Level used to categorize logs
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.DEBUG">
+            <summary>
+            Used for misc debug statements
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.WARNING">
+            <summary>
+            Used to warn that something may have gone wrong, but wouldn't throw an error
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.ERROR">
+            <summary>
+            Used to log error details
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.SQLQUERY">
+            <summary>
+            Used to log queries made to the database
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Queries.Query(System.String,System.Boolean)">
+            <summary>
+            Sends a Query to the Database. Returns a string[] of the result, with \0 seperating each column
+            </summary>
+            <param name="query">The MySQL query to perform</param>
+            <param name="printQuery">True to write the query to console, false otherwise</param>
+            <returns>A string[] containing each result of the query</returns>
+        </member>
+        <member name="M:PrimaryQueries.Queries.Query(System.String)">
+            <summary>
+            Overloaded Query which defaults to printQuery=false. Returns a string[] of the result, with \0 seperating each column
+            </summary>
+            <param name="query">The MySQL query to perform</param>
+            <returns>A string[] containing each result of the query</returns>
+        </member>
+        <member name="M:PrimaryQueries.Queries.PopulateTable(PrimaryQueries.Queries.CurrentType)">
+            <summary>
+            A function for grabbing part info off of pcpart picker
+            </summary>
+            <param name="current">The Current table to populate</param>
+        </member>
+        <member name="M:PrimaryQueries.Queries.Log(PrimaryQueries.Queries.LogLevel,System.String)">
+            <summary>
+            Logs a message to the log file
+            </summary>
+            <param name="level">The Severity of the Message. <para>DEBUG</para><para>SQLQUERY</para><para>WARNING</para><para>ERROR</para></param>
+            <param name="message">The message to log</param>
+        </member>
+        <member name="M:PrimaryQueries.Queries.CloseLog">
+            <summary>
+            Closes the StreamWriter and logs "Finished Program"
+            </summary>
+        </member>
+        <member name="T:PrimaryQueries.Storage">
+            <summary>
+            The hard drive of the Computer
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Storage.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates a new Storage Part
+            </summary>
+            <param name="partNumber">The identifying Part number</param>
+            <param name="name">The name of the Part</param>
+            <param name="price">The price of the Part</param>
+            <param name="series">The series the hard drive belongs to</param>
+            <param name="form">The form of the hard drive</param>
+            <param name="type">The type of storage used</param>
+            <param name="capacity">The amount of data it can hold</param>
+            <param name="cache">The size of the cache</param>
+        </member>
+        <member name="M:PrimaryQueries.Storage.GetSeries">
+            <summary>
+            Gets the series of the hard drive
+            </summary>
+            <returns>The series name of the hard drive</returns>
+        </member>
+        <member name="M:PrimaryQueries.Storage.GetForm">
+            <summary>
+            Gets the form of the hard drive
+            </summary>
+            <returns>The form of the hard drive</returns>
+        </member>
+        <member name="M:PrimaryQueries.Storage.GetStorageType">
+            <summary>
+            Gets the type of storage used
+            </summary>
+            <returns>The type of storage used</returns>
+        </member>
+        <member name="M:PrimaryQueries.Storage.GetCapacity">
+            <summary>
+            Gets the amount of data the hard drive can hold
+            </summary>
+            <returns>The amount of data the hard drive can hold</returns>
+        </member>
+        <member name="M:PrimaryQueries.Storage.GetCache">
+            <summary>
+            Gets the size of the cache
+            </summary>
+            <returns>The size of the cache</returns>
+        </member>
+        <member name="M:PrimaryQueries.Storage.AddToDatabase">
+            <summary>
+            Adds this Part to the Storage, and Part databases
+            </summary>
+        </member>
+        <member name="M:PrimaryQueries.Storage.GetFromQuery(System.String)">
+            <summary>
+            Converts a MySQL query result into a Storage object
+            </summary>
+            <param name="query">The result of the query</param>
+            <returns>The Storage object created from the result</returns>
+        </member>
+        <member name="M:PrimaryQueries.Storage.GetAll">
+            <summary>
+            Gets all Storage objects in the Storage database
+            </summary>
+            <returns>A Storage[] containing all Parts in the Storage database</returns>
+        </member>
+        <member name="M:PrimaryQueries.Storage.Get(System.Int32)">
+            <summary>
+            Gets a Storage object with the given part number
+            </summary>
+            <param name="partNumber">The identifying part number</param>
+            <returns>The Storage object with the part number</returns>
+        </member>
+    </members>
+</doc>
