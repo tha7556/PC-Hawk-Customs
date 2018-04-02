@@ -1,7 +1,4 @@
-﻿//TODO: Password encryption
-//TODO: Have Change email modify database
-//TODO: Verification for passwords
-//TODO: Ensure that People can't be made with emails already in database
+﻿
 namespace PrimaryQueries {
     /// <summary>
     /// An abstract Person to represent either an Employee or a Customer
@@ -62,6 +59,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <param name="newEmail">The new email address</param>
         public void ChangeEmail(string newEmail) {
+            Queries.Query("UPDATE `" + table + "` SET `email` = '" + newEmail + "' WHERE `" + table + "`.`email` = '" + email + "';");
             email = newEmail;
         }
         /// <summary>
@@ -135,6 +133,18 @@ namespace PrimaryQueries {
                 return true;
             }
             return false;
+        }
+        /// <summary>
+        /// Validates login information for both Customers and Employees. Returns true if login is valid for either
+        /// </summary>
+        /// <param name="email">The email to check</param>
+        /// <param name="password">The password to check</param>
+        /// <returns></returns>
+        public bool CheckCredentials(string email, string password) {
+            bool isPassword = CheckPassword(password);
+            bool isEmployee = IsEmployee(email);
+            bool isCustomer = IsCustomer(email);
+            return isPassword && (isEmployee || isCustomer);
         }
         /// <summary>
         /// Adds the Person to the Database

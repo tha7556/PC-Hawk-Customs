@@ -453,6 +453,14 @@
             <param name="pass">The plaintext password (is encrypted during this method)</param>
             <returns></returns>
         </member>
+        <member name="M:PrimaryQueries.Person.CheckCredentials(System.String,System.String)">
+            <summary>
+            Validates login information for both Customers and Employees. Returns true if login is valid for either
+            </summary>
+            <param name="email">The email to check</param>
+            <param name="password">The password to check</param>
+            <returns></returns>
+        </member>
         <member name="M:PrimaryQueries.Person.AddToDatabase">
             <summary>
             Adds the Person to the Database

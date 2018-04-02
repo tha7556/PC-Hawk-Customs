@@ -26,6 +26,7 @@ namespace PrimaryQueries {
             this.city = city;
             this.state = state;
             this.zipcode = zipcode;
+            table = "customer";
             Queries.Log(Queries.LogLevel.DEBUG, "Customer(" + firstName + "," + lastName + "," + email + "," + streetAddress + "," + city + "," + state + "," + zipcode + "," + password + ");");
         }
         /// <summary>
