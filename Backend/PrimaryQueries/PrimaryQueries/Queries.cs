@@ -349,8 +349,8 @@ namespace PrimaryQueries {
             Log(LogLevel.DEBUG, "Finished Program");
             writer.Close();
         }
-        /*static void Main(string[] args) {
-           /* PopulateTable(CurrentType.storage);
+        static void Main(string[] args) {
+            PopulateTable(CurrentType.storage);
             PopulateTable(CurrentType.graphicsCard);
             PopulateTable(CurrentType.pcCase);
             PopulateTable(CurrentType.powerSupply);
@@ -359,6 +359,6 @@ namespace PrimaryQueries {
             CloseLog();
             Console.WriteLine("\n\nPress any key to close");
             Console.ReadKey();
-        }*/
+        }
     }
 }

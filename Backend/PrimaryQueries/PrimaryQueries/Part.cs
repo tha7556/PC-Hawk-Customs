@@ -70,9 +70,7 @@ namespace PrimaryQueries {
             Queries.Log(Queries.LogLevel.DEBUG, "Changed Price of Part [" + partNumber + "] from: $"+oldPrice + " to: $" + newPrice);
         }
 
-        public void getNerdType(){
-            componentType = "This is a test NerD!!!DD!!";
-        }
+       
         /// <summary>
         /// Gets an array of Parts compatable with this one
         /// </summary>
