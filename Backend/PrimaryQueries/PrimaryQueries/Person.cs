@@ -7,7 +7,22 @@ namespace PrimaryQueries {
     /// An abstract Person to represent either an Employee or a Customer
     /// </summary>
     public abstract class Person {
-        protected string firstName, lastName, email, password, table;
+        /// <summary>
+        /// The Name of the Person
+        /// </summary>
+        protected string firstName, lastName;
+        /// <summary>
+        /// The Person's email address
+        /// </summary>
+        protected string email;
+        /// <summary>
+        /// The Person's login password
+        /// </summary>
+        protected string password;
+        /// <summary>
+        /// The table in the database to find this Person
+        /// </summary>
+        protected string table;
         /// <summary>
         /// Creates a new Person
         /// </summary>
@@ -47,7 +62,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <param name="newEmail">The new email address</param>
         public void ChangeEmail(string newEmail) {
-            this.email = newEmail;
+            email = newEmail;
         }
         /// <summary>
         /// Gets the Person's Password
@@ -102,6 +117,13 @@ namespace PrimaryQueries {
             return !(Employee.Get(email) == null);
         }
         /// <summary>
+        /// Encrypts the Person's password
+        /// </summary>
+        /// <param name="password">The password to encrypt</param>
+        public static void EncryptPassword(string password) {
+            Queries.Query("SELECT encryptPassword("+password+")");
+        }
+        /// <summary>
         /// Adds the Person to the Database
         /// </summary>
         public abstract void AddToDatabase();
@@ -109,6 +131,11 @@ namespace PrimaryQueries {
         /// Removes the Person from the Database
         /// </summary>
         public abstract void DeleteFromDatabase();
+        /// <summary>
+        /// Returns a string representation in the form: 
+        /// {Employee/Customer}: {first name} {last name}, {email}
+        /// </summary>
+        /// <returns>{Employee/Customer}: {first name} {last name}, {email}</returns>
         public override string ToString() {
             return GetType() + ": " + firstName + " " + lastName + ", " + email;
         }

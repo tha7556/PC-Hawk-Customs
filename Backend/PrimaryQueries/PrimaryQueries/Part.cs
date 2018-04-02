@@ -8,8 +8,21 @@ namespace PrimaryQueries {
     /// An individual Part of a computer
     /// </summary>
     public class Part {
+        /// <summary>
+        /// The identifying Part Number
+        /// </summary>
         protected int partNumber;
-        protected string name, table;
+        /// <summary>
+        /// The Name of the part
+        /// </summary>
+        protected string name;
+        /// <summary>
+        /// The table in the database where this Part is stored
+        /// </summary>
+        protected string table;
+        /// <summary>
+        /// The Price of the Part
+        /// </summary>
         protected double price;
         /// <summary>
         /// Creates a new Part object

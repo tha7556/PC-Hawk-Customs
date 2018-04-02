@@ -33,6 +33,18 @@
             </summary>
             <returns>The Watts of the built in powerSupply if there is one</returns>
         </member>
+        <member name="M:PrimaryQueries.Case.GetExternalSize">
+            <summary>
+            Gets the External Size
+            </summary>
+            <returns>Gets the External Size</returns>
+        </member>
+        <member name="M:PrimaryQueries.Case.GetInternalSize">
+            <summary>
+            Gets the Internal Size
+            </summary>
+            <returns>The Internal Size</returns>
+        </member>
         <member name="M:PrimaryQueries.Case.AddToDatabase">
             <summary>
             Adds this Part to the pcCase and Part databases
@@ -144,6 +156,20 @@
             Gets all Customers in the Database
             </summary>
             <returns>A Customer[] containing all customers from the database</returns>
+        </member>
+        <member name="M:PrimaryQueries.Customer.IsZipcode(System.Int32)">
+            <summary>
+            Checks to see if a zipcode is valid by checking if it is 5 digits, and then checking online (can be slow)
+            </summary>
+            <param name="zipcode">The zipcode to check</param>
+            <returns>True if it is a valid zipcode</returns>
+        </member>
+        <member name="M:PrimaryQueries.Customer.IsState(System.String)">
+            <summary>
+            Checks whether or not a US State code is valid
+            </summary>
+            <param name="state">The state code to check</param>
+            <returns>True if it is a valid State</returns>
         </member>
         <member name="T:PrimaryQueries.Employee">
             <summary>
@@ -307,6 +333,11 @@
             </summary>
             <returns>The Customer making the order</returns>
         </member>
+        <member name="M:PrimaryQueries.Order.AddToDatabase">
+            <summary>
+            Adds this Order to the Database
+            </summary>
+        </member>
         <member name="M:PrimaryQueries.Order.GetOrderFromQuery(System.String)">
             <summary>
             Converts a MySql query result into an Order
@@ -317,6 +348,31 @@
         <member name="T:PrimaryQueries.Person">
             <summary>
             An abstract Person to represent either an Employee or a Customer
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Person.firstName">
+            <summary>
+            The Name of the Person
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Person.lastName">
+            <summary>
+            The Name of the Person
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Person.email">
+            <summary>
+            The Person's email address
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Person.password">
+            <summary>
+            The Person's login password
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Person.table">
+            <summary>
+            The table in the database to find this Person
             </summary>
         </member>
         <member name="M:PrimaryQueries.Person.#ctor(System.String,System.String,System.String,System.String)">
@@ -394,9 +450,36 @@
             Removes the Person from the Database
             </summary>
         </member>
+        <member name="M:PrimaryQueries.Person.ToString">
+            <summary>
+            Returns a string representation in the form: 
+            {Employee/Customer}: {first name} {last name}, {email}
+            </summary>
+            <returns>{Employee/Customer}: {first name} {last name}, {email}</returns>
+        </member>
         <member name="T:PrimaryQueries.Part">
             <summary>
             An individual Part of a computer
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Part.partNumber">
+            <summary>
+            The identifying Part Number
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Part.name">
+            <summary>
+            The Name of the part
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Part.table">
+            <summary>
+            The table in the database where this Part is stored
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Part.price">
+            <summary>
+            The Price of the Part
             </summary>
         </member>
         <member name="M:PrimaryQueries.Part.#ctor(System.Int32,System.String,System.Double)">
@@ -556,6 +639,31 @@
         <member name="T:PrimaryQueries.Queries">
             <summary>
             Class used to query the MySQL PCHawkCustoms Database.
+            </summary>
+        </member>
+        <member name="T:PrimaryQueries.Queries.LogLevel">
+            <summary>
+            The Level used to categorize logs
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.DEBUG">
+            <summary>
+            Used for misc debug statements
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.WARNING">
+            <summary>
+            Used to warn that something may have gone wrong, but wouldn't throw an error
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.ERROR">
+            <summary>
+            Used to log error details
+            </summary>
+        </member>
+        <member name="F:PrimaryQueries.Queries.LogLevel.SQLQUERY">
+            <summary>
+            Used to log queries made to the database
             </summary>
         </member>
         <member name="M:PrimaryQueries.Queries.Query(System.String,System.Boolean)">

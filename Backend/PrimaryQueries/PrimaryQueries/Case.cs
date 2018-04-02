@@ -37,11 +37,17 @@ namespace PrimaryQueries {
         public string GetPowerSupply() {
             return powerSupply;
         }
-        //TODO: what is this?
+        /// <summary>
+        /// Gets the External Size
+        /// </summary>
+        /// <returns>Gets the External Size</returns>
         public int GetExternalSize() {
             return externalSize;
         }
-        //TODO: what is this?
+        /// <summary>
+        /// Gets the Internal Size
+        /// </summary>
+        /// <returns>The Internal Size</returns>
         public int GetInternalSize() {
             return internalSize;
         }
