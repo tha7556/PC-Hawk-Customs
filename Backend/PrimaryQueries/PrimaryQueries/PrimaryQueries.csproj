@@ -42,13 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Case.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="GraphicsCard.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Part.cs" />
+    <Compile Include="PowerSupply.cs" />
     <Compile Include="PrimaryQueries.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Storage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

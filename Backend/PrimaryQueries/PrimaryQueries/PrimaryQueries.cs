@@ -73,6 +73,7 @@ namespace PrimaryQueries {
         /// <param name="current">The Current table to populate</param>
         public static void PopulateTable(string current) {
             string content = File.ReadAllText("..//..//part data//" + current + ".html");
+            int partNumber = 1;
             if (current.Equals("cpu")) {
                 while (content.IndexOf("<tr>") != -1) {
                     content = content.Substring(content.IndexOf("<tr>") + 2);
@@ -196,6 +197,7 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
                     Console.WriteLine("price: " + price + "\n-----------------");
+                    Storage storage = new Storage(partNumber, name, double.Parse(price), series, form, type, capacity, cache);
                 }
             }
             else if (current.Equals("graphicsCard")) {
@@ -223,6 +225,7 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
                     Console.WriteLine("price: " + price + "\n-----------------");
+                    GraphicsCard graphicsCard = new GraphicsCard(partNumber, name, double.Parse(price), series, chipset, memory, coreclock);
                 }
             }
             else if (current.Equals("power")) {
@@ -252,6 +255,7 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
                     Console.WriteLine("price: " + price + "\n-----------------");
+                    PowerSupply powerSupply = new PowerSupply(partNumber, name, double.Parse(price), series, form, efficiency, watts, modular);
                 }
             }
             else if (current.Equals("case")) {
@@ -279,6 +283,7 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
                     Console.WriteLine("price: " + price + "\n-----------------");
+                    Case pcCase = new Case(partNumber, name, double.Parse(price), type, int.Parse(ext514), int.Parse(in312), powersupply);
                 }
             }
 

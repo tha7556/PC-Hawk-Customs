@@ -10,14 +10,13 @@ namespace PrimaryQueries {
     /// </summary>
     class Part {
         private int partNumber;
-        private string name
+        private string name;
         private double price;
         /// <summary>
         /// Creates a new Part object
         /// </summary>
         /// <param name="partNumber">The identifying Part number</param>
         /// <param name="name">The name of the Part</param>
-        /// <param name="componentType">The type of Part that it is</param>
         /// <param name="price">The price of the Part</param>
         public Part(int partNumber, string name, double price) {
             this.partNumber = partNumber;
@@ -109,7 +108,7 @@ namespace PrimaryQueries {
         /// <returns>The Part object from the query</returns>
         public static Part GetPartFromQuery(string result) {
             string[] line = result.Split('\0');
-            return new Part(int.Parse(line[0]), line[1], line[3], double.Parse(line[2]));
+            return new Part(int.Parse(line[0]), line[1], double.Parse(line[2]));
         }
     }
 }
