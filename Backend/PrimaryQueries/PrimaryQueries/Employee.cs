@@ -13,7 +13,7 @@ namespace PrimaryQueries {
         /// <param name="password">The Employee's password</param>
         public Employee(string firstName, string lastName, string email, string password) : base(firstName, lastName, email,password) {
             table = "employee";
-            Queries.Log(Queries.LogLevel.DEBUG, "Employee(" + firstName + "," + lastName + "," + email + "," + password+");");
+            Queries.Log(Queries.LogLevel.DEBUG, "Employee(" + firstName + "," + lastName + "," + email + "," + EncryptPassword(password)+");");
         }
         /// <summary>
         /// Adds the Employee to the Database

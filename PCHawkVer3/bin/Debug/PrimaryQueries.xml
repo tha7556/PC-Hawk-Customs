@@ -440,6 +440,19 @@
             <param name="email">The Email to check</param>
             <returns>True if the email matches an Employee</returns>
         </member>
+        <member name="M:PrimaryQueries.Person.EncryptPassword(System.String)">
+            <summary>
+            Encrypts the Person's password
+            </summary>
+            <param name="password">The password to encrypt</param>
+        </member>
+        <member name="M:PrimaryQueries.Person.CheckPassword(System.String)">
+            <summary>
+            Checks to see if the password matches the one stored in the database
+            </summary>
+            <param name="pass">The plaintext password (is encrypted during this method)</param>
+            <returns></returns>
+        </member>
         <member name="M:PrimaryQueries.Person.AddToDatabase">
             <summary>
             Adds the Person to the Database

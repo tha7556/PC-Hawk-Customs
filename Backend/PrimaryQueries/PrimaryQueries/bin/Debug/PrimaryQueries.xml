@@ -446,6 +446,13 @@
             </summary>
             <param name="password">The password to encrypt</param>
         </member>
+        <member name="M:PrimaryQueries.Person.CheckPassword(System.String)">
+            <summary>
+            Checks to see if the password matches the one stored in the database
+            </summary>
+            <param name="pass">The plaintext password (is encrypted during this method)</param>
+            <returns></returns>
+        </member>
         <member name="M:PrimaryQueries.Person.AddToDatabase">
             <summary>
             Adds the Person to the Database

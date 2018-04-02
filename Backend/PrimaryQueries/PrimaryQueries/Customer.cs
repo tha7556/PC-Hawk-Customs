@@ -75,7 +75,7 @@ namespace PrimaryQueries {
         override
         public void AddToDatabase() {
             Queries.Query("INSERT INTO `customer` (`email`, `first name`, `last name`, `street addess`, `city`, `state`, `zipcode`, `password`) " +
-                "VALUES ('"+email+"', '"+firstName+"', '"+lastName+"', '"+streetAddress+"', '"+city+"', '"+state+"', "+zipcode+",'"+password+"');");
+                "VALUES ('"+email+"', '"+firstName+"', '"+lastName+"', '"+streetAddress+"', '"+city+"', '"+state+"', "+zipcode+",'"+EncryptPassword(password)+"');");
         }
         /// <summary>
         /// Deletes a Customer from the Database
@@ -106,7 +106,7 @@ namespace PrimaryQueries {
         /// <param name="email">The Customer's email</param>
         /// <returns>The Customer with the given email</returns>
         public static Customer Get(string email) {
-            string[] result = Queries.Query("SELECT * FROM `customer` WHERE `email`=" + email);
+            string[] result = Queries.Query("SELECT * FROM `customer` WHERE `email`='" + email+"'");
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }

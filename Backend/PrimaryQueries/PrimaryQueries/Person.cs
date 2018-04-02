@@ -76,7 +76,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <param name="newPassword">The new Password to change to</param>
         public void ChangePassword(string newPassword) {
-            password = newPassword;
+            password = EncryptPassword(newPassword);
             Queries.Query("UPDATE `" + table + "` SET `password` = '" + password + "' WHERE `" + table + "`.`email` = " + email + ";");
         }
         /// <summary>
@@ -120,8 +120,21 @@ namespace PrimaryQueries {
         /// Encrypts the Person's password
         /// </summary>
         /// <param name="password">The password to encrypt</param>
-        public static void EncryptPassword(string password) {
-            Queries.Query("SELECT encryptPassword("+password+")");
+        public static string EncryptPassword(string password) {
+            string[] result = Queries.Query("SELECT encryptPassword(\""+password+"\");");
+            return result[0].Substring(0,result[0].Length-1); //The query adds a question mark at the end for some reason
+        }
+        /// <summary>
+        /// Checks to see if the password matches the one stored in the database
+        /// </summary>
+        /// <param name="pass">The plaintext password (is encrypted during this method)</param>
+        /// <returns></returns>
+        public bool CheckPassword(string pass) {
+            string encrypted = EncryptPassword(pass);
+            if(password.Equals(encrypted)) {
+                return true;
+            }
+            return false;
         }
         /// <summary>
         /// Adds the Person to the Database
