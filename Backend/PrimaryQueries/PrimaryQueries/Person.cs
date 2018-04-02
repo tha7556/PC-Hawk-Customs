@@ -62,7 +62,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <param name="newEmail">The new email address</param>
         public void ChangeEmail(string newEmail) {
-            this.email = newEmail;
+            email = newEmail;
         }
         /// <summary>
         /// Gets the Person's Password
@@ -115,6 +115,13 @@ namespace PrimaryQueries {
         /// <returns>True if the email matches an Employee</returns>
         public static bool IsEmployee(string email) {
             return !(Employee.Get(email) == null);
+        }
+        /// <summary>
+        /// Encrypts the Person's password
+        /// </summary>
+        /// <param name="password">The password to encrypt</param>
+        public static void EncryptPassword(string password) {
+            Queries.Query("SELECT encryptPassword("+password+")");
         }
         /// <summary>
         /// Adds the Person to the Database
