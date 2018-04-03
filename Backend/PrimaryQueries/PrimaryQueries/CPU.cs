@@ -39,7 +39,24 @@ namespace PrimaryQueries {
 
         public static CPU GetFromQuery(string query) {
             string[] result = query.Split('\0');
-            return new CPU(int.Parse(result[0]), result[1], double.Parse(result[2]), result[3], int.Parse(result[4]), int.Parse(result[5]), result[6]);
+            return new CPU(int.Parse(result[0]), result[1], double.Parse(result[2]), double.Parse(result[3]), int.Parse(result[4]), int.Parse(result[5]));
+        }
+
+        public static CPU[] GetAll() {
+            string[] result = Queries.Query("SELECT * FROM 'cpu'");
+            CPU[] arr = new CPU[result.Length];
+            for (int i = 0; i < result.Length; i++) {
+                arr[i] = GetFromQuery(result[i]);
+            }
+            return arr;
+        }
+
+        public static CPU Get(int partNumber) {
+            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `cpu` = " + partNumber);
+            if (result.Length > 0) {
+                return GetFromQuery(result[0]);
+            }
+            return null;
         }
     }
 }
