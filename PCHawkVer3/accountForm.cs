@@ -12,10 +12,13 @@ namespace PCHawkVer3
 {
     public partial class accountForm : Form
     {
+        public static String userID;
         public accountForm()
         {
             InitializeComponent();
-           
+            userID = MyStaticClass.MyStringMessage;
+            txtBoxEmail.Text = userID;
+
         }
         /// <summary>
         /// Allows user to exit the application

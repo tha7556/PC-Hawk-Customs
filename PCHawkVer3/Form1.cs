@@ -63,6 +63,9 @@ namespace PCHawkVer3
         /// <param name="e"></param>
         private void bttnLogin_Click(object sender, EventArgs e)
         {
+            //MyStaticClass.MyStringMessage object will be assigned the email of the logging in user. accessible throughout forms.
+            //MyStaticClass.MyStringMessage is a static public class.
+            MyStaticClass.MyStringMessage = txtBoxEmail.Text;
             this.Hide();
             frmHome home = new frmHome();
             home.Show();

@@ -93,6 +93,7 @@
     <Compile Include="homeScreenControl.Designer.cs">
       <DependentUpon>homeScreenControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyStaticClass.cs" />
     <Compile Include="preBuildForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace PCHawkVer3
 {
+
     public partial class frmHome : Form
     {
         public frmHome()
