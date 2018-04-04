@@ -30,6 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bttnHome = new System.Windows.Forms.Button();
+            this.bttnLogout = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bttnExit = new System.Windows.Forms.Button();
+            this.bttnCart = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtBoxFirst = new System.Windows.Forms.TextBox();
             this.txtBoxLast = new System.Windows.Forms.TextBox();
@@ -48,12 +54,13 @@
             this.toolTipLogout = new System.Windows.Forms.ToolTip(this.components);
             this.bttnSave = new System.Windows.Forms.Button();
             this.txtBoxZip = new System.Windows.Forms.TextBox();
-            this.bttnHome = new System.Windows.Forms.Button();
-            this.bttnLogout = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bttnExit = new System.Windows.Forms.Button();
-            this.bttnCart = new System.Windows.Forms.Button();
-            this.btnHelp = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -71,139 +78,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(870, 165);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(870, 20);
-            this.panel2.TabIndex = 1;
-            // 
-            // txtBoxFirst
-            // 
-            this.txtBoxFirst.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxFirst.Location = new System.Drawing.Point(45, 202);
-            this.txtBoxFirst.Name = "txtBoxFirst";
-            this.txtBoxFirst.ReadOnly = true;
-            this.txtBoxFirst.Size = new System.Drawing.Size(145, 26);
-            this.txtBoxFirst.TabIndex = 3;
-            this.txtBoxFirst.Text = "First Name";
-            // 
-            // txtBoxLast
-            // 
-            this.txtBoxLast.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxLast.Location = new System.Drawing.Point(196, 202);
-            this.txtBoxLast.Name = "txtBoxLast";
-            this.txtBoxLast.Size = new System.Drawing.Size(145, 26);
-            this.txtBoxLast.TabIndex = 4;
-            this.txtBoxLast.Text = "Last Name";
-            // 
-            // txtBoxEmail
-            // 
-            this.txtBoxEmail.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxEmail.Location = new System.Drawing.Point(45, 234);
-            this.txtBoxEmail.Name = "txtBoxEmail";
-            this.txtBoxEmail.Size = new System.Drawing.Size(296, 26);
-            this.txtBoxEmail.TabIndex = 5;
-            this.txtBoxEmail.Text = "Email";
-            // 
-            // txtBoxAddress
-            // 
-            this.txtBoxAddress.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxAddress.Location = new System.Drawing.Point(45, 266);
-            this.txtBoxAddress.Name = "txtBoxAddress";
-            this.txtBoxAddress.Size = new System.Drawing.Size(296, 26);
-            this.txtBoxAddress.TabIndex = 6;
-            this.txtBoxAddress.Text = "Address";
-            // 
-            // txtBoxCity
-            // 
-            this.txtBoxCity.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxCity.Location = new System.Drawing.Point(45, 298);
-            this.txtBoxCity.Name = "txtBoxCity";
-            this.txtBoxCity.Size = new System.Drawing.Size(296, 26);
-            this.txtBoxCity.TabIndex = 7;
-            this.txtBoxCity.Text = "City";
-            // 
-            // txtBoxState
-            // 
-            this.txtBoxState.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxState.Location = new System.Drawing.Point(45, 330);
-            this.txtBoxState.Name = "txtBoxState";
-            this.txtBoxState.Size = new System.Drawing.Size(296, 26);
-            this.txtBoxState.TabIndex = 8;
-            this.txtBoxState.Text = "State";
-            // 
-            // bttnChangeInfo
-            // 
-            this.bttnChangeInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnChangeInfo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnChangeInfo.ForeColor = System.Drawing.Color.White;
-            this.bttnChangeInfo.Location = new System.Drawing.Point(45, 394);
-            this.bttnChangeInfo.Name = "bttnChangeInfo";
-            this.bttnChangeInfo.Size = new System.Drawing.Size(296, 40);
-            this.bttnChangeInfo.TabIndex = 9;
-            this.bttnChangeInfo.Text = "Update Info";
-            this.bttnChangeInfo.UseVisualStyleBackColor = true;
-            this.bttnChangeInfo.Click += new System.EventHandler(this.bttnChangeInfo_Click);
-            // 
-            // bttnPassChange
-            // 
-            this.bttnPassChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnPassChange.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnPassChange.ForeColor = System.Drawing.Color.White;
-            this.bttnPassChange.Location = new System.Drawing.Point(45, 440);
-            this.bttnPassChange.Name = "bttnPassChange";
-            this.bttnPassChange.Size = new System.Drawing.Size(296, 40);
-            this.bttnPassChange.TabIndex = 10;
-            this.bttnPassChange.Text = "Change Password";
-            this.bttnPassChange.UseVisualStyleBackColor = true;
-            // 
-            // historyBox
-            // 
-            this.historyBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.historyBox.FormattingEnabled = true;
-            this.historyBox.ItemHeight = 20;
-            this.historyBox.Location = new System.Drawing.Point(465, 257);
-            this.historyBox.Name = "historyBox";
-            this.historyBox.Size = new System.Drawing.Size(325, 244);
-            this.historyBox.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(557, 224);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 26);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Order History";
-            // 
-            // bttnSave
-            // 
-            this.bttnSave.Enabled = false;
-            this.bttnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnSave.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnSave.ForeColor = System.Drawing.Color.White;
-            this.bttnSave.Location = new System.Drawing.Point(45, 486);
-            this.bttnSave.Name = "bttnSave";
-            this.bttnSave.Size = new System.Drawing.Size(296, 40);
-            this.bttnSave.TabIndex = 13;
-            this.bttnSave.Text = "Save Changes";
-            this.bttnSave.UseVisualStyleBackColor = true;
-            this.bttnSave.Click += new System.EventHandler(this.bttnSave_Click);
-            // 
-            // txtBoxZip
-            // 
-            this.txtBoxZip.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxZip.Location = new System.Drawing.Point(45, 362);
-            this.txtBoxZip.Name = "txtBoxZip";
-            this.txtBoxZip.Size = new System.Drawing.Size(296, 26);
-            this.txtBoxZip.TabIndex = 14;
-            this.txtBoxZip.Text = "Zip Code";
             // 
             // bttnHome
             // 
@@ -294,12 +168,222 @@
             this.btnHelp.UseVisualStyleBackColor = false;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(870, 20);
+            this.panel2.TabIndex = 1;
+            // 
+            // txtBoxFirst
+            // 
+            this.txtBoxFirst.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxFirst.Location = new System.Drawing.Point(45, 224);
+            this.txtBoxFirst.Name = "txtBoxFirst";
+            this.txtBoxFirst.ReadOnly = true;
+            this.txtBoxFirst.Size = new System.Drawing.Size(145, 26);
+            this.txtBoxFirst.TabIndex = 3;
+            // 
+            // txtBoxLast
+            // 
+            this.txtBoxLast.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxLast.Location = new System.Drawing.Point(196, 224);
+            this.txtBoxLast.Name = "txtBoxLast";
+            this.txtBoxLast.Size = new System.Drawing.Size(145, 26);
+            this.txtBoxLast.TabIndex = 4;
+            // 
+            // txtBoxEmail
+            // 
+            this.txtBoxEmail.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxEmail.Location = new System.Drawing.Point(45, 275);
+            this.txtBoxEmail.Name = "txtBoxEmail";
+            this.txtBoxEmail.Size = new System.Drawing.Size(296, 26);
+            this.txtBoxEmail.TabIndex = 5;
+            // 
+            // txtBoxAddress
+            // 
+            this.txtBoxAddress.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxAddress.Location = new System.Drawing.Point(45, 325);
+            this.txtBoxAddress.Name = "txtBoxAddress";
+            this.txtBoxAddress.Size = new System.Drawing.Size(296, 26);
+            this.txtBoxAddress.TabIndex = 6;
+            // 
+            // txtBoxCity
+            // 
+            this.txtBoxCity.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxCity.Location = new System.Drawing.Point(45, 375);
+            this.txtBoxCity.Name = "txtBoxCity";
+            this.txtBoxCity.Size = new System.Drawing.Size(296, 26);
+            this.txtBoxCity.TabIndex = 7;
+            // 
+            // txtBoxState
+            // 
+            this.txtBoxState.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxState.Location = new System.Drawing.Point(45, 425);
+            this.txtBoxState.Name = "txtBoxState";
+            this.txtBoxState.Size = new System.Drawing.Size(296, 26);
+            this.txtBoxState.TabIndex = 8;
+            // 
+            // bttnChangeInfo
+            // 
+            this.bttnChangeInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnChangeInfo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnChangeInfo.ForeColor = System.Drawing.Color.White;
+            this.bttnChangeInfo.Location = new System.Drawing.Point(45, 510);
+            this.bttnChangeInfo.Name = "bttnChangeInfo";
+            this.bttnChangeInfo.Size = new System.Drawing.Size(296, 40);
+            this.bttnChangeInfo.TabIndex = 9;
+            this.bttnChangeInfo.Text = "Update Info";
+            this.bttnChangeInfo.UseVisualStyleBackColor = true;
+            this.bttnChangeInfo.Click += new System.EventHandler(this.bttnChangeInfo_Click);
+            // 
+            // bttnPassChange
+            // 
+            this.bttnPassChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnPassChange.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnPassChange.ForeColor = System.Drawing.Color.White;
+            this.bttnPassChange.Location = new System.Drawing.Point(45, 556);
+            this.bttnPassChange.Name = "bttnPassChange";
+            this.bttnPassChange.Size = new System.Drawing.Size(296, 40);
+            this.bttnPassChange.TabIndex = 10;
+            this.bttnPassChange.Text = "Change Password";
+            this.bttnPassChange.UseVisualStyleBackColor = true;
+            // 
+            // historyBox
+            // 
+            this.historyBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.historyBox.FormattingEnabled = true;
+            this.historyBox.ItemHeight = 20;
+            this.historyBox.Location = new System.Drawing.Point(465, 257);
+            this.historyBox.Name = "historyBox";
+            this.historyBox.Size = new System.Drawing.Size(325, 384);
+            this.historyBox.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(557, 224);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 26);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Order History";
+            // 
+            // bttnSave
+            // 
+            this.bttnSave.Enabled = false;
+            this.bttnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnSave.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnSave.ForeColor = System.Drawing.Color.White;
+            this.bttnSave.Location = new System.Drawing.Point(45, 602);
+            this.bttnSave.Name = "bttnSave";
+            this.bttnSave.Size = new System.Drawing.Size(296, 40);
+            this.bttnSave.TabIndex = 13;
+            this.bttnSave.Text = "Save Changes";
+            this.bttnSave.UseVisualStyleBackColor = true;
+            this.bttnSave.Click += new System.EventHandler(this.bttnSave_Click);
+            // 
+            // txtBoxZip
+            // 
+            this.txtBoxZip.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxZip.Location = new System.Drawing.Point(45, 475);
+            this.txtBoxZip.Name = "txtBoxZip";
+            this.txtBoxZip.Size = new System.Drawing.Size(296, 26);
+            this.txtBoxZip.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(42, 203);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 18);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "First Name:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(193, 203);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 18);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Last Name:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(42, 454);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 18);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Zip:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(42, 404);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 18);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "State:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(42, 354);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 18);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "City:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(42, 304);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 18);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Address:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(42, 254);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 18);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Email:";
+            // 
             // accountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(869, 551);
+            this.ClientSize = new System.Drawing.Size(869, 685);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtBoxZip);
             this.Controls.Add(this.bttnSave);
             this.Controls.Add(this.label1);
@@ -353,5 +437,12 @@
         private System.Windows.Forms.ToolTip toolTipHelp;
         private System.Windows.Forms.Button bttnSave;
         private System.Windows.Forms.TextBox txtBoxZip;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
