@@ -69,6 +69,8 @@ namespace PrimaryQueries {
             Queries.Query("UPDATE `"+table+"` SET `price` = '"+price+"' WHERE `"+table+"`.`part number` = "+partNumber+";");
             Queries.Log(Queries.LogLevel.DEBUG, "Changed Price of Part [" + partNumber + "] from: $"+oldPrice + " to: $" + newPrice);
         }
+
+       
         /// <summary>
         /// Gets an array of Parts compatable with this one
         /// </summary>
