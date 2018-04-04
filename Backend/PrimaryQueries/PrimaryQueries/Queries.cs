@@ -345,15 +345,26 @@ namespace PrimaryQueries {
             else
                 Console.WriteLine("invalid input: " + current);
         }
+        /// <summary>
+        /// Populates all of the tables in the database with info from Part picker
+        /// </summary>
         public static void PopulateTables() {
-            /*PopulateTable(CurrentType.storage);
+            PopulateTable(CurrentType.storage);
+            Log(LogLevel.DEBUG, "Populated Storage tables");
             PopulateTable(CurrentType.graphicsCard);
+            Log(LogLevel.DEBUG, "Populated Graphics Card tables");
             PopulateTable(CurrentType.pcCase);
-            PopulateTable(CurrentType.powerSupply);*/
+            Log(LogLevel.DEBUG, "Populated PC Case tables");
+            PopulateTable(CurrentType.powerSupply);
+            Log(LogLevel.DEBUG, "Populated Power Supply tables");
             PopulateTable(CurrentType.cpu);
+            Log(LogLevel.DEBUG, "Populated CPU tables");
             PopulateTable(CurrentType.fan);
+            Log(LogLevel.DEBUG, "Populated Fan tables");
             PopulateTable(CurrentType.memory);
+            Log(LogLevel.DEBUG, "Populated Memory tables");
             PopulateTable(CurrentType.motherboard);
+            Log(LogLevel.DEBUG, "Populated Motherboard tables");
         }
         /// <summary>
         /// Logs a message to the log file
