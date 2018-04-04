@@ -18,7 +18,7 @@ namespace PrimaryQueries {
         public new void AddToDatabase() {
             base.AddToDatabase();
             Queries.Query("INSERT INTO `fan` (`part number`, `name`, `price`, `rpm`, `noise level`)" +
-                " VALUES (" + partNumber + ", '" + name + "', " + price + ", '" + rpm + "', " + nl + "')");
+                " VALUES (" + partNumber + ", '" + name + "', " + price + ", '" + rpm + "', " + nl + ")");
         }
 
         public static Fan GetFromQuery(string query) {

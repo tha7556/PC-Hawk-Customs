@@ -113,19 +113,24 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf(";\"") + 3);
                     string speed = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("speed: " + speed);
                     sub = sub.Substring(sub.IndexOf(";\"") + 3);
                     string cores = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("cores: " + cores);
                     sub = sub.Substring(sub.IndexOf(";\"") + 3);
                     string tdp = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("tdp: " + tdp);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
+                    CPU cpu;
+                    try {
+                        cpu = new CPU(partNumber, name, double.Parse(price), double.Parse(speed.Substring(0, speed.IndexOf("GH"))), int.Parse(cores), int.Parse(tdp.Substring(0, tdp.IndexOf("W"))));
+                    }
+                    catch(Exception e) {
+                        Log(LogLevel.ERROR, e.StackTrace);
+                        continue;
+                    }
+                    cpu.AddToDatabase();
+                    partNumber++;
                 }
             }
             else if (current == CurrentType.fan) {
@@ -140,11 +145,27 @@ namespace PrimaryQueries {
                     string speed = sub.Substring(0, sub.IndexOf("<"));
                     Console.WriteLine("rpm: " + speed);
                     sub = sub.Substring(sub.IndexOf(";\"") + 3);
-                    string cores = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("noise level: " + cores);
+                    string nl = sub.Substring(0, sub.IndexOf("<"));
+                    Console.WriteLine("noise level: " + nl);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
                     Console.WriteLine("price: " + price + "\n-----------------");
+                    Fan fan;
+                    try {
+                        if (speed.IndexOf("-") != -1)
+                            speed = speed.Substring(speed.IndexOf("-") + 1);
+                        speed = speed.Substring(0,speed.IndexOf("RPM"));
+                        if (nl.IndexOf("-") != -1)
+                            nl = nl.Substring(nl.IndexOf("-") + 1);
+                        nl = nl.Substring(0, nl.IndexOf("dbA"));
+                        fan = new Fan(partNumber, name, double.Parse(price), int.Parse(speed),double.Parse(nl));
+                    }
+                    catch(Exception e) {
+                        Log(LogLevel.ERROR, e.StackTrace);
+                        continue;
+                    }
+                    fan.AddToDatabase();
+                    partNumber++;
                 }
             }
             else if (current == CurrentType.motherboard) {
@@ -323,6 +344,16 @@ namespace PrimaryQueries {
             }
             else
                 Console.WriteLine("invalid input: " + current);
+        }
+        public static void PopulateTables() {
+            /*PopulateTable(CurrentType.storage);
+            PopulateTable(CurrentType.graphicsCard);
+            PopulateTable(CurrentType.pcCase);
+            PopulateTable(CurrentType.powerSupply);*/
+            PopulateTable(CurrentType.cpu);
+            PopulateTable(CurrentType.fan);
+            PopulateTable(CurrentType.memory);
+            PopulateTable(CurrentType.motherboard);
         }
         /// <summary>
         /// Logs a message to the log file

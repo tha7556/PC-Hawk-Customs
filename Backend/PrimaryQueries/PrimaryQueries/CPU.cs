@@ -33,8 +33,8 @@ namespace PrimaryQueries {
 
         public new void AddToDatabase() {
             base.AddToDatabase();
-            Queries.Query("INSERT INTO 'cpu' ('part number', 'name', 'price', 'speed', 'cores', 'tdp')" +
-                " VALUES (" + partNumber + ", '" + name + "', " + price + ", '" + speed + "', " + cores + "', " + tdp + "')");
+            Queries.Query("INSERT INTO `cpu` (`part number`, `name`, `price`, `speed`, `cores`, `tdp`)" +
+                " VALUES (" + partNumber + ", '" + name + "', " + price + ", " + speed + ", " + cores + ", " + tdp + ")");
         }
 
         public static CPU GetFromQuery(string query) {
