@@ -68,6 +68,26 @@ namespace PCHawkVer3
 
         }
 
-        
+        private void chkBoxPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBoxPass.Checked == true)
+            {
+
+                txtBoxPass.PasswordChar = '*';
+                txtBoxPass.Refresh();
+            }
+            else
+            {
+
+                txtBoxPass.PasswordChar = '\0';
+                txtBoxPass.Refresh();
+            }
+            txtBoxPass.Refresh();
+        }
+
+        private void signUpForm_Load(object sender, EventArgs e)
+        {
+            txtBoxPass.PasswordChar = '*';
+        }
     }
 }

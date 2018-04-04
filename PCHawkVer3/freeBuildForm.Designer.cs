@@ -52,6 +52,7 @@
             this.toolTipHome = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipAccount = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipLogOut = new System.Windows.Forms.ToolTip(this.components);
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -197,12 +198,6 @@
             // 
             this.partBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.partBox.FormattingEnabled = true;
-            this.partBox.Items.AddRange(new object[] {
-            "$0-500",
-            "$500-1000",
-            "$1000-1500",
-            "$1500-2000",
-            "$2000-Higher"});
             this.partBox.Location = new System.Drawing.Point(50, 255);
             this.partBox.Name = "partBox";
             this.partBox.Size = new System.Drawing.Size(168, 28);
@@ -213,12 +208,6 @@
             // 
             this.partTypeBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.partTypeBox.FormattingEnabled = true;
-            this.partTypeBox.Items.AddRange(new object[] {
-            "$0-500",
-            "$500-1000",
-            "$1000-1500",
-            "$1500-2000",
-            "$2000-Higher"});
             this.partTypeBox.Location = new System.Drawing.Point(50, 221);
             this.partTypeBox.Name = "partTypeBox";
             this.partTypeBox.Size = new System.Drawing.Size(168, 28);
@@ -241,11 +230,11 @@
             // priceTxtBox
             // 
             this.priceTxtBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceTxtBox.Location = new System.Drawing.Point(50, 544);
+            this.priceTxtBox.Location = new System.Drawing.Point(50, 562);
             this.priceTxtBox.Name = "priceTxtBox";
+            this.priceTxtBox.ReadOnly = true;
             this.priceTxtBox.Size = new System.Drawing.Size(160, 26);
             this.priceTxtBox.TabIndex = 10;
-            this.priceTxtBox.Text = "Price";
             // 
             // buildNameBox
             // 
@@ -280,12 +269,24 @@
             this.bttnAddCart.UseVisualStyleBackColor = true;
             this.bttnAddCart.Click += new System.EventHandler(this.bttnAddCart_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Yellow;
+            this.label6.Location = new System.Drawing.Point(47, 541);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 18);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Price:";
+            // 
             // freeBuildForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(875, 600);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.bttnAddCart);
             this.Controls.Add(this.buildListBox);
             this.Controls.Add(this.buildNameBox);
@@ -332,5 +333,6 @@
         private System.Windows.Forms.ToolTip toolTipCart;
         private System.Windows.Forms.ToolTip toolTipHelp;
         private System.Windows.Forms.Button bttnAddCart;
+        private System.Windows.Forms.Label label6;
     }
 }
