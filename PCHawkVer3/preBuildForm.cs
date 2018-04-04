@@ -12,9 +12,11 @@ namespace PCHawkVer3
 {
     public partial class preBuildForm : Form
     {
+        
         public preBuildForm()
         {
             InitializeComponent();
+            
             List<prodDescription> pd = new List<prodDescription>();
             pd.Add(new prodDescription() { name = "Computing Needs", descrip = "Product Description" });
             pd.Add(new prodDescription() { name = "Gaming", descrip = "A Computer designed for gaming.\nThese computers" +
