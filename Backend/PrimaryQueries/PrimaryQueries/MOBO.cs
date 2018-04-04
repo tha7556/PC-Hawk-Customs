@@ -9,7 +9,7 @@ namespace PrimaryQueries {
         private string socket {get; set;}
         private string form {get; set;}
         private string mRAM{get; set;}
-        private int rAMSlots {get; set}
+        private int rAMSlots { get; set; }
 
         public MOBO(int partNumber, string name, double price, string socket, string form, string mRAM, int rAMSlots) : base(partNumber, name, price){
             this.socket = socket;
