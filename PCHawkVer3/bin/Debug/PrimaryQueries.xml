@@ -70,6 +70,12 @@
             <param name="partNumber">The identifying part number</param>
             <returns>The Case object with the part number</returns>
         </member>
+        <member name="T:PrimaryQueries.CPU">
+            <summary>
+            The Central Processing Unit comprised of (outside of Part):
+            Speed, Cores, and TDP
+            </summary>
+        </member>
         <member name="T:PrimaryQueries.Customer">
             <summary>
             A customer of PCHawkCustoms
