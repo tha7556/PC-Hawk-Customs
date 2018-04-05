@@ -414,6 +414,13 @@
             </summary>
             <param name="newEmail">The new email address</param>
         </member>
+        <member name="M:PrimaryQueries.Person.ChangeName(System.String,System.String)">
+            <summary>
+            Changes the Person's first and last names
+            </summary>
+            <param name="firstName">The new first name</param>
+            <param name="lastName">The new last name</param>
+        </member>
         <member name="M:PrimaryQueries.Person.GetPassword">
             <summary>
             Gets the Person's Password

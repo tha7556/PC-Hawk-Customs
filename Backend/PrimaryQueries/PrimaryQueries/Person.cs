@@ -63,6 +63,17 @@ namespace PrimaryQueries {
             email = newEmail;
         }
         /// <summary>
+        /// Changes the Person's first and last names
+        /// </summary>
+        /// <param name="firstName">The new first name</param>
+        /// <param name="lastName">The new last name</param>
+        public void ChangeName(string firstName, string lastName) {
+            Queries.Query(string.Format("UPDATE `{0}` SET `first name` = '{1}' WHERE `{0}`.`email` = '{2}';", table, firstName, email));
+            Queries.Query(string.Format("UPDATE `{0}` SET `last name` = '{1}' WHERE `{0}`.`email` = '{2}';", table, lastName, email));
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+        /// <summary>
         /// Gets the Person's Password
         /// </summary>
         /// <returns>The Person's Password</returns>
