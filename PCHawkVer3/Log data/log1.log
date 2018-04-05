@@ -1,2 +1,3 @@
-     <DEBUG 0:0:7>: 	Start Program
- <DEBUG 11:10:884>: 	Finished Program
+     <DEBUG 0:0:9>: 	SetTest PrimaryQueries.Fan: test 10 10.23
+    <DEBUG 0:0:12>: 	Start Program
+    <DEBUG 0:8:38>: 	Finished Program

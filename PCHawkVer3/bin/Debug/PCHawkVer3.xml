@@ -60,6 +60,13 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="M:PCHawkVer3.accountForm.txtBoxZip_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            another fubar function lol
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
         <member name="F:PCHawkVer3.accountForm.components">
             <summary>
             Required designer variable.

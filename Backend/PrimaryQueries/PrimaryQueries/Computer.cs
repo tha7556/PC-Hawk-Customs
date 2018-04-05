@@ -1,15 +1,15 @@
 ﻿
 namespace PrimaryQueries {
-    class Computer { 
-        private Case pcCase;
-        private CPU cpu;
-        private Fan fan;
-        private GraphicsCard gCard;
-        private Memory memory;
-        private MOBO mBoard;
-        private PowerSupply power;
-        private Storage storage;
-        private int serialNumber;
+    public class Computer { 
+        public Case pcCase { get; set; }
+        public CPU cpu { get; set; }
+        public Fan fan { get; set; }
+        public GraphicsCard gCard { get; set; }
+        public Memory memory { get; set; }
+        public MOBO mBoard { get; set; }
+        public PowerSupply power { get; set; }
+        public Storage storage { get; set; }
+        public int serialNumber { get; set; }
 
         public Computer(int serialNumber, Case pcCase, CPU cpu, Fan fan, GraphicsCard gCard, Memory memory, MOBO mBoard, PowerSupply power, Storage storage) {
             this.pcCase = pcCase;
@@ -92,7 +92,7 @@ namespace PrimaryQueries {
                 num = "NULL";
             string query = string.Format("INSERT INTO `computers` (`serialNumber`, `cpu`, `fan`, `graphicsCard`, `memory`, `motherboard`, `pcCase`, `powerSupply`, `storage`) " +
                 "VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8});", 
-                num, cpu.GetPartNumber(), fan.GetPartNumber(), gCard.GetPartNumber(), memory.GetPartNumber(), mBoard.GetPartNumber(), pcCase.GetPartNumber(),power.GetPartNumber(),storage.GetPartNumber());
+                num, cpu.partNumber, fan.partNumber, gCard.partNumber, memory.partNumber, mBoard.partNumber, pcCase.partNumber,power.partNumber,storage.partNumber);
             Queries.Query(query);
         }
 
