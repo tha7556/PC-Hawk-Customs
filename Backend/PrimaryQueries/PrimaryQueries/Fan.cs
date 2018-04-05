@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace PrimaryQueries {
-    class Fan : Part{
-        private int rpm { get; set; }
-        private double nl { get; set; }
+    public class Fan : Part{
+        public int rpm { get; set; }
+        public double nl { get; set; }
 
         public Fan(int partNumber, string name, double price, int rpm, double nl) : base(partNumber, name, price) {
             this.rpm = rpm;

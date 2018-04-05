@@ -7,8 +7,10 @@ namespace PrimaryQueries {
     /// A customer of PCHawkCustoms
     /// </summary>
     public class Customer : Person {
-        private string streetAddress, city, state;
-        private int zipcode;
+        public string streetAddress { get; set; }
+        public string city{get;set;}
+        public string state { get; set; }
+        private int zipcode { get; set; }
         private static string stateCodes = "|AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MP|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|";
         /// <summary>
         /// Creates a new Customer
@@ -29,35 +31,7 @@ namespace PrimaryQueries {
             table = "customer";
             Queries.Log(Queries.LogLevel.DEBUG, "Customer(" + firstName + "," + lastName + "," + email + "," + streetAddress + "," + city + "," + state + "," + zipcode + "," + password + ");");
         }
-        /// <summary>
-        /// Gets the Street Address of the Customer
-        /// </summary>
-        /// <returns>The Street Address of the Customer</returns>
-        public string GetStreetAddress() {
-            return streetAddress;
-        }
-        /// <summary>
-        /// Gets the City of the Customer
-        /// </summary>
-        /// <returns>The City of the Customer</returns>
-        public string GetCity() {
-            return city;
-        }
-        /// <summary>
-        /// Gets the State of the Customer
-        /// </summary>
-        /// <returns>The State the Customer lives in</returns>
-        public string GetState() {
-            return state;
-        }
-        /// <summary>
-        /// Gets the Zipcode of the Customer
-        /// </summary>
-        /// <returns>The Zipcode of the Customer</returns>
-        public int GetZipcode() {
-            return zipcode;
-        }
-        /// <summary>
+
         /// Changes the Customer's Address
         /// </summary>
         /// <param name="newStreetAddress">The new Street Address of the Customer</param>

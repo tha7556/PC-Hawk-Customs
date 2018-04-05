@@ -7,10 +7,10 @@ namespace PrimaryQueries {
     /// An Order for a Part
     /// </summary>
     public class Order {
-        private int orderNumber;
-        private Part part;
-        private Employee employee;
-        private Customer customer;
+        private int orderNumber { get; set; }
+        private Part part { get; set; }
+        private Employee employee { get; set; }
+        private Customer customer { get; set; }
         /// <summary>
         /// Creates a new Order for a Part
         /// </summary>
@@ -33,34 +33,7 @@ namespace PrimaryQueries {
         public Order(Part part, Employee employee, Customer customer) : this(-1,part,employee,customer){
             
         }
-        /// <summary>
-        /// Gets the number identifying the Order
-        /// </summary>
-        /// <returns>The order number</returns>
-        public int GetOrderNumber() {
-            return orderNumber;
-        }
-        /// <summary>
-        /// Gets the Part being ordered
-        /// </summary>
-        /// <returns>The Part being ordered</returns>
-        public Part GetPart() {
-            return part;
-        }
-        /// <summary>
-        /// Gets the Employee involved in the Order
-        /// </summary>
-        /// <returns>The Employee involved in the Order</returns>
-        public Employee GetEmployee() {
-            return employee;
-        }
-        /// <summary>
-        /// Gets the Customer making the order
-        /// </summary>
-        /// <returns>The Customer making the order</returns>
-        public Customer GetCustomer() {
-            return customer;
-        }
+        
         /// <summary>
         /// Adds this Order to the Database
         /// </summary>
@@ -69,7 +42,7 @@ namespace PrimaryQueries {
             if (orderNumber == -1)
                 num = "NULL";
             Queries.Query("INSERT INTO `order` (`order number`, `employee email`, `part number`, `customer email`) VALUES " +
-                "("+num+", '"+employee.GetEmail()+"', "+part.GetPartNumber()+", '"+customer.GetEmail()+"');");
+                "("+num+", '"+employee.email+"', "+part.partNumber+", '"+customer.email+"');");
         }
         /// <summary>
         /// Converts a MySql query result into an Order

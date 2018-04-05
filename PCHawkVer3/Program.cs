@@ -15,6 +15,8 @@ namespace PCHawkVer3
         [STAThread]
         static void Main()
         {
+            Fan test = new Fan(10, "test", 10.23, 3, 5.6);
+            double x = test.nl;
             Queries.Log(Queries.LogLevel.DEBUG, "Start Program");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

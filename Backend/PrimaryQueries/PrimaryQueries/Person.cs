@@ -7,19 +7,20 @@ namespace PrimaryQueries {
         /// <summary>
         /// The Name of the Person
         /// </summary>
-        protected string firstName, lastName;
+        public string firstName { get; set; }
+        public string lastName { get; set; }
         /// <summary>
         /// The Person's email address
         /// </summary>
-        protected string email;
+        public string email { get; set; }
         /// <summary>
         /// The Person's login password
         /// </summary>
-        protected string password;
+        public string password { get; set; }
         /// <summary>
         /// The table in the database to find this Person
         /// </summary>
-        protected string table;
+        public string table { get; set; }
         /// <summary>
         /// Creates a new Person
         /// </summary>
@@ -33,27 +34,7 @@ namespace PrimaryQueries {
             this.email = email;
             this.password = password;
         }
-        /// <summary>
-        /// Gets the Person's first name
-        /// </summary>
-        /// <returns>The Person's first name</returns>
-        public string GetFirstName() {
-            return firstName;
-        }
-        /// <summary>
-        /// Gets the Person's last name
-        /// </summary>
-        /// <returns>The Person's last name</returns>
-        public string GetLastName() {
-            return lastName;
-        }
-        /// <summary>
-        /// Gets the Person's email address
-        /// </summary>
-        /// <returns>The Person's email address</returns>
-        public string GetEmail() {
-            return email;
-        }
+       
         /// <summary>
         /// Changes the Person's email address
         /// </summary>

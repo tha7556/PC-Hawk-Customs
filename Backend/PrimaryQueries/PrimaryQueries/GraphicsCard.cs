@@ -5,7 +5,10 @@ namespace PrimaryQueries {
     /// The Graphics Card of the Computer
     /// </summary>
     public class GraphicsCard : Part {
-        private string series, chipSet, memory, coreClock;
+        public string series { get; set; }
+        public string chipSet { get; set; }
+        public string memory { get; set; }
+        public string coreClock { get; set; }
         /// <summary>
         /// Creates a Graphics Card
         /// </summary>
@@ -23,34 +26,7 @@ namespace PrimaryQueries {
             this.coreClock = coreClock;
             table = "graphicscard";
         }
-        /// <summary>
-        /// Gets the series that the Graphics Card belongs to
-        /// </summary>
-        /// <returns>The series of the Graphics Card</returns>
-        public string GetSeries() {
-            return series;
-        }
-        /// <summary>
-        /// Gets the chipset used in the Graphics Card
-        /// </summary>
-        /// <returns>The chipset of the Graphics Card</returns>
-        public string GetChipSet() {
-            return chipSet;
-        }
-        /// <summary>
-        /// Gets the amount of memory in the Graphics Card
-        /// </summary>
-        /// <returns>The amount of memory in the Graphics Card</returns>
-        public string GetMemory() {
-            return memory;
-        }
-        /// <summary>
-        /// Gets the speed of the clock
-        /// </summary>
-        /// <returns>The speed of the clock</returns>
-        public string GetCoreClock() {
-            return coreClock;
-        }
+        
         /// <summary>
         /// Adds this Part to the GraphicsCard and Part databases
         /// </summary>

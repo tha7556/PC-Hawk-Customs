@@ -4,8 +4,10 @@ namespace PrimaryQueries {
     /// A Case for a Computer
     /// </summary>
     public class Case : Part {
-        private string type, powerSupply;
-        private int externalSize, internalSize;
+        public string type { get; set; }
+        public string powerSupply { get; set; }
+        public int externalSize { get; set; }
+        public int internalSize { get; set; }
         /// <summary>
         /// Creates a new Case
         /// </summary>
@@ -23,34 +25,7 @@ namespace PrimaryQueries {
             this.internalSize = internalSize;
             table = "pc case";
         }
-        /// <summary>
-        /// Gets the type of Case
-        /// </summary>
-        /// <returns>The type of Case</returns>
-        public string GetCaseType() {
-            return type;
-        }
-        /// <summary>
-        /// Gets the Watts of the built in powerSupply if there is one
-        /// </summary>
-        /// <returns>The Watts of the built in powerSupply if there is one</returns>
-        public string GetPowerSupply() {
-            return powerSupply;
-        }
-        /// <summary>
-        /// Gets the External Size
-        /// </summary>
-        /// <returns>Gets the External Size</returns>
-        public int GetExternalSize() {
-            return externalSize;
-        }
-        /// <summary>
-        /// Gets the Internal Size
-        /// </summary>
-        /// <returns>The Internal Size</returns>
-        public int GetInternalSize() {
-            return internalSize;
-        }
+
         /// <summary>
         /// Adds this Part to the pcCase and Part databases
         /// </summary>
