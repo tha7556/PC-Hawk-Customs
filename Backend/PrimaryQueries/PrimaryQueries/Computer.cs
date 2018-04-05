@@ -11,6 +11,18 @@ namespace PrimaryQueries {
         public Storage storage { get; set; }
         public int serialNumber { get; set; }
 
+        /// <summary>
+        /// Computer constructor requiring all parts
+        /// </summary>
+        /// <param name="serialNumber"></param>
+        /// <param name="pcCase"></param>
+        /// <param name="cpu"></param>
+        /// <param name="fan"></param>
+        /// <param name="gCard"></param>
+        /// <param name="memory"></param>
+        /// <param name="mBoard"></param>
+        /// <param name="power"></param>
+        /// <param name="storage"></param>
         public Computer(int serialNumber, Case pcCase, CPU cpu, Fan fan, GraphicsCard gCard, Memory memory, MOBO mBoard, PowerSupply power, Storage storage) {
             this.pcCase = pcCase;
             this.cpu = cpu;
@@ -22,70 +34,29 @@ namespace PrimaryQueries {
             this.storage = storage;
             this.serialNumber = serialNumber;
         }
+        /// <summary>
+        /// Secondary Constructor for database incrementation
+        /// </summary>
+        /// <param name="pcCase"></param>
+        /// <param name="cpu"></param>
+        /// <param name="fan"></param>
+        /// <param name="gCard"></param>
+        /// <param name="memory"></param>
+        /// <param name="mBoard"></param>
+        /// <param name="power"></param>
+        /// <param name="storage"></param>
         public Computer(Case pcCase, CPU cpu, Fan fan, GraphicsCard gCard, Memory memory, MOBO mBoard, PowerSupply power, Storage storage) :this(-1, pcCase, cpu, fan, gCard, memory, mBoard, power, storage) {
         }
+        /// <summary>
+        /// Empty Constructor for prebuild sequential additions
+        /// </summary>
         public Computer() {
 
         }
-        public Part[] GetParts() {
-            return new Part[] { pcCase, cpu, fan, gCard, memory, mBoard, power, storage };
-        }
-        public bool CheckParts() {
-            Part[] parts = GetParts();
-            foreach(Part p in parts) {
-                if (p == null)
-                    return false;
-            }
-            return true;
-        }
-        public Case GetCase() {
-            return pcCase;
-        }
-        public void SetCase(Case newCase) {
-            pcCase = newCase;
-        }
-        public CPU GetCPU() {
-            return cpu;
-        }
-        public void SetCPU(CPU newCPU) {
-            cpu = newCPU;
-        }
-        public Fan GetFan() {
-            return fan;
-        }
-        public void SetFan(Fan newFan) {
-            fan = newFan;
-        }
-        public GraphicsCard GetGraphicsCard() {
-            return gCard;
-        }
-        public void SetGraphicsCard(GraphicsCard newGraphicsCard) {
-            gCard = newGraphicsCard;
-        }
-        public Memory GetMemory() {
-            return memory;
-        }
-        public void SetMemory(Memory newMemory) {
-            memory = newMemory;
-        }
-        public MOBO GetMotherboard() {
-            return mBoard;
-        }
-        public void SetMotherboard(MOBO newMBoard) {
-            mBoard = newMBoard;
-        }
-        public PowerSupply GetPowerSupply() {
-            return power;
-        }
-        public void SetPowerSupply(PowerSupply newPowerSupply) {
-            power = newPowerSupply;
-        }
-        public Storage GetStorage() {
-            return storage;
-        }
-        public void SetStorage(Storage newStorage) {
-            storage = newStorage;
-        }
+
+        /// <summary>
+        /// Inserts the selected Computer object into the relevant table
+        /// </summary>
         public void AddToDatabase() {
             string num = serialNumber.ToString();
             if (serialNumber == -1)
