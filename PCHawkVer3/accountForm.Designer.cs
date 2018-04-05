@@ -293,6 +293,7 @@
             this.txtBoxZip.Name = "txtBoxZip";
             this.txtBoxZip.Size = new System.Drawing.Size(296, 26);
             this.txtBoxZip.TabIndex = 14;
+            this.txtBoxZip.TextChanged += new System.EventHandler(this.txtBoxZip_TextChanged);
             // 
             // label6
             // 

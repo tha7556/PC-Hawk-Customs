@@ -12,10 +12,19 @@ namespace PCHawkVer3
 {
     public partial class accountForm : Form
     {
+        
         public accountForm()
         {
             InitializeComponent();
-           
+            //setting account
+            txtBoxEmail.Text = MyStaticClass.customer.GetEmail();
+            txtBoxFirst.Text = MyStaticClass.customer.GetFirstName();
+            txtBoxLast.Text = MyStaticClass.customer.GetLastName();
+            txtBoxAddress.Text = MyStaticClass.customer.GetStreetAddress();
+            txtBoxCity.Text = MyStaticClass.customer.GetCity();
+            txtBoxState.Text = MyStaticClass.customer.GetState();
+            txtBoxZip.Text = MyStaticClass.customer.GetZipcode().ToString();
+            
         }
         /// <summary>
         /// Allows user to exit the application
@@ -117,14 +126,16 @@ namespace PCHawkVer3
             var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                txtBoxFirst.ReadOnly = true;
-                txtBoxLast.ReadOnly = true;
-                txtBoxEmail.ReadOnly = true;
-                txtBoxAddress.ReadOnly = true;
-                txtBoxCity.ReadOnly = true;
-                txtBoxState.ReadOnly = true;
-                bttnSave.Enabled = false;
-                txtBoxZip.ReadOnly = true;
+                txtBoxFirst.ReadOnly = true; 
+                txtBoxLast.ReadOnly = true; 
+                txtBoxEmail.ReadOnly = true; MyStaticClass.customer.ChangeEmail(txtBoxEmail.Text);
+                txtBoxAddress.ReadOnly = true; String street = txtBoxAddress.Text;
+                txtBoxCity.ReadOnly = true; String city = txtBoxCity.Text;
+                txtBoxState.ReadOnly = true; String State = txtBoxState.Text;
+                bttnSave.Enabled = false; 
+                txtBoxZip.ReadOnly = true; int value = Convert.ToInt32(txtBoxZip.Text);
+                MyStaticClass.customer.ChangeAddress(street, city, State, value);
+
             }
         }
         /// <summary>
@@ -138,7 +149,14 @@ namespace PCHawkVer3
             cart.Show();
             this.Close();
         }
+        /// <summary>
+        /// another fubar function lol
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtBoxZip_TextChanged(object sender, EventArgs e)
+        {
 
-    
+        }
     }
 }
