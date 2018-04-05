@@ -714,6 +714,11 @@
             </summary>
             <param name="current">The Current table to populate</param>
         </member>
+        <member name="M:PrimaryQueries.Queries.PopulateTables">
+            <summary>
+            Populates all of the tables in the database with info from Part picker
+            </summary>
+        </member>
         <member name="M:PrimaryQueries.Queries.Log(PrimaryQueries.Queries.LogLevel,System.String)">
             <summary>
             Logs a message to the log file

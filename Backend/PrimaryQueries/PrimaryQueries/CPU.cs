@@ -43,7 +43,7 @@ namespace PrimaryQueries {
         }
 
         public static CPU[] GetAll() {
-            string[] result = Queries.Query("SELECT * FROM 'cpu'");
+            string[] result = Queries.Query("SELECT * FROM `cpu`");
             CPU[] arr = new CPU[result.Length];
             for (int i = 0; i < result.Length; i++) {
                 arr[i] = GetFromQuery(result[i]);

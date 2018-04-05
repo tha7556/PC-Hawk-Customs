@@ -140,16 +140,12 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf(";\"") + 3);
                     string speed = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("rpm: " + speed);
                     sub = sub.Substring(sub.IndexOf(";\"") + 3);
                     string nl = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("noise level: " + nl);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
                     Fan fan;
                     try {
                         if (speed.IndexOf("-") != -1)
@@ -175,23 +171,27 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     string socket = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("socket: " + socket);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     string form = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("form: " + form);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string slots = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("slots: " + slots);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string maxRam = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("max ram: " + maxRam);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
+                    MOBO mBoard;
+                    try {
+                        mBoard = new MOBO(partNumber, name, double.Parse(price), socket, form, maxRam, int.Parse(slots));
+                    }
+                    catch(Exception e) {
+                        Log(LogLevel.ERROR, e.StackTrace);
+                        continue;
+                    }
+                    mBoard.AddToDatabase();
+                    partNumber++;
                 }
             }
             else if (current == CurrentType.memory) {
@@ -201,26 +201,29 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string speed = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("speed: " + speed);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string type = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("type: " + type);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string cas = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("cas: " + cas);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string modules = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("modules: " + modules);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string size = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("size: " + size);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
+                    Memory memory;
+                    try {
+                        memory = new Memory(partNumber, name, double.Parse(price), speed, type, cas, modules, size);
+                    }
+                    catch(Exception e) {
+                        Log(LogLevel.ERROR, e.StackTrace);
+                        continue;
+                    }
+                    memory.AddToDatabase();
+                    partNumber++;
                 }
             }
             else if (current == CurrentType.storage) {
