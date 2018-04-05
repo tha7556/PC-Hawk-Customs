@@ -9,8 +9,9 @@ namespace PrimaryQueries {
         private MOBO mBoard;
         private PowerSupply power;
         private Storage storage;
+        private int serialNumber;
 
-        public Computer(Case pcCase, CPU cpu, Fan fan, GraphicsCard gCard, Memory memory, MOBO mBoard, PowerSupply power, Storage storage) {
+        public Computer(int serialNumber, Case pcCase, CPU cpu, Fan fan, GraphicsCard gCard, Memory memory, MOBO mBoard, PowerSupply power, Storage storage) {
             this.pcCase = pcCase;
             this.cpu = cpu;
             this.fan = fan;
@@ -19,6 +20,9 @@ namespace PrimaryQueries {
             this.mBoard = mBoard;
             this.power = power;
             this.storage = storage;
+            this.serialNumber = serialNumber;
+        }
+        public Computer(Case pcCase, CPU cpu, Fan fan, GraphicsCard gCard, Memory memory, MOBO mBoard, PowerSupply power, Storage storage) :this(-1, pcCase, cpu, fan, gCard, memory, mBoard, power, storage) {
         }
         public Computer() {
 
@@ -81,6 +85,15 @@ namespace PrimaryQueries {
         }
         public void SetStorage(Storage newStorage) {
             storage = newStorage;
+        }
+        public void AddToDatabase() {
+            string num = serialNumber.ToString();
+            if (serialNumber == -1)
+                num = "NULL";
+            string query = string.Format("INSERT INTO `computers` (`serialNumber`, `cpu`, `fan`, `graphicsCard`, `memory`, `motherboard`, `pcCase`, `powerSupply`, `storage`) " +
+                "VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8});", 
+                num, cpu.GetPartNumber(), fan.GetPartNumber(), gCard.GetPartNumber(), memory.GetPartNumber(), mBoard.GetPartNumber(), pcCase.GetPartNumber(),power.GetPartNumber(),storage.GetPartNumber());
+            Queries.Query(query);
         }
 
     }
