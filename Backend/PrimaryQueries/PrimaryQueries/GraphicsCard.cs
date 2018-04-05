@@ -50,6 +50,7 @@ namespace PrimaryQueries {
         /// <returns>A GraphicsCard[] of all Graphics Cards in the database</returns>
         public static GraphicsCard[] GetAll() {
             string[] result = Queries.Query("SELECT * FROM `graphicscard`");
+            Queries.Log(Queries.LogLevel.DEBUG, result.Length.ToString());
             GraphicsCard[] arr = new GraphicsCard[result.Length];
             for (int i = 0; i < result.Length; i++) {
                 arr[i] = GetFromQuery(result[i]);

@@ -98,15 +98,31 @@ namespace PrimaryQueries {
         /// <returns>A Part[] containing all Parts in the database</returns>
         public static Part[] GetAllParts() {
             Storage[] storages = Storage.GetAll();
-            GraphicsCard[] cards = GraphicsCard.GetAll();
+            Queries.Log(Queries.LogLevel.DEBUG, storages.Length.ToString());
+            GraphicsCard[] cards = GraphicsCard.GetAll(); // bad
+            Queries.Log(Queries.LogLevel.DEBUG, cards.Length.ToString());
             Case[] cases = Case.GetAll();
-            PowerSupply[] supplies = PowerSupply.GetAll();
-            int length = storages.Length + cards.Length + cases.Length + supplies.Length;
+            Queries.Log(Queries.LogLevel.DEBUG, cases.Length.ToString());
+            PowerSupply[] supplies = PowerSupply.GetAll(); //bad
+            Queries.Log(Queries.LogLevel.DEBUG, supplies.Length.ToString());
+            CPU[] cpus = CPU.GetAll();
+            Queries.Log(Queries.LogLevel.DEBUG, cpus.Length.ToString());
+            Fan[] fans = Fan.GetAll();
+            Queries.Log(Queries.LogLevel.DEBUG, fans.Length.ToString());
+            Memory[] mems = Memory.GetAll();
+            Queries.Log(Queries.LogLevel.DEBUG, mems.Length.ToString());
+            MOBO[] mobs = MOBO.GetAll();
+            Queries.Log(Queries.LogLevel.DEBUG, mobs.Length.ToString());
+            int length = storages.Length + cards.Length + cases.Length + supplies.Length + cpus.Length + fans.Length + mems.Length + mobs.Length;
             Part[] parts = new Part[length];
             storages.CopyTo(parts, 0);
             cards.CopyTo(parts, storages.Length);
             cases.CopyTo(parts, cards.Length+storages.Length);
             supplies.CopyTo(parts, cases.Length+ cards.Length + storages.Length);
+            cpus.CopyTo(parts, cases.Length + cards.Length + storages.Length + supplies.Length);
+            fans.CopyTo(parts, cases.Length + cards.Length + storages.Length + supplies.Length+cpus.Length);
+            mems.CopyTo(parts, cases.Length + cards.Length + storages.Length + supplies.Length + cpus.Length+fans.Length);
+            mobs.CopyTo(parts, cases.Length + cards.Length + storages.Length + supplies.Length + cpus.Length + fans.Length+mems.Length);
             return parts;
         }
         /// <summary>
@@ -123,7 +139,7 @@ namespace PrimaryQueries {
                     type = "graphicscard";
                 else if (type.Equals("power supply"))
                     type = "powersupply";
-                else if (type.Equals("case"))
+                else if (type.Equals("pc case"))
                     type = "pc case";
                 result = Queries.Query("SELECT * FROM `" + type + "` WHERE `part number` = " + partNumber);
                 if(result.Length > 0) {
@@ -136,6 +152,14 @@ namespace PrimaryQueries {
                             return Case.GetFromQuery(result[0]);
                         case "powersupply":
                             return PowerSupply.GetFromQuery(result[0]);
+                        case "cpu":
+                            return CPU.GetFromQuery(result[0]);
+                        case "fan":
+                            return Fan.GetFromQuery(result[0]);
+                        case "memory":
+                            return Memory.GetFromQuery(result[0]);
+                        case "motherboard":
+                            return MOBO.GetFromQuery(result[0]);
                         default:
                             return null;
                     }
@@ -148,18 +172,20 @@ namespace PrimaryQueries {
         /// </summary>
         public void AddToDatabase() {
             string type = "";
-            if(this is Storage) {
-                type = "Storage";
-            }
-            else if(this is GraphicsCard) {
+            if (this is GraphicsCard) {
                 type = "Graphics Card";
             }
-            else if(this is Case) {
-                type = "Case";
+            else if (this is Case) {
+                type = "PC Case";
             }
-            else if(this is PowerSupply) {
+            else if (this is PowerSupply) {
                 type = "Power Supply";
             }
+            else if (this is MOBO)
+                type = "Motherboard";
+            else
+                type = GetType().Name;
+
             Queries.Query("INSERT INTO `part` (`part number`, `component type`) VALUES ("+partNumber+", '"+type+"');"); ;
         }
     }

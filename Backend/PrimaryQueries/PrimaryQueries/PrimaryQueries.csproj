@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Case.cs" />
+    <Compile Include="Computer.cs" />
     <Compile Include="CPU.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Employee.cs" />

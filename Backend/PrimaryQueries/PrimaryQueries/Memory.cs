@@ -24,7 +24,7 @@ namespace PrimaryQueries {
         public new void AddToDatabase() {
             base.AddToDatabase();
             Queries.Query("INSERT INTO `memory` (`part number`, `name`, `price`, `speed`, `type`, `cas`, `modules`, `size`)" +
-                " VALUES (" + partNumber + ", '" + name + "', " + price + ", '" + speed + "', " + type + ", " + cas + ", '" + modules + ", '" + size + "')");
+                " VALUES (" + partNumber + ", '" + name + "', " + price + ", '" + speed + "', '" + type + "', '" + cas + "', '" + modules + "', '" + size + "')");
         }
 
         public static Memory GetFromQuery(string query) {

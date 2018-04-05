@@ -113,19 +113,24 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf(";\"") + 3);
                     string speed = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("speed: " + speed);
                     sub = sub.Substring(sub.IndexOf(";\"") + 3);
                     string cores = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("cores: " + cores);
                     sub = sub.Substring(sub.IndexOf(";\"") + 3);
                     string tdp = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("tdp: " + tdp);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
+                    CPU cpu;
+                    try {
+                        cpu = new CPU(partNumber, name, double.Parse(price), double.Parse(speed.Substring(0, speed.IndexOf("GH"))), int.Parse(cores), int.Parse(tdp.Substring(0, tdp.IndexOf("W"))));
+                    }
+                    catch(Exception e) {
+                        Log(LogLevel.ERROR, e.StackTrace);
+                        continue;
+                    }
+                    cpu.AddToDatabase();
+                    partNumber++;
                 }
             }
             else if (current == CurrentType.fan) {
@@ -135,16 +140,28 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf(";\"") + 3);
                     string speed = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("rpm: " + speed);
                     sub = sub.Substring(sub.IndexOf(";\"") + 3);
-                    string cores = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("noise level: " + cores);
+                    string nl = sub.Substring(0, sub.IndexOf("<"));
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
+                    Fan fan;
+                    try {
+                        if (speed.IndexOf("-") != -1)
+                            speed = speed.Substring(speed.IndexOf("-") + 1);
+                        speed = speed.Substring(0,speed.IndexOf("RPM"));
+                        if (nl.IndexOf("-") != -1)
+                            nl = nl.Substring(nl.IndexOf("-") + 1);
+                        nl = nl.Substring(0, nl.IndexOf("dbA"));
+                        fan = new Fan(partNumber, name, double.Parse(price), int.Parse(speed),double.Parse(nl));
+                    }
+                    catch(Exception e) {
+                        Log(LogLevel.ERROR, e.StackTrace);
+                        continue;
+                    }
+                    fan.AddToDatabase();
+                    partNumber++;
                 }
             }
             else if (current == CurrentType.motherboard) {
@@ -154,23 +171,27 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     string socket = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("socket: " + socket);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     string form = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("form: " + form);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string slots = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("slots: " + slots);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string maxRam = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("max ram: " + maxRam);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
+                    MOBO mBoard;
+                    try {
+                        mBoard = new MOBO(partNumber, name, double.Parse(price), socket, form, maxRam, int.Parse(slots));
+                    }
+                    catch(Exception e) {
+                        Log(LogLevel.ERROR, e.StackTrace);
+                        continue;
+                    }
+                    mBoard.AddToDatabase();
+                    partNumber++;
                 }
             }
             else if (current == CurrentType.memory) {
@@ -180,26 +201,29 @@ namespace PrimaryQueries {
                     sub = sub.Substring(sub.IndexOf("a href"));
                     sub = sub.Substring(sub.IndexOf(">") + 1);
                     string name = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("name: " + name);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string speed = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("speed: " + speed);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string type = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("type: " + type);
                     sub = sub.Substring(sub.IndexOf("<td>") + 4);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string cas = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("cas: " + cas);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string modules = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("modules: " + modules);
                     sub = sub.Substring(sub.IndexOf(";") + 3);
                     string size = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("size: " + size);
                     sub = sub.Substring(sub.IndexOf("price") + 8);
                     string price = sub.Substring(0, sub.IndexOf("<"));
-                    Console.WriteLine("price: " + price + "\n-----------------");
+                    Memory memory;
+                    try {
+                        memory = new Memory(partNumber, name, double.Parse(price), speed, type, cas, modules, size);
+                    }
+                    catch(Exception e) {
+                        Log(LogLevel.ERROR, e.StackTrace);
+                        continue;
+                    }
+                    memory.AddToDatabase();
+                    partNumber++;
                 }
             }
             else if (current == CurrentType.storage) {
@@ -323,6 +347,27 @@ namespace PrimaryQueries {
             }
             else
                 Console.WriteLine("invalid input: " + current);
+        }
+        /// <summary>
+        /// Populates all of the tables in the database with info from Part picker
+        /// </summary>
+        public static void PopulateTables() {
+            PopulateTable(CurrentType.storage);
+            Log(LogLevel.DEBUG, "Populated Storage tables");
+            PopulateTable(CurrentType.graphicsCard);
+            Log(LogLevel.DEBUG, "Populated Graphics Card tables");
+            PopulateTable(CurrentType.pcCase);
+            Log(LogLevel.DEBUG, "Populated PC Case tables");
+            PopulateTable(CurrentType.powerSupply);
+            Log(LogLevel.DEBUG, "Populated Power Supply tables");
+            PopulateTable(CurrentType.cpu);
+            Log(LogLevel.DEBUG, "Populated CPU tables");
+            PopulateTable(CurrentType.fan);
+            Log(LogLevel.DEBUG, "Populated Fan tables");
+            PopulateTable(CurrentType.memory);
+            Log(LogLevel.DEBUG, "Populated Memory tables");
+            PopulateTable(CurrentType.motherboard);
+            Log(LogLevel.DEBUG, "Populated Motherboard tables");
         }
         /// <summary>
         /// Logs a message to the log file

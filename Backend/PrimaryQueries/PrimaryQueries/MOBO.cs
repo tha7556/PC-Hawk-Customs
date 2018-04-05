@@ -21,13 +21,13 @@ namespace PrimaryQueries {
 
         public new void AddToDatabase() {
             base.AddToDatabase();
-            Queries.Query("INSERT INTO `motherboard` (`part number`, `name`, `price`, `socket`, `form factor`, `mRAM`, `rAMSlots`)" +
-                " VALUES (" + partNumber + ", '" + name + "', " + price + ", '" + socket + "', " + form + ", " + mRAM + ", '" + rAMSlots + "')");
+            Queries.Query("INSERT INTO `motherboard` (`part number`, `name`, `price`, `socket`, `form factor`, `max ram`, `ram slots`)" +
+                " VALUES (" + partNumber + ", '" + name + "', " + price + ", '" + socket + "', '" + form + "', '" + mRAM + "', '" + rAMSlots + "')");
         }
 
         public static MOBO GetFromQuery(string query) {
             string[] result = query.Split('\0');
-            return new MOBO(int.Parse(result[0]), result[1], double.Parse(result[2]), result[3], result[4], result[5], int.Parse(result[6]));
+            return new MOBO(int.Parse(result[0]), result[1], double.Parse(result[2]), result[3], result[4], result[6], int.Parse(result[5]));
         }
 
         public static MOBO[] GetAll() {
