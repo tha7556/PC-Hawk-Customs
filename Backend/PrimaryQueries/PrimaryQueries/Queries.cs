@@ -50,7 +50,10 @@ namespace PrimaryQueries {
                 Console.WriteLine("Please don't drop any tables from here...please");
                 return new string[0];
             }
-            Log(LogLevel.SQLQUERY, query);
+            if (!query.Contains("encryptPassword"))
+                Log(LogLevel.SQLQUERY, query);
+            else
+                Log(LogLevel.SQLQUERY, "SELECT encryptPassword('*****')");
             string postData = "query=" + query;
             if(printQuery)
                 Console.WriteLine(query);
