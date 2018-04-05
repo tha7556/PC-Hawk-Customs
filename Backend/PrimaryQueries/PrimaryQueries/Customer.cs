@@ -69,6 +69,10 @@ namespace PrimaryQueries {
             city = newCity;
             state = newState;
             zipcode = newZipcode;
+            Queries.Query(string.Format("UPDATE `{0}` SET `street address` = '{1}' WHERE `{0}`.`email` = '{2}';", table, newStreetAddress, email));
+            Queries.Query(string.Format("UPDATE `{0}` SET `city` = '{1}' WHERE `{0}`.`email` = '{2}';", table, newCity, email));
+            Queries.Query(string.Format("UPDATE `{0}` SET `state` = '{1}' WHERE `{0}`.`email` = '{2}';", table, newState, email));
+            Queries.Query(string.Format("UPDATE `{0}` SET `zipcode` = '{1}' WHERE `{0}`.`email` = '{2}';", table, newZipcode, email));
         }
         /// <summary>
         /// Adds the Customer to the Database
