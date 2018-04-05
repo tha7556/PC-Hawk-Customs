@@ -17,13 +17,13 @@ namespace PCHawkVer3
         {
             InitializeComponent();
             //setting account
-            txtBoxEmail.Text = MyStaticClass.customer.GetEmail();
-            txtBoxFirst.Text = MyStaticClass.customer.GetFirstName();
-            txtBoxLast.Text = MyStaticClass.customer.GetLastName();
-            txtBoxAddress.Text = MyStaticClass.customer.GetStreetAddress();
-            txtBoxCity.Text = MyStaticClass.customer.GetCity();
-            txtBoxState.Text = MyStaticClass.customer.GetState();
-            txtBoxZip.Text = MyStaticClass.customer.GetZipcode().ToString();
+            txtBoxEmail.Text = MyStaticClass.customer.email;
+            txtBoxFirst.Text = MyStaticClass.customer.firstName;
+            txtBoxLast.Text = MyStaticClass.customer.lastName;
+            txtBoxAddress.Text = MyStaticClass.customer.streetAddress;
+            txtBoxCity.Text = MyStaticClass.customer.city;
+            txtBoxState.Text = MyStaticClass.customer.state;
+            txtBoxZip.Text = MyStaticClass.customer.zipcode.ToString();
             
         }
         /// <summary>
