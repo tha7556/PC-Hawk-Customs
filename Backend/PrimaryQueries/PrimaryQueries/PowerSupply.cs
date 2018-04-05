@@ -4,7 +4,11 @@ namespace PrimaryQueries {
     /// A Power Supply for the Computer
     /// </summary>
     public class PowerSupply : Part {
-        private string series, form, efficiency, watts, modular;
+        private string series { get; set; }
+        public string form { get; set; }
+        public string efficiency { get; set; }
+        public string watts { get; set; }
+        public string modular { get; set; }
         /// <summary>
         /// Creates a new Power Supply
         /// </summary>
@@ -24,41 +28,7 @@ namespace PrimaryQueries {
             this.modular = modular;
             table = "powersupply";
         }
-        /// <summary>
-        /// Gets the series that the Power Supply belongs to
-        /// </summary>
-        /// <returns>The name of the series of the Power Supply</returns>
-        public string GetSeries() {
-            return series;
-        }
-        /// <summary>
-        /// Gets the form of the Power Supply
-        /// </summary>
-        /// <returns>The Form of the Power Supply</returns>
-        public string GetForm() {
-            return form;
-        }
-        /// <summary>
-        /// Gets the efficiency rating of the Power Supply
-        /// </summary>
-        /// <returns>The efficiency rating of the Power Supply</returns>
-        public string GetEfficiency() {
-            return efficiency;
-        }
-        /// <summary>
-        /// Gets the wattage of the Power Supply
-        /// </summary>
-        /// <returns>The Power Supply wattage</returns>
-        public string GetWatts() {
-            return watts;
-        }
-        /// <summary>
-        /// Gets the degree of modularity of the Power Supply
-        /// </summary>
-        /// <returns>The degree of modularity</returns>
-        public string GetModular() {
-            return modular;
-        }
+
         /// <summary>
         /// Adds this Part to the PowerSupply and Part databases
         /// </summary>

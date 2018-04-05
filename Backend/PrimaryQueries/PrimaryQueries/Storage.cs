@@ -4,7 +4,11 @@ namespace PrimaryQueries {
     /// The hard drive of the Computer
     /// </summary>
     public class Storage : Part {
-        private string series, form, type, capacity, cache;
+        public string series { get; set; }
+        public string form{ get; set; }
+        public string type { get; set; }
+        public string capacity { get; set; }
+        public string cache { get; set; }
         /// <summary>
         /// Creates a new Storage Part
         /// </summary>
@@ -25,41 +29,7 @@ namespace PrimaryQueries {
             table = "storage";
             Queries.Log(Queries.LogLevel.DEBUG, "Storage(" + partNumber + "," + name + "," + series + "," + form + "," + type + "," + capacity + "," + cache + ");");
         }
-        /// <summary>
-        /// Gets the series of the hard drive
-        /// </summary>
-        /// <returns>The series name of the hard drive</returns>
-        public string GetSeries() {
-            return series;
-        }
-        /// <summary>
-        /// Gets the form of the hard drive
-        /// </summary>
-        /// <returns>The form of the hard drive</returns>
-        public string GetForm() {
-            return form;
-        }
-        /// <summary>
-        /// Gets the type of storage used
-        /// </summary>
-        /// <returns>The type of storage used</returns>
-        public string GetStorageType() {
-            return type;
-        }
-        /// <summary>
-        /// Gets the amount of data the hard drive can hold
-        /// </summary>
-        /// <returns>The amount of data the hard drive can hold</returns>
-        public string GetCapacity() {
-            return capacity;
-        }
-        /// <summary>
-        /// Gets the size of the cache
-        /// </summary>
-        /// <returns>The size of the cache</returns>
-        public string GetCache() {
-            return cache;
-        }
+
         /// <summary>
         /// Adds this Part to the Storage, and Part databases
         /// </summary>

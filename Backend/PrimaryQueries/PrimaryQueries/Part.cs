@@ -11,19 +11,19 @@ namespace PrimaryQueries {
         /// <summary>
         /// The identifying Part Number
         /// </summary>
-        protected int partNumber;
+        public int partNumber { get; set; }
         /// <summary>
         /// The Name of the part
         /// </summary>
-        protected string name;
+        public string name { get; set; }
         /// <summary>
         /// The table in the database where this Part is stored
         /// </summary>
-        protected string table;
+        public string table { get; set; }
         /// <summary>
         /// The Price of the Part
         /// </summary>
-        protected double price;
+        public double price { get; set; }
         /// <summary>
         /// Creates a new Part object
         /// </summary>
@@ -36,28 +36,7 @@ namespace PrimaryQueries {
             this.price = price;
             table = "part";
         }
-        /// <summary>
-        /// Gets the Part's identifying number
-        /// </summary>
-        /// <returns>The Part's identifying number</returns>
-        public int GetPartNumber() {
-            return partNumber;
-        }
-        /// <summary>
-        /// Gets the name of the Part
-        /// </summary>
-        /// <returns>The name of the Part</returns>
-        public string GetName() {
-            return name;
-        }
- 
-        /// <summary>
-        /// Gets the price of the Part
-        /// </summary>
-        /// <returns>The price of the Part</returns>
-        public double GetPrice() {
-            return price;
-        }
+
         /// <summary>
         /// Changes the Part's price to a new Price
         /// </summary>
@@ -88,7 +67,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <param name="other">The other Part to be compatable with</param>
         public void SetCompatableWith(Part other) {
-            SetCompatableWith(other.GetPartNumber());
+            SetCompatableWith(other.partNumber);
         }
         /// <summary>
         /// Sets this Part to be compatable with another based on the Part's ID

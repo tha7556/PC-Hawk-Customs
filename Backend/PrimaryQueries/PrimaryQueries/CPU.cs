@@ -10,8 +10,9 @@ namespace PrimaryQueries {
     /// Speed, Cores, and TDP
     /// </summary>
     public class CPU : Part {
-        private double speed;
-        private int cores, tdp;
+        public double speed { get; set; }
+        public int cores { get; set; }
+        public int tdp { get; set; }
 
         public CPU(int partNumber, string name, double price, double speed, int cores, int tdp) : base(partNumber, name, price) {
             this.speed = speed;
@@ -19,17 +20,6 @@ namespace PrimaryQueries {
             this.tdp = tdp;
         }
 
-        public double GetSpeed() {
-            return speed;
-        }
-
-        public int GetCores() {
-            return cores;
-        }
-
-        public int GetTdp() {
-            return tdp;
-        }
 
         public new void AddToDatabase() {
             base.AddToDatabase();
