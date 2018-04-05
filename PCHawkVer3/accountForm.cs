@@ -126,7 +126,7 @@ namespace PCHawkVer3
             var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                txtBoxFirst.ReadOnly = true; 
+                txtBoxFirst.ReadOnly = true; MyStaticClass.customer.ChangeName(txtBoxFirst.Text, txtBoxLast.Text);
                 txtBoxLast.ReadOnly = true; 
                 txtBoxEmail.ReadOnly = true; MyStaticClass.customer.ChangeEmail(txtBoxEmail.Text);
                 txtBoxAddress.ReadOnly = true; String street = txtBoxAddress.Text;

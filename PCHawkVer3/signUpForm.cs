@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PrimaryQueries;
 
 namespace PCHawkVer3
 {
@@ -23,6 +24,17 @@ namespace PCHawkVer3
         /// <param name="e"></param>
         private void bttnCreateAcc_Click(object sender, EventArgs e)
         {
+            String first = txtBoxFirst.Text;
+            String last = txtBoxLast.Text;
+            String email = txtBoxEmail.Text;
+            String pass = txtBoxPass.Text;
+            String street = txtBoxAddress.Text;
+            String city = txtBoxCity.Text;
+            String state = txtBoxState.Text;
+            int zip = Convert.ToInt32(txtBoxZip.Text);
+            Customer newCustomer = new Customer(first, last, email, street, city, state, zip, pass);
+            newCustomer.AddToDatabase();
+            MyStaticClass.customer = Customer.Get(email);
             this.Hide();
             frmHome home = new frmHome();
             home.Show();

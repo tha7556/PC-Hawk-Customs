@@ -1,3 +1,13 @@
-     <DEBUG 0:0:9>: 	SetTest PrimaryQueries.Fan: test 10 10.23
-    <DEBUG 0:0:12>: 	Start Program
-    <DEBUG 0:8:38>: 	Finished Program
+    <DEBUG 0:0:15>: 	Start Program
+<SQLQUERY 0:8:788>: 	SELECT * FROM `customer` WHERE `email`='jDawg@gmail.com'
+<SQLQUERY 0:15:286>: 	SELECT * FROM `customer` WHERE `email`='jDawg69@gmail.com'
+  <DEBUG 0:15:299>: 	Customer(Jason,Clemms,jDawg69@gmail.com,HELL,Raleigh,NC,27666,d36509359b36aa71b34049a5e08636cf10330abe);
+<SQLQUERY 0:15:299>: 	SELECT * FROM `customer` WHERE `email`='jDawg69@gmail.com'
+  <DEBUG 0:15:308>: 	Customer(Jason,Clemms,jDawg69@gmail.com,HELL,Raleigh,NC,27666,d36509359b36aa71b34049a5e08636cf10330abe);
+<SQLQUERY 0:15:309>: 	SELECT encryptPassword("42069");
+   <DEBUG 0:19:40>: 	help
+  <DEBUG 0:21:326>: 	help
+  <DEBUG 0:22:300>: 	help
+  <DEBUG 0:23:508>: 	help
+  <DEBUG 0:25:556>: 	help
+  <DEBUG 0:27:675>: 	Finished Program

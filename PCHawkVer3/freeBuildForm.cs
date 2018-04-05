@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PrimaryQueries;
 
 namespace PCHawkVer3
 {
@@ -15,6 +16,7 @@ namespace PCHawkVer3
         public freeBuildForm()
         {
             InitializeComponent();
+            
         }
         /// <summary>
         /// allows user to view their cart
@@ -109,6 +111,17 @@ namespace PCHawkVer3
         private void bttnAddCart_Click(object sender, EventArgs e)
         {
             //also how we do dis
+        }
+
+        private void partTypeBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Queries.Log(Queries.LogLevel.DEBUG, "help");
+            String test = partTypeBox.SelectedText;
+            if (test == "CPU")
+            {
+                 
+
+            }
         }
     }
 }

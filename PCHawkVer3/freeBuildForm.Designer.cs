@@ -53,6 +53,8 @@
             this.toolTipAccount = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipLogOut = new System.Windows.Forms.ToolTip(this.components);
             this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtBoxTotal = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -208,11 +210,21 @@
             // 
             this.partTypeBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.partTypeBox.FormattingEnabled = true;
+            this.partTypeBox.Items.AddRange(new object[] {
+            "CPU",
+            "Case",
+            "Cooling",
+            "Power Supply",
+            "Motherboard",
+            "Memory",
+            "Storage",
+            ""});
             this.partTypeBox.Location = new System.Drawing.Point(50, 221);
             this.partTypeBox.Name = "partTypeBox";
             this.partTypeBox.Size = new System.Drawing.Size(168, 28);
             this.partTypeBox.TabIndex = 8;
             this.partTypeBox.Text = "Part Type";
+            this.partTypeBox.SelectedIndexChanged += new System.EventHandler(this.partTypeBox_SelectedIndexChanged);
             // 
             // bttnAddPart
             // 
@@ -261,7 +273,7 @@
             this.bttnAddCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnAddCart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnAddCart.ForeColor = System.Drawing.Color.White;
-            this.bttnAddCart.Location = new System.Drawing.Point(480, 544);
+            this.bttnAddCart.Location = new System.Drawing.Point(480, 591);
             this.bttnAddCart.Name = "bttnAddCart";
             this.bttnAddCart.Size = new System.Drawing.Size(345, 44);
             this.bttnAddCart.TabIndex = 13;
@@ -280,12 +292,34 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "Price:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(477, 541);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 18);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Total Price:";
+            // 
+            // txtBoxTotal
+            // 
+            this.txtBoxTotal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxTotal.Location = new System.Drawing.Point(480, 559);
+            this.txtBoxTotal.Name = "txtBoxTotal";
+            this.txtBoxTotal.ReadOnly = true;
+            this.txtBoxTotal.Size = new System.Drawing.Size(160, 26);
+            this.txtBoxTotal.TabIndex = 20;
+            // 
             // freeBuildForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(875, 600);
+            this.ClientSize = new System.Drawing.Size(875, 647);
+            this.Controls.Add(this.txtBoxTotal);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.bttnAddCart);
             this.Controls.Add(this.buildListBox);
@@ -334,5 +368,7 @@
         private System.Windows.Forms.ToolTip toolTipHelp;
         private System.Windows.Forms.Button bttnAddCart;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBoxTotal;
     }
 }
