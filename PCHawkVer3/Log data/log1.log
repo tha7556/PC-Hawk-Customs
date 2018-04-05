@@ -1,2 +1,9 @@
-     <DEBUG 0:0:7>: 	Start Program
-   <DEBUG 0:1:670>: 	Finished Program
+    <DEBUG 0:0:16>: 	Start Program
+<SQLQUERY 0:15:216>: 	SELECT * FROM `customer` WHERE `email`='jDawg69@gmail.com'
+  <DEBUG 0:15:414>: 	Customer(Jordan,Clemmer,jDawg69@gmail.com,HELL,Wilmington,NC,27265,d36509359b36aa71b34049a5e08636cf10330abe);
+<SQLQUERY 0:15:414>: 	SELECT * FROM `customer` WHERE `email`='jDawg69@gmail.com'
+  <DEBUG 0:15:420>: 	Customer(Jordan,Clemmer,jDawg69@gmail.com,HELL,Wilmington,NC,27265,d36509359b36aa71b34049a5e08636cf10330abe);
+<SQLQUERY 0:15:422>: 	SELECT encryptPassword("42069");
+<SQLQUERY 0:47:661>: 	UPDATE `customer` SET `email` = 'jDawg69@gmail.com' WHERE `customer`.`email` = 'jDawg69@gmail.com';
+<SQLQUERY 1:17:302>: 	UPDATE `customer` SET `email` = 'jDawg@gmail.com' WHERE `customer`.`email` = 'jDawg69@gmail.com';
+  <DEBUG 1:41:865>: 	Finished Program

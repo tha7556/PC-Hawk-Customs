@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PrimaryQueries;
 
 namespace PCHawkVer3
 {
@@ -65,10 +66,40 @@ namespace PCHawkVer3
         {
             //MyStaticClass.MyStringMessage object will be assigned the email of the logging in user. accessible throughout forms.
             //MyStaticClass.MyStringMessage is a static public class.
-            MyStaticClass.MyStringMessage = txtBoxEmail.Text;
-            this.Hide();
-            frmHome home = new frmHome();
-            home.Show();
+            String email = txtBoxEmail.Text;
+            String password = txtBoxPass.Text;
+            const string EmailMessage = "The email you have entered is incorrect!";
+            const string EmailCaption = "Email Error!";
+            const string PassMessage = "The password you have entered is incorrect!";
+            const string PassCaption = "Password Error!";
+           
+            //checking customer email
+            if (Customer.IsCustomer(email) == true)
+            {
+                //setting customer object
+               MyStaticClass.customer = Customer.Get(email);
+                //checking customer password
+                if (MyStaticClass.customer.CheckPassword(password) == true)
+                {
+                    //login stuff
+                    this.Hide();
+                    frmHome home = new frmHome();
+                    home.Show();
+                }
+                else
+                {
+                    var passMsg = MessageBox.Show(PassMessage, PassCaption, MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                }
+            }
+            else
+            {
+                var emailMsg = MessageBox.Show(EmailMessage, EmailCaption, MessageBoxButtons.OK, MessageBoxIcon.Hand);
+            }
+            
+
+
+
+            
         }
         /// <summary>
         /// Takes user to the sign up form
