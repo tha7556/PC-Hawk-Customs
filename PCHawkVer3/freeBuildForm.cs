@@ -116,12 +116,52 @@ namespace PCHawkVer3
         private void partTypeBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             Queries.Log(Queries.LogLevel.DEBUG, "help");
-            String test = partTypeBox.SelectedText;
+            String test = partTypeBox.SelectedItem.ToString();
             if (test == "CPU")
             {
-                 
+                partBox.DataSource = CPU.GetAll();
+                partDescriptionBox.Text = partBox.SelectedItem.ToString();
 
+            }else if(test == "Cooling")
+            {
+                partBox.DataSource = Fan.GetAll();
+                partDescriptionBox.Text = partBox.SelectedItem.ToString();
             }
+            else if (test == "Case")
+            {
+                partBox.DataSource = Case.GetAll();
+                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+            }
+            else if (test == "Memory")
+            {
+                partBox.DataSource = Memory.GetAll();
+                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+            }
+            else if (test == "Power Supply")
+            {
+                partBox.DataSource = PowerSupply.GetAll();
+                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+            }
+            else if (test == "Storage")
+            {
+                partBox.DataSource = Storage.GetAll();
+                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+            }
+            else if (test == "Graphics Card")
+            {
+                partBox.DataSource = GraphicsCard.GetAll();
+                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+            }
+            else if (test == "Motherboard")
+            {
+                partBox.DataSource = MOBO.GetAll();
+                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+            }
+        }
+
+        private void partBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            partDescriptionBox.Text = partBox.SelectedItem.ToString();
         }
     }
 }

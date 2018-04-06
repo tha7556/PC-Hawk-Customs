@@ -81,7 +81,7 @@ namespace PrimaryQueries {
         /// </summary>
         /// <returns>The string representation of the Part</returns>
         public override string ToString() {
-            return GetType().Name + ": " + name + " " + partNumber + " " + price;
+            return name;
         }
         /// <summary>
         /// Converts a MySQL query result into a Part object. Query must return the form: partNumber\0name\0price\0componentType

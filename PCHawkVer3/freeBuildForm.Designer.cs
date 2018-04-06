@@ -202,9 +202,10 @@
             this.partBox.FormattingEnabled = true;
             this.partBox.Location = new System.Drawing.Point(50, 255);
             this.partBox.Name = "partBox";
-            this.partBox.Size = new System.Drawing.Size(168, 28);
+            this.partBox.Size = new System.Drawing.Size(301, 28);
             this.partBox.TabIndex = 7;
             this.partBox.Text = "Part";
+            this.partBox.SelectedIndexChanged += new System.EventHandler(this.partBox_SelectedIndexChanged);
             // 
             // partTypeBox
             // 
@@ -214,14 +215,14 @@
             "CPU",
             "Case",
             "Cooling",
+            "Graphics Card",
             "Power Supply",
             "Motherboard",
             "Memory",
-            "Storage",
-            ""});
+            "Storage"});
             this.partTypeBox.Location = new System.Drawing.Point(50, 221);
             this.partTypeBox.Name = "partTypeBox";
-            this.partTypeBox.Size = new System.Drawing.Size(168, 28);
+            this.partTypeBox.Size = new System.Drawing.Size(301, 28);
             this.partTypeBox.TabIndex = 8;
             this.partTypeBox.Text = "Part Type";
             this.partTypeBox.SelectedIndexChanged += new System.EventHandler(this.partTypeBox_SelectedIndexChanged);
