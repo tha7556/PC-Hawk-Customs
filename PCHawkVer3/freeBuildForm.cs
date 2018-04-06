@@ -100,7 +100,12 @@ namespace PCHawkVer3
         /// <param name="e"></param>
         private void bttnAddPart_Click(object sender, EventArgs e)
         {
-            //How we do dis
+            if (MyStaticClass.computer == null)
+                MyStaticClass.computer = new Computer();
+            MyStaticClass.computer.AddPart((Part)partBox.SelectedItem);
+            Queries.Log(Queries.LogLevel.DEBUG, "Add Part Clicked");
+            buildListBox.DataSource = MyStaticClass.computer.GetAttributes();
+            txtBoxTotal.Text = "$"+MyStaticClass.computer.price;
 
         }
         /// <summary>
@@ -163,7 +168,7 @@ namespace PCHawkVer3
                 attribs = ((MOBO)partBox.SelectedItem).GetAttributes();
             }
             partDescriptionBox.Text = attribs;
-            priceTxtBox.Text = "$" + ((Part)partBox.SelectedItem).price.ToString();
+            priceTxtBox.Text = "$" + ((Part)partBox.SelectedItem).price;
 
         }
         /// <summary>

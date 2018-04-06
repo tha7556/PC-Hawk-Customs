@@ -11,6 +11,7 @@ namespace PrimaryQueries {
         public Storage storage { get; set; }
         public int serialNumber { get; set; }
         public string name { get; set; }
+        public double price { get; set; }
 
         /// <summary>
         /// Computer constructor requiring all parts
@@ -36,6 +37,7 @@ namespace PrimaryQueries {
             this.storage = storage;
             this.serialNumber = serialNumber;
             this.name = name;
+            price = CalcPrice();
         }
         /// <summary>
         /// Secondary Constructor for database incrementation
@@ -57,6 +59,15 @@ namespace PrimaryQueries {
         public Computer() {
 
         }
+        public double CalcPrice() {
+            price = 0.0;
+            Part[] parts = { pcCase, cpu, fan, gCard, memory, mBoard, power, storage };
+            foreach (Part p in parts) {
+                if (p != null)
+                    price += p.price;
+            }
+            return price;
+        }
 
         /// <summary>
         /// Inserts the selected Computer object into the relevant table
@@ -69,6 +80,73 @@ namespace PrimaryQueries {
                 "VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8},{9});", 
                 num, name, cpu.partNumber, fan.partNumber, gCard.partNumber, memory.partNumber, mBoard.partNumber, pcCase.partNumber,power.partNumber,storage.partNumber);
             Queries.Query(query);
+        }
+        public void AddPart(Part p) {
+            string type = p.GetType().Name;
+            switch(type) {
+                case "Case":
+                    pcCase = (Case)p;
+                    break;
+                case "CPU":
+                    cpu = (CPU)p;
+                    break;
+                case "Fan":
+                    fan = (Fan)p;
+                    break;
+                case "GraphicsCard":
+                    gCard = (GraphicsCard)p;
+                    break;
+                case "Memory":
+                    memory = (Memory)p;
+                    break;
+                case "MOBO":
+                    mBoard = (MOBO)p;
+                    break;
+                case "PowerSupply":
+                    power = (PowerSupply)p;
+                    break;
+                case "Storage":
+                    storage = (Storage)p;
+                    break;
+            }
+            CalcPrice();
+        }
+        public string[] GetAttributes() {
+            string[] result = new string[8];
+            if (pcCase == null)
+                result[0]= "Case: None Selected";
+            else
+                result[0] = "Case: " + pcCase.name + " $" + pcCase.price;
+            if (cpu == null)
+                result[1] = "CPU: None Selected";
+            else
+                result[1] = "CPU: " + cpu.name + " $" + cpu.price;
+            if (fan == null)
+                result[2] = "Fan: None Selected";
+            else
+                result[2] = "Fan: " + fan.name + " $" + fan.price;
+            if (gCard == null)
+                result[3] = "Graphics Card: None Selected";
+            else
+                result[3] = "Graphics Card: " + gCard.name + " $" + gCard.price;
+            if (memory == null)
+                result[4] = "Memory: None Selected";
+            else
+                result[4] = "Memory: " + memory.name + " $" + memory.price;
+            if (mBoard == null)
+                result[5] = "Motherboard: None Selected";
+            else
+                result[5] = "Motherboard: " + mBoard.name + " $" + memory.price;
+            if (power == null)
+                result[6] = "Power Supply: None Selected";
+            else
+                result[6] = "Power Supply: " + power.name + " $" + power.price;
+            if (storage == null)
+                result[7] = "Storage: None Selected";
+            else
+                result[7] = "Storage: " + storage.name + " $" + storage.price;
+
+            return result;
         }
         public static Computer Get(int serialNumber) {
             return GetFromQuery(Queries.Query("SELECT * FROM `computers` WHERE `serialNumber` = " + serialNumber)[0]);

@@ -10,5 +10,6 @@ namespace PCHawkVer3
     class MyStaticClass
     {
         public static Customer customer { get; set; }
+        public static Computer computer { get; set; }
     }
 }
