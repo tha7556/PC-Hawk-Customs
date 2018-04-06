@@ -1,0 +1,591 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PCHawk</name>
+    </assembly>
+    <members>
+        <member name="M:PCHawk.accountForm.bttnExit_Click(System.Object,System.EventArgs)">
+            <summary>
+            Allows user to exit the application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.accountForm.bttnHome_Click(System.Object,System.EventArgs)">
+            <summary>
+            Allows user to return to the home page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.accountForm.bttnLogout_Click(System.Object,System.EventArgs)">
+            <summary>
+            Allows user to logout of the application. Returns user to login page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.accountForm.btnHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Displays the help screen
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.accountForm.accountForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            Actions that occur when the form loads. sets all text fields to read only.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.accountForm.bttnChangeInfo_Click(System.Object,System.EventArgs)">
+            <summary>
+            Allows user to change their info, sets all text fields to !readonly 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.accountForm.bttnSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            saves changes use makes to their info, sets all text fields to read only
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.accountForm.bttnCart_Click(System.Object,System.EventArgs)">
+            <summary>
+            allows user to view their cart
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.accountForm.txtBoxZip_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            another fubar function lol
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PCHawk.accountForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.accountForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.accountForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PCHawk.cartForm.bttnCheckOut_Click(System.Object,System.EventArgs)">
+            <summary>
+            brings user to checkout page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PCHawk.cartForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.cartForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.cartForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PCHawk.checkOutForm.bttnSame_Click(System.Object,System.EventArgs)">
+            <summary>
+            when clicked fills in billing info with the same info as shipping
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.checkOutForm.bttnExit_Click(System.Object,System.EventArgs)">
+            <summary>
+            Exits Application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.checkOutForm.btnHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Displays the help page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.checkOutForm.bttnHome_Click(System.Object,System.EventArgs)">
+            <summary>
+            takes user back to the home page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.checkOutForm.bttnLogout_Click(System.Object,System.EventArgs)">
+            <summary>
+            Allows user to logout of the application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.checkOutForm.bttnAccount_Click(System.Object,System.EventArgs)">
+            <summary>
+            Allows user to view their account
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.checkOutForm.bttnOrdered_Click(System.Object,System.EventArgs)">
+            <summary>
+            user sumbits their order and returns them to the home page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PCHawk.checkOutForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.checkOutForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.checkOutForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PCHawk.SignInForm.bttnExit_Click(System.Object,System.EventArgs)">
+            <summary>
+            Exits the application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.SignInForm.txtBoxPass_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            This odes nothing but dont delete it cause just dont
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.SignInForm.chkBoxPass_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            sets the hide password filter
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.SignInForm.bttnLogin_Click(System.Object,System.EventArgs)">
+            <summary>
+            logs the user in to the application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.SignInForm.bttnSignUp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Takes user to the sign up form
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.SignInForm.bttnHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            allows user to view the help form
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.SignInForm.SignInForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            actions that run when the form loads
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PCHawk.SignInForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.SignInForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.SignInForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.bttnCart_Click(System.Object,System.EventArgs)">
+            <summary>
+            allows user to view their cart
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.bttnExit_Click(System.Object,System.EventArgs)">
+            <summary>
+            allows user to exit the application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.btnHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            allws user to view the help form
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.bttnLogout_Click(System.Object,System.EventArgs)">
+            <summary>
+            allows user to logout of the application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.bttnHome_Click(System.Object,System.EventArgs)">
+            <summary>
+            brings user to the home page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.bttnAccount_Click(System.Object,System.EventArgs)">
+            <summary>
+            brings user to their account page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.bttnAddPart_Click(System.Object,System.EventArgs)">
+            <summary>
+            adds selected part to the current build
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.bttnAddCart_Click(System.Object,System.EventArgs)">
+            <summary>
+            adds build to users cart
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.partTypeBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            action that occurs when the user chooses a part type. will set the collection/datasource of the part dropdown menu to those that match
+            the users selection. will also populate the description box.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.partBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Change that occurs when the user selects a part. When a part is selected its attributes are selected and used to populate the 
+            description box and price box
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PCHawk.freeBuildForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:PCHawk.frmHome.bttnFreeBuild_Click(System.Object,System.EventArgs)">
+            <summary>
+            takes user to the free build page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.frmHome.bttnExit_Click(System.Object,System.EventArgs)">
+            <summary>
+            exits the application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.frmHome.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            logs user out of the applicatiion
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.frmHome.btnHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            shows help menu
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.frmHome.bttnPreBuild_Click(System.Object,System.EventArgs)">
+            <summary>
+            takes user to the preBuild page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.frmHome.bttnAccount_Click(System.Object,System.EventArgs)">
+            <summary>
+            view user account
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.frmHome.bttnCart_Click(System.Object,System.EventArgs)">
+            <summary>
+            view user cart
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PCHawk.frmHome.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.frmHome.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.frmHome.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:PCHawk.helpForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.helpForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.helpForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:PCHawk.homeScreenControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.homeScreenControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.homeScreenControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:PCHawk.preBuildForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.preBuildForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.preBuildForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PCHawk.prodDescription">
+            <summary>
+            class prodDescription is used in the preBuild form for giving descriptinons of build types
+            </summary>
+        </member>
+        <member name="M:PCHawk.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:PCHawk.signUpForm.bttnCreateAcc_Click(System.Object,System.EventArgs)">
+            <summary>
+            creates user account
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.signUpForm.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            leaving application
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.signUpForm.bttnHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Displays the help screen
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.signUpForm.txtBoxFirst_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            yeah dont delete this either made this on accident and need to find location in source code to properly remove
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PCHawk.signUpForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.signUpForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.signUpForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PCHawk.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.banner">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.exit">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.home">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.home__1_">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.info">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.jezyk_cml_sharepoint_1140x540">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.login">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.power_button">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.power_button__2_">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.question">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.shopping_cart">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.shopping_cart__2_">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.user">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:PCHawk.Properties.Resources.user_account_box">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
