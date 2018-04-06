@@ -71,15 +71,13 @@ namespace PrimaryQueries {
             }
             return null;
         }
-        public new string[] GetAttributes() {
-            return new string[] {
-                "Name: "+name,
-                "Series: "+series,
-                "Form: "+form,
-                "Type: "+type,
-                "Capacity: " + capacity,
-                "Cache: "+cache
-            };
+        public override string GetAttributes() {
+            return "Name: "+name+
+                "\nSeries: "+series+
+                "\nForm: "+form+
+                "\nType: "+type+
+                "\nCapacity: " + capacity+
+                "\nCache: "+cache;
         }
     }
 }

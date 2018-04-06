@@ -74,14 +74,12 @@ namespace PrimaryQueries {
             }
             return null;
         }
-        public new string[] GetAttributes() {
-            return new string[] {
-                "Name: "+name,
-                "Socket: "+socket,
-                "Form: "+form,
-                "Max Ram: "+mRAM,
-                "Ram Slots: "+rAMSlots
-            };
+        public new string GetAttributes() {
+            return "Name: "+name+
+                "\nSocket: "+socket+
+                "\nForm: "+form+
+                "\nMax Ram: "+mRAM+
+                "\nRam Slots: "+rAMSlots;
         }
     }
 }

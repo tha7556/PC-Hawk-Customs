@@ -192,8 +192,8 @@ namespace PrimaryQueries {
         /// Gets an array of each attribute of the Part
         /// </summary>
         /// <returns></returns>
-        public string[] GetAttributes() {
-            return new string[] {"Name: "+name,"Price: "+price };
+        public string GetAttributes() {
+            return "Name: "+name + "\nPrice: "+price ;
         }
     }
 }

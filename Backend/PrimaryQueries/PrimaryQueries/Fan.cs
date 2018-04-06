@@ -67,12 +67,10 @@ namespace PrimaryQueries {
             }
             return null;
         }
-        public new string[] GetAttributes() {
-            return new string[] {
-                "Name: " + name,
-                "RPM: " + rpm,
-                "Noise Level: "+nl
-            };
+        public new string GetAttributes() {
+            return "Name: " + name+
+                "\nRPM: " + rpm+
+                "\nNoise Level: "+nl;
         }
     }
 }

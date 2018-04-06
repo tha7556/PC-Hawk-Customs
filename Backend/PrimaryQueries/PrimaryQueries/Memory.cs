@@ -76,13 +76,11 @@ namespace PrimaryQueries {
             }
             return null;
         }
-        public new string[] GetAttributes() {
-            return new string[] {
-                "Name: "+name,
-                "Speed: "+speed,
-                "CAS: "+cas,
-                "Modules: "+modules
-            };
+        public new string GetAttributes() {
+            return "Name: "+name+
+                "\nSpeed: "+speed+
+                "\nCAS: "+cas+
+                "\nModules: "+modules;
         }
     }
 

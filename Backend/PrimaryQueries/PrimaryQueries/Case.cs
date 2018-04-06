@@ -67,14 +67,12 @@ namespace PrimaryQueries {
             }
             return null;
         }
-        public new string[] GetAttributes() {
-            return new string[] {
-                "Name: " + name,
-                "Type: " + type,
-                "PowerSupply: " + powerSupply,
-                "External Size: " + externalSize,
-                "Internal Size: " +internalSize
-            };
+        public new string GetAttributes() {
+            return "Name: " + name+
+                "\nType: " + type+
+                "\nPowerSupply: " + powerSupply+
+                "\nExternal Size: " + externalSize+
+                "\nInternal Size: " +internalSize;
         }
     }
 }

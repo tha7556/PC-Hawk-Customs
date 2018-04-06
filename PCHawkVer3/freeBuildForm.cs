@@ -121,7 +121,7 @@ namespace PCHawkVer3
         private void partTypeBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             String test = partTypeBox.SelectedItem.ToString();
-            string[] attribs = new string[0];
+            string attribs = "";
             if (test == "CPU")
             {
                 partBox.DataSource = CPU.GetAll();
@@ -162,10 +162,7 @@ namespace PCHawkVer3
                 partBox.DataSource = MOBO.GetAll();
                 attribs = ((MOBO)partBox.SelectedItem).GetAttributes();
             }
-            string description = "";
-            foreach(string s in attribs)
-                description += s+"\n";
-            partDescriptionBox.Text = description;
+            partDescriptionBox.Text = attribs;
             
         }
         /// <summary>
@@ -178,7 +175,7 @@ namespace PCHawkVer3
         {
             
             String test = partTypeBox.SelectedItem.ToString();
-            string[] attribs = new string[0];
+            string attribs = "";
             if (test == "CPU")
             {
                 
@@ -220,10 +217,7 @@ namespace PCHawkVer3
                 
                 attribs = ((MOBO)partBox.SelectedItem).GetAttributes();
             }
-            string description = "";
-            foreach (string s in attribs)
-                description += s + "\n";
-            partDescriptionBox.Text = description;
+            partDescriptionBox.Text = attribs;
         }
     }
 }
