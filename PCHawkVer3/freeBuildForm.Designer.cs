@@ -192,7 +192,7 @@
             this.partDescriptionBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.partDescriptionBox.Location = new System.Drawing.Point(50, 289);
             this.partDescriptionBox.Name = "partDescriptionBox";
-            this.partDescriptionBox.Size = new System.Drawing.Size(301, 249);
+            this.partDescriptionBox.Size = new System.Drawing.Size(370, 250);
             this.partDescriptionBox.TabIndex = 6;
             this.partDescriptionBox.Text = "Part Description";
             // 
@@ -202,7 +202,7 @@
             this.partBox.FormattingEnabled = true;
             this.partBox.Location = new System.Drawing.Point(50, 255);
             this.partBox.Name = "partBox";
-            this.partBox.Size = new System.Drawing.Size(301, 28);
+            this.partBox.Size = new System.Drawing.Size(368, 28);
             this.partBox.TabIndex = 7;
             this.partBox.Text = "Part";
             this.partBox.SelectedIndexChanged += new System.EventHandler(this.partBox_SelectedIndexChanged);
@@ -222,7 +222,7 @@
             "Storage"});
             this.partTypeBox.Location = new System.Drawing.Point(50, 221);
             this.partTypeBox.Name = "partTypeBox";
-            this.partTypeBox.Size = new System.Drawing.Size(301, 28);
+            this.partTypeBox.Size = new System.Drawing.Size(160, 28);
             this.partTypeBox.TabIndex = 8;
             this.partTypeBox.Text = "Part Type";
             this.partTypeBox.SelectedIndexChanged += new System.EventHandler(this.partTypeBox_SelectedIndexChanged);
@@ -232,9 +232,9 @@
             this.bttnAddPart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnAddPart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnAddPart.ForeColor = System.Drawing.Color.White;
-            this.bttnAddPart.Location = new System.Drawing.Point(216, 544);
+            this.bttnAddPart.Location = new System.Drawing.Point(216, 545);
             this.bttnAddPart.Name = "bttnAddPart";
-            this.bttnAddPart.Size = new System.Drawing.Size(135, 44);
+            this.bttnAddPart.Size = new System.Drawing.Size(202, 44);
             this.bttnAddPart.TabIndex = 9;
             this.bttnAddPart.Text = "Add To Build";
             this.bttnAddPart.UseVisualStyleBackColor = true;
@@ -266,17 +266,17 @@
             this.buildListBox.ItemHeight = 20;
             this.buildListBox.Location = new System.Drawing.Point(480, 255);
             this.buildListBox.Name = "buildListBox";
-            this.buildListBox.Size = new System.Drawing.Size(345, 284);
+            this.buildListBox.Size = new System.Drawing.Size(370, 284);
             this.buildListBox.TabIndex = 12;
             // 
             // bttnAddCart
             // 
             this.bttnAddCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnAddCart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnAddCart.ForeColor = System.Drawing.Color.White;
-            this.bttnAddCart.Location = new System.Drawing.Point(480, 591);
+            this.bttnAddCart.ForeColor = System.Drawing.Color.Yellow;
+            this.bttnAddCart.Location = new System.Drawing.Point(646, 541);
             this.bttnAddCart.Name = "bttnAddCart";
-            this.bttnAddCart.Size = new System.Drawing.Size(345, 44);
+            this.bttnAddCart.Size = new System.Drawing.Size(204, 44);
             this.bttnAddCart.TabIndex = 13;
             this.bttnAddCart.Text = "Add To Cart";
             this.bttnAddCart.UseVisualStyleBackColor = true;
@@ -318,7 +318,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(875, 647);
+            this.ClientSize = new System.Drawing.Size(875, 622);
             this.Controls.Add(this.txtBoxTotal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);

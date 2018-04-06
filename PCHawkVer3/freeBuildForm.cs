@@ -112,7 +112,12 @@ namespace PCHawkVer3
         {
             //also how we do dis
         }
-
+        /// <summary>
+        /// action that occurs when the user chooses a part type. will set the collection/datasource of the part dropdown menu to those that match
+        /// the users selection. will also populate the description box.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void partTypeBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             String test = partTypeBox.SelectedItem.ToString();
@@ -163,10 +168,62 @@ namespace PCHawkVer3
             partDescriptionBox.Text = description;
             
         }
-
+        /// <summary>
+        /// Change that occurs when the user selects a part. When a part is selected its attributes are selected and used to populate the 
+        /// description box and price box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void partBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            partDescriptionBox.Text = partBox.SelectedItem.ToString();
+            
+            String test = partTypeBox.SelectedItem.ToString();
+            string[] attribs = new string[0];
+            if (test == "CPU")
+            {
+                
+                attribs = ((CPU)partBox.SelectedItem).GetAttributes();
+
+            }
+            else if (test == "Cooling")
+            {
+                
+                attribs = ((Fan)partBox.SelectedItem).GetAttributes();
+            }
+            else if (test == "Case")
+            {
+                
+                attribs = ((Case)partBox.SelectedItem).GetAttributes();
+            }
+            else if (test == "Memory")
+            {
+                
+                attribs = ((Memory)partBox.SelectedItem).GetAttributes();
+            }
+            else if (test == "Power Supply")
+            {
+                
+                attribs = ((PowerSupply)partBox.SelectedItem).GetAttributes();
+            }
+            else if (test == "Storage")
+            {
+                
+                attribs = ((Storage)partBox.SelectedItem).GetAttributes();
+            }
+            else if (test == "Graphics Card")
+            {
+                
+                attribs = ((GraphicsCard)partBox.SelectedItem).GetAttributes();
+            }
+            else if (test == "Motherboard")
+            {
+                
+                attribs = ((MOBO)partBox.SelectedItem).GetAttributes();
+            }
+            string description = "";
+            foreach (string s in attribs)
+                description += s + "\n";
+            partDescriptionBox.Text = description;
         }
     }
 }

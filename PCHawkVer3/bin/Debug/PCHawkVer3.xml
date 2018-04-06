@@ -296,6 +296,22 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="M:PCHawkVer3.freeBuildForm.partTypeBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            action that occurs when the user chooses a part type. will set the collection/datasource of the part dropdown menu to those that match
+            the users selection. will also populate the description box.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawkVer3.freeBuildForm.partBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Change that occurs when the user selects a part. When a part is selected its attributes are selected and used to populate the 
+            description box and price box
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
         <member name="F:PCHawkVer3.freeBuildForm.components">
             <summary>
             Required designer variable.

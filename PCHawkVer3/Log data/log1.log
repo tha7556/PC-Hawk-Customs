@@ -1,10 +1,9 @@
-    <DEBUG 0:0:18>: 	Start Program
-<SQLQUERY 0:4:174>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:4:283>: 	Customer(Testicles,Balls,test,BallSack,Penis,BA,69696,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:4:283>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:4:296>: 	Customer(Testicles,Balls,test,BallSack,Penis,BA,69696,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:4:298>: 	SELECT encryptPassword("");
-   <DEBUG 0:7:573>: 	help
-<SQLQUERY 0:7:574>: 	SELECT * FROM `graphicscard`
-   <DEBUG 0:7:590>: 	93
-  <DEBUG 0:20:593>: 	Finished Program
+    <DEBUG 0:0:15>: 	Start Program
+<SQLQUERY 0:16:668>: 	SELECT * FROM `customer` WHERE `email`='jDawg@gmail.com'
+<SQLQUERY 0:22:547>: 	SELECT * FROM `customer` WHERE `email`='jDawg69@gmail.com'
+  <DEBUG 0:22:562>: 	Customer(Jason,Clemms,jDawg69@gmail.com,HELL,Raleigh,NC,27666,d36509359b36aa71b34049a5e08636cf10330abe);
+<SQLQUERY 0:22:562>: 	SELECT * FROM `customer` WHERE `email`='jDawg69@gmail.com'
+  <DEBUG 0:22:562>: 	Customer(Jason,Clemms,jDawg69@gmail.com,HELL,Raleigh,NC,27666,d36509359b36aa71b34049a5e08636cf10330abe);
+<SQLQUERY 0:22:562>: 	SELECT encryptPassword('*****')
+<SQLQUERY 0:28:899>: 	SELECT * FROM `motherboard`
+  <DEBUG 1:12:535>: 	Finished Program
