@@ -71,7 +71,7 @@ namespace PrimaryQueries {
             }
             return null;
         }
-        public override string GetAttributes() {
+        public new string GetAttributes() {
             return "Name: "+name+
                 "\nSeries: "+series+
                 "\nForm: "+form+

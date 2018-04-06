@@ -163,7 +163,8 @@ namespace PCHawkVer3
                 attribs = ((MOBO)partBox.SelectedItem).GetAttributes();
             }
             partDescriptionBox.Text = attribs;
-            
+            priceTxtBox.Text = "$" + ((Part)partBox.SelectedItem).price.ToString();
+
         }
         /// <summary>
         /// Change that occurs when the user selects a part. When a part is selected its attributes are selected and used to populate the 
@@ -218,6 +219,7 @@ namespace PCHawkVer3
                 attribs = ((MOBO)partBox.SelectedItem).GetAttributes();
             }
             partDescriptionBox.Text = attribs;
+            priceTxtBox.Text = "$"+((Part)partBox.SelectedItem).price.ToString();
         }
     }
 }
