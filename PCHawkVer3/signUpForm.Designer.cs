@@ -40,7 +40,7 @@
             this.txtBoxFirst = new System.Windows.Forms.TextBox();
             this.welcomeLab = new System.Windows.Forms.Label();
             this.toolTipExit = new System.Windows.Forms.ToolTip(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxAddress = new System.Windows.Forms.TextBox();
             this.txtBoxCity = new System.Windows.Forms.TextBox();
             this.txtBoxState = new System.Windows.Forms.TextBox();
             this.txtBoxZip = new System.Windows.Forms.TextBox();
@@ -166,13 +166,13 @@
             this.welcomeLab.TabIndex = 6;
             this.welcomeLab.Text = "Welcome!";
             // 
-            // textBox1
+            // txtBoxAddress
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(235, 340);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(426, 26);
-            this.textBox1.TabIndex = 7;
+            this.txtBoxAddress.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxAddress.Location = new System.Drawing.Point(235, 340);
+            this.txtBoxAddress.Name = "txtBoxAddress";
+            this.txtBoxAddress.Size = new System.Drawing.Size(426, 26);
+            this.txtBoxAddress.TabIndex = 7;
             // 
             // txtBoxCity
             // 
@@ -320,7 +320,7 @@
             this.Controls.Add(this.txtBoxZip);
             this.Controls.Add(this.txtBoxState);
             this.Controls.Add(this.txtBoxCity);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxAddress);
             this.Controls.Add(this.welcomeLab);
             this.Controls.Add(this.txtBoxFirst);
             this.Controls.Add(this.txtBoxLast);
@@ -352,7 +352,7 @@
         private System.Windows.Forms.Label welcomeLab;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTipExit;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxAddress;
         private System.Windows.Forms.TextBox txtBoxCity;
         private System.Windows.Forms.TextBox txtBoxState;
         private System.Windows.Forms.TextBox txtBoxZip;

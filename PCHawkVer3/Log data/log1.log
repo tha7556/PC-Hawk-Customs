@@ -1,3 +1,10 @@
-     <DEBUG 0:0:9>: 	SetTest PrimaryQueries.Fan: test 10 10.23
-    <DEBUG 0:0:12>: 	Start Program
-    <DEBUG 0:8:38>: 	Finished Program
+    <DEBUG 0:0:18>: 	Start Program
+<SQLQUERY 0:4:174>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:4:283>: 	Customer(Testicles,Balls,test,BallSack,Penis,BA,69696,da39a3ee5e6b4b0d3255bfef95601890afd80709);
+<SQLQUERY 0:4:283>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:4:296>: 	Customer(Testicles,Balls,test,BallSack,Penis,BA,69696,da39a3ee5e6b4b0d3255bfef95601890afd80709);
+<SQLQUERY 0:4:298>: 	SELECT encryptPassword("");
+   <DEBUG 0:7:573>: 	help
+<SQLQUERY 0:7:574>: 	SELECT * FROM `graphicscard`
+   <DEBUG 0:7:590>: 	93
+  <DEBUG 0:20:593>: 	Finished Program
