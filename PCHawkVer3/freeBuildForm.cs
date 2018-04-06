@@ -25,6 +25,7 @@ namespace PCHawkVer3
         /// <param name="e"></param>
         private void bttnCart_Click(object sender, EventArgs e)
         {
+            Queries.Log(Queries.LogLevel.DEBUG, "Cart Button clicked");
             cartForm cart = new cartForm();
             cart.Show();
             this.Close();
@@ -36,6 +37,7 @@ namespace PCHawkVer3
         /// <param name="e"></param>
         private void bttnExit_Click(object sender, EventArgs e)
         {
+            Queries.Log(Queries.LogLevel.DEBUG, "Exit Button clicked");
             const string message = "Are you sure that you would like to leave the Application?";
             const string caption = "Quiting Application!";
             var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -52,6 +54,7 @@ namespace PCHawkVer3
         /// <param name="e"></param>
         private void btnHelp_Click(object sender, EventArgs e)
         {
+            Queries.Log(Queries.LogLevel.DEBUG, "Help Button clicked");
             helpForm help = new helpForm();
             help.Show();
         }
@@ -62,6 +65,7 @@ namespace PCHawkVer3
         /// <param name="e"></param>
         private void bttnLogout_Click(object sender, EventArgs e)
         {
+            Queries.Log(Queries.LogLevel.DEBUG, "Logout Button clicked");
             const string message = "Are you sure that you would like to logout?";
             const string caption = "Logging Out!";
             var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -78,6 +82,7 @@ namespace PCHawkVer3
         /// <param name="e"></param>
         private void bttnHome_Click(object sender, EventArgs e)
         {
+            Queries.Log(Queries.LogLevel.DEBUG, "Home Button clicked");
             frmHome home = new frmHome();
             home.Show();
             this.Close();
@@ -89,6 +94,7 @@ namespace PCHawkVer3
         /// <param name="e"></param>
         private void bttnAccount_Click(object sender, EventArgs e)
         {
+            Queries.Log(Queries.LogLevel.DEBUG, "Account Button clicked");
             accountForm account = new accountForm();
             account.Show();
             this.Close();
@@ -103,7 +109,7 @@ namespace PCHawkVer3
             if (MyStaticClass.computer == null)
                 MyStaticClass.computer = new Computer();
             MyStaticClass.computer.AddPart((Part)partBox.SelectedItem);
-            Queries.Log(Queries.LogLevel.DEBUG, "Add Part Clicked");
+            Queries.Log(Queries.LogLevel.DEBUG, "Adding: "+partBox.SelectedItem.GetType().Name + " to build");
             buildListBox.DataSource = MyStaticClass.computer.GetAttributes();
             txtBoxTotal.Text = "$"+MyStaticClass.computer.price;
 
@@ -115,6 +121,7 @@ namespace PCHawkVer3
         /// <param name="e"></param>
         private void bttnAddCart_Click(object sender, EventArgs e)
         {
+            Queries.Log(Queries.LogLevel.DEBUG, "Add to Cart Button clicked");
             //also how we do dis
         }
         /// <summary>
@@ -126,6 +133,7 @@ namespace PCHawkVer3
         private void partTypeBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             String test = partTypeBox.SelectedItem.ToString();
+            Queries.Log(Queries.LogLevel.DEBUG, "Selected : " + test);
             string attribs = "";
             if (test == "CPU")
             {
@@ -181,6 +189,7 @@ namespace PCHawkVer3
         {
             
             String test = partTypeBox.SelectedItem.ToString();
+            Queries.Log(Queries.LogLevel.DEBUG, "Selected "+test+": " + ((Part)partBox.SelectedItem));
             string attribs = "";
             if (test == "CPU")
             {

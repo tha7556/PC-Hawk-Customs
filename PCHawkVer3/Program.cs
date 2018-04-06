@@ -15,7 +15,6 @@ namespace PCHawkVer3
         [STAThread]
         static void Main()
         {
-
             Queries.Log(Queries.LogLevel.DEBUG, "Start Program");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
