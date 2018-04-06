@@ -68,7 +68,7 @@ namespace PrimaryQueries {
         /// <param name="partNumber"></param>
         /// <returns></returns>
         public static MOBO Get(int partNumber) {
-            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `motherboard` = " + partNumber);
+            string[] result = Queries.Query("SELECT * FROM `motherboard` WHERE `part number` = " + partNumber);
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }

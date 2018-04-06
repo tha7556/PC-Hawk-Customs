@@ -64,7 +64,7 @@ namespace PrimaryQueries {
         /// <param name="partNumber">The identifying part number</param>
         /// <returns>The PowerSupply object with the part number</returns>
         public static PowerSupply Get(int partNumber) {
-            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `powersupply` = " + partNumber);
+            string[] result = Queries.Query("SELECT * FROM `powersupply` WHERE `part number` = " + partNumber);
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }

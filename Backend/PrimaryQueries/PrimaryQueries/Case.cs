@@ -61,7 +61,7 @@ namespace PrimaryQueries {
         /// <param name="partNumber">The identifying part number</param>
         /// <returns>The Case object with the part number</returns>
         public static Case Get(int partNumber) {
-            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `pc case` = " + partNumber);
+            string[] result = Queries.Query("SELECT * FROM `pc case` WHERE `part number` = " + partNumber);
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }

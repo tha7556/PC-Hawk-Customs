@@ -61,7 +61,7 @@ namespace PrimaryQueries {
         /// <param name="partNumber"></param>
         /// <returns></returns>
         public static Fan Get(int partNumber) {
-            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `fan` = " + partNumber);
+            string[] result = Queries.Query("SELECT * FROM `fan` WHERE `part number` = " + partNumber);
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }

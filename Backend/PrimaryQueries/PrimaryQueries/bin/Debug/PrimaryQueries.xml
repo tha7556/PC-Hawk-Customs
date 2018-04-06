@@ -46,11 +46,12 @@
             <param name="partNumber">The identifying part number</param>
             <returns>The Case object with the part number</returns>
         </member>
-        <member name="M:PrimaryQueries.Computer.#ctor(System.Int32,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)">
+        <member name="M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)">
             <summary>
             Computer constructor requiring all parts
             </summary>
             <param name="serialNumber"></param>
+            <param name="name"></param>
             <param name="pcCase"></param>
             <param name="cpu"></param>
             <param name="fan"></param>
@@ -60,10 +61,11 @@
             <param name="power"></param>
             <param name="storage"></param>
         </member>
-        <member name="M:PrimaryQueries.Computer.#ctor(PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)">
+        <member name="M:PrimaryQueries.Computer.#ctor(System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)">
             <summary>
             Secondary Constructor for database incrementation
             </summary>
+            <param name="name"></param>
             <param name="pcCase"></param>
             <param name="cpu"></param>
             <param name="fan"></param>
@@ -401,16 +403,16 @@
             An Order for a Part
             </summary>
         </member>
-        <member name="M:PrimaryQueries.Order.#ctor(System.Int32,PrimaryQueries.Part,PrimaryQueries.Employee,PrimaryQueries.Customer)">
+        <member name="M:PrimaryQueries.Order.#ctor(System.Int32,PrimaryQueries.Computer,PrimaryQueries.Employee,PrimaryQueries.Customer)">
             <summary>
             Creates a new Order for a Part
             </summary>
             <param name="orderNumber">The number identifying the Order</param>
-            <param name="part">The Part being ordered</param>
+            <param name="computer">The Computer being ordered</param>
             <param name="employee">The Employee involved in the Order</param>
             <param name="customer">The Customer making the Order</param>
         </member>
-        <member name="M:PrimaryQueries.Order.#ctor(PrimaryQueries.Part,PrimaryQueries.Employee,PrimaryQueries.Customer)">
+        <member name="M:PrimaryQueries.Order.#ctor(PrimaryQueries.Computer,PrimaryQueries.Employee,PrimaryQueries.Customer)">
             <summary>
             Creates a new Order with -1 as Order Number. When added to the database, it automatically sets it to the next number
             </summary>

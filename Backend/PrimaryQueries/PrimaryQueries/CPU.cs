@@ -67,7 +67,7 @@ namespace PrimaryQueries {
         /// <param name="partNumber"></param>
         /// <returns></returns>
         public static CPU Get(int partNumber) {
-            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `cpu` = " + partNumber);
+            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `part number` = " + partNumber);
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }

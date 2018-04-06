@@ -70,7 +70,7 @@ namespace PrimaryQueries {
         /// <param name="partNumber"></param>
         /// <returns></returns>
         public static Memory Get(int partNumber) {
-            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `memory` = " + partNumber);
+            string[] result = Queries.Query("SELECT * FROM `memory` WHERE `part number` = " + partNumber);
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }
