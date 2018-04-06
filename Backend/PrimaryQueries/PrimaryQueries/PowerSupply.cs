@@ -70,5 +70,15 @@ namespace PrimaryQueries {
             }
             return null;
         }
+        public new string[] GetAttributes() {
+            return new string[] {
+                "Name: "+name,
+                "Series: "+series,
+                "Form: "+form,
+                "Efficiency Rating: "+efficiency,
+                "Watts: "+watts,
+                "Modular: "+modular
+            };
+        }
     }
 }

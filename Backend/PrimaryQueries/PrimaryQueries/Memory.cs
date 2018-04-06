@@ -76,6 +76,14 @@ namespace PrimaryQueries {
             }
             return null;
         }
+        public new string[] GetAttributes() {
+            return new string[] {
+                "Name: "+name,
+                "Speed: "+speed,
+                "CAS: "+cas,
+                "Modules: "+modules
+            };
+        }
     }
 
 

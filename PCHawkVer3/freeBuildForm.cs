@@ -115,48 +115,53 @@ namespace PCHawkVer3
 
         private void partTypeBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Queries.Log(Queries.LogLevel.DEBUG, "help");
             String test = partTypeBox.SelectedItem.ToString();
+            string[] attribs = new string[0];
             if (test == "CPU")
             {
                 partBox.DataSource = CPU.GetAll();
-                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+                attribs = ((CPU)partBox.SelectedItem).GetAttributes();
 
             }else if(test == "Cooling")
             {
                 partBox.DataSource = Fan.GetAll();
-                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+                attribs = ((Fan)partBox.SelectedItem).GetAttributes();
             }
             else if (test == "Case")
             {
                 partBox.DataSource = Case.GetAll();
-                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+                attribs = ((Case)partBox.SelectedItem).GetAttributes();
             }
             else if (test == "Memory")
             {
                 partBox.DataSource = Memory.GetAll();
-                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+                attribs = ((Memory)partBox.SelectedItem).GetAttributes();
             }
             else if (test == "Power Supply")
             {
                 partBox.DataSource = PowerSupply.GetAll();
-                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+                attribs = ((PowerSupply)partBox.SelectedItem).GetAttributes();
             }
             else if (test == "Storage")
             {
                 partBox.DataSource = Storage.GetAll();
-                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+                attribs = ((Storage)partBox.SelectedItem).GetAttributes();
             }
             else if (test == "Graphics Card")
             {
                 partBox.DataSource = GraphicsCard.GetAll();
-                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+                attribs = ((GraphicsCard)partBox.SelectedItem).GetAttributes();
             }
             else if (test == "Motherboard")
             {
                 partBox.DataSource = MOBO.GetAll();
-                partDescriptionBox.Text = partBox.SelectedItem.ToString();
+                attribs = ((MOBO)partBox.SelectedItem).GetAttributes();
             }
+            string description = "";
+            foreach(string s in attribs)
+                description += s+"\n";
+            partDescriptionBox.Text = description;
+            
         }
 
         private void partBox_SelectedIndexChanged(object sender, EventArgs e)

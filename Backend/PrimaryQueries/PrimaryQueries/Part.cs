@@ -188,5 +188,12 @@ namespace PrimaryQueries {
 
             Queries.Query("INSERT INTO `part` (`part number`, `component type`) VALUES ("+partNumber+", '"+type+"');"); ;
         }
+        /// <summary>
+        /// Gets an array of each attribute of the Part
+        /// </summary>
+        /// <returns></returns>
+        public string[] GetAttributes() {
+            return new string[] {"Name: "+name,"Price: "+price };
+        }
     }
 }
