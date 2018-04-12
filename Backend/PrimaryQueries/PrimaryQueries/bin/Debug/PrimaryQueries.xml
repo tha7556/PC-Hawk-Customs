@@ -612,6 +612,13 @@
             </summary>
             <returns>The string representation of the Part</returns>
         </member>
+        <member name="M:PrimaryQueries.Part.Search(System.String)">
+            <summary>
+            Searches for parts based on a name
+            </summary>
+            <param name="partName">The name of the Part</param>
+            <returns>A List containing the results of the search</returns>
+        </member>
         <member name="M:PrimaryQueries.Part.GetPartFromQuery(System.String)">
             <summary>
             Converts a MySQL query result into a Part object. Query must return the form: partNumber\0name\0price\0componentType

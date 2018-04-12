@@ -3,6 +3,8 @@
 //TODO: Part images?
 //TODO: Add Part to database
 //TODO: Part ratings?
+using System.Collections.Generic;
+
 namespace PrimaryQueries {
     /// <summary>
     /// An individual Part of a computer
@@ -24,6 +26,7 @@ namespace PrimaryQueries {
         /// The Price of the Part
         /// </summary>
         public double price { get; set; }
+        private static string[] tables = new string[] { "cpu", "fan", "graphicscard", "memory", "motherboard", "'pc case'", "powersupply", "storage" };
         /// <summary>
         /// Creates a new Part object
         /// </summary>
@@ -82,6 +85,60 @@ namespace PrimaryQueries {
         /// <returns>The string representation of the Part</returns>
         public override string ToString() {
             return name;
+        }
+        /// <summary>
+        /// Searches for parts based on a name
+        /// </summary>
+        /// <param name="partName">The name of the Part</param>
+        /// <returns>A List containing the results of the search</returns>
+        public static List<Part> Search(string partName) {
+            List<Part> parts = new List<Part>();
+            for(int i = 0; i < tables.Length; i++) {
+                string[] result = Queries.Query("CALL search(" + tables[i] + "," + partName + ")");
+                switch(i) {
+                    case 0:
+                        foreach(string p in result) {
+                            parts.Add(CPU.GetFromQuery(p));
+                        }
+                        break;
+                    case 1:
+                        foreach (string p in result) {
+                            parts.Add(Fan.GetFromQuery(p));
+                        }
+                        break;
+                    case 2:
+                        foreach (string p in result) {
+                            parts.Add(GraphicsCard.GetFromQuery(p));
+                        }
+                        break;
+                    case 3:
+                        foreach (string p in result) {
+                            parts.Add(Memory.GetFromQuery(p));
+                        }
+                        break;
+                    case 4:
+                        foreach (string p in result) {
+                            parts.Add(MOBO.GetFromQuery(p));
+                        }
+                        break;
+                    case 5:
+                        foreach (string p in result) {
+                            parts.Add(Case.GetFromQuery(p));
+                        }
+                        break;
+                    case 6:
+                        foreach (string p in result) {
+                            parts.Add(PowerSupply.GetFromQuery(p));
+                        }
+                        break;
+                    case 7:
+                        foreach (string p in result) {
+                            parts.Add(Storage.GetFromQuery(p));
+                        }
+                        break;
+                }
+            }
+            return parts;
         }
         /// <summary>
         /// Converts a MySQL query result into a Part object. Query must return the form: partNumber\0name\0price\0componentType
