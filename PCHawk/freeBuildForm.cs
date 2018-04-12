@@ -235,5 +235,18 @@ namespace PCHawk
             partDescriptionBox.Text = attribs;
             priceTxtBox.Text = "$"+((Part)partBox.SelectedItem).price.ToString();
         }
+
+        private void searchBoxbttn_Click(object sender, EventArgs e)
+        {
+            String userSearch = searchTxtBox.Text;
+            List<Part> results = Part.Search(userSearch);
+            int c = results.Count;
+            searchResultTxtBox.Text = results[0].name;
+            
+            for(int i = 0; i < results.Count; i++)
+            {
+                //searchResultTxtBox.Text = results[i].GetType().Name;
+            }
+        }
     }
 }

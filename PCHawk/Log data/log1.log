@@ -1,7 +1,16 @@
     <DEBUG 0:0:15>: 	Start Program
-<SQLQUERY 0:4:641>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:4:797>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:4:797>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:4:813>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:4:813>: 	SELECT encryptPassword('*****')
-  <DEBUG 0:23:347>: 	Finished Program
+<SQLQUERY 0:3:338>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:3:467>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
+<SQLQUERY 0:3:467>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:3:474>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
+<SQLQUERY 0:3:476>: 	SELECT encryptPassword('*****')
+<SQLQUERY 0:7:919>: 	SELECT * FROM `cpu` WHERE name like '%Intel%'
+<SQLQUERY 0:7:950>: 	SELECT * FROM `fan` WHERE name like '%Intel%'
+<SQLQUERY 0:7:950>: 	SELECT * FROM `graphicscard` WHERE name like '%Intel%'
+<SQLQUERY 0:7:965>: 	SELECT * FROM `memory` WHERE name like '%Intel%'
+<SQLQUERY 0:7:965>: 	SELECT * FROM `motherboard` WHERE name like '%Intel%'
+<SQLQUERY 0:7:981>: 	SELECT * FROM `pc case` WHERE name like '%Intel%'
+<SQLQUERY 0:7:981>: 	SELECT * FROM `powersupply` WHERE name like '%Intel%'
+<SQLQUERY 0:7:997>: 	SELECT * FROM `storage` WHERE name like '%Intel%'
+   <DEBUG 0:13:46>: 	Exit Button clicked
+  <DEBUG 0:14:617>: 	Finished Program

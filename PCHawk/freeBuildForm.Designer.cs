@@ -59,6 +59,7 @@
             this.searchResultTxtBox = new System.Windows.Forms.RichTextBox();
             this.labelS = new System.Windows.Forms.Label();
             this.priceSortchk = new System.Windows.Forms.CheckBox();
+            this.searchBoxbttn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -329,7 +330,7 @@
             // searchResultTxtBox
             // 
             this.searchResultTxtBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchResultTxtBox.Location = new System.Drawing.Point(394, 289);
+            this.searchResultTxtBox.Location = new System.Drawing.Point(394, 338);
             this.searchResultTxtBox.Name = "searchResultTxtBox";
             this.searchResultTxtBox.Size = new System.Drawing.Size(269, 250);
             this.searchResultTxtBox.TabIndex = 22;
@@ -358,12 +359,26 @@
             this.priceSortchk.Text = "Sort By Price";
             this.priceSortchk.UseVisualStyleBackColor = true;
             // 
+            // searchBoxbttn
+            // 
+            this.searchBoxbttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchBoxbttn.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBoxbttn.ForeColor = System.Drawing.Color.White;
+            this.searchBoxbttn.Location = new System.Drawing.Point(394, 289);
+            this.searchBoxbttn.Name = "searchBoxbttn";
+            this.searchBoxbttn.Size = new System.Drawing.Size(202, 44);
+            this.searchBoxbttn.TabIndex = 25;
+            this.searchBoxbttn.Text = "Find";
+            this.searchBoxbttn.UseVisualStyleBackColor = true;
+            this.searchBoxbttn.Click += new System.EventHandler(this.searchBoxbttn_Click);
+            // 
             // freeBuildForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1080, 622);
+            this.Controls.Add(this.searchBoxbttn);
             this.Controls.Add(this.priceSortchk);
             this.Controls.Add(this.labelS);
             this.Controls.Add(this.searchResultTxtBox);
@@ -424,5 +439,6 @@
         private System.Windows.Forms.RichTextBox searchResultTxtBox;
         private System.Windows.Forms.Label labelS;
         private System.Windows.Forms.CheckBox priceSortchk;
+        private System.Windows.Forms.Button searchBoxbttn;
     }
 }
