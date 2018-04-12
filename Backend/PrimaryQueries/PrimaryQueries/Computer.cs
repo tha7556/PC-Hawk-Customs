@@ -135,8 +135,9 @@ namespace PrimaryQueries {
                 result[4] = "Memory: " + memory.name + " $" + memory.price;
             if (mBoard == null)
                 result[5] = "Motherboard: None Selected";
-            else
-                result[5] = "Motherboard: " + mBoard.name + " $" + memory.price;
+            else {
+                result[5] = "Motherboard: " + mBoard.name + " $" + mBoard.price;
+            }
             if (power == null)
                 result[6] = "Power Supply: None Selected";
             else

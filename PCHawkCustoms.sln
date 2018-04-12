@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimaryQueries", "Backend\PrimaryQueries\PrimaryQueries\PrimaryQueries.csproj", "{9E601E87-4D31-452D-9CE0-E5AA7823B1C6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCHawk", "PCHawk\PCHawk.csproj", "{D29B0349-8D9C-4EE4-907A-74A957498C95}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9E601E87-4D31-452D-9CE0-E5AA7823B1C6} = {9E601E87-4D31-452D-9CE0-E5AA7823B1C6}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
