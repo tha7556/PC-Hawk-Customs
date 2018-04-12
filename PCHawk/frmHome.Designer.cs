@@ -30,15 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.bttnAccount = new System.Windows.Forms.Button();
-            this.btnHelp = new System.Windows.Forms.Button();
-            this.bttnCart = new System.Windows.Forms.Button();
-            this.bttnExit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.homeScreenControl1 = new PCHawk.homeScreenControl();
             this.bttnPreBuild = new System.Windows.Forms.Button();
             this.bttnFreeBuild = new System.Windows.Forms.Button();
             this.rtbInfo = new System.Windows.Forms.RichTextBox();
@@ -48,9 +41,16 @@
             this.toolTipHelp = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipAccount = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipLog = new System.Windows.Forms.ToolTip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.bttnAccount = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.bttnCart = new System.Windows.Forms.Button();
+            this.bttnExit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.homeScreenControl1 = new PCHawk.homeScreenControl();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,6 +66,74 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1170, 192);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1184, 18);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.homeScreenControl1);
+            this.panel3.Location = new System.Drawing.Point(331, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(853, 861);
+            this.panel3.TabIndex = 2;
+            // 
+            // bttnPreBuild
+            // 
+            this.bttnPreBuild.FlatAppearance.BorderSize = 0;
+            this.bttnPreBuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnPreBuild.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnPreBuild.ForeColor = System.Drawing.Color.White;
+            this.bttnPreBuild.Location = new System.Drawing.Point(11, 218);
+            this.bttnPreBuild.Name = "bttnPreBuild";
+            this.bttnPreBuild.Size = new System.Drawing.Size(315, 275);
+            this.bttnPreBuild.TabIndex = 3;
+            this.bttnPreBuild.Text = "Pre-Built";
+            this.bttnPreBuild.UseVisualStyleBackColor = true;
+            this.bttnPreBuild.Click += new System.EventHandler(this.bttnPreBuild_Click);
+            // 
+            // bttnFreeBuild
+            // 
+            this.bttnFreeBuild.FlatAppearance.BorderSize = 0;
+            this.bttnFreeBuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnFreeBuild.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnFreeBuild.ForeColor = System.Drawing.Color.White;
+            this.bttnFreeBuild.Location = new System.Drawing.Point(11, 597);
+            this.bttnFreeBuild.Name = "bttnFreeBuild";
+            this.bttnFreeBuild.Size = new System.Drawing.Size(315, 225);
+            this.bttnFreeBuild.TabIndex = 4;
+            this.bttnFreeBuild.Text = "Free Build";
+            this.bttnFreeBuild.UseVisualStyleBackColor = true;
+            this.bttnFreeBuild.Click += new System.EventHandler(this.bttnFreeBuild_Click);
+            // 
+            // rtbInfo
+            // 
+            this.rtbInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rtbInfo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbInfo.ForeColor = System.Drawing.Color.White;
+            this.rtbInfo.Location = new System.Drawing.Point(12, 498);
+            this.rtbInfo.Name = "rtbInfo";
+            this.rtbInfo.Size = new System.Drawing.Size(313, 94);
+            this.rtbInfo.TabIndex = 5;
+            this.rtbInfo.Text = "Select Pre-Built to view our pre assembled machines.\nSelect Free Build to build y" +
+    "our own computer piece by piece.";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(75, 469);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 24);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "LET\'S GET STARTED!";
             // 
             // button1
             // 
@@ -156,23 +224,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1184, 18);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.homeScreenControl1);
-            this.panel3.Location = new System.Drawing.Point(331, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(853, 861);
-            this.panel3.TabIndex = 2;
-            // 
             // homeScreenControl1
             // 
             this.homeScreenControl1.BackColor = System.Drawing.Color.White;
@@ -180,57 +231,6 @@
             this.homeScreenControl1.Name = "homeScreenControl1";
             this.homeScreenControl1.Size = new System.Drawing.Size(839, 617);
             this.homeScreenControl1.TabIndex = 0;
-            // 
-            // bttnPreBuild
-            // 
-            this.bttnPreBuild.FlatAppearance.BorderSize = 0;
-            this.bttnPreBuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnPreBuild.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnPreBuild.ForeColor = System.Drawing.Color.White;
-            this.bttnPreBuild.Location = new System.Drawing.Point(11, 218);
-            this.bttnPreBuild.Name = "bttnPreBuild";
-            this.bttnPreBuild.Size = new System.Drawing.Size(315, 275);
-            this.bttnPreBuild.TabIndex = 3;
-            this.bttnPreBuild.Text = "Pre-Built";
-            this.bttnPreBuild.UseVisualStyleBackColor = true;
-            this.bttnPreBuild.Click += new System.EventHandler(this.bttnPreBuild_Click);
-            // 
-            // bttnFreeBuild
-            // 
-            this.bttnFreeBuild.FlatAppearance.BorderSize = 0;
-            this.bttnFreeBuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnFreeBuild.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnFreeBuild.ForeColor = System.Drawing.Color.White;
-            this.bttnFreeBuild.Location = new System.Drawing.Point(11, 597);
-            this.bttnFreeBuild.Name = "bttnFreeBuild";
-            this.bttnFreeBuild.Size = new System.Drawing.Size(315, 225);
-            this.bttnFreeBuild.TabIndex = 4;
-            this.bttnFreeBuild.Text = "Free Build";
-            this.bttnFreeBuild.UseVisualStyleBackColor = true;
-            this.bttnFreeBuild.Click += new System.EventHandler(this.bttnFreeBuild_Click);
-            // 
-            // rtbInfo
-            // 
-            this.rtbInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rtbInfo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbInfo.ForeColor = System.Drawing.Color.White;
-            this.rtbInfo.Location = new System.Drawing.Point(12, 498);
-            this.rtbInfo.Name = "rtbInfo";
-            this.rtbInfo.Size = new System.Drawing.Size(313, 94);
-            this.rtbInfo.TabIndex = 5;
-            this.rtbInfo.Text = "Select Pre-Built to view our pre assembled machines.\nSelect Free Build to build you" +
-    "r own computer piece by piece.";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(75, 469);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 24);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "LET\'S GET STARTED!";
             // 
             // frmHome
             // 
@@ -250,8 +250,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHome";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

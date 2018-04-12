@@ -1,7 +1,7 @@
-    <DEBUG 0:0:12>: 	Start Program
-<SQLQUERY 0:3:159>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:3:368>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:3:368>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:3:453>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:3:453>: 	SELECT encryptPassword('*****')
-   <DEBUG 0:6:105>: 	Finished Program
+    <DEBUG 0:0:15>: 	Start Program
+<SQLQUERY 0:4:641>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:4:797>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
+<SQLQUERY 0:4:797>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:4:813>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
+<SQLQUERY 0:4:813>: 	SELECT encryptPassword('*****')
+  <DEBUG 0:23:347>: 	Finished Program

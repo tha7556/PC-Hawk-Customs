@@ -216,6 +216,55 @@
     <None Include="Resources\power-button %282%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\if_Intel_99936.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_nvidia_294666.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_nvidia_294666 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_intel_294676.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_asus_294699.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Amd_692148.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_hp_294682.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_samsung_294658.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_microsoft_294669.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_logitech_294665.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_amd_85850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Asus_99933.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_kingston_85929.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_logitech_2946651.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_acer_294702.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_nvidia_294666 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_samsung_294658 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

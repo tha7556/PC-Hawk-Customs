@@ -55,6 +55,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBoxTotal = new System.Windows.Forms.TextBox();
+            this.searchTxtBox = new System.Windows.Forms.TextBox();
+            this.searchResultTxtBox = new System.Windows.Forms.RichTextBox();
+            this.labelS = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +85,7 @@
             this.bttnHome.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnHome.ForeColor = System.Drawing.Color.White;
             this.bttnHome.Image = global::PCHawk.Properties.Resources.home__1_;
-            this.bttnHome.Location = new System.Drawing.Point(610, 106);
+            this.bttnHome.Location = new System.Drawing.Point(791, 106);
             this.bttnHome.Name = "bttnHome";
             this.bttnHome.Size = new System.Drawing.Size(67, 66);
             this.bttnHome.TabIndex = 8;
@@ -98,7 +101,7 @@
             this.bttnAccount.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnAccount.ForeColor = System.Drawing.Color.White;
             this.bttnAccount.Image = global::PCHawk.Properties.Resources.user;
-            this.bttnAccount.Location = new System.Drawing.Point(707, 106);
+            this.bttnAccount.Location = new System.Drawing.Point(902, 106);
             this.bttnAccount.Name = "bttnAccount";
             this.bttnAccount.Size = new System.Drawing.Size(65, 66);
             this.bttnAccount.TabIndex = 7;
@@ -114,7 +117,7 @@
             this.bttnLogout.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnLogout.ForeColor = System.Drawing.Color.White;
             this.bttnLogout.Image = global::PCHawk.Properties.Resources.exit;
-            this.bttnLogout.Location = new System.Drawing.Point(799, 106);
+            this.bttnLogout.Location = new System.Drawing.Point(999, 106);
             this.bttnLogout.Name = "bttnLogout";
             this.bttnLogout.Size = new System.Drawing.Size(69, 66);
             this.bttnLogout.TabIndex = 6;
@@ -130,7 +133,7 @@
             this.bttnExit.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnExit.ForeColor = System.Drawing.Color.White;
             this.bttnExit.Image = global::PCHawk.Properties.Resources.power_button__2_;
-            this.bttnExit.Location = new System.Drawing.Point(799, 15);
+            this.bttnExit.Location = new System.Drawing.Point(999, 15);
             this.bttnExit.Name = "bttnExit";
             this.bttnExit.Size = new System.Drawing.Size(69, 66);
             this.bttnExit.TabIndex = 5;
@@ -146,7 +149,7 @@
             this.bttnCart.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCart.ForeColor = System.Drawing.Color.White;
             this.bttnCart.Image = global::PCHawk.Properties.Resources.shopping_cart__2_;
-            this.bttnCart.Location = new System.Drawing.Point(702, 15);
+            this.bttnCart.Location = new System.Drawing.Point(897, 15);
             this.bttnCart.Name = "bttnCart";
             this.bttnCart.Size = new System.Drawing.Size(70, 66);
             this.bttnCart.TabIndex = 4;
@@ -162,7 +165,7 @@
             this.btnHelp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHelp.ForeColor = System.Drawing.Color.White;
             this.btnHelp.Image = global::PCHawk.Properties.Resources.info;
-            this.btnHelp.Location = new System.Drawing.Point(610, 15);
+            this.btnHelp.Location = new System.Drawing.Point(782, 15);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(76, 66);
             this.btnHelp.TabIndex = 3;
@@ -184,13 +187,13 @@
             this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Location = new System.Drawing.Point(0, 1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(878, 20);
+            this.panel2.Size = new System.Drawing.Size(1083, 20);
             this.panel2.TabIndex = 1;
             // 
             // partDescriptionBox
             // 
             this.partDescriptionBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.partDescriptionBox.Location = new System.Drawing.Point(50, 289);
+            this.partDescriptionBox.Location = new System.Drawing.Point(12, 289);
             this.partDescriptionBox.Name = "partDescriptionBox";
             this.partDescriptionBox.Size = new System.Drawing.Size(370, 250);
             this.partDescriptionBox.TabIndex = 6;
@@ -200,7 +203,7 @@
             // 
             this.partBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.partBox.FormattingEnabled = true;
-            this.partBox.Location = new System.Drawing.Point(50, 255);
+            this.partBox.Location = new System.Drawing.Point(12, 255);
             this.partBox.Name = "partBox";
             this.partBox.Size = new System.Drawing.Size(368, 28);
             this.partBox.TabIndex = 7;
@@ -220,7 +223,7 @@
             "Motherboard",
             "Memory",
             "Storage"});
-            this.partTypeBox.Location = new System.Drawing.Point(50, 221);
+            this.partTypeBox.Location = new System.Drawing.Point(12, 221);
             this.partTypeBox.Name = "partTypeBox";
             this.partTypeBox.Size = new System.Drawing.Size(160, 28);
             this.partTypeBox.TabIndex = 8;
@@ -232,7 +235,7 @@
             this.bttnAddPart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnAddPart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnAddPart.ForeColor = System.Drawing.Color.White;
-            this.bttnAddPart.Location = new System.Drawing.Point(216, 545);
+            this.bttnAddPart.Location = new System.Drawing.Point(181, 544);
             this.bttnAddPart.Name = "bttnAddPart";
             this.bttnAddPart.Size = new System.Drawing.Size(202, 44);
             this.bttnAddPart.TabIndex = 9;
@@ -243,7 +246,7 @@
             // priceTxtBox
             // 
             this.priceTxtBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceTxtBox.Location = new System.Drawing.Point(50, 562);
+            this.priceTxtBox.Location = new System.Drawing.Point(15, 562);
             this.priceTxtBox.Name = "priceTxtBox";
             this.priceTxtBox.ReadOnly = true;
             this.priceTxtBox.Size = new System.Drawing.Size(160, 26);
@@ -252,7 +255,7 @@
             // buildNameBox
             // 
             this.buildNameBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buildNameBox.Location = new System.Drawing.Point(480, 223);
+            this.buildNameBox.Location = new System.Drawing.Point(698, 221);
             this.buildNameBox.Name = "buildNameBox";
             this.buildNameBox.Size = new System.Drawing.Size(269, 26);
             this.buildNameBox.TabIndex = 11;
@@ -264,7 +267,7 @@
             this.buildListBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buildListBox.FormattingEnabled = true;
             this.buildListBox.ItemHeight = 20;
-            this.buildListBox.Location = new System.Drawing.Point(480, 255);
+            this.buildListBox.Location = new System.Drawing.Point(698, 255);
             this.buildListBox.Name = "buildListBox";
             this.buildListBox.Size = new System.Drawing.Size(370, 284);
             this.buildListBox.TabIndex = 12;
@@ -274,7 +277,7 @@
             this.bttnAddCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnAddCart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnAddCart.ForeColor = System.Drawing.Color.Yellow;
-            this.bttnAddCart.Location = new System.Drawing.Point(646, 541);
+            this.bttnAddCart.Location = new System.Drawing.Point(864, 544);
             this.bttnAddCart.Name = "bttnAddCart";
             this.bttnAddCart.Size = new System.Drawing.Size(204, 44);
             this.bttnAddCart.TabIndex = 13;
@@ -287,7 +290,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Yellow;
-            this.label6.Location = new System.Drawing.Point(47, 541);
+            this.label6.Location = new System.Drawing.Point(12, 541);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 18);
             this.label6.TabIndex = 18;
@@ -298,7 +301,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(477, 541);
+            this.label1.Location = new System.Drawing.Point(685, 541);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 18);
             this.label1.TabIndex = 19;
@@ -307,18 +310,50 @@
             // txtBoxTotal
             // 
             this.txtBoxTotal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxTotal.Location = new System.Drawing.Point(480, 559);
+            this.txtBoxTotal.Location = new System.Drawing.Point(698, 562);
             this.txtBoxTotal.Name = "txtBoxTotal";
             this.txtBoxTotal.ReadOnly = true;
             this.txtBoxTotal.Size = new System.Drawing.Size(160, 26);
             this.txtBoxTotal.TabIndex = 20;
+            // 
+            // searchTxtBox
+            // 
+            this.searchTxtBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchTxtBox.Location = new System.Drawing.Point(394, 257);
+            this.searchTxtBox.Name = "searchTxtBox";
+            this.searchTxtBox.Size = new System.Drawing.Size(269, 26);
+            this.searchTxtBox.TabIndex = 21;
+            this.searchTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // searchResultTxtBox
+            // 
+            this.searchResultTxtBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchResultTxtBox.Location = new System.Drawing.Point(394, 289);
+            this.searchResultTxtBox.Name = "searchResultTxtBox";
+            this.searchResultTxtBox.Size = new System.Drawing.Size(269, 250);
+            this.searchResultTxtBox.TabIndex = 22;
+            this.searchResultTxtBox.Text = "Part Description";
+            // 
+            // labelS
+            // 
+            this.labelS.AutoSize = true;
+            this.labelS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelS.ForeColor = System.Drawing.Color.White;
+            this.labelS.Location = new System.Drawing.Point(390, 235);
+            this.labelS.Name = "labelS";
+            this.labelS.Size = new System.Drawing.Size(135, 19);
+            this.labelS.TabIndex = 23;
+            this.labelS.Text = "Manual Search: ";
             // 
             // freeBuildForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(875, 622);
+            this.ClientSize = new System.Drawing.Size(1080, 622);
+            this.Controls.Add(this.labelS);
+            this.Controls.Add(this.searchResultTxtBox);
+            this.Controls.Add(this.searchTxtBox);
             this.Controls.Add(this.txtBoxTotal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
@@ -371,5 +406,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBoxTotal;
+        private System.Windows.Forms.TextBox searchTxtBox;
+        private System.Windows.Forms.RichTextBox searchResultTxtBox;
+        private System.Windows.Forms.Label labelS;
     }
 }

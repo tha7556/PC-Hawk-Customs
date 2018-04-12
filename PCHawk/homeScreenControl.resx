@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>PC Hawk is your one-stop PC building shop for those that want high-end custom PCs without in-depth knowledge of the process or the physical aspects of building one themselves.
+Our system will give you the power to build a PC in one of two ways:
+The Free-Build option will give you free reins on customization to build a PC tailored to exactly fit you computing needs.
+The Pre-Built option will have you select between Gaming, Home-Office, or HTPC to describe your computing needs and our system will sugest a complete build based on your choice and budget.
+</value>
+  </data>
 </root>
