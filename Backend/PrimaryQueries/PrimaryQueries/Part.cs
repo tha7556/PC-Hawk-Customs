@@ -26,7 +26,7 @@ namespace PrimaryQueries {
         /// The Price of the Part
         /// </summary>
         public double price { get; set; }
-        private static string[] tables = new string[] { "cpu", "fan", "graphicscard", "memory", "motherboard", "'pc case'", "powersupply", "storage" };
+        private static string[] tables = new string[] { "cpu", "fan", "graphicscard", "memory", "motherboard", "pc case", "powersupply", "storage" };
         /// <summary>
         /// Creates a new Part object
         /// </summary>
@@ -94,7 +94,7 @@ namespace PrimaryQueries {
         public static List<Part> Search(string partName) {
             List<Part> parts = new List<Part>();
             for(int i = 0; i < tables.Length; i++) {
-                string[] result = Queries.Query("CALL search(" + tables[i] + "," + partName + ")");
+                string[] result = Queries.Query(string.Format("SELECT * FROM `{0}` WHERE name like '%{1}%'", tables[i], partName));
                 switch(i) {
                     case 0:
                         foreach(string p in result) {
