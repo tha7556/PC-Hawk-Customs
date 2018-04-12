@@ -58,6 +58,7 @@
             this.searchTxtBox = new System.Windows.Forms.TextBox();
             this.searchResultTxtBox = new System.Windows.Forms.RichTextBox();
             this.labelS = new System.Windows.Forms.Label();
+            this.priceSortchk = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -345,12 +346,25 @@
             this.labelS.TabIndex = 23;
             this.labelS.Text = "Manual Search: ";
             // 
+            // priceSortchk
+            // 
+            this.priceSortchk.AutoSize = true;
+            this.priceSortchk.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceSortchk.ForeColor = System.Drawing.Color.White;
+            this.priceSortchk.Location = new System.Drawing.Point(181, 224);
+            this.priceSortchk.Name = "priceSortchk";
+            this.priceSortchk.Size = new System.Drawing.Size(117, 24);
+            this.priceSortchk.TabIndex = 24;
+            this.priceSortchk.Text = "Sort By Price";
+            this.priceSortchk.UseVisualStyleBackColor = true;
+            // 
             // freeBuildForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1080, 622);
+            this.Controls.Add(this.priceSortchk);
             this.Controls.Add(this.labelS);
             this.Controls.Add(this.searchResultTxtBox);
             this.Controls.Add(this.searchTxtBox);
@@ -409,5 +423,6 @@
         private System.Windows.Forms.TextBox searchTxtBox;
         private System.Windows.Forms.RichTextBox searchResultTxtBox;
         private System.Windows.Forms.Label labelS;
+        private System.Windows.Forms.CheckBox priceSortchk;
     }
 }
