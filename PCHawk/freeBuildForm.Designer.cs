@@ -372,6 +372,7 @@
             this.searchResultsBox.Name = "searchResultsBox";
             this.searchResultsBox.Size = new System.Drawing.Size(269, 284);
             this.searchResultsBox.TabIndex = 26;
+            this.searchResultsBox.SelectedIndexChanged += new System.EventHandler(this.searchResultsBox_SelectedIndexChanged);
             // 
             // freeBuildForm
             // 

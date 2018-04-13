@@ -1,20 +1,54 @@
-    <DEBUG 0:0:45>: 	Start Program
-<SQLQUERY 0:16:169>: 	SELECT * FROM `customer` WHERE `email`='test'
-  <DEBUG 0:16:300>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:16:300>: 	SELECT * FROM `customer` WHERE `email`='test'
-  <DEBUG 0:16:316>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:16:316>: 	SELECT encryptPassword('*****')
-<SQLQUERY 0:24:75>: 	SELECT * FROM `cpu` WHERE name like '%Intel%'
-<SQLQUERY 0:24:106>: 	SELECT * FROM `fan` WHERE name like '%Intel%'
-<SQLQUERY 0:24:106>: 	SELECT * FROM `graphicscard` WHERE name like '%Intel%'
-<SQLQUERY 0:24:122>: 	SELECT * FROM `memory` WHERE name like '%Intel%'
-<SQLQUERY 0:24:122>: 	SELECT * FROM `motherboard` WHERE name like '%Intel%'
-<SQLQUERY 0:24:122>: 	SELECT * FROM `pc case` WHERE name like '%Intel%'
-<SQLQUERY 0:24:138>: 	SELECT * FROM `powersupply` WHERE name like '%Intel%'
-<SQLQUERY 0:24:153>: 	SELECT * FROM `storage` WHERE name like '%Intel%'
-  <DEBUG 0:31:462>: 	Selected : CPU
-<SQLQUERY 0:31:462>: 	SELECT * FROM `cpu`
-  <DEBUG 0:31:502>: 	Selected CPU: Intel Core i7-8700K
-  <DEBUG 0:48:737>: 	Adding: CPU to build
-  <DEBUG 2:41:200>: 	Exit Button clicked
-  <DEBUG 2:42:248>: 	Finished Program
+    <DEBUG 0:0:31>: 	Start Program
+ <SQLQUERY 0:4:10>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:4:119>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
+<SQLQUERY 0:4:119>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:4:135>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
+<SQLQUERY 0:4:135>: 	SELECT encryptPassword('*****')
+ <SQLQUERY 0:9:41>: 	SELECT * FROM `cpu` WHERE name like '%Intel%'
+ <SQLQUERY 0:9:62>: 	SELECT * FROM `fan` WHERE name like '%Intel%'
+ <SQLQUERY 0:9:70>: 	SELECT * FROM `graphicscard` WHERE name like '%Intel%'
+ <SQLQUERY 0:9:74>: 	SELECT * FROM `memory` WHERE name like '%Intel%'
+ <SQLQUERY 0:9:82>: 	SELECT * FROM `motherboard` WHERE name like '%Intel%'
+ <SQLQUERY 0:9:90>: 	SELECT * FROM `pc case` WHERE name like '%Intel%'
+ <SQLQUERY 0:9:98>: 	SELECT * FROM `powersupply` WHERE name like '%Intel%'
+<SQLQUERY 0:9:102>: 	SELECT * FROM `storage` WHERE name like '%Intel%'
+  <DEBUG 0:12:417>: 	Selected : CPU
+<SQLQUERY 0:12:417>: 	SELECT * FROM `cpu`
+  <DEBUG 0:12:464>: 	Selected CPU: Intel Core i7-8700K
+  <DEBUG 0:13:559>: 	Adding: CPU to build
+  <DEBUG 0:13:559>: 	Adding: CPU to build
+  <DEBUG 0:20:255>: 	Account Button clicked
+<SQLQUERY 0:26:831>: 	SELECT * FROM `cpu` WHERE name like '%Intel%'
+<SQLQUERY 0:26:847>: 	SELECT * FROM `fan` WHERE name like '%Intel%'
+<SQLQUERY 0:26:847>: 	SELECT * FROM `graphicscard` WHERE name like '%Intel%'
+<SQLQUERY 0:26:862>: 	SELECT * FROM `memory` WHERE name like '%Intel%'
+<SQLQUERY 0:26:862>: 	SELECT * FROM `motherboard` WHERE name like '%Intel%'
+<SQLQUERY 0:26:878>: 	SELECT * FROM `pc case` WHERE name like '%Intel%'
+<SQLQUERY 0:26:878>: 	SELECT * FROM `powersupply` WHERE name like '%Intel%'
+<SQLQUERY 0:26:878>: 	SELECT * FROM `storage` WHERE name like '%Intel%'
+  <DEBUG 0:30:339>: 	Selected : CPU
+<SQLQUERY 0:30:339>: 	SELECT * FROM `cpu`
+  <DEBUG 0:30:370>: 	Selected CPU: Intel Core i7-8700K
+  <DEBUG 0:31:295>: 	Adding: CPU to build
+  <DEBUG 0:31:295>: 	Adding: CPU to build
+  <DEBUG 0:36:594>: 	Selected : Graphics Card
+<SQLQUERY 0:36:594>: 	SELECT * FROM `graphicscard`
+  <DEBUG 0:36:646>: 	Selected Graphics Card: MSI GEFORCE GTX 1060 GAMING X 6G
+  <DEBUG 0:37:504>: 	Adding: GraphicsCard to build
+  <DEBUG 0:37:504>: 	Adding: CPU to build
+  <DEBUG 0:38:461>: 	Account Button clicked
+<SQLQUERY 0:44:418>: 	SELECT * FROM `cpu` WHERE name like '%Intel%'
+<SQLQUERY 0:44:433>: 	SELECT * FROM `fan` WHERE name like '%Intel%'
+<SQLQUERY 0:44:433>: 	SELECT * FROM `graphicscard` WHERE name like '%Intel%'
+<SQLQUERY 0:44:449>: 	SELECT * FROM `memory` WHERE name like '%Intel%'
+<SQLQUERY 0:44:449>: 	SELECT * FROM `motherboard` WHERE name like '%Intel%'
+<SQLQUERY 0:44:465>: 	SELECT * FROM `pc case` WHERE name like '%Intel%'
+<SQLQUERY 0:44:465>: 	SELECT * FROM `powersupply` WHERE name like '%Intel%'
+<SQLQUERY 0:44:480>: 	SELECT * FROM `storage` WHERE name like '%Intel%'
+  <DEBUG 0:49:546>: 	Selected : CPU
+<SQLQUERY 0:49:546>: 	SELECT * FROM `cpu`
+  <DEBUG 0:49:578>: 	Selected CPU: Intel Core i7-8700K
+  <DEBUG 0:51:286>: 	Adding: CPU to build
+  <DEBUG 0:51:286>: 	Adding: CPU to build
+  <DEBUG 1:43:877>: 	Exit Button clicked
+   <DEBUG 1:45:68>: 	Finished Program

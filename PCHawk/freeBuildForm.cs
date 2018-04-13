@@ -13,10 +13,12 @@ namespace PCHawk
 {
     public partial class freeBuildForm : Form
     {
+        Boolean trigger = true;
         public freeBuildForm()
         {
             InitializeComponent();
-            
+            MyStaticClass.computer = new Computer();
+
         }
         /// <summary>
         /// allows user to view their cart
@@ -107,9 +109,18 @@ namespace PCHawk
         private void bttnAddPart_Click(object sender, EventArgs e)
         {
             if (MyStaticClass.computer == null)
-                MyStaticClass.computer = new Computer();
-            MyStaticClass.computer.AddPart((Part)partBox.SelectedItem);
+            {
+              //  MyStaticClass.computer = new Computer();
+            }
+            if(trigger == true) {
+                MyStaticClass.computer.AddPart((Part)partBox.SelectedItem);
+            }
+            if(trigger == false){
+                MyStaticClass.computer.AddPart((Part)searchResultsBox.SelectedItem);
+            }
+            //MyStaticClass.computer.AddPart((Part)partBox.SelectedItem);
             Queries.Log(Queries.LogLevel.DEBUG, "Adding: "+partBox.SelectedItem.GetType().Name + " to build");
+            Queries.Log(Queries.LogLevel.DEBUG, "Adding: " + searchResultsBox.SelectedItem.GetType().Name + " to build");
             buildListBox.DataSource = MyStaticClass.computer.GetAttributes();
             txtBoxTotal.Text = "$"+MyStaticClass.computer.price;
 
@@ -191,6 +202,7 @@ namespace PCHawk
             String test = partTypeBox.SelectedItem.ToString();
             Queries.Log(Queries.LogLevel.DEBUG, "Selected "+test+": " + ((Part)partBox.SelectedItem));
             string attribs = "";
+            trigger = true;
             if (test == "CPU")
             {
                 
@@ -242,11 +254,57 @@ namespace PCHawk
         /// <param name="e"></param>
         private void searchBoxbttn_Click(object sender, EventArgs e)
         {
+            trigger = false;
             String userSearch = searchTxtBox.Text;
             List<Part> results = Part.Search(userSearch);
            
             searchResultsBox.DataSource = results;
             
+        }
+
+        private void searchResultsBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Part name = (Part)searchResultsBox.SelectedItem;
+            String attribs = "";
+            trigger = false;
+            if(name is CPU)
+            {
+                 attribs = ((CPU)searchResultsBox.SelectedItem).GetAttributes();
+            }
+            else if (name is Fan)
+            {
+                attribs = ((Fan)searchResultsBox.SelectedItem).GetAttributes();
+            }
+            else if (name is Case)
+            {
+                attribs = ((Case)searchResultsBox.SelectedItem).GetAttributes();
+            }
+            else if (name is Memory)
+            {
+                attribs = ((Memory)searchResultsBox.SelectedItem).GetAttributes();
+            }
+            else if (name is PowerSupply)
+            {
+                attribs = ((PowerSupply)searchResultsBox.SelectedItem).GetAttributes();
+            }
+            else if (name is Storage)
+            {
+                attribs = ((Storage)searchResultsBox.SelectedItem).GetAttributes();
+            }
+            else if (name is GraphicsCard)
+            {
+                attribs = ((GraphicsCard)searchResultsBox.SelectedItem).GetAttributes();
+            }
+            else if (name is MOBO)
+            {
+                attribs = ((MOBO)searchResultsBox.SelectedItem).GetAttributes();
+            }
+
+
+            //String attribs = ((Part)searchResultsBox.SelectedItem).GetAttributes();
+            partDescriptionBox.Text = attribs;
+            priceTxtBox.Text = "$" + ((Part)searchResultsBox.SelectedItem).price.ToString();
+
         }
     }
 }
