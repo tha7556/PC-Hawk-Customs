@@ -312,6 +312,13 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="M:PCHawk.freeBuildForm.searchBoxbttn_Click(System.Object,System.EventArgs)">
+            <summary>
+            When clicked searches for all occurences of the string in the manual search text box and populates parts in a corresponding list box
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
         <member name="F:PCHawk.freeBuildForm.components">
             <summary>
             Required designer variable.

@@ -56,10 +56,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBoxTotal = new System.Windows.Forms.TextBox();
             this.searchTxtBox = new System.Windows.Forms.TextBox();
-            this.searchResultTxtBox = new System.Windows.Forms.RichTextBox();
             this.labelS = new System.Windows.Forms.Label();
             this.priceSortchk = new System.Windows.Forms.CheckBox();
             this.searchBoxbttn = new System.Windows.Forms.Button();
+            this.searchResultsBox = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -195,7 +195,7 @@
             // partDescriptionBox
             // 
             this.partDescriptionBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.partDescriptionBox.Location = new System.Drawing.Point(12, 289);
+            this.partDescriptionBox.Location = new System.Drawing.Point(312, 287);
             this.partDescriptionBox.Name = "partDescriptionBox";
             this.partDescriptionBox.Size = new System.Drawing.Size(370, 250);
             this.partDescriptionBox.TabIndex = 6;
@@ -205,7 +205,7 @@
             // 
             this.partBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.partBox.FormattingEnabled = true;
-            this.partBox.Location = new System.Drawing.Point(12, 255);
+            this.partBox.Location = new System.Drawing.Point(314, 253);
             this.partBox.Name = "partBox";
             this.partBox.Size = new System.Drawing.Size(368, 28);
             this.partBox.TabIndex = 7;
@@ -225,7 +225,7 @@
             "Motherboard",
             "Memory",
             "Storage"});
-            this.partTypeBox.Location = new System.Drawing.Point(12, 221);
+            this.partTypeBox.Location = new System.Drawing.Point(314, 221);
             this.partTypeBox.Name = "partTypeBox";
             this.partTypeBox.Size = new System.Drawing.Size(160, 28);
             this.partTypeBox.TabIndex = 8;
@@ -237,7 +237,7 @@
             this.bttnAddPart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnAddPart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnAddPart.ForeColor = System.Drawing.Color.White;
-            this.bttnAddPart.Location = new System.Drawing.Point(181, 544);
+            this.bttnAddPart.Location = new System.Drawing.Point(480, 543);
             this.bttnAddPart.Name = "bttnAddPart";
             this.bttnAddPart.Size = new System.Drawing.Size(202, 44);
             this.bttnAddPart.TabIndex = 9;
@@ -248,7 +248,7 @@
             // priceTxtBox
             // 
             this.priceTxtBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceTxtBox.Location = new System.Drawing.Point(15, 562);
+            this.priceTxtBox.Location = new System.Drawing.Point(312, 563);
             this.priceTxtBox.Name = "priceTxtBox";
             this.priceTxtBox.ReadOnly = true;
             this.priceTxtBox.Size = new System.Drawing.Size(160, 26);
@@ -269,7 +269,7 @@
             this.buildListBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buildListBox.FormattingEnabled = true;
             this.buildListBox.ItemHeight = 20;
-            this.buildListBox.Location = new System.Drawing.Point(698, 255);
+            this.buildListBox.Location = new System.Drawing.Point(698, 253);
             this.buildListBox.Name = "buildListBox";
             this.buildListBox.Size = new System.Drawing.Size(370, 284);
             this.buildListBox.TabIndex = 12;
@@ -292,7 +292,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Yellow;
-            this.label6.Location = new System.Drawing.Point(12, 541);
+            this.label6.Location = new System.Drawing.Point(311, 540);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 18);
             this.label6.TabIndex = 18;
@@ -303,7 +303,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(685, 541);
+            this.label1.Location = new System.Drawing.Point(695, 540);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 18);
             this.label1.TabIndex = 19;
@@ -312,7 +312,7 @@
             // txtBoxTotal
             // 
             this.txtBoxTotal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxTotal.Location = new System.Drawing.Point(698, 562);
+            this.txtBoxTotal.Location = new System.Drawing.Point(698, 563);
             this.txtBoxTotal.Name = "txtBoxTotal";
             this.txtBoxTotal.ReadOnly = true;
             this.txtBoxTotal.Size = new System.Drawing.Size(160, 26);
@@ -321,27 +321,18 @@
             // searchTxtBox
             // 
             this.searchTxtBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchTxtBox.Location = new System.Drawing.Point(394, 257);
+            this.searchTxtBox.Location = new System.Drawing.Point(12, 235);
             this.searchTxtBox.Name = "searchTxtBox";
             this.searchTxtBox.Size = new System.Drawing.Size(269, 26);
             this.searchTxtBox.TabIndex = 21;
             this.searchTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // searchResultTxtBox
-            // 
-            this.searchResultTxtBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchResultTxtBox.Location = new System.Drawing.Point(394, 338);
-            this.searchResultTxtBox.Name = "searchResultTxtBox";
-            this.searchResultTxtBox.Size = new System.Drawing.Size(269, 250);
-            this.searchResultTxtBox.TabIndex = 22;
-            this.searchResultTxtBox.Text = "Part Description";
             // 
             // labelS
             // 
             this.labelS.AutoSize = true;
             this.labelS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelS.ForeColor = System.Drawing.Color.White;
-            this.labelS.Location = new System.Drawing.Point(390, 235);
+            this.labelS.Location = new System.Drawing.Point(12, 213);
             this.labelS.Name = "labelS";
             this.labelS.Size = new System.Drawing.Size(135, 19);
             this.labelS.TabIndex = 23;
@@ -352,7 +343,7 @@
             this.priceSortchk.AutoSize = true;
             this.priceSortchk.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceSortchk.ForeColor = System.Drawing.Color.White;
-            this.priceSortchk.Location = new System.Drawing.Point(181, 224);
+            this.priceSortchk.Location = new System.Drawing.Point(480, 223);
             this.priceSortchk.Name = "priceSortchk";
             this.priceSortchk.Size = new System.Drawing.Size(117, 24);
             this.priceSortchk.TabIndex = 24;
@@ -364,7 +355,7 @@
             this.searchBoxbttn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchBoxbttn.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBoxbttn.ForeColor = System.Drawing.Color.White;
-            this.searchBoxbttn.Location = new System.Drawing.Point(394, 289);
+            this.searchBoxbttn.Location = new System.Drawing.Point(12, 267);
             this.searchBoxbttn.Name = "searchBoxbttn";
             this.searchBoxbttn.Size = new System.Drawing.Size(202, 44);
             this.searchBoxbttn.TabIndex = 25;
@@ -372,16 +363,26 @@
             this.searchBoxbttn.UseVisualStyleBackColor = true;
             this.searchBoxbttn.Click += new System.EventHandler(this.searchBoxbttn_Click);
             // 
+            // searchResultsBox
+            // 
+            this.searchResultsBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchResultsBox.FormattingEnabled = true;
+            this.searchResultsBox.ItemHeight = 20;
+            this.searchResultsBox.Location = new System.Drawing.Point(12, 317);
+            this.searchResultsBox.Name = "searchResultsBox";
+            this.searchResultsBox.Size = new System.Drawing.Size(269, 284);
+            this.searchResultsBox.TabIndex = 26;
+            // 
             // freeBuildForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1080, 622);
+            this.Controls.Add(this.searchResultsBox);
             this.Controls.Add(this.searchBoxbttn);
             this.Controls.Add(this.priceSortchk);
             this.Controls.Add(this.labelS);
-            this.Controls.Add(this.searchResultTxtBox);
             this.Controls.Add(this.searchTxtBox);
             this.Controls.Add(this.txtBoxTotal);
             this.Controls.Add(this.label1);
@@ -436,9 +437,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBoxTotal;
         private System.Windows.Forms.TextBox searchTxtBox;
-        private System.Windows.Forms.RichTextBox searchResultTxtBox;
         private System.Windows.Forms.Label labelS;
         private System.Windows.Forms.CheckBox priceSortchk;
         private System.Windows.Forms.Button searchBoxbttn;
+        private System.Windows.Forms.ListBox searchResultsBox;
     }
 }

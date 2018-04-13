@@ -235,18 +235,18 @@ namespace PCHawk
             partDescriptionBox.Text = attribs;
             priceTxtBox.Text = "$"+((Part)partBox.SelectedItem).price.ToString();
         }
-
+        /// <summary>
+        /// When clicked searches for all occurences of the string in the manual search text box and populates parts in a corresponding list box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void searchBoxbttn_Click(object sender, EventArgs e)
         {
             String userSearch = searchTxtBox.Text;
             List<Part> results = Part.Search(userSearch);
-            int c = results.Count;
-            searchResultTxtBox.Text = results[0].name;
+           
+            searchResultsBox.DataSource = results;
             
-            for(int i = 0; i < results.Count; i++)
-            {
-                //searchResultTxtBox.Text = results[i].GetType().Name;
-            }
         }
     }
 }
