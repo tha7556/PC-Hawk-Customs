@@ -196,6 +196,12 @@
             <param name="serialNumber">The serial number to look up</param>
             <returns>The Computer from the serial number</returns>
         </member>
+        <member name="M:PrimaryQueries.Computer.GetAll">
+            <summary>
+            Gets all computers in the database
+            </summary>
+            <returns>A Computer[] of all Computers in the database</returns>
+        </member>
         <member name="M:PrimaryQueries.Computer.GetFromQuery(System.String)">
             <summary>
             Converts a MySQL query result into a Computer

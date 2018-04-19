@@ -206,6 +206,18 @@ namespace PrimaryQueries {
             return GetFromQuery(Queries.Query("SELECT * FROM `computers` WHERE `serialNumber` = " + serialNumber)[0]);
         }
         /// <summary>
+        /// Gets all computers in the database
+        /// </summary>
+        /// <returns>A Computer[] of all Computers in the database</returns>
+        public static Computer[] GetAll() {
+            string[] result = Queries.Query("SELECT * FROM `computers");
+            Computer[] comps = new Computer[result.Length];
+            for(int i = 0; i < result.Length; i++) {
+                comps[i] = GetFromQuery(result[i]);
+            }
+            return comps;
+        }
+        /// <summary>
         /// Converts a MySQL query result into a Computer
         /// </summary>
         /// <param name="result">The MySQL query result</param>
