@@ -110,17 +110,19 @@ namespace PCHawk
         {
             if (MyStaticClass.computer == null)
             {
-              //  MyStaticClass.computer = new Computer();
+                MyStaticClass.computer = new Computer();
             }
             if(trigger == true) {
                 MyStaticClass.computer.AddPart((Part)partBox.SelectedItem);
+                Queries.Log(Queries.LogLevel.DEBUG, "Adding: " + partBox.SelectedItem.GetType().Name + " to build");
             }
             if(trigger == false){
                 MyStaticClass.computer.AddPart((Part)searchResultsBox.SelectedItem);
+                Queries.Log(Queries.LogLevel.DEBUG, "Adding: " + searchResultsBox.SelectedItem.GetType().Name + " to build");
             }
             //MyStaticClass.computer.AddPart((Part)partBox.SelectedItem);
-            Queries.Log(Queries.LogLevel.DEBUG, "Adding: "+partBox.SelectedItem.GetType().Name + " to build");
-            Queries.Log(Queries.LogLevel.DEBUG, "Adding: " + searchResultsBox.SelectedItem.GetType().Name + " to build");
+            
+            
             buildListBox.DataSource = MyStaticClass.computer.GetAttributes();
             txtBoxTotal.Text = "$"+MyStaticClass.computer.price;
 
