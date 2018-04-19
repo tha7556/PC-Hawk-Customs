@@ -11,5 +11,6 @@ namespace PCHawk
     {
         public static Customer customer { get; set; }
         public static Computer computer { get; set; }
+        public static Computer cart { get; set; }
     }
 }

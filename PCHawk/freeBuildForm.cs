@@ -135,7 +135,7 @@ namespace PCHawk
         private void bttnAddCart_Click(object sender, EventArgs e)
         {
             Queries.Log(Queries.LogLevel.DEBUG, "Add to Cart Button clicked");
-            //also how we do dis
+            MyStaticClass.cart = MyStaticClass.computer; //TODO: check that all parts are selected
         }
         /// <summary>
         /// action that occurs when the user chooses a part type. will set the collection/datasource of the part dropdown menu to those that match
