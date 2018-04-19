@@ -10,9 +10,14 @@ using System.Windows.Forms;
 
 namespace PCHawk
 {
+    /// <summary>
+    /// form class
+    /// </summary>
     public partial class preBuildForm : Form
     {
-        
+        /// <summary>
+        /// pre build class
+        /// </summary>
         public preBuildForm()
         {
             InitializeComponent();

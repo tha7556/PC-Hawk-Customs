@@ -9,9 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PCHawk
-{
+{/// <summary>
+/// 
+/// </summary>
     public partial class homeScreenControl : UserControl
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public homeScreenControl()
         {
             InitializeComponent();

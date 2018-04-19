@@ -9,9 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PCHawk
-{
+{   
+    /// <summary>
+    /// checkout form class
+    /// </summary>
     public partial class checkOutForm : Form
     {
+        /// <summary>
+        /// form class
+        /// </summary>
         public checkOutForm()
         {
             InitializeComponent();

@@ -11,9 +11,15 @@ using PrimaryQueries;
 
 namespace PCHawk
 {
+    /// <summary>
+    /// free build
+    /// </summary>
     public partial class freeBuildForm : Form
     {
         Boolean trigger = true;
+        /// <summary>
+        /// form class
+        /// </summary>
         public freeBuildForm()
         {
             InitializeComponent();
@@ -135,6 +141,7 @@ namespace PCHawk
         private void bttnAddCart_Click(object sender, EventArgs e)
         {
             Queries.Log(Queries.LogLevel.DEBUG, "Add to Cart Button clicked");
+            MyStaticClass.computer.name = buildNameBox.Text;
             MyStaticClass.cart = MyStaticClass.computer; //TODO: check that all parts are selected
         }
         /// <summary>

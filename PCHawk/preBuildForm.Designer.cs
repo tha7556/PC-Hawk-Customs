@@ -240,7 +240,7 @@
             // 
             this.bttnAddCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnAddCart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnAddCart.ForeColor = System.Drawing.Color.White;
+            this.bttnAddCart.ForeColor = System.Drawing.Color.Yellow;
             this.bttnAddCart.Location = new System.Drawing.Point(390, 521);
             this.bttnAddCart.Name = "bttnAddCart";
             this.bttnAddCart.Size = new System.Drawing.Size(314, 44);

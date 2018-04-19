@@ -10,9 +10,14 @@ using System.Windows.Forms;
 
 namespace PCHawk
 {
+    /// <summary>
+    /// the login form class
+    /// </summary>
     public partial class accountForm : Form
     {
-        
+        /// <summary>
+        /// initialization of form
+        /// </summary>
         public accountForm()
         {
             InitializeComponent();

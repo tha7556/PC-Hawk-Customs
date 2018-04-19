@@ -1,5 +1,8 @@
 ﻿namespace PCHawk
 {
+    /// <summary>
+    /// DO NOT TOUCH
+    /// </summary>
     partial class checkOutForm
     {
         /// <summary>

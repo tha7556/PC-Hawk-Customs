@@ -10,9 +10,14 @@ using System.Windows.Forms;
 
 namespace PCHawk
 {
-
+    /// <summary>
+    /// home form
+    /// </summary>
     public partial class frmHome : Form
     {
+        /// <summary>
+        /// home form
+        /// </summary>
         public frmHome()
         {
             InitializeComponent();

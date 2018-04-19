@@ -4,6 +4,16 @@
         <name>PCHawk</name>
     </assembly>
     <members>
+        <member name="T:PCHawk.accountForm">
+            <summary>
+            the login form class
+            </summary>
+        </member>
+        <member name="M:PCHawk.accountForm.#ctor">
+            <summary>
+            initialization of form
+            </summary>
+        </member>
         <member name="M:PCHawk.accountForm.bttnExit_Click(System.Object,System.EventArgs)">
             <summary>
             Allows user to exit the application
@@ -84,6 +94,16 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:PCHawk.cartForm">
+            <summary>
+            cart form
+            </summary>
+        </member>
+        <member name="M:PCHawk.cartForm.#ctor">
+            <summary>
+            cart class
+            </summary>
+        </member>
         <member name="M:PCHawk.cartForm.bttnCheckOut_Click(System.Object,System.EventArgs)">
             <summary>
             brings user to checkout page
@@ -106,6 +126,19 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PCHawk.checkOutForm">
+            <summary>
+            checkout form class
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PCHawk.checkOutForm.#ctor">
+            <summary>
+            form class
             </summary>
         </member>
         <member name="M:PCHawk.checkOutForm.bttnSame_Click(System.Object,System.EventArgs)">
@@ -174,6 +207,16 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:PCHawk.SignInForm">
+            <summary>
+            form class
+            </summary>
+        </member>
+        <member name="M:PCHawk.SignInForm.#ctor">
+            <summary>
+            form init
+            </summary>
+        </member>
         <member name="M:PCHawk.SignInForm.bttnExit_Click(System.Object,System.EventArgs)">
             <summary>
             Exits the application
@@ -238,6 +281,16 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PCHawk.freeBuildForm">
+            <summary>
+            free build
+            </summary>
+        </member>
+        <member name="M:PCHawk.freeBuildForm.#ctor">
+            <summary>
+            form class
             </summary>
         </member>
         <member name="M:PCHawk.freeBuildForm.bttnCart_Click(System.Object,System.EventArgs)">
@@ -336,6 +389,16 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:PCHawk.frmHome">
+            <summary>
+            home form
+            </summary>
+        </member>
+        <member name="M:PCHawk.frmHome.#ctor">
+            <summary>
+            home form
+            </summary>
+        </member>
         <member name="M:PCHawk.frmHome.bttnFreeBuild_Click(System.Object,System.EventArgs)">
             <summary>
             takes user to the free build page
@@ -402,6 +465,23 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:PCHawk.helpForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PCHawk.helpForm.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PCHawk.helpForm.bttnExitHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
         <member name="F:PCHawk.helpForm.components">
             <summary>
             Required designer variable.
@@ -419,6 +499,16 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:PCHawk.homeScreenControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PCHawk.homeScreenControl.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="F:PCHawk.homeScreenControl.components">
             <summary> 
             Required designer variable.
@@ -434,6 +524,16 @@
             <summary> 
             Required method for Designer support - do not modify 
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PCHawk.preBuildForm">
+            <summary>
+            form class
+            </summary>
+        </member>
+        <member name="M:PCHawk.preBuildForm.#ctor">
+            <summary>
+            pre build class
             </summary>
         </member>
         <member name="F:PCHawk.preBuildForm.components">
@@ -461,6 +561,16 @@
         <member name="M:PCHawk.Program.Main">
             <summary>
             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:PCHawk.signUpForm">
+            <summary>
+            sign up
+            </summary>
+        </member>
+        <member name="M:PCHawk.signUpForm.#ctor">
+            <summary>
+            form class
             </summary>
         </member>
         <member name="M:PCHawk.signUpForm.bttnCreateAcc_Click(System.Object,System.EventArgs)">

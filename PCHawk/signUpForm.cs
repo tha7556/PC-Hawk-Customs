@@ -11,8 +11,14 @@ using PrimaryQueries;
 
 namespace PCHawk
 {
+    /// <summary>
+    /// sign up
+    /// </summary>
     public partial class signUpForm : Form
     {
+        /// <summary>
+        /// form class
+        /// </summary>
         public signUpForm()
         {
             InitializeComponent();

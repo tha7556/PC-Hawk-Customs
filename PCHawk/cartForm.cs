@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace PCHawk
 {
+    /// <summary>
+    /// cart form
+    /// </summary>
     public partial class cartForm : Form
     {
+        /// <summary>
+        /// cart class
+        /// </summary>
         public cartForm()
         {
             //intialization of the form
