@@ -4,10 +4,25 @@ namespace PrimaryQueries {
     /// The hard drive of the Computer
     /// </summary>
     public class Storage : Part {
+        /// <summary>
+        /// The Series the hard drive belongs to
+        /// </summary>
         public string series { get; set; }
+        /// <summary>
+        /// The form of the hard drive
+        /// </summary>
         public string form{ get; set; }
+        /// <summary>
+        /// The type of storage used
+        /// </summary>
         public string type { get; set; }
+        /// <summary>
+        /// The amount of data the hard drive can hold
+        /// </summary>
         public string capacity { get; set; }
+        /// <summary>
+        /// The size of the cache
+        /// </summary>
         public string cache { get; set; }
         /// <summary>
         /// Creates a new Storage Part
@@ -71,6 +86,10 @@ namespace PrimaryQueries {
             }
             return null;
         }
+        /// <summary>
+        /// Gets the attributes of the Storage
+        /// </summary>
+        /// <returns>A string containing the attributes</returns>
         public new string GetAttributes() {
             return "Name: "+name+
                 "\nSeries: "+series+

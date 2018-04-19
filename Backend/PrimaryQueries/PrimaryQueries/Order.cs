@@ -27,9 +27,9 @@ namespace PrimaryQueries {
         /// <summary>
         /// Creates a new Order with -1 as Order Number. When added to the database, it automatically sets it to the next number
         /// </summary>
-        /// <param name="part">The Part being ordered</param>
         /// <param name="employee">The Employee involved in the Order</param>
         /// <param name="customer">The Customer making the Order</param>
+        /// <param name="computer">The Computer being ordered</param>
         public Order(Computer computer, Employee employee, Customer customer) : this(-1,computer,employee,customer){
             
         }

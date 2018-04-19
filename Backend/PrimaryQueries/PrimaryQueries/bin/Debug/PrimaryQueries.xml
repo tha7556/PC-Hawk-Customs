@@ -9,6 +9,26 @@
             A Case for a Computer
             </summary>
         </member>
+        <member name="P:PrimaryQueries.Case.type">
+            <summary>
+            The type of the case
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Case.powerSupply">
+            <summary>
+            The watts of the built in power supply if there is one
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Case.externalSize">
+            <summary>
+            TODO
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Case.internalSize">
+            <summary>
+            TODO
+            </summary>
+        </member>
         <member name="M:PrimaryQueries.Case.#ctor(System.Int32,System.String,System.Double,System.String,System.Int32,System.Int32,System.String)">
             <summary>
             Creates a new Case
@@ -46,49 +66,162 @@
             <param name="partNumber">The identifying part number</param>
             <returns>The Case object with the part number</returns>
         </member>
+        <member name="M:PrimaryQueries.Case.GetAttributes">
+            <summary>
+            Gets the attributes of the Case
+            </summary>
+            <returns>A string containing the attributes</returns>
+        </member>
+        <member name="T:PrimaryQueries.Computer">
+            <summary>
+            A Computer object
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Computer.pcCase">
+            <summary>
+            The PC case of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Computer.cpu">
+            <summary>
+            The CPU of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Computer.fan">
+            <summary>
+            The Fan of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Computer.gCard">
+            <summary>
+            The Graphics Card of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Computer.memory">
+            <summary>
+            The Memory of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Computer.mBoard">
+            <summary>
+            The Motherboard of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Computer.power">
+            <summary>
+            The Power Supply of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Computer.storage">
+            <summary>
+            The Storage of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Computer.serialNumber">
+            <summary>
+            The serial number of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Computer.name">
+            <summary>
+            The name of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Computer.price">
+            <summary>
+            The price of the Computer
+            </summary>
+        </member>
         <member name="M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)">
             <summary>
             Computer constructor requiring all parts
             </summary>
-            <param name="serialNumber"></param>
-            <param name="name"></param>
-            <param name="pcCase"></param>
-            <param name="cpu"></param>
-            <param name="fan"></param>
-            <param name="gCard"></param>
-            <param name="memory"></param>
-            <param name="mBoard"></param>
-            <param name="power"></param>
-            <param name="storage"></param>
+            <param name="serialNumber">The serial number of the Computer</param>
+            <param name="name">The name of the Computer</param>
+            <param name="pcCase">The pc case of the Computer</param>
+            <param name="cpu">The cpu of the Computer</param>
+            <param name="fan">The fan of the Computer</param>
+            <param name="gCard">The Graphics Card of the Computer</param>
+            <param name="memory">The Memory of the Computer</param>
+            <param name="mBoard">The Motherboard of the Computer</param>
+            <param name="power">The power supply of the Computer</param>
+            <param name="storage">The storage of the computer</param>
         </member>
         <member name="M:PrimaryQueries.Computer.#ctor(System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)">
             <summary>
             Secondary Constructor for database incrementation
             </summary>
-            <param name="name"></param>
-            <param name="pcCase"></param>
-            <param name="cpu"></param>
-            <param name="fan"></param>
-            <param name="gCard"></param>
-            <param name="memory"></param>
-            <param name="mBoard"></param>
-            <param name="power"></param>
-            <param name="storage"></param>
+            <param name="name">The Name of the Computer</param>
+            <param name="pcCase">The pc case of the Computer</param>
+            <param name="cpu">The CPU of the Computer</param>
+            <param name="fan">The Fan of the Computer</param>
+            <param name="gCard">The Graphics Card of the Computer</param>
+            <param name="memory">The Memory of the Computer</param>
+            <param name="mBoard">The Motherboard of the Computer</param>
+            <param name="power">The Power Supply of the Computer</param>
+            <param name="storage">The Storage of the Computer</param>
         </member>
         <member name="M:PrimaryQueries.Computer.#ctor">
             <summary>
-            Empty Constructor for prebuild sequential additions
+            Empty Constructor for freebuild sequential additions
             </summary>
+        </member>
+        <member name="M:PrimaryQueries.Computer.CalcPrice">
+            <summary>
+            Calculates the Price of the Computer
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:PrimaryQueries.Computer.AddToDatabase">
             <summary>
             Inserts the selected Computer object into the relevant table
             </summary>
         </member>
+        <member name="M:PrimaryQueries.Computer.AddPart(PrimaryQueries.Part)">
+            <summary>
+            Adds a Part to the Computer
+            </summary>
+            <param name="p">The Part to add</param>
+        </member>
+        <member name="M:PrimaryQueries.Computer.GetAttributes">
+            <summary>
+            Gets the attributes of the Computer
+            </summary>
+            <returns>A string[] containing the attributes</returns>
+        </member>
+        <member name="M:PrimaryQueries.Computer.Get(System.Int32)">
+            <summary>
+            Gets a Computer based on a serial number
+            </summary>
+            <param name="serialNumber">The serial number to look up</param>
+            <returns>The Computer from the serial number</returns>
+        </member>
+        <member name="M:PrimaryQueries.Computer.GetFromQuery(System.String)">
+            <summary>
+            Converts a MySQL query result into a Computer
+            </summary>
+            <param name="result">The MySQL query result</param>
+            <returns>The Computer found from the query</returns>
+        </member>
         <member name="T:PrimaryQueries.CPU">
             <summary>
             The Central Processing Unit comprised of (outside of Part):
             Speed, Cores, and TDP
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.CPU.speed">
+            <summary>
+            The speed of the CPU
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.CPU.cores">
+            <summary>
+            The number of cores the CPU has
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.CPU.tdp">
+            <summary>
+            The TDP of the CPU
             </summary>
         </member>
         <member name="M:PrimaryQueries.CPU.#ctor(System.Int32,System.String,System.Double,System.Double,System.Int32,System.Int32)">
@@ -111,8 +244,8 @@
             <summary>
             Returns a cpu object parsed from the string parameter
             </summary>
-            <param name="query"></param>
-            <returns></returns>
+            <param name="query">The MySQL query result</param>
+            <returns>The CPU from the query result</returns>
         </member>
         <member name="M:PrimaryQueries.CPU.GetAll">
             <summary>
@@ -124,12 +257,38 @@
             <summary>
             Returns the relevant part from the database table queried on partNumber
             </summary>
-            <param name="partNumber"></param>
-            <returns></returns>
+            <param name="partNumber">The part number</param>
+            <returns>The CPU from the part number</returns>
+        </member>
+        <member name="M:PrimaryQueries.CPU.GetAttributes">
+            <summary>
+            Gets the attributes of the CPU
+            </summary>
+            <returns>A string containing the attributes</returns>
         </member>
         <member name="T:PrimaryQueries.Customer">
             <summary>
             A customer of PCHawkCustoms
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Customer.streetAddress">
+            <summary>
+            The street address of the Customer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Customer.city">
+            <summary>
+            The city of the Customer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Customer.state">
+            <summary>
+            The state of the Customer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Customer.zipcode">
+            <summary>
+            The zipcode of the Customer
             </summary>
         </member>
         <member name="M:PrimaryQueries.Customer.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)">
@@ -145,7 +304,15 @@
             <param name="zipcode">The Customer's zipcode</param>
             <param name="password">The Customer's password</param>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:PrimaryQueries.Customer.ChangeAddress(System.String,System.String,System.String,System.Int32)" -->
+        <member name="M:PrimaryQueries.Customer.ChangeAddress(System.String,System.String,System.String,System.Int32)">
+            <summary>
+             Changes the Customer's Address
+             </summary>
+             <param name="newStreetAddress">The new Street Address of the Customer</param>
+             <param name="newCity">The new City of the Customer</param>
+             <param name="newState">The new State of the Customer</param>
+             <param name="newZipcode">The new Zipcode of the Customer</param>
+        </member>
         <member name="M:PrimaryQueries.Customer.AddToDatabase">
             <summary>
             Adds the Customer to the Database
@@ -246,15 +413,30 @@
             </summary>
             <returns>A Employee[] containing all employees from the database</returns>
         </member>
+        <member name="T:PrimaryQueries.Fan">
+            <summary>
+            The Fan of a Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Fan.rpm">
+            <summary>
+            The rpm of the fan
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Fan.nl">
+            <summary>
+            The noise level of the Fan
+            </summary>
+        </member>
         <member name="M:PrimaryQueries.Fan.#ctor(System.Int32,System.String,System.Double,System.Int32,System.Double)">
             <summary>
             Constructor for Fan Class
             </summary>
-            <param name="partNumber"></param>
-            <param name="name"></param>
-            <param name="price"></param>
-            <param name="rpm"></param>
-            <param name="nl"></param>
+            <param name="partNumber">The part number of the Fan</param>
+            <param name="name">The name of the Fan</param>
+            <param name="price">The price of the Fan</param>
+            <param name="rpm">The rpm of the Fan</param>
+            <param name="nl">The noise level of the Fan</param>
         </member>
         <member name="M:PrimaryQueries.Fan.AddToDatabase">
             <summary>
@@ -263,27 +445,53 @@
         </member>
         <member name="M:PrimaryQueries.Fan.GetFromQuery(System.String)">
             <summary>
-            Queries the database for object creation
+            Converts a MySQL result into a Fan
             </summary>
-            <param name="query"></param>
-            <returns></returns>
+            <param name="query">The MySQL query result</param>
+            <returns>The fan created from the query result</returns>
         </member>
         <member name="M:PrimaryQueries.Fan.GetAll">
             <summary>
             Return all fan objects from the relevant table
             </summary>
-            <returns></returns>
+            <returns>A Fan[] of all fans in the database</returns>
         </member>
         <member name="M:PrimaryQueries.Fan.Get(System.Int32)">
             <summary>
             Returns a fan object, queried for by part number
             </summary>
-            <param name="partNumber"></param>
-            <returns></returns>
+            <param name="partNumber">The part number to get</param>
+            <returns>The Fan from the part number</returns>
+        </member>
+        <member name="M:PrimaryQueries.Fan.GetAttributes">
+            <summary>
+            Gets the attributes of the Fan
+            </summary>
+            <returns>A string containing the attributes</returns>
         </member>
         <member name="T:PrimaryQueries.GraphicsCard">
             <summary>
             The Graphics Card of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.GraphicsCard.series">
+            <summary>
+            The series the Graphics Card belongs to
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.GraphicsCard.chipSet">
+            <summary>
+            The chipset used int the Graphics Card
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.GraphicsCard.memory">
+            <summary>
+            The amount of memory the Graphics Card has
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.GraphicsCard.coreClock">
+            <summary>
+            The speed of the clock on the Graphics Card
             </summary>
         </member>
         <member name="M:PrimaryQueries.GraphicsCard.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String)">
@@ -323,18 +531,54 @@
             <param name="partNumber">The identifying part number</param>
             <returns>The GraphicsCard object with the part number</returns>
         </member>
+        <member name="M:PrimaryQueries.GraphicsCard.GetAttributes">
+            <summary>
+            Gets the attributes of the Graphics Card
+            </summary>
+            <returns>A string containing the attributes</returns>
+        </member>
+        <member name="T:PrimaryQueries.Memory">
+            <summary>
+            The Memory of the Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Memory.speed">
+            <summary>
+            The speed of The Memory
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Memory.type">
+            <summary>
+            The type used
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Memory.cas">
+            <summary>
+            The delay time between the moment a memory controller tells the memory module to access a particular memory column on a RAM module
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Memory.modules">
+            <summary>
+            The modules of the Memory
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Memory.size">
+            <summary>
+            The size of the Memory
+            </summary>
+        </member>
         <member name="M:PrimaryQueries.Memory.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)">
             <summary>
             Memory Object constructor
             </summary>
-            <param name="partNumber"></param>
-            <param name="name"></param>
-            <param name="price"></param>
-            <param name="speed"></param>
-            <param name="type"></param>
-            <param name="cas"></param>
-            <param name="modules"></param>
-            <param name="size"></param>
+            <param name="partNumber">The identifying part number</param>
+            <param name="name">The name of the part</param>
+            <param name="price">The price of the part</param>
+            <param name="speed">The speed of the Memory</param>
+            <param name="type">The type used</param>
+            <param name="cas">The delay time between the moment a memory controller tells the memory module to access a particular memory column on a RAM module</param>
+            <param name="modules">The modules of the Memory</param>
+            <param name="size">The size of the Memory</param>
         </member>
         <member name="M:PrimaryQueries.Memory.AddToDatabase">
             <summary>
@@ -345,33 +589,64 @@
             <summary>
             /// Converts a MySQL query into a Memory object
             </summary>
-            <param name="query"></param>
-            <returns></returns>
+            <param name="query">The query result</param>
+            <returns>The Memory resulting from the query</returns>
         </member>
         <member name="M:PrimaryQueries.Memory.GetAll">
             <summary>
             Returns all elements within database memory table as an array of Memory objects
             </summary>
-            <returns></returns>
+            <returns>A Memory[] with all Memory in the database</returns>
         </member>
         <member name="M:PrimaryQueries.Memory.Get(System.Int32)">
             <summary>
             Gets a Memory object from the database based on parameter part number
             </summary>
-            <param name="partNumber"></param>
-            <returns></returns>
+            <param name="partNumber">The part number of the Memory</param>
+            <returns>The Memory retrieved from the part number</returns>
+        </member>
+        <member name="M:PrimaryQueries.Memory.GetAttributes">
+            <summary>
+            Gets the attributes of the Memory
+            </summary>
+            <returns>A string containing the attributes</returns>
+        </member>
+        <member name="T:PrimaryQueries.MOBO">
+            <summary>
+            A Motherboard of a Computer
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.MOBO.socket">
+            <summary>
+            The socket of the Motherboard
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.MOBO.form">
+            <summary>
+            The form of the Motherboard
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.MOBO.mRAM">
+            <summary>
+            The max ram of the Motherboard
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.MOBO.rAMSlots">
+            <summary>
+            The number of Ram slots
+            </summary>
         </member>
         <member name="M:PrimaryQueries.MOBO.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.Int32)">
             <summary>
             Motherboard Object constructor
             </summary>
-            <param name="partNumber"></param>
-            <param name="name"></param>
-            <param name="price"></param>
-            <param name="socket"></param>
-            <param name="form"></param>
-            <param name="mRAM"></param>
-            <param name="rAMSlots"></param>
+            <param name="partNumber">The identifying part number</param>
+            <param name="name">The name of the Part</param>
+            <param name="price">The price of the Part</param>
+            <param name="socket">The socket of the Motherboard</param>
+            <param name="form">The form of the Motherboard</param>
+            <param name="mRAM">The max ram of the Motherboard</param>
+            <param name="rAMSlots">The number of ram slots</param>
         </member>
         <member name="M:PrimaryQueries.MOBO.AddToDatabase">
             <summary>
@@ -382,21 +657,27 @@
             <summary>
             Converts a MySQL query into a MOBO object
             </summary>
-            <param name="query"></param>
-            <returns></returns>
+            <param name="query">The query result</param>
+            <returns>The MOBO created from the result</returns>
         </member>
         <member name="M:PrimaryQueries.MOBO.GetAll">
             <summary>
             Returns all elements from the database motherboard table as an array of MOBO objects
             </summary>
-            <returns></returns>
+            <returns>A MOBO[] of all Motherboards in the database</returns>
         </member>
         <member name="M:PrimaryQueries.MOBO.Get(System.Int32)">
             <summary>
             Returns the MOBO object queried from database selected by parameter part numebr
             </summary>
-            <param name="partNumber"></param>
-            <returns></returns>
+            <param name="partNumber">The part number to get</param>
+            <returns>The MOBO found from the part number</returns>
+        </member>
+        <member name="M:PrimaryQueries.MOBO.GetAttributes">
+            <summary>
+            Gets the attributes of the Motherboard
+            </summary>
+            <returns>A string containing the attributes</returns>
         </member>
         <member name="T:PrimaryQueries.Order">
             <summary>
@@ -416,9 +697,9 @@
             <summary>
             Creates a new Order with -1 as Order Number. When added to the database, it automatically sets it to the next number
             </summary>
-            <param name="part">The Part being ordered</param>
             <param name="employee">The Employee involved in the Order</param>
             <param name="customer">The Customer making the Order</param>
+            <param name="computer">The Computer being ordered</param>
         </member>
         <member name="M:PrimaryQueries.Order.AddToDatabase">
             <summary>
@@ -439,7 +720,12 @@
         </member>
         <member name="P:PrimaryQueries.Person.firstName">
             <summary>
-            The Name of the Person
+            The first name of the Person
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Person.lastName">
+            <summary>
+            The last name of the Person
             </summary>
         </member>
         <member name="P:PrimaryQueries.Person.email">
@@ -655,6 +941,31 @@
             A Power Supply for the Computer
             </summary>
         </member>
+        <member name="P:PrimaryQueries.PowerSupply.series">
+            <summary>
+            The series the power supply belongs to
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.PowerSupply.form">
+            <summary>
+            The form of the Power Supply
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.PowerSupply.efficiency">
+            <summary>
+            The efficiency rating of the Power Supply
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.PowerSupply.watts">
+            <summary>
+            The wattage of the Power Supple
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.PowerSupply.modular">
+            <summary>
+            The degree of modularity of the Power Supply
+            </summary>
+        </member>
         <member name="M:PrimaryQueries.PowerSupply.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)">
             <summary>
             Creates a new Power Supply
@@ -692,6 +1003,12 @@
             </summary>
             <param name="partNumber">The identifying part number</param>
             <returns>The PowerSupply object with the part number</returns>
+        </member>
+        <member name="M:PrimaryQueries.PowerSupply.GetAttributes">
+            <summary>
+            Gets the attributes of the Power Supply
+            </summary>
+            <returns>A string containing the attributes</returns>
         </member>
         <member name="T:PrimaryQueries.Queries">
             <summary>
@@ -766,6 +1083,31 @@
             The hard drive of the Computer
             </summary>
         </member>
+        <member name="P:PrimaryQueries.Storage.series">
+            <summary>
+            The Series the hard drive belongs to
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Storage.form">
+            <summary>
+            The form of the hard drive
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Storage.type">
+            <summary>
+            The type of storage used
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Storage.capacity">
+            <summary>
+            The amount of data the hard drive can hold
+            </summary>
+        </member>
+        <member name="P:PrimaryQueries.Storage.cache">
+            <summary>
+            The size of the cache
+            </summary>
+        </member>
         <member name="M:PrimaryQueries.Storage.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)">
             <summary>
             Creates a new Storage Part
@@ -803,6 +1145,12 @@
             </summary>
             <param name="partNumber">The identifying part number</param>
             <returns>The Storage object with the part number</returns>
+        </member>
+        <member name="M:PrimaryQueries.Storage.GetAttributes">
+            <summary>
+            Gets the attributes of the Storage
+            </summary>
+            <returns>A string containing the attributes</returns>
         </member>
     </members>
 </doc>

@@ -4,10 +4,25 @@ namespace PrimaryQueries {
     /// A Power Supply for the Computer
     /// </summary>
     public class PowerSupply : Part {
-        private string series { get; set; }
+        /// <summary>
+        /// The series the power supply belongs to
+        /// </summary>
+        public string series { get; set; }
+        /// <summary>
+        /// The form of the Power Supply
+        /// </summary>
         public string form { get; set; }
+        /// <summary>
+        /// The efficiency rating of the Power Supply
+        /// </summary>
         public string efficiency { get; set; }
+        /// <summary>
+        /// The wattage of the Power Supple
+        /// </summary>
         public string watts { get; set; }
+        /// <summary>
+        /// The degree of modularity of the Power Supply
+        /// </summary>
         public string modular { get; set; }
         /// <summary>
         /// Creates a new Power Supply
@@ -70,6 +85,10 @@ namespace PrimaryQueries {
             }
             return null;
         }
+        /// <summary>
+        /// Gets the attributes of the Power Supply
+        /// </summary>
+        /// <returns>A string containing the attributes</returns>
         public new string GetAttributes() {
             return "Name: "+name+
                 "\nSeries: "+series+

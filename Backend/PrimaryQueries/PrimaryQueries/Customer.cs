@@ -7,9 +7,21 @@ namespace PrimaryQueries {
     /// A customer of PCHawkCustoms
     /// </summary>
     public class Customer : Person {
+        /// <summary>
+        /// The street address of the Customer
+        /// </summary>
         public string streetAddress { get; set; }
+        /// <summary>
+        /// The city of the Customer
+        /// </summary>
         public string city{get;set;}
+        /// <summary>
+        /// The state of the Customer
+        /// </summary>
         public string state { get; set; }
+        /// <summary>
+        /// The zipcode of the Customer
+        /// </summary>
         public int zipcode { get; set; }
         //TODO: Some of these states do not exist
         private static string stateCodes = "|AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MP|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|";
@@ -32,13 +44,14 @@ namespace PrimaryQueries {
             table = "customer";
             Queries.Log(Queries.LogLevel.DEBUG, "Customer(" + firstName + "," + lastName + "," + email + "," + streetAddress + "," + city + "," + state + "," + zipcode + "," + password + ");");
         }
-
+        ///<summary>
         /// Changes the Customer's Address
         /// </summary>
         /// <param name="newStreetAddress">The new Street Address of the Customer</param>
         /// <param name="newCity">The new City of the Customer</param>
         /// <param name="newState">The new State of the Customer</param>
         /// <param name="newZipcode">The new Zipcode of the Customer</param>
+
         public void ChangeAddress(string newStreetAddress, string newCity, string newState, int newZipcode) {
             streetAddress = newStreetAddress;
             city = newCity;

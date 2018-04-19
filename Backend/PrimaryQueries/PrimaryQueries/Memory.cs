@@ -5,25 +5,43 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace PrimaryQueries {
-    public class Memory : Part {
-        private string speed { get; set; }
-        private string type { get; set; }
-        private string cas { get; set; }
-        private string modules { get; set; }
-        private string size { get; set; }
-    
     /// <summary>
-    /// Memory Object constructor
+    /// The Memory of the Computer
     /// </summary>
-    /// <param name="partNumber"></param>
-    /// <param name="name"></param>
-    /// <param name="price"></param>
-    /// <param name="speed"></param>
-    /// <param name="type"></param>
-    /// <param name="cas"></param>
-    /// <param name="modules"></param>
-    /// <param name="size"></param>
-    public Memory(int partNumber, string name, double price, string speed, string type, string cas, string modules, string size) : base(partNumber,name,price) {
+    public class Memory : Part {
+        /// <summary>
+        /// The speed of The Memory
+        /// </summary>
+        public string speed { get; set; }
+        /// <summary>
+        /// The type used
+        /// </summary>
+        public string type { get; set; }
+        /// <summary>
+        /// The delay time between the moment a memory controller tells the memory module to access a particular memory column on a RAM module
+        /// </summary>
+        public string cas { get; set; }
+        /// <summary>
+        /// The modules of the Memory
+        /// </summary>
+        public string modules { get; set; }
+        /// <summary>
+        /// The size of the Memory
+        /// </summary>
+        public string size { get; set; }
+
+        /// <summary>
+        /// Memory Object constructor
+        /// </summary>
+        /// <param name="partNumber">The identifying part number</param>
+        /// <param name="name">The name of the part</param>
+        /// <param name="price">The price of the part</param>
+        /// <param name="speed">The speed of the Memory</param>
+        /// <param name="type">The type used</param>
+        /// <param name="cas">The delay time between the moment a memory controller tells the memory module to access a particular memory column on a RAM module</param>
+        /// <param name="modules">The modules of the Memory</param>
+        /// <param name="size">The size of the Memory</param>
+        public Memory(int partNumber, string name, double price, string speed, string type, string cas, string modules, string size) : base(partNumber,name,price) {
             this.speed = speed;
             this.type = type;
             this.cas = cas;
@@ -44,8 +62,8 @@ namespace PrimaryQueries {
         /// <summary>
         /// /// Converts a MySQL query into a Memory object
         /// </summary>
-        /// <param name="query"></param>
-        /// <returns></returns>
+        /// <param name="query">The query result</param>
+        /// <returns>The Memory resulting from the query</returns>
         public static Memory GetFromQuery(string query) {
             string[] result = query.Split('\0');
             return new Memory(int.Parse(result[0]), result[1], double.Parse(result[2]), result[3], result[4], result[5], result[6], result[7]);
@@ -54,7 +72,7 @@ namespace PrimaryQueries {
         /// <summary>
         /// Returns all elements within database memory table as an array of Memory objects
         /// </summary>
-        /// <returns></returns>
+        /// <returns>A Memory[] with all Memory in the database</returns>
         public static Memory[] GetAll() {
             string[] result = Queries.Query("SELECT * FROM `memory`");
             Memory[] arr = new Memory[result.Length];
@@ -67,8 +85,8 @@ namespace PrimaryQueries {
         /// <summary>
         /// Gets a Memory object from the database based on parameter part number
         /// </summary>
-        /// <param name="partNumber"></param>
-        /// <returns></returns>
+        /// <param name="partNumber">The part number of the Memory</param>
+        /// <returns>The Memory retrieved from the part number</returns>
         public static Memory Get(int partNumber) {
             string[] result = Queries.Query("SELECT * FROM `memory` WHERE `part number` = " + partNumber);
             if (result.Length > 0) {
@@ -76,6 +94,10 @@ namespace PrimaryQueries {
             }
             return null;
         }
+        /// <summary>
+        /// Gets the attributes of the Memory
+        /// </summary>
+        /// <returns>A string containing the attributes</returns>
         public new string GetAttributes() {
             return "Name: "+name+
                 "\nSpeed: "+speed+

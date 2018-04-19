@@ -5,9 +5,21 @@ namespace PrimaryQueries {
     /// The Graphics Card of the Computer
     /// </summary>
     public class GraphicsCard : Part {
+        /// <summary>
+        /// The series the Graphics Card belongs to
+        /// </summary>
         public string series { get; set; }
+        /// <summary>
+        /// The chipset used int the Graphics Card
+        /// </summary>
         public string chipSet { get; set; }
+        /// <summary>
+        /// The amount of memory the Graphics Card has
+        /// </summary>
         public string memory { get; set; }
+        /// <summary>
+        /// The speed of the clock on the Graphics Card
+        /// </summary>
         public string coreClock { get; set; }
         /// <summary>
         /// Creates a Graphics Card
@@ -68,6 +80,10 @@ namespace PrimaryQueries {
             }
             return null;
         }
+        /// <summary>
+        /// Gets the attributes of the Graphics Card
+        /// </summary>
+        /// <returns>A string containing the attributes</returns>
         public new string GetAttributes() {
             return "Name: "+name+
                 "\nSeries: "+series+

@@ -5,22 +5,37 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace PrimaryQueries {
+    /// <summary>
+    /// A Motherboard of a Computer
+    /// </summary>
     public class MOBO : Part {
-        private string socket {get; set;}
-        private string form {get; set;}
-        private string mRAM{get; set;}
-        private int rAMSlots { get; set; }
+        /// <summary>
+        /// The socket of the Motherboard
+        /// </summary>
+        public string socket {get; set;}
+        /// <summary>
+        /// The form of the Motherboard
+        /// </summary>
+        public string form {get; set;}
+        /// <summary>
+        /// The max ram of the Motherboard
+        /// </summary>
+        public string mRAM{get; set;}
+        /// <summary>
+        /// The number of Ram slots
+        /// </summary>
+        public int rAMSlots { get; set; }
 
         /// <summary>
         /// Motherboard Object constructor
         /// </summary>
-        /// <param name="partNumber"></param>
-        /// <param name="name"></param>
-        /// <param name="price"></param>
-        /// <param name="socket"></param>
-        /// <param name="form"></param>
-        /// <param name="mRAM"></param>
-        /// <param name="rAMSlots"></param>
+        /// <param name="partNumber">The identifying part number</param>
+        /// <param name="name">The name of the Part</param>
+        /// <param name="price">The price of the Part</param>
+        /// <param name="socket">The socket of the Motherboard</param>
+        /// <param name="form">The form of the Motherboard</param>
+        /// <param name="mRAM">The max ram of the Motherboard</param>
+        /// <param name="rAMSlots">The number of ram slots</param>
         public MOBO(int partNumber, string name, double price, string socket, string form, string mRAM, int rAMSlots) : base(partNumber, name, price){
             this.socket = socket;
             this.form = form;
@@ -42,8 +57,8 @@ namespace PrimaryQueries {
         /// <summary>
         /// Converts a MySQL query into a MOBO object
         /// </summary>
-        /// <param name="query"></param>
-        /// <returns></returns>
+        /// <param name="query">The query result</param>
+        /// <returns>The MOBO created from the result</returns>
         public static MOBO GetFromQuery(string query) {
             string[] result = query.Split('\0');
             return new MOBO(int.Parse(result[0]), result[1], double.Parse(result[2]), result[3], result[4], result[6], int.Parse(result[5]));
@@ -52,7 +67,7 @@ namespace PrimaryQueries {
         /// <summary>
         /// Returns all elements from the database motherboard table as an array of MOBO objects
         /// </summary>
-        /// <returns></returns>
+        /// <returns>A MOBO[] of all Motherboards in the database</returns>
         public static MOBO[] GetAll() {
             string[] result = Queries.Query("SELECT * FROM `motherboard`");
             MOBO[] arr = new MOBO[result.Length];
@@ -65,8 +80,8 @@ namespace PrimaryQueries {
         /// <summary>
         /// Returns the MOBO object queried from database selected by parameter part numebr
         /// </summary>
-        /// <param name="partNumber"></param>
-        /// <returns></returns>
+        /// <param name="partNumber">The part number to get</param>
+        /// <returns>The MOBO found from the part number</returns>
         public static MOBO Get(int partNumber) {
             string[] result = Queries.Query("SELECT * FROM `motherboard` WHERE `part number` = " + partNumber);
             if (result.Length > 0) {
@@ -74,6 +89,10 @@ namespace PrimaryQueries {
             }
             return null;
         }
+        /// <summary>
+        /// Gets the attributes of the Motherboard
+        /// </summary>
+        /// <returns>A string containing the attributes</returns>
         public new string GetAttributes() {
             return "Name: "+name+
                 "\nSocket: "+socket+

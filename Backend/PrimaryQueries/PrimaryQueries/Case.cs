@@ -4,9 +4,21 @@ namespace PrimaryQueries {
     /// A Case for a Computer
     /// </summary>
     public class Case : Part {
+        /// <summary>
+        /// The type of the case
+        /// </summary>
         public string type { get; set; }
+        /// <summary>
+        /// The watts of the built in power supply if there is one
+        /// </summary>
         public string powerSupply { get; set; }
+        /// <summary>
+        /// TODO
+        /// </summary>
         public int externalSize { get; set; }
+        /// <summary>
+        /// TODO
+        /// </summary>
         public int internalSize { get; set; }
         /// <summary>
         /// Creates a new Case
@@ -67,6 +79,10 @@ namespace PrimaryQueries {
             }
             return null;
         }
+        /// <summary>
+        /// Gets the attributes of the Case
+        /// </summary>
+        /// <returns>A string containing the attributes</returns>
         public new string GetAttributes() {
             return "Name: " + name+
                 "\nType: " + type+

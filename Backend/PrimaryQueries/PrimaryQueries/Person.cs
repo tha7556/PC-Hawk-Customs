@@ -5,9 +5,12 @@ namespace PrimaryQueries {
     /// </summary>
     public abstract class Person {
         /// <summary>
-        /// The Name of the Person
+        /// The first name of the Person
         /// </summary>
         public string firstName { get; set; }
+        /// <summary>
+        /// The last name of the Person
+        /// </summary>
         public string lastName { get; set; }
         /// <summary>
         /// The Person's email address

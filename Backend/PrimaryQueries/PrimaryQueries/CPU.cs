@@ -10,8 +10,17 @@ namespace PrimaryQueries {
     /// Speed, Cores, and TDP
     /// </summary>
     public class CPU : Part {
+        /// <summary>
+        /// The speed of the CPU
+        /// </summary>
         public double speed { get; set; }
+        /// <summary>
+        /// The number of cores the CPU has
+        /// </summary>
         public int cores { get; set; }
+        /// <summary>
+        /// The TDP of the CPU
+        /// </summary>
         public int tdp { get; set; }
 
         /// <summary>
@@ -41,8 +50,8 @@ namespace PrimaryQueries {
         /// <summary>
         /// Returns a cpu object parsed from the string parameter
         /// </summary>
-        /// <param name="query"></param>
-        /// <returns></returns>
+        /// <param name="query">The MySQL query result</param>
+        /// <returns>The CPU from the query result</returns>
         public static CPU GetFromQuery(string query) {
             string[] result = query.Split('\0');
             return new CPU(int.Parse(result[0]), result[1], double.Parse(result[2]), double.Parse(result[3]), int.Parse(result[4]), int.Parse(result[5]));
@@ -64,8 +73,8 @@ namespace PrimaryQueries {
         /// <summary>
         /// Returns the relevant part from the database table queried on partNumber
         /// </summary>
-        /// <param name="partNumber"></param>
-        /// <returns></returns>
+        /// <param name="partNumber">The part number</param>
+        /// <returns>The CPU from the part number</returns>
         public static CPU Get(int partNumber) {
             string[] result = Queries.Query("SELECT * FROM `storage` WHERE `part number` = " + partNumber);
             if (result.Length > 0) {
@@ -73,6 +82,10 @@ namespace PrimaryQueries {
             }
             return null;
         }
+        /// <summary>
+        /// Gets the attributes of the CPU
+        /// </summary>
+        /// <returns>A string containing the attributes</returns>
         public new string GetAttributes() {
             return "Name: "+name+
                 "\nSpeed: "+speed+

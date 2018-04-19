@@ -1,31 +1,67 @@
 ﻿
 namespace PrimaryQueries {
+    /// <summary>
+    /// A Computer object
+    /// </summary>
     public class Computer { 
+        /// <summary>
+        /// The PC case of the Computer
+        /// </summary>
         public Case pcCase { get; set; }
+        /// <summary>
+        /// The CPU of the Computer
+        /// </summary>
         public CPU cpu { get; set; }
+        /// <summary>
+        /// The Fan of the Computer
+        /// </summary>
         public Fan fan { get; set; }
+        /// <summary>
+        /// The Graphics Card of the Computer
+        /// </summary>
         public GraphicsCard gCard { get; set; }
+        /// <summary>
+        /// The Memory of the Computer
+        /// </summary>
         public Memory memory { get; set; }
+        /// <summary>
+        /// The Motherboard of the Computer
+        /// </summary>
         public MOBO mBoard { get; set; }
+        /// <summary>
+        /// The Power Supply of the Computer
+        /// </summary>
         public PowerSupply power { get; set; }
+        /// <summary>
+        /// The Storage of the Computer
+        /// </summary>
         public Storage storage { get; set; }
+        /// <summary>
+        /// The serial number of the Computer
+        /// </summary>
         public int serialNumber { get; set; }
+        /// <summary>
+        /// The name of the Computer
+        /// </summary>
         public string name { get; set; }
+        /// <summary>
+        /// The price of the Computer
+        /// </summary>
         public double price { get; set; }
 
         /// <summary>
         /// Computer constructor requiring all parts
         /// </summary>
-        /// <param name="serialNumber"></param>
-        /// <param name="name"></param>
-        /// <param name="pcCase"></param>
-        /// <param name="cpu"></param>
-        /// <param name="fan"></param>
-        /// <param name="gCard"></param>
-        /// <param name="memory"></param>
-        /// <param name="mBoard"></param>
-        /// <param name="power"></param>
-        /// <param name="storage"></param>
+        /// <param name="serialNumber">The serial number of the Computer</param>
+        /// <param name="name">The name of the Computer</param>
+        /// <param name="pcCase">The pc case of the Computer</param>
+        /// <param name="cpu">The cpu of the Computer</param>
+        /// <param name="fan">The fan of the Computer</param>
+        /// <param name="gCard">The Graphics Card of the Computer</param>
+        /// <param name="memory">The Memory of the Computer</param>
+        /// <param name="mBoard">The Motherboard of the Computer</param>
+        /// <param name="power">The power supply of the Computer</param>
+        /// <param name="storage">The storage of the computer</param>
         public Computer(int serialNumber, string name, Case pcCase, CPU cpu, Fan fan, GraphicsCard gCard, Memory memory, MOBO mBoard, PowerSupply power, Storage storage) {
             this.pcCase = pcCase;
             this.cpu = cpu;
@@ -42,23 +78,27 @@ namespace PrimaryQueries {
         /// <summary>
         /// Secondary Constructor for database incrementation
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="pcCase"></param>
-        /// <param name="cpu"></param>
-        /// <param name="fan"></param>
-        /// <param name="gCard"></param>
-        /// <param name="memory"></param>
-        /// <param name="mBoard"></param>
-        /// <param name="power"></param>
-        /// <param name="storage"></param>
+        /// <param name="name">The Name of the Computer</param>
+        /// <param name="pcCase">The pc case of the Computer</param>
+        /// <param name="cpu">The CPU of the Computer</param>
+        /// <param name="fan">The Fan of the Computer</param>
+        /// <param name="gCard">The Graphics Card of the Computer</param>
+        /// <param name="memory">The Memory of the Computer</param>
+        /// <param name="mBoard">The Motherboard of the Computer</param>
+        /// <param name="power">The Power Supply of the Computer</param>
+        /// <param name="storage">The Storage of the Computer</param>
         public Computer(string name, Case pcCase, CPU cpu, Fan fan, GraphicsCard gCard, Memory memory, MOBO mBoard, PowerSupply power, Storage storage) :this(-1, name, pcCase, cpu, fan, gCard, memory, mBoard, power, storage) {
         }
         /// <summary>
-        /// Empty Constructor for prebuild sequential additions
+        /// Empty Constructor for freebuild sequential additions
         /// </summary>
         public Computer() {
 
         }
+        /// <summary>
+        /// Calculates the Price of the Computer
+        /// </summary>
+        /// <returns></returns>
         public double CalcPrice() {
             price = 0.0;
             Part[] parts = { pcCase, cpu, fan, gCard, memory, mBoard, power, storage };
@@ -81,6 +121,10 @@ namespace PrimaryQueries {
                 num, name, cpu.partNumber, fan.partNumber, gCard.partNumber, memory.partNumber, mBoard.partNumber, pcCase.partNumber,power.partNumber,storage.partNumber);
             Queries.Query(query);
         }
+        /// <summary>
+        /// Adds a Part to the Computer
+        /// </summary>
+        /// <param name="p">The Part to add</param>
         public void AddPart(Part p) {
             string type = p.GetType().Name;
             switch(type) {
@@ -111,6 +155,10 @@ namespace PrimaryQueries {
             }
             CalcPrice();
         }
+        /// <summary>
+        /// Gets the attributes of the Computer
+        /// </summary>
+        /// <returns>A string[] containing the attributes</returns>
         public string[] GetAttributes() {
             string[] result = new string[8];
             if (pcCase == null)
@@ -149,9 +197,19 @@ namespace PrimaryQueries {
 
             return result;
         }
+        /// <summary>
+        /// Gets a Computer based on a serial number
+        /// </summary>
+        /// <param name="serialNumber">The serial number to look up</param>
+        /// <returns>The Computer from the serial number</returns>
         public static Computer Get(int serialNumber) {
             return GetFromQuery(Queries.Query("SELECT * FROM `computers` WHERE `serialNumber` = " + serialNumber)[0]);
         }
+        /// <summary>
+        /// Converts a MySQL query result into a Computer
+        /// </summary>
+        /// <param name="result">The MySQL query result</param>
+        /// <returns>The Computer found from the query</returns>
         public static Computer GetFromQuery(string result) {
             string[] arr = result.Split('\0');
             CPU cpu = CPU.Get(int.Parse(arr[2]));
