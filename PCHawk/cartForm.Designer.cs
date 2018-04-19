@@ -37,7 +37,6 @@
             this.bttnExit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cartContentsBox = new System.Windows.Forms.ListBox();
             this.totalBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.toolTipAccount = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipLogout = new System.Windows.Forms.ToolTip(this.components);
+            this.CartContentsBox = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -165,21 +165,12 @@
             this.panel2.Size = new System.Drawing.Size(855, 22);
             this.panel2.TabIndex = 1;
             // 
-            // cartContentsBox
-            // 
-            this.cartContentsBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cartContentsBox.FormattingEnabled = true;
-            this.cartContentsBox.ItemHeight = 20;
-            this.cartContentsBox.Location = new System.Drawing.Point(25, 236);
-            this.cartContentsBox.Name = "cartContentsBox";
-            this.cartContentsBox.Size = new System.Drawing.Size(306, 304);
-            this.cartContentsBox.TabIndex = 2;
-            // 
             // totalBox
             // 
             this.totalBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalBox.Location = new System.Drawing.Point(146, 546);
             this.totalBox.Name = "totalBox";
+            this.totalBox.ReadOnly = true;
             this.totalBox.Size = new System.Drawing.Size(185, 23);
             this.totalBox.TabIndex = 3;
             // 
@@ -256,12 +247,23 @@
             this.bttnCheckOut.UseVisualStyleBackColor = true;
             this.bttnCheckOut.Click += new System.EventHandler(this.bttnCheckOut_Click);
             // 
+            // CartContentsBox
+            // 
+            this.CartContentsBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CartContentsBox.FormattingEnabled = true;
+            this.CartContentsBox.ItemHeight = 20;
+            this.CartContentsBox.Location = new System.Drawing.Point(25, 236);
+            this.CartContentsBox.Name = "CartContentsBox";
+            this.CartContentsBox.Size = new System.Drawing.Size(306, 304);
+            this.CartContentsBox.TabIndex = 10;
+            // 
             // cartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(850, 600);
+            this.Controls.Add(this.CartContentsBox);
             this.Controls.Add(this.bttnCheckOut);
             this.Controls.Add(this.bttnClear);
             this.Controls.Add(this.bttnEdit);
@@ -269,7 +271,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.totalBox);
-            this.Controls.Add(this.cartContentsBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -293,7 +294,6 @@
         private System.Windows.Forms.Button bttnHome;
         private System.Windows.Forms.Button bttnAccount;
         private System.Windows.Forms.Button bttnLogout;
-        private System.Windows.Forms.ListBox cartContentsBox;
         private System.Windows.Forms.TextBox totalBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -306,5 +306,6 @@
         private System.Windows.Forms.ToolTip toolTipHelp;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolTip toolTipAccount;
+        private System.Windows.Forms.ListBox CartContentsBox;
     }
 }

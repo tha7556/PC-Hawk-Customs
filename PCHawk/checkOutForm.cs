@@ -15,6 +15,21 @@ namespace PCHawk
         public checkOutForm()
         {
             InitializeComponent();
+            if (MyStaticClass.customer != null)
+            {
+                txtBoxFirst.Text = MyStaticClass.customer.firstName;
+                txtBoxLast.Text = MyStaticClass.customer.lastName;
+                txtBoxAddress.Text = MyStaticClass.customer.streetAddress;
+                txtBoxCity.Text = MyStaticClass.customer.city;
+                txtBoxState.Text = MyStaticClass.customer.state;
+                txtBoxZip.Text = MyStaticClass.customer.zipcode.ToString();
+            }
+            if(MyStaticClass.cart != null)
+            {
+                cartContentsBox.DataSource = MyStaticClass.cart.GetAttributes();
+
+               totalBoxPrice.Text = "$" + MyStaticClass.cart.price;
+            }
         }
         /// <summary>
         /// when clicked fills in billing info with the same info as shipping

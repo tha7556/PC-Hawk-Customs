@@ -16,6 +16,13 @@ namespace PCHawk
         {
             //intialization of the form
             InitializeComponent();
+            if (MyStaticClass.cart != null)
+            {
+                CartContentsBox.DataSource = MyStaticClass.cart.GetAttributes();
+
+                totalBox.Text = "$" + MyStaticClass.cart.price;
+            }
+            
         }
         /*
          * Function: Allows the user to exit the application. Will prompt user before proceding.
@@ -94,6 +101,9 @@ namespace PCHawk
             var result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
+                MyStaticClass.cart = new PrimaryQueries.Computer();
+                CartContentsBox.DataSource = new List<String>();
+                
                 
             }
         }

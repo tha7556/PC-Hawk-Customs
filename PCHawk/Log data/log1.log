@@ -1,22 +1,7 @@
-    <DEBUG 0:0:24>: 	Start Program
-<SQLQUERY 0:5:204>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:5:318>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:5:318>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:5:322>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:5:326>: 	SELECT encryptPassword('*****')
-<SQLQUERY 0:12:292>: 	SELECT * FROM `cpu` WHERE name like '%intel%'
-<SQLQUERY 0:12:417>: 	SELECT * FROM `fan` WHERE name like '%intel%'
-<SQLQUERY 0:12:417>: 	SELECT * FROM `graphicscard` WHERE name like '%intel%'
-<SQLQUERY 0:12:448>: 	SELECT * FROM `memory` WHERE name like '%intel%'
-<SQLQUERY 0:12:542>: 	SELECT * FROM `motherboard` WHERE name like '%intel%'
-<SQLQUERY 0:12:778>: 	SELECT * FROM `pc case` WHERE name like '%intel%'
-<SQLQUERY 0:12:810>: 	SELECT * FROM `powersupply` WHERE name like '%intel%'
-<SQLQUERY 0:12:825>: 	SELECT * FROM `storage` WHERE name like '%intel%'
-  <DEBUG 0:14:409>: 	Adding: CPU to build
-  <DEBUG 0:29:510>: 	Adding: CPU to build
-  <DEBUG 0:32:564>: 	Selected : Cooling
-<SQLQUERY 0:32:564>: 	SELECT * FROM `fan`
-  <DEBUG 0:32:595>: 	Selected Cooling: Cooler Master Hyper 212 EVO
-  <DEBUG 0:33:961>: 	Adding: Fan to build
-  <DEBUG 1:37:934>: 	Exit Button clicked
-  <DEBUG 1:39:819>: 	Finished Program
+    <DEBUG 0:0:17>: 	Start Program
+<SQLQUERY 0:4:322>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:4:451>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
+<SQLQUERY 0:4:451>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:4:463>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
+<SQLQUERY 0:4:465>: 	SELECT encryptPassword('*****')
+  <DEBUG 0:56:121>: 	Finished Program
