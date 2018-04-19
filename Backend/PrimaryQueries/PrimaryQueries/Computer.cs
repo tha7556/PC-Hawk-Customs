@@ -116,8 +116,9 @@ namespace PrimaryQueries {
             string num = serialNumber.ToString();
             if (serialNumber == -1)
                 num = "NULL";
+            Queries.Log(Queries.LogLevel.DEBUG, "num: " + num);
             string query = string.Format("INSERT INTO `computers` (`serialNumber`, `name`, `cpu`, `fan`, `graphicsCard`, `memory`, `motherboard`, `pcCase`, `powerSupply`, `storage`) " +
-                "VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8},{9});", 
+                "VALUES (NULL, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8},{9});", 
                 num, name, cpu.partNumber, fan.partNumber, gCard.partNumber, memory.partNumber, mBoard.partNumber, pcCase.partNumber,power.partNumber,storage.partNumber);
             Queries.Query(query);
         }

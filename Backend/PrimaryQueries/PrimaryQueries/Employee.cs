@@ -15,6 +15,8 @@ namespace PrimaryQueries {
             table = "employee";
             Queries.Log(Queries.LogLevel.DEBUG, "Employee(" + firstName + "," + lastName + "," + email + "," + EncryptPassword(password)+");");
         }
+        private Employee(string firstName, string lastName, string email) : this(firstName,lastName,email,null) {
+        }
         /// <summary>
         /// Adds the Employee to the Database
         /// </summary>
@@ -44,7 +46,7 @@ namespace PrimaryQueries {
         /// <returns>An Employee from the query</returns>
         public static Employee GetFromQuery(string result) {
             string[] line = result.Split('\0');
-            return new Employee(line[1], line[2], line[0],line[3]);
+            return new Employee(line[1], line[2], line[0]);
         }
         /// <summary>
         /// Gets an Employee based on their email from the database

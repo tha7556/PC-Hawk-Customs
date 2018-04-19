@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PrimaryQueries;
 
 namespace PCHawk
 {   
@@ -124,6 +125,10 @@ namespace PCHawk
         /// <param name="e"></param>
         private void bttnOrdered_Click(object sender, EventArgs e)
         {
+            Order order = new Order(MyStaticClass.cart, Employee.Get("josh@uncw.edu"), MyStaticClass.customer);
+            order.AddToDatabase();
+            MyStaticClass.computer.AddToDatabase();
+            Queries.Log(Queries.LogLevel.DEBUG, MyStaticClass.computer.serialNumber+", serial num");
             const string message = "Thank You for your purchase!";
             const string caption = "Thank You!";
             var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Question);
