@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PrimaryQueries;
 
 namespace PCHawk
 {
@@ -71,6 +72,23 @@ namespace PCHawk
         {
             prodDescription pd1 = needsBox.SelectedItem as prodDescription;
             DescriptionBox.Text = Convert.ToString(pd1.descrip);
+            if(pd1.name == "Gaming")
+            {
+                componentBox.DataSource = Computer.Get(6).GetAttributes();
+                buildNameBox.Text = Computer.Get(6).name;
+                totalBox.Text = "$" + Computer.Get(6).price;
+            }
+            else if(pd1.name == "Home Office")
+            {
+                componentBox.DataSource = Computer.Get(7).GetAttributes();
+                buildNameBox.Text = Computer.Get(7).name;
+                totalBox.Text = "$" + Computer.Get(7).price;
+            }
+            else if(pd1.name == "HTPC")
+            {
+
+            }
+
         }
 
         private void bttnHome_Click(object sender, EventArgs e)

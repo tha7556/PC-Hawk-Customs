@@ -39,10 +39,8 @@
             this.bannerBox = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.needsBox = new System.Windows.Forms.ComboBox();
-            this.priceRngBox = new System.Windows.Forms.ComboBox();
             this.DescriptionBox = new System.Windows.Forms.RichTextBox();
-            this.componentsBox = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buildNameBox = new System.Windows.Forms.TextBox();
             this.bttnAddCart = new System.Windows.Forms.Button();
             this.toolTipHelp = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipCart = new System.Windows.Forms.ToolTip(this.components);
@@ -50,6 +48,9 @@
             this.toolTipHome = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipAccount = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipLogout = new System.Windows.Forms.ToolTip(this.components);
+            this.componentBox = new System.Windows.Forms.ListBox();
+            this.totalBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bannerBox)).BeginInit();
             this.SuspendLayout();
@@ -186,67 +187,72 @@
             // 
             this.needsBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.needsBox.FormattingEnabled = true;
-            this.needsBox.Location = new System.Drawing.Point(50, 258);
+            this.needsBox.Location = new System.Drawing.Point(50, 240);
             this.needsBox.Name = "needsBox";
             this.needsBox.Size = new System.Drawing.Size(168, 28);
             this.needsBox.TabIndex = 3;
             this.needsBox.SelectedIndexChanged += new System.EventHandler(this.needsBox_SelectedIndexChanged);
             // 
-            // priceRngBox
-            // 
-            this.priceRngBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceRngBox.FormattingEnabled = true;
-            this.priceRngBox.Items.AddRange(new object[] {
-            "$0-500",
-            "$500-1000",
-            "$1000-1500",
-            "$1500-2000",
-            "$2000-Higher"});
-            this.priceRngBox.Location = new System.Drawing.Point(50, 292);
-            this.priceRngBox.Name = "priceRngBox";
-            this.priceRngBox.Size = new System.Drawing.Size(168, 28);
-            this.priceRngBox.TabIndex = 4;
-            this.priceRngBox.Text = "Price Range";
-            // 
             // DescriptionBox
             // 
             this.DescriptionBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DescriptionBox.Location = new System.Drawing.Point(50, 327);
+            this.DescriptionBox.Location = new System.Drawing.Point(50, 272);
             this.DescriptionBox.Name = "DescriptionBox";
             this.DescriptionBox.Size = new System.Drawing.Size(257, 238);
             this.DescriptionBox.TabIndex = 5;
             this.DescriptionBox.Text = "Product Description";
             // 
-            // componentsBox
+            // buildNameBox
             // 
-            this.componentsBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.componentsBox.Location = new System.Drawing.Point(390, 290);
-            this.componentsBox.Name = "componentsBox";
-            this.componentsBox.Size = new System.Drawing.Size(314, 225);
-            this.componentsBox.TabIndex = 6;
-            this.componentsBox.Text = "Components";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(390, 258);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(313, 26);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.Text = "Build Name";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buildNameBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buildNameBox.Location = new System.Drawing.Point(389, 240);
+            this.buildNameBox.Name = "buildNameBox";
+            this.buildNameBox.Size = new System.Drawing.Size(401, 26);
+            this.buildNameBox.TabIndex = 7;
+            this.buildNameBox.Text = "Build Name";
+            this.buildNameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // bttnAddCart
             // 
             this.bttnAddCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnAddCart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnAddCart.ForeColor = System.Drawing.Color.Yellow;
-            this.bttnAddCart.Location = new System.Drawing.Point(390, 521);
+            this.bttnAddCart.Location = new System.Drawing.Point(389, 531);
             this.bttnAddCart.Name = "bttnAddCart";
             this.bttnAddCart.Size = new System.Drawing.Size(314, 44);
             this.bttnAddCart.TabIndex = 8;
             this.bttnAddCart.Text = "Add To Cart";
             this.bttnAddCart.UseVisualStyleBackColor = true;
+            // 
+            // componentBox
+            // 
+            this.componentBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.componentBox.FormattingEnabled = true;
+            this.componentBox.ItemHeight = 17;
+            this.componentBox.Location = new System.Drawing.Point(389, 272);
+            this.componentBox.Name = "componentBox";
+            this.componentBox.Size = new System.Drawing.Size(401, 225);
+            this.componentBox.TabIndex = 9;
+            // 
+            // totalBox
+            // 
+            this.totalBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalBox.Location = new System.Drawing.Point(445, 499);
+            this.totalBox.Name = "totalBox";
+            this.totalBox.Size = new System.Drawing.Size(138, 26);
+            this.totalBox.TabIndex = 10;
+            this.totalBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(390, 502);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 19);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Total:";
             // 
             // preBuildForm
             // 
@@ -254,11 +260,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(885, 590);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.totalBox);
+            this.Controls.Add(this.componentBox);
             this.Controls.Add(this.bttnAddCart);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.componentsBox);
+            this.Controls.Add(this.buildNameBox);
             this.Controls.Add(this.DescriptionBox);
-            this.Controls.Add(this.priceRngBox);
             this.Controls.Add(this.needsBox);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -285,11 +292,9 @@
         private System.Windows.Forms.Button bttnAccount;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox needsBox;
-        private System.Windows.Forms.ComboBox priceRngBox;
         private System.Windows.Forms.RichTextBox DescriptionBox;
         private System.Windows.Forms.Button bttnHome;
-        private System.Windows.Forms.RichTextBox componentsBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox buildNameBox;
         private System.Windows.Forms.Button bttnAddCart;
         private System.Windows.Forms.ToolTip toolTipHome;
         private System.Windows.Forms.ToolTip toolTipAccount;
@@ -297,5 +302,8 @@
         private System.Windows.Forms.ToolTip toolTipHelp;
         private System.Windows.Forms.ToolTip toolTipCart;
         private System.Windows.Forms.ToolTip toolTipExit;
+        private System.Windows.Forms.ListBox componentBox;
+        private System.Windows.Forms.TextBox totalBox;
+        private System.Windows.Forms.Label label1;
     }
 }
