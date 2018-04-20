@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Title="Welcome to the [TODO: Add project name]" Url="html/d098dbc0-a177-4ce8-80b2-fbbda8015117.htm" />
+  <HelpTOCNode Id="5ad74522-1122-4079-a366-0269f698f036" Title="Version History" Url="html/c55fe442-88da-4d3d-8d03-6c0133b944d6.htm">
+    <HelpTOCNode Title="Version 1.0.0.0" Url="html/fb46dc17-c14e-488d-b8f0-314659721567.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="e0696d95-d3fc-4e69-9c32-d157c7c1ebc7" Title="PCHawk" Url="html/24eed734-fb98-3dc1-74b2-a69864ab1855.htm">
+    <HelpTOCNode Id="0696e571-ed97-4983-adbf-7e4ca3fb3487" Title="accountForm Class" Url="html/cc8d90db-bd66-974d-8b20-c6396255b6f2.htm">
+      <HelpTOCNode Title="accountForm Constructor " Url="html/e45762ff-1574-21e9-d8f7-dd9d3c8ef55d.htm" />
+      <HelpTOCNode Title="accountForm Properties" Url="html/d8cf7a85-2570-c0f9-05ed-2defc888ffa4.htm" />
+      <HelpTOCNode Id="f771e89b-5866-4625-94de-4366cffaff22" Title="accountForm Methods" Url="html/40461afc-fc6c-2156-4fcc-289bb110fa88.htm">
+        <HelpTOCNode Id="34649bd0-368b-4077-a2b0-3674ce2037bf" Title="Dispose Method " Url="html/025a19b9-e7a0-90ca-c7a1-d2b65cdcc607.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/f30bcaec-7be1-5c0c-c690-95c5ca01051a.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="accountForm Events" Url="html/30d5ab3c-5c3c-e92d-97c0-a9293ec89df0.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a3d1a04a-075e-417f-b22f-d2cd5903aa1e" Title="cartForm Class" Url="html/218d9c9f-68aa-0be8-bb6f-6f5bd4a6b046.htm">
+      <HelpTOCNode Title="cartForm Constructor " Url="html/45595533-3ab7-10dd-8fba-e5ba20670c73.htm" />
+      <HelpTOCNode Title="cartForm Properties" Url="html/9620131e-6fec-b8c9-e48d-1527a6d15ab1.htm" />
+      <HelpTOCNode Id="bfd7b2ab-e244-45ec-831e-84f1caabdb07" Title="cartForm Methods" Url="html/72799104-656b-351c-2702-9889a88ad812.htm">
+        <HelpTOCNode Id="1e2743ce-396b-40c4-bde1-ff9573344124" Title="Dispose Method " Url="html/499694e4-7e35-28cd-9c66-27dea80a9a5d.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/ae2c8c7a-04e4-1e29-dd38-99a4d27b214d.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="cartForm Events" Url="html/d36b2510-a37f-3891-e57e-ca629b702232.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0a6e6650-db6e-4e18-840c-314d6a2ec6c7" Title="checkOutForm Class" Url="html/eafa459b-3637-5182-384a-8c094897c813.htm">
+      <HelpTOCNode Title="checkOutForm Constructor " Url="html/176ff54c-95fd-a640-f64e-f537d647cac5.htm" />
+      <HelpTOCNode Title="checkOutForm Properties" Url="html/59da34ac-7cf6-c3e8-dd54-3e2260683da9.htm" />
+      <HelpTOCNode Id="1ff79408-9559-4a05-a96e-b913a6bf72bd" Title="checkOutForm Methods" Url="html/be06a70e-6f68-2003-09da-dc9c01504bd3.htm">
+        <HelpTOCNode Id="7b39d603-7810-4f54-a09b-ab6c8ad696ff" Title="Dispose Method " Url="html/bdb8f702-3df4-fd2d-1ef3-3ee6ae61d904.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/4ce4804a-89ef-1171-18cc-a6dc925f497c.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="checkOutForm Events" Url="html/85888318-58ba-718f-7772-1f91c7977b85.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a897ba3e-cdc2-43b2-a437-2506d4dd9e56" Title="freeBuildForm Class" Url="html/e445b71f-f47f-1b6e-f3f0-1ae25a49a310.htm">
+      <HelpTOCNode Title="freeBuildForm Constructor " Url="html/96c57983-ae5a-e06a-2cdd-d0296c1f684d.htm" />
+      <HelpTOCNode Title="freeBuildForm Properties" Url="html/97ca4979-aa1b-a7b1-52b0-92c3b7cbb311.htm" />
+      <HelpTOCNode Id="905baba6-4d24-42c3-b714-e1e7fb0f0b64" Title="freeBuildForm Methods" Url="html/144ad8d5-f6cb-d38d-dade-d090343c209e.htm">
+        <HelpTOCNode Id="d323ddf3-2c6e-460d-aaab-c5a4b334e05d" Title="Dispose Method " Url="html/61229b05-63a2-e3a8-0c50-d0f37c9b60a9.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/9faf582a-076a-8103-3b10-cf00f7323468.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="freeBuildForm Events" Url="html/07325dca-35f8-3acd-1da4-2d1c3df363ba.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="51fcf078-2aac-4f03-b17e-4d317804138b" Title="frmHome Class" Url="html/9ba2e482-01f4-90bd-718f-cecfa451e951.htm">
+      <HelpTOCNode Title="frmHome Constructor " Url="html/3548c9ba-eb1f-a0c4-ceab-346d6a9d4a2d.htm" />
+      <HelpTOCNode Title="frmHome Properties" Url="html/4890f9e1-7c1e-feb4-a057-180d82b42e3d.htm" />
+      <HelpTOCNode Id="8eef7fd9-4436-4490-aad8-ebb143a301d2" Title="frmHome Methods" Url="html/b57b4ac8-6c1e-f72f-f2d8-76e8fe8c1f38.htm">
+        <HelpTOCNode Id="e864f696-d88a-49f5-83d1-35ba5ca5005c" Title="Dispose Method " Url="html/fcbf618a-6c40-6099-80e4-a60f93f4d6be.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/3dd6017c-d667-584f-311a-9f3128a4226d.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="frmHome Events" Url="html/e3d11f4a-ac6d-19bc-e24d-42b76c9a2182.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="3649d3da-60ac-4ba5-b6f5-f10153bfbe56" Title="helpForm Class" Url="html/7bc83eeb-5345-d1f0-7a38-39c15a40a83a.htm">
+      <HelpTOCNode Title="helpForm Constructor " Url="html/b505b2c2-9170-e33a-df98-a4265527091b.htm" />
+      <HelpTOCNode Title="helpForm Properties" Url="html/38d7add5-a81b-81d9-9598-e83e418d58c8.htm" />
+      <HelpTOCNode Id="5cd17464-a106-43de-a187-78186b518be2" Title="helpForm Methods" Url="html/ff316823-2430-e46f-3eae-3f7fdc4f6e1b.htm">
+        <HelpTOCNode Id="b9dad696-c4ca-455c-8568-35e6dd79e04c" Title="Dispose Method " Url="html/046fbd7f-b9b2-8d47-0da9-cd661efb203b.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/87abbf9d-c565-ad47-7699-41d7dfe82c0e.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="helpForm Events" Url="html/b34f490b-7195-0743-55f3-a2b8e4a2d00e.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1e359a48-30e8-4b6a-a4c3-204c2908b730" Title="homeScreenControl Class" Url="html/65f50631-4bb3-0d8c-2590-14a24e0b7b4a.htm">
+      <HelpTOCNode Title="homeScreenControl Constructor " Url="html/a4179268-998b-04ff-06cb-43d7f8783e69.htm" />
+      <HelpTOCNode Title="homeScreenControl Properties" Url="html/4f5221b3-5f16-7c42-f47a-35d5167b3eb5.htm" />
+      <HelpTOCNode Id="e8f3caff-047b-4478-bfa6-6b68833ef7d4" Title="homeScreenControl Methods" Url="html/5624849a-0f17-a820-b9cd-191cb2df9b09.htm">
+        <HelpTOCNode Id="b9d7d25f-f3e5-4c0d-a445-21978aeb689d" Title="Dispose Method " Url="html/0f0f0b1d-078e-9b3c-e3e6-05ab89b44ece.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/a3bd0b01-26e2-c26e-510a-632495d90e05.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="homeScreenControl Events" Url="html/b38ee1dd-d826-f589-a249-1565f413b8ae.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e1cc54a0-fccc-4120-a000-85ff29f79d7f" Title="preBuildForm Class" Url="html/e89acd51-f1bc-9dd4-5f13-448e275db67c.htm">
+      <HelpTOCNode Title="preBuildForm Constructor " Url="html/17099d38-ae21-e10d-fda6-7d58c8e69107.htm" />
+      <HelpTOCNode Title="preBuildForm Properties" Url="html/71fb9999-d03b-ff50-8353-1651417fc5fe.htm" />
+      <HelpTOCNode Id="9c88ed86-b8b5-4748-a1ce-7cc54b681412" Title="preBuildForm Methods" Url="html/73f556b8-ff7e-849d-852e-fd7ea2b08e42.htm">
+        <HelpTOCNode Id="40ada8d5-1b02-411a-8081-d79d55bf94ba" Title="Dispose Method " Url="html/0af9da4a-e5a1-2d5e-cce8-e11a7a617b78.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/36164216-cd03-4e5d-9fa6-c93e3c5bf9f9.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="preBuildForm Events" Url="html/649b440e-f807-eb4d-5fa2-817a73bb68b8.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a2bc9b16-26c0-40e8-b626-cf26b56c3fad" Title="SignInForm Class" Url="html/f5cf1e9c-17b7-ed95-e1f5-61fdc40afe47.htm">
+      <HelpTOCNode Title="SignInForm Constructor " Url="html/6329f6d0-266c-77f0-0b2c-b914aec63f85.htm" />
+      <HelpTOCNode Title="SignInForm Properties" Url="html/1b67ae2b-8eff-b5f0-d29a-7d1fc0f249ad.htm" />
+      <HelpTOCNode Id="5ea1c078-ff9f-428d-81fc-c291470ebb79" Title="SignInForm Methods" Url="html/bac176b1-dd16-b93e-0c76-c0cbac6c8250.htm">
+        <HelpTOCNode Id="c3d84d57-9218-4b0c-9078-de4a6fae40c9" Title="Dispose Method " Url="html/b40384a2-6a54-cd21-98a9-d3c9988a2348.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/1e5e2f06-e301-b482-8506-534d220018c3.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="SignInForm Events" Url="html/17c745b7-ed0d-59f1-5ef7-8bf67a7de772.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="9d628ac9-a769-4c60-9cc9-b15a4988db79" Title="signUpForm Class" Url="html/d67f0222-341d-85ab-d8d4-403fbcbb64ac.htm">
+      <HelpTOCNode Title="signUpForm Constructor " Url="html/dd5f4e97-ed29-3911-b1bf-e4520127e67b.htm" />
+      <HelpTOCNode Title="signUpForm Properties" Url="html/6c530e80-e418-c571-d898-9c3c969e9681.htm" />
+      <HelpTOCNode Id="83ef16ff-4786-444c-b2b4-1b5af937abee" Title="signUpForm Methods" Url="html/86cea43e-4680-3195-ac7d-b765b39b4a6c.htm">
+        <HelpTOCNode Id="6057b64b-2452-4b6a-9ff6-6b105ae6cfc1" Title="Dispose Method " Url="html/dbb2f790-70dc-4b53-ea7b-d6e833c590ee.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/3a0e8e9b-eb21-2980-e845-9e7cfd7b8bae.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="signUpForm Events" Url="html/b1463d43-5d22-d907-f1db-c276c38d5f5f.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="bff0276c-6ed3-4703-a7fe-e155dbcd8ba5" Title="PrimaryQueries" Url="html/1ad20aee-d484-dcac-75ca-fed5ad116866.htm">
+    <HelpTOCNode Id="636f075c-138c-46e7-8f9b-72ce6b15f027" Title="Case Class" Url="html/4c3efc1e-8ca8-6211-c998-c87e23487753.htm">
+      <HelpTOCNode Title="Case Constructor " Url="html/8a404362-264a-15b3-17b9-7bd86485062e.htm" />
+      <HelpTOCNode Id="61616d69-d8f9-4c6b-ae4b-a957497a900b" Title="Case Properties" Url="html/495ca9d3-8f68-2a1d-bbff-393381651c32.htm">
+        <HelpTOCNode Title="externalSize Property " Url="html/5a59c0aa-70fb-8b64-57df-e8f4a858b99f.htm" />
+        <HelpTOCNode Title="internalSize Property " Url="html/27ce2594-7844-3541-2dbf-855ee7fb8fb9.htm" />
+        <HelpTOCNode Title="powerSupply Property " Url="html/acc20b4e-1a85-4a48-f0c3-cb64060a2857.htm" />
+        <HelpTOCNode Title="type Property " Url="html/f926163a-6ca0-a510-bf51-67e1f174b5cf.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f3dcd089-4d3b-4fcc-9f06-41a1c7fdece3" Title="Case Methods" Url="html/e58c1824-c195-5633-041a-9811b82c37a5.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/21974742-b6f9-8cfb-e2a3-8d20182ad47d.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/fed34b15-074f-c2b8-a024-a4847a26d2e3.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/ff524b4a-2210-e512-bfdf-b29cf4770acf.htm" />
+        <HelpTOCNode Title="GetAttributes Method " Url="html/db06845e-363e-74c8-1781-698205c7f12f.htm" />
+        <HelpTOCNode Title="GetFromQuery Method " Url="html/6dc70d3d-63c3-3bf0-cf3e-33246f1685a7.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9673bc0c-5f26-49c3-8ec1-93e07d05879a" Title="Computer Class" Url="html/1dce5ad0-3a24-4c3b-ac78-6c54f4f3e8bd.htm">
+      <HelpTOCNode Id="6398a736-58d9-4418-ae49-8b785d4f5aa9" Title="Computer Constructor " Url="html/ce75ca21-b0d1-f6fb-7764-b1976e7e2d1f.htm">
+        <HelpTOCNode Title="Computer Constructor " Url="html/b1aeeed6-0770-102e-e805-c4128f3837cd.htm" />
+        <HelpTOCNode Title="Computer Constructor (String, Case, CPU, Fan, GraphicsCard, Memory, MOBO, PowerSupply, Storage)" Url="html/3309b1fd-f189-adc9-4e1d-4364875b447b.htm" />
+        <HelpTOCNode Title="Computer Constructor (Int32, String, Case, CPU, Fan, GraphicsCard, Memory, MOBO, PowerSupply, Storage)" Url="html/74ae35da-f9fb-4509-713f-b4a8539ece35.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="834e47ec-02d5-4cba-8b02-3e6082df222e" Title="Computer Properties" Url="html/cda53395-0be4-717b-7b96-3d593e625ee6.htm">
+        <HelpTOCNode Title="cpu Property " Url="html/1b5764e6-2c9d-12e6-24d5-08cafa1a57e6.htm" />
+        <HelpTOCNode Title="fan Property " Url="html/27e5692e-c851-999a-5443-419980ef54e1.htm" />
+        <HelpTOCNode Title="gCard Property " Url="html/bf3c2c57-e0e6-80c4-bd94-ae9a160e1573.htm" />
+        <HelpTOCNode Title="mBoard Property " Url="html/b26aba4b-74f2-06a5-a9b7-21d120820e8d.htm" />
+        <HelpTOCNode Title="memory Property " Url="html/d1be113f-5498-b0c2-93c8-896a8997c2c4.htm" />
+        <HelpTOCNode Title="name Property " Url="html/23e2b36b-d765-857a-fa67-49482075a68e.htm" />
+        <HelpTOCNode Title="pcCase Property " Url="html/61ef4857-d6e9-2e32-b774-ba63e9800b3f.htm" />
+        <HelpTOCNode Title="power Property " Url="html/e6cd341d-24eb-76e1-2503-42bf383ae12e.htm" />
+        <HelpTOCNode Title="price Property " Url="html/9f6db4d7-ab1c-8b7a-4c60-3b0555d5e116.htm" />
+        <HelpTOCNode Title="serialNumber Property " Url="html/0ccd655d-5d22-fd34-db3a-a15f4ec9f381.htm" />
+        <HelpTOCNode Title="storage Property " Url="html/39bd3c2a-ec8d-d37f-6448-9ff66c0ff9cb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a6775cd5-8a92-4dd6-af05-fe3d53630178" Title="Computer Methods" Url="html/18ac7265-4ef8-daad-c202-c827f158fcad.htm">
+        <HelpTOCNode Title="AddPart Method " Url="html/be46986d-c8b1-416a-2b19-5598a92170f7.htm" />
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/c72cdda1-66c8-3175-a75e-f177c529fb65.htm" />
+        <HelpTOCNode Title="CalcPrice Method " Url="html/c07227b4-5644-d927-79ec-2b59a28537ee.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/900f4db0-c6cd-52c7-222b-52ed3ff556a4.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/ef79c5b6-45fe-76f5-918b-17e718ac22db.htm" />
+        <HelpTOCNode Title="GetAttributes Method " Url="html/2dcc5ebc-8c6c-2a30-5b81-9fdccefae036.htm" />
+        <HelpTOCNode Title="GetFromQuery Method " Url="html/c142fc05-eae2-fffd-1ea7-78f4d0498fbe.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="09caf6dc-b759-445f-a283-eadb65d3bba1" Title="CPU Class" Url="html/63010b76-ff98-65f4-f808-02bd7b82440d.htm">
+      <HelpTOCNode Title="CPU Constructor " Url="html/94396fa2-5bc2-373d-0bcf-dfadcb43e33d.htm" />
+      <HelpTOCNode Id="c5d05e7d-11eb-4156-a6be-65278dbdabb1" Title="CPU Properties" Url="html/0c45659c-eef6-8cae-5986-ae7ee33e0efc.htm">
+        <HelpTOCNode Title="cores Property " Url="html/351820d8-ac0d-a3f6-fb7d-bc54d94df662.htm" />
+        <HelpTOCNode Title="speed Property " Url="html/48649d85-a16c-265e-6bec-cd89a76e8e3d.htm" />
+        <HelpTOCNode Title="tdp Property " Url="html/2f3bd2a8-5a86-e7af-b9b2-083b7b882b80.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c3d597a7-c0d6-49ab-995c-4eebcbae0477" Title="CPU Methods" Url="html/8ddb5898-97dd-eac8-775e-3df4db1c50b0.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/96ec0675-d448-f151-8ce9-06c08f4c0275.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/27c2336f-17e4-bfa3-be64-cfc9df6a8e4c.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/46e006d1-1d6a-56e5-ea9e-b43006d27e25.htm" />
+        <HelpTOCNode Title="GetAttributes Method " Url="html/16ef7bbb-eedf-dd17-9266-89b087057e34.htm" />
+        <HelpTOCNode Title="GetFromQuery Method " Url="html/f1e29408-73e6-c666-f74d-3bd2be801f9d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0326a426-179d-4045-8be2-fde56c51e833" Title="Customer Class" Url="html/91257529-6923-c1b7-d97d-3499d1af1047.htm">
+      <HelpTOCNode Title="Customer Constructor " Url="html/75cd8ae7-5385-99b2-103b-d212eb3939a0.htm" />
+      <HelpTOCNode Id="77cbea35-ba0c-46e9-913f-1b5cde504cd3" Title="Customer Properties" Url="html/34997ae8-83f0-fa1a-c30b-051983a0e3f2.htm">
+        <HelpTOCNode Title="city Property " Url="html/ccc1a97c-1e66-8b92-3b1c-281811588db9.htm" />
+        <HelpTOCNode Title="state Property " Url="html/ec82480c-9d49-63e6-15a9-ddb9a918986e.htm" />
+        <HelpTOCNode Title="streetAddress Property " Url="html/8d3380c6-e533-954a-ae92-529e389f4930.htm" />
+        <HelpTOCNode Title="zipcode Property " Url="html/ab019b93-3721-abfd-3497-760bdc81c9a2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f875944a-3afc-4f87-acc4-3ecf28e2d853" Title="Customer Methods" Url="html/0369b992-0e52-0825-b675-2575311d435a.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/4cd414f7-04f0-8c89-886a-5b74525ee9eb.htm" />
+        <HelpTOCNode Title="ChangeAddress Method " Url="html/6ce15e6c-6d30-4560-725b-44baaf4645bd.htm" />
+        <HelpTOCNode Id="e047f0d8-7b13-40dd-a60a-1a8804f118c9" Title="DeleteFromDatabase Method " Url="html/c0ba7a66-f743-c0d9-25e4-cb9f6250587f.htm">
+          <HelpTOCNode Title="DeleteFromDatabase Method " Url="html/6897cc6a-1e06-da4e-f344-8a446b608161.htm" />
+          <HelpTOCNode Title="DeleteFromDatabase Method (String)" Url="html/8f747537-5591-342c-212c-a6735019083d.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Get Method " Url="html/73a6e986-7324-4666-a29f-fed27dbf59b7.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/94363861-2095-f333-b63c-6824e9e99c0a.htm" />
+        <HelpTOCNode Title="GetFromQuery Method " Url="html/368776c3-7397-5501-0608-c3b9f3af0bff.htm" />
+        <HelpTOCNode Title="IsState Method " Url="html/79223dc3-efe1-cc75-feb0-a8f1ec11e98a.htm" />
+        <HelpTOCNode Title="IsZipcode Method " Url="html/7d3c2913-e5fc-3125-9005-5a2c778dac5a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a34f1590-96cf-4c72-a7bc-0eed568dd713" Title="Employee Class" Url="html/ca80432a-8c3e-eb7f-8455-0ae1ead0a1f8.htm">
+      <HelpTOCNode Title="Employee Constructor " Url="html/09d1b04b-724a-4dfa-1f2c-ef3832a49075.htm" />
+      <HelpTOCNode Title="Employee Properties" Url="html/091e5f11-b4c8-6e90-eb03-c78c36dc9235.htm" />
+      <HelpTOCNode Id="dd0c35e3-5785-45db-905b-627a122b59e5" Title="Employee Methods" Url="html/eb6d243a-59cf-c2f0-3a27-a1a6047a0869.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/5740302b-ae6c-e7a1-8408-4eb086bf1343.htm" />
+        <HelpTOCNode Id="b5b5c313-762e-4b2b-9ae9-ff94b951ba42" Title="DeleteFromDatabase Method " Url="html/e3ed3fdf-f7a7-bad4-5af3-f72112271170.htm">
+          <HelpTOCNode Title="DeleteFromDatabase Method " Url="html/c895a9f4-1f9d-43c9-1811-0374d485b7c6.htm" />
+          <HelpTOCNode Title="DeleteFromDatabase Method (String)" Url="html/7a308709-207b-0bbd-fa30-ce6dc8988684.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Get Method " Url="html/3a7b27d7-4a9c-f744-2049-40bcfc4048d6.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/dcfd6a48-d3ff-2c48-c0eb-f3ecfa59ceab.htm" />
+        <HelpTOCNode Title="GetFromQuery Method " Url="html/49df0d28-1b67-cbf6-6964-7f7cfe8554c9.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="854a049c-7cef-4b95-a47d-25d244b57b5b" Title="Fan Class" Url="html/17abb32a-131a-a0b7-4e44-c630a1f8a6fc.htm">
+      <HelpTOCNode Title="Fan Constructor " Url="html/9f0dc9c1-cb3e-eda9-e540-24ef318f61fe.htm" />
+      <HelpTOCNode Id="bd41066b-12f9-4461-b1a2-8770ef1a90e9" Title="Fan Properties" Url="html/ed72d0dd-f4be-68a4-c725-3d1c21e0d8ba.htm">
+        <HelpTOCNode Title="nl Property " Url="html/70f5baaf-1a73-97f5-e0d7-f07844c2559d.htm" />
+        <HelpTOCNode Title="rpm Property " Url="html/48b5c17c-c3dc-14b3-79d0-0fefd31365e2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f099d965-3a28-46e4-9557-38604bb20057" Title="Fan Methods" Url="html/aac91243-eeae-edd9-56a6-5da7f27c108a.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/ec6ed8f7-e41a-0ad0-9d4b-822ba05137cf.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/12867594-c396-c53a-3832-8ac90a6a470a.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/6ce1d8ca-9c16-6978-ae2c-47b83eb05c25.htm" />
+        <HelpTOCNode Title="GetAttributes Method " Url="html/433a16c8-932b-b004-5b74-e5ef3979a64a.htm" />
+        <HelpTOCNode Title="GetFromQuery Method " Url="html/d2c988d3-1aea-3456-ec0d-81839c672d04.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1fcc3a12-dfc4-4740-80b8-eea34a221d5f" Title="GraphicsCard Class" Url="html/a61706be-efc1-c954-7b2f-ce5a10498398.htm">
+      <HelpTOCNode Title="GraphicsCard Constructor " Url="html/ed6c8159-177a-0e4c-fc6b-849062734efb.htm" />
+      <HelpTOCNode Id="5e072c4d-e2be-430f-95ad-8242a369dee0" Title="GraphicsCard Properties" Url="html/c9e04565-227c-e7d7-9723-2e1866ce4e4a.htm">
+        <HelpTOCNode Title="chipSet Property " Url="html/5c233b4c-61fe-17f3-d7ff-cd9c5c10ea1b.htm" />
+        <HelpTOCNode Title="coreClock Property " Url="html/5722003c-75ab-6e14-7e15-7e5be156defa.htm" />
+        <HelpTOCNode Title="memory Property " Url="html/4c084a8a-23c3-802b-bd5d-ec6f6cd873d2.htm" />
+        <HelpTOCNode Title="series Property " Url="html/449e0d47-f154-2278-9127-84fadc35be6f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="75058778-db07-42f9-ac2f-590e3d119fc4" Title="GraphicsCard Methods" Url="html/eddc4227-67e6-06d6-19a0-e9dfe4c8ed1a.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/f19b954b-d01f-024a-f939-2f84dabe8e3f.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/8957e0d1-7b80-1585-75b9-daec8621fc12.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/42dcbec2-9d43-3ba6-ecc2-b298894c26ce.htm" />
+        <HelpTOCNode Title="GetAttributes Method " Url="html/62841881-639b-c7e1-c3e8-c949754de2dc.htm" />
+        <HelpTOCNode Title="GetFromQuery Method " Url="html/a8d8d1d2-dbfd-fbb4-ad36-b7a19e2757f2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d71f476f-54c0-49c1-9ee6-2dbcded73b41" Title="Memory Class" Url="html/698ddf03-3fbd-bb66-7fe8-62fe25e13c12.htm">
+      <HelpTOCNode Title="Memory Constructor " Url="html/5fd431e9-65b4-d4da-4186-7d0074ac6758.htm" />
+      <HelpTOCNode Id="09d1e4ce-8888-4a59-951b-a63dd7f8d7e9" Title="Memory Properties" Url="html/e6819f90-ff0b-02c6-2281-f4ef90b68d54.htm">
+        <HelpTOCNode Title="cas Property " Url="html/35dd0fc3-c3bc-da44-bf1a-15f1d6ee019e.htm" />
+        <HelpTOCNode Title="modules Property " Url="html/40220ef6-e062-b719-7393-1303ba9930eb.htm" />
+        <HelpTOCNode Title="size Property " Url="html/156cb773-f317-26cc-f106-27946bf6da71.htm" />
+        <HelpTOCNode Title="speed Property " Url="html/6377c20a-6ff7-7ba5-4e4c-6e6af0ae5314.htm" />
+        <HelpTOCNode Title="type Property " Url="html/a9d586be-8d49-810c-842a-8e82043eee86.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e53cec29-0e8f-4a04-934c-6144a5e342e6" Title="Memory Methods" Url="html/40efa0c7-0751-346f-082b-14a37e0af17c.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/046a33bd-c573-1f13-ec7a-f2eaa9b5d8a7.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/5f5bad77-c836-ff49-d91b-6454fe8035bc.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/1558b8e1-d361-3bfc-e649-108c0c07b1f5.htm" />
+        <HelpTOCNode Title="GetAttributes Method " Url="html/1be6d6cb-db32-734d-ee84-655972b710f5.htm" />
+        <HelpTOCNode Title="GetFromQuery Method " Url="html/50c85a04-de8d-ea5e-38bd-c6c7258097db.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e53dcd2e-019e-46b7-ac13-37adcb0d16ac" Title="MOBO Class" Url="html/efe2f879-8c37-0564-f710-4bb46063e70e.htm">
+      <HelpTOCNode Title="MOBO Constructor " Url="html/8410821e-7950-c4c3-4d4e-d5874af8764e.htm" />
+      <HelpTOCNode Id="2bc2ee2c-00da-4d10-97b1-50c6cb0557bc" Title="MOBO Properties" Url="html/504a635a-0005-1d78-aa28-4b9cc6f92126.htm">
+        <HelpTOCNode Title="form Property " Url="html/ce918305-53f2-1e42-3c92-9245aa74fd50.htm" />
+        <HelpTOCNode Title="mRAM Property " Url="html/a0fb8f97-ceba-46ec-f1ef-80d3276a12dc.htm" />
+        <HelpTOCNode Title="rAMSlots Property " Url="html/ce304961-5dd2-36f8-9799-dbafc1f752bb.htm" />
+        <HelpTOCNode Title="socket Property " Url="html/bcfe65ea-6141-83c5-888b-7e91b023f21a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9b78e303-5c66-4b40-ae72-1f180611be91" Title="MOBO Methods" Url="html/9120dfc6-4769-3d31-4e47-b950d27b8726.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/a360df79-a918-76a7-c6e7-12bced2f2114.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/f3c128ba-86a0-6fac-6d2b-3fcad880bffe.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/0b26f42e-91f8-77ca-99df-10da30873f5c.htm" />
+        <HelpTOCNode Title="GetAttributes Method " Url="html/45915978-705e-e9f6-54ea-2461fbd0a4dc.htm" />
+        <HelpTOCNode Title="GetFromQuery Method " Url="html/1c560751-6e61-6ae1-0f0a-51287bd491ab.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f1a4dbfb-5bc0-4361-b124-4fa2ed0444c5" Title="Order Class" Url="html/80ab9162-71a2-f72c-9856-618abf39a530.htm">
+      <HelpTOCNode Id="052c38c5-ca41-4cf5-8ae1-efecf08cf92b" Title="Order Constructor " Url="html/77442380-c672-f6e1-0b59-67bf57ae6054.htm">
+        <HelpTOCNode Title="Order Constructor (Computer, Employee, Customer)" Url="html/72b67ae2-2777-6ca9-125b-0c6058184920.htm" />
+        <HelpTOCNode Title="Order Constructor (Int32, Computer, Employee, Customer)" Url="html/02f69ea2-e037-7484-84ac-a5eb1cf5b204.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b3741730-ea26-462e-a0bd-e1076846257e" Title="Order Methods" Url="html/83c07a3f-e47a-8145-71ff-172a695e31c5.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/d8ecee92-915b-e043-ff7a-1c92cbcbdc7b.htm" />
+        <HelpTOCNode Title="GetOrderFromQuery Method " Url="html/e2afcca9-de08-5f5b-1b3d-45e4efd3598b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ca204f0b-5ac3-47f4-af79-e5204d38d63d" Title="Part Class" Url="html/676c146d-90a6-6a9d-b9fb-e6f8d606a923.htm">
+      <HelpTOCNode Title="Part Constructor " Url="html/e58e41e9-57b2-887a-f30c-baae2f7f1610.htm" />
+      <HelpTOCNode Id="25b2caa0-86a6-4b8a-94ef-21af52ab40c8" Title="Part Properties" Url="html/6ddbdf74-3a22-6adb-ca19-76e84495a419.htm">
+        <HelpTOCNode Title="name Property " Url="html/e9e1c830-8e84-09cb-d3ad-8fd110e936d2.htm" />
+        <HelpTOCNode Title="partNumber Property " Url="html/df3fdbfa-9b07-2309-d8a5-3b3d0fc31909.htm" />
+        <HelpTOCNode Title="price Property " Url="html/d33e6606-74c1-86b0-b365-014ae29b0188.htm" />
+        <HelpTOCNode Title="table Property " Url="html/a454cd60-be9d-e5a2-0494-af5405d1f123.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4a0f33fd-f551-4d24-b6c9-8d85877f755e" Title="Part Methods" Url="html/099a9bd0-0fb2-0b40-b50b-7ff35aed044c.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/6cdaa89a-d0a5-c993-e1c8-96b904cd5af3.htm" />
+        <HelpTOCNode Title="GetAllParts Method " Url="html/dc22e003-4c60-363c-0349-df39c6112bcf.htm" />
+        <HelpTOCNode Title="GetAttributes Method " Url="html/63f0cafc-e2e0-e63f-6536-84b729a760ec.htm" />
+        <HelpTOCNode Title="GetCompatableParts Method " Url="html/79317ae0-fec6-6df4-da2b-a49ddf2194c2.htm" />
+        <HelpTOCNode Title="GetPart Method " Url="html/9da94ca6-9e5b-729f-6dba-95937828f906.htm" />
+        <HelpTOCNode Title="GetPartFromQuery Method " Url="html/1824034c-c0d8-9880-bc98-ad6325e0ddb2.htm" />
+        <HelpTOCNode Title="Search Method " Url="html/483cdae3-a71e-cd4b-f83d-e1748d1c7aaa.htm" />
+        <HelpTOCNode Id="c3404df0-ef4c-4f6a-840e-0f31ad518d97" Title="SetCompatableWith Method " Url="html/02ab592e-f21c-2978-ac8a-d2f49e99b445.htm">
+          <HelpTOCNode Title="SetCompatableWith Method (Int32)" Url="html/6b79c270-fda4-ce49-b76a-d6d3cfbfca33.htm" />
+          <HelpTOCNode Title="SetCompatableWith Method (Part)" Url="html/b5f76cfd-d38a-50f1-1aa1-47d42da8df2c.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="SetPrice Method " Url="html/f6b1d314-45b6-6ec4-aa2b-11427b5ddbec.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/b2979543-0b1a-da1b-d976-a3e257b7bcf7.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e40d88f3-b4ef-4758-96d8-8d4e542c1fc5" Title="Person Class" Url="html/68b878f4-ddf4-ebb5-f0a9-3a67a97f58f9.htm">
+      <HelpTOCNode Title="Person Constructor " Url="html/56e878f0-0837-bcd0-4286-9347d5169d9b.htm" />
+      <HelpTOCNode Id="b6d6ea70-f15b-48c5-ba71-2a773a41859f" Title="Person Properties" Url="html/53992e6d-44c8-a457-ec83-b20fd3ce139f.htm">
+        <HelpTOCNode Title="email Property " Url="html/94419345-e202-9091-8e56-e2ef75ecd321.htm" />
+        <HelpTOCNode Title="firstName Property " Url="html/6cbed386-2c5f-eca9-5a2f-8d26bcab5610.htm" />
+        <HelpTOCNode Title="lastName Property " Url="html/cba0f8a4-5d87-aa7b-a1b4-f9d2d5acb35a.htm" />
+        <HelpTOCNode Title="password Property " Url="html/6d4cb6f5-b65f-d163-d7ed-c645403b1e00.htm" />
+        <HelpTOCNode Title="table Property " Url="html/7b85c11e-312c-0b0f-2188-f8cbe8367568.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6ba6502f-a519-4df6-80c5-2fa18c4cd350" Title="Person Methods" Url="html/38fb00f5-dd81-17aa-63c3-969aeec275b8.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/63cfd700-22d5-b506-aff2-6e0602b40670.htm" />
+        <HelpTOCNode Title="ChangeEmail Method " Url="html/2cacb4e5-5c2e-5ad9-205c-5fb2dd439a19.htm" />
+        <HelpTOCNode Title="ChangeName Method " Url="html/52695e0c-8490-df5f-6f03-b02adf2ee8ca.htm" />
+        <HelpTOCNode Title="ChangePassword Method " Url="html/a8c52a71-be92-3563-35d0-e0cb4572ae91.htm" />
+        <HelpTOCNode Title="CheckCredentials Method " Url="html/73e1d4d5-ecaa-936d-4d1f-eb7d88a74ad6.htm" />
+        <HelpTOCNode Title="CheckPassword Method " Url="html/346d965b-a8e1-f113-7e60-1a0c32998126.htm" />
+        <HelpTOCNode Title="DeleteFromDatabase Method " Url="html/a6994651-9c7c-c3c9-9228-0fe6531108ae.htm" />
+        <HelpTOCNode Title="EncryptPassword Method " Url="html/3a173b21-210a-e7b0-9332-50018bcedc48.htm" />
+        <HelpTOCNode Title="GetOrders Method " Url="html/8a8491f2-22dc-d966-7f12-2f2939eac821.htm" />
+        <HelpTOCNode Title="GetPassword Method " Url="html/ef7443f0-d7da-d4e8-a0b5-0eae979c18b9.htm" />
+        <HelpTOCNode Title="IsCustomer Method " Url="html/50b0f5a3-5b07-96c9-1d91-531fb51849b4.htm" />
+        <HelpTOCNode Title="IsEmployee Method " Url="html/aabdcd43-d87a-12c5-7d44-b8519014a857.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/794f7826-c636-0fe0-83b8-1f71df0bb362.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bc42f3d5-8562-4e46-b76f-5b142cea0d3b" Title="PowerSupply Class" Url="html/38a46bdb-be97-51f2-1238-d3030149fd81.htm">
+      <HelpTOCNode Title="PowerSupply Constructor " Url="html/9ff0ea48-c8e5-06d9-30a0-08c20aa1ea24.htm" />
+      <HelpTOCNode Id="0e837ad4-7a16-4bcd-941b-36ff16a7cc31" Title="PowerSupply Properties" Url="html/c6e14850-18b1-0050-7ee3-1e68e2b99d16.htm">
+        <HelpTOCNode Title="efficiency Property " Url="html/1e5bd34d-f8ba-c6af-bb6c-16dfd1336232.htm" />
+        <HelpTOCNode Title="form Property " Url="html/9f13d0c3-c332-8ccd-b47a-7ac315c9204b.htm" />
+        <HelpTOCNode Title="modular Property " Url="html/0e80c9ed-f300-d61b-1fb9-53b4f497afaf.htm" />
+        <HelpTOCNode Title="series Property " Url="html/acfc4df5-4776-032a-73ed-d9a34302a9a8.htm" />
+        <HelpTOCNode Title="watts Property " Url="html/2352c9d5-1eda-e310-6343-2b678e634847.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1a57c444-591a-4b69-a880-9be52c6187ff" Title="PowerSupply Methods" Url="html/6538c89e-d3f4-6d5c-d0af-a7b585de5dc7.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/963a1f23-b9dc-8040-fb8b-c4c9d18ee697.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/72799a19-bfe8-d4fd-946c-7ba67e52103f.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/80a94adb-eed6-377d-0246-633d717092a5.htm" />
+        <HelpTOCNode Title="GetAttributes Method " Url="html/22d87752-42cf-682e-1c1a-63f6ded4ba81.htm" />
+        <HelpTOCNode Title="GetFromQuery Method " Url="html/72a62929-ff86-0041-1598-30198a3ad5a0.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d098e0b9-12c7-4684-b5dd-5e1e33f56cf4" Title="Queries Class" Url="html/3093c562-b816-f06d-fa5a-4e53efd0280a.htm">
+      <HelpTOCNode Title="Queries Constructor " Url="html/a927f91b-b313-072b-083d-0c9c1d0b2823.htm" />
+      <HelpTOCNode Id="ff518ab1-811a-4a59-b2e9-66068337bba9" Title="Queries Methods" Url="html/deac80a6-84bf-adc9-082c-15da3b2b14a0.htm">
+        <HelpTOCNode Title="CloseLog Method " Url="html/16c4811f-9891-3a9a-e531-bcf97f88f5de.htm" />
+        <HelpTOCNode Title="Log Method " Url="html/bff8ae98-8313-7ea1-5719-f33d56ba3056.htm" />
+        <HelpTOCNode Title="PopulateTables Method " Url="html/bb948604-f473-06ab-3f4d-87e88469b2b6.htm" />
+        <HelpTOCNode Id="292826ec-9bcc-4756-8946-da14982d535c" Title="Query Method " Url="html/af7e80bc-e1d4-2646-6d65-4672d7036ae6.htm">
+          <HelpTOCNode Title="Query Method (String)" Url="html/3abeb2f2-016d-2624-7561-0b69a8c685bb.htm" />
+          <HelpTOCNode Title="Query Method (String, Boolean)" Url="html/5349b4c6-0290-6be8-c258-e2866ee4c82c.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Queries.LogLevel Enumeration" Url="html/c3e5be21-432a-3b35-151f-1b59b5a8f509.htm" />
+    <HelpTOCNode Id="d05d7a63-8b85-49c6-ba3b-c33f4a5b1b51" Title="Storage Class" Url="html/c0b76fc8-6036-f1aa-a9c1-3f31738aebdf.htm">
+      <HelpTOCNode Title="Storage Constructor " Url="html/d5958549-a43d-5a69-583a-66780ac8de99.htm" />
+      <HelpTOCNode Id="f5a4f20a-240b-426b-9898-39bbd31acd52" Title="Storage Properties" Url="html/15ece54b-d614-4792-fb57-eb6cc115d3c2.htm">
+        <HelpTOCNode Title="cache Property " Url="html/8f98de3a-8522-42a5-9a95-abe62da3a692.htm" />
+        <HelpTOCNode Title="capacity Property " Url="html/ad987606-feef-14c2-12c8-3dfd238232ca.htm" />
+        <HelpTOCNode Title="form Property " Url="html/c257addd-7941-a2a0-7851-b5d01ec25dfd.htm" />
+        <HelpTOCNode Title="series Property " Url="html/0671e83f-3697-3e53-ae6c-b596e7d54420.htm" />
+        <HelpTOCNode Title="type Property " Url="html/839352d4-899c-89fe-86ba-0e89a97094b6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dcec19a4-fa3c-4fb6-8bd3-973c09cf6634" Title="Storage Methods" Url="html/7ef43cd1-75ec-3625-bbd5-6fdd344131c3.htm">
+        <HelpTOCNode Title="AddToDatabase Method " Url="html/385523d3-1701-ca6e-ec6a-d1194f7c01db.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/5b6e48e5-4cb3-7dad-4cb5-e216489a284a.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/7a3c9a7c-3a48-2eda-7c67-96f5ec02c82c.htm" />
+        <HelpTOCNode Title="GetAttributes Method " Url="html/79619b62-97de-9478-311c-6d38d460d35a.htm" />
+        <HelpTOCNode Title="GetFromQuery Method " Url="html/0e8f3b0a-ff64-4972-d1ef-2cbf44631d76.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

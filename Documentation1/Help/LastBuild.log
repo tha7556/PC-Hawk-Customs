@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.12.30.2" projectFile="C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\HawkDocs.shfbproj" started="4/19/2018 7:51:55 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.12.30.2" projectFile="C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\HawkDocs.shfbproj" started="4/19/2018 8:13:08 PM">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -15,9 +15,8 @@ Loading and initializing plug-ins...
 Lightweight Website Style Version 2017.12.30.2
 Copyright &#169; 2006-2017, Eric Woodruff, All Rights Reserved
 Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
-</buildStep>
-<buildStep step="ClearWorkFolder">
-Clearing working folder...
+-------------------------------
+Clearing any prior web/markdown output...
 </buildStep>
 <buildStep step="ValidatingDocumentationSources">
 Validating and copying documentation source information
@@ -40,16 +39,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00.1177
+</plugIn>    Last step completed in 00:00:00.0156
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0311
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateRefInfo.proj]
-Build started 4/19/2018 7:51:57 PM.
+Build started 4/19/2018 8:13:09 PM.
 Project &quot;C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
@@ -59,7 +58,7 @@ GenerateRefInfo:
   Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
   No source code context base path specified.  Source context information is unavailable.
   Loaded 2 assemblies for reflection and 2 dependency assemblies.
-  Wrote information on 2 namespaces, 26 types, and 180 members
+  Wrote information on 2 namespaces, 26 types, and 191 members
   Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
   XslTransform (v2017.12.30.2)
   Copyright c 2006-2017, Microsoft Corporation, All Rights Reserved.
@@ -69,13 +68,13 @@ Done Building Project &quot;C:\Users\Dylan Menchetti\Documents\Spring_2018\Compu
 
 Build succeeded.
 
-Time Elapsed 00:00:02.32
-    Last step completed in 00:00:02.7972
+Time Elapsed 00:00:01.89
+    Last step completed in 00:00:02.2348
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - TransformManifest.proj]
-Build started 4/19/2018 7:51:59 PM.
+Build started 4/19/2018 8:13:11 PM.
 Project &quot;C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\TransformManifest.proj&quot; on node 1 (default targets).
 TransformManifest:
   XslTransform (v2017.12.30.2)
@@ -95,8 +94,8 @@ Done Building Project &quot;C:\Users\Dylan Menchetti\Documents\Spring_2018\Compu
 
 Build succeeded.
 
-Time Elapsed 00:00:04.33
-    Last step completed in 00:00:04.6522
+Time Elapsed 00:00:03.23
+    Last step completed in 00:00:03.5069
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
@@ -115,28 +114,29 @@ Generating conceptual topic files
     C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Content\VersionHistory\VersionHistory.aml -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\ddueXml\c55fe442-88da-4d3d-8d03-6c0133b944d6.xml
     Parsing topic file &#39;C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Content\VersionHistory\v1.0.0.0.aml&#39;
     C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Content\VersionHistory\v1.0.0.0.aml -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\ddueXml\fb46dc17-c14e-488d-b8f0-314659721567.xml
-    Last step completed in 00:00:00.0469
+    Last step completed in 00:00:00.0625
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into manifest.xml
-    Last step completed in 00:00:00.0469
+    Last step completed in 00:00:00.0156
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\icons\Help.png -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\HtmlHelp1\icons\Help.png
+C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\icons\Help.png -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\Help.png
     Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0156
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 4/19/2018 7:52:04 PM.
+Build started 4/19/2018 8:13:15 PM.
 Project &quot;C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 GenerateIntermediateTOC:
   XslTransform (v2017.12.30.2)
@@ -147,14 +147,14 @@ Done Building Project &quot;C:\Users\Dylan Menchetti\Documents\Spring_2018\Compu
 
 Build succeeded.
 
-Time Elapsed 00:00:01.25
+Time Elapsed 00:00:01.17
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:01.6095
+    Last step completed in 00:00:01.5002
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.3907
+    Last step completed in 00:00:00.1467
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -162,195 +162,53 @@ C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senio
   Updating reference topic configurations.
   Updating conceptual topic configurations.
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0156
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - BuildTopics.proj]
-Build started 4/19/2018 7:52:06 PM.
+Build started 4/19/2018 8:13:17 PM.
 Project &quot;C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj&quot; on node 1 (default targets).
 BuildTopics:
   BuildAssembler (v2017.12.30.2)
   Copyright c 2006-2017, Microsoft Corporation, All Rights Reserved.
   Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
   Loading configuration...
-  ResolveReferenceLinksComponent: The MSDN content ID cache &#39;C:\Users\Dylan Menchetti\AppData\Local\EWSoftware\Sandcastle Help File Builder\Cache\MsdnContentId.cache&#39; does not exist yet.  All IDs will be looked up in this build which will slow it down.
   Processing topics...
 BuildAssembler : warning : ShowMissingComponent: [N:PCHawk] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PCHawk.accountForm] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PCHawk.cartForm] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PCHawk.checkOutForm] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PCHawk.freeBuildForm] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PCHawk.frmHome] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [T:PCHawk.helpForm] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [T:PCHawk.homeScreenControl] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PCHawk.preBuildForm] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PCHawk.SignInForm] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PCHawk.signUpForm] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:PrimaryQueries] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Case.externalSize] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Case.GetAttributes] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Case.GetAttributes] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Case.internalSize] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Case.powerSupply] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Case.type] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PrimaryQueries.Computer] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;serialNumber&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;name&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;pcCase&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;cpu&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;fan&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;gCard&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;memory&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;mBoard&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;power&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.Int32,System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;storage&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;name&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;pcCase&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;cpu&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;fan&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;gCard&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;memory&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;mBoard&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;power&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.#ctor(System.String,PrimaryQueries.Case,PrimaryQueries.CPU,PrimaryQueries.Fan,PrimaryQueries.GraphicsCard,PrimaryQueries.Memory,PrimaryQueries.MOBO,PrimaryQueries.PowerSupply,PrimaryQueries.Storage)] Missing &lt;param name=&quot;storage&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.AddPart(PrimaryQueries.Part)] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.AddPart(PrimaryQueries.Part)] Missing &lt;param name=&quot;p&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.CalcPrice] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.CalcPrice] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Computer.cpu] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Computer.fan] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Computer.gCard] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.Get(System.Int32)] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.Get(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.Get(System.Int32)] Missing &lt;param name=&quot;serialNumber&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.GetAttributes] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.GetAttributes] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.GetFromQuery(System.String)] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.GetFromQuery(System.String)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Computer.GetFromQuery(System.String)] Missing &lt;param name=&quot;result&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Computer.mBoard] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Computer.memory] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Computer.name] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Computer.pcCase] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Computer.power] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Computer.price] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Computer.serialNumber] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Computer.storage] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.#ctor(System.Int32,System.String,System.Double,System.Double,System.Int32,System.Int32)] Missing &lt;param name=&quot;partNumber&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.#ctor(System.Int32,System.String,System.Double,System.Double,System.Int32,System.Int32)] Missing &lt;param name=&quot;name&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.#ctor(System.Int32,System.String,System.Double,System.Double,System.Int32,System.Int32)] Missing &lt;param name=&quot;price&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.#ctor(System.Int32,System.String,System.Double,System.Double,System.Int32,System.Int32)] Missing &lt;param name=&quot;speed&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.#ctor(System.Int32,System.String,System.Double,System.Double,System.Int32,System.Int32)] Missing &lt;param name=&quot;cores&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.#ctor(System.Int32,System.String,System.Double,System.Double,System.Int32,System.Int32)] Missing &lt;param name=&quot;tdp&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.CPU.cores] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.Get(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.Get(System.Int32)] Missing &lt;param name=&quot;partNumber&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.GetAll] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.GetAttributes] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.GetAttributes] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.GetFromQuery(System.String)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.CPU.GetFromQuery(System.String)] Missing &lt;param name=&quot;query&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.CPU.speed] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.CPU.tdp] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Customer.ChangeAddress(System.String,System.String,System.String,System.Int32)] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Customer.ChangeAddress(System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;newStreetAddress&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Customer.ChangeAddress(System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;newCity&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Customer.ChangeAddress(System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;newState&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Customer.ChangeAddress(System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;newZipcode&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Customer.city] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Customer.state] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Customer.streetAddress] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Customer.zipcode] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PrimaryQueries.Fan] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.#ctor(System.Int32,System.String,System.Double,System.Int32,System.Double)] Missing &lt;param name=&quot;partNumber&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.#ctor(System.Int32,System.String,System.Double,System.Int32,System.Double)] Missing &lt;param name=&quot;name&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.#ctor(System.Int32,System.String,System.Double,System.Int32,System.Double)] Missing &lt;param name=&quot;price&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.#ctor(System.Int32,System.String,System.Double,System.Int32,System.Double)] Missing &lt;param name=&quot;rpm&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.#ctor(System.Int32,System.String,System.Double,System.Int32,System.Double)] Missing &lt;param name=&quot;nl&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.Get(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.Get(System.Int32)] Missing &lt;param name=&quot;partNumber&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.GetAll] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.GetAttributes] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.GetAttributes] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.GetFromQuery(System.String)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Fan.GetFromQuery(System.String)] Missing &lt;param name=&quot;query&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Fan.nl] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Fan.rpm] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.GraphicsCard.chipSet] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.GraphicsCard.coreClock] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.GraphicsCard.GetAttributes] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.GraphicsCard.GetAttributes] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.GraphicsCard.memory] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.GraphicsCard.series] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PrimaryQueries.Memory] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;partNumber&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;name&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;price&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;speed&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;type&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;cas&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;modules&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;size&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.Get(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.Get(System.Int32)] Missing &lt;param name=&quot;partNumber&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.GetAll] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.GetAttributes] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.GetAttributes] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.GetFromQuery(System.String)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Memory.GetFromQuery(System.String)] Missing &lt;param name=&quot;query&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:PrimaryQueries.MOBO] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;partNumber&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;name&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;price&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;socket&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;form&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;mRAM&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.#ctor(System.Int32,System.String,System.Double,System.String,System.String,System.String,System.Int32)] Missing &lt;param name=&quot;rAMSlots&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.Get(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.Get(System.Int32)] Missing &lt;param name=&quot;partNumber&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.GetAll] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.GetAttributes] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.GetAttributes] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.GetFromQuery(System.String)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.MOBO.GetFromQuery(System.String)] Missing &lt;param name=&quot;query&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Order.#ctor(PrimaryQueries.Computer,PrimaryQueries.Employee,PrimaryQueries.Customer)] Missing &lt;param name=&quot;computer&quot;/&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Part.GetAttributes] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Person.CheckCredentials(System.String,System.String)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Person.CheckPassword(System.String)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Person.EncryptPassword(System.String)] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Person.GetOrders] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Person.lastName] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.PowerSupply.efficiency] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.PowerSupply.form] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.PowerSupply.GetAttributes] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.PowerSupply.GetAttributes] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.PowerSupply.modular] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.PowerSupply.watts] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Storage.cache] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Storage.capacity] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Storage.form] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Storage.GetAttributes] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:PrimaryQueries.Storage.GetAttributes] Missing &lt;returns&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Storage.series] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:PrimaryQueries.Storage.type] Missing &lt;summary&gt; documentation [C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj]
-  Processed 281 topic(s)
-  158 warning(s)
+  Processed 292 topic(s)
+  17 warning(s)
   CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
   ResolveArtLinksComponent: Copying media files...
-  ResolveReferenceLinksComponent: 549 entries added to the MSDN content ID cache.  New cache size: 549 entries
+  ResolveArtLinksComponent: Copying media files...
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 3 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
 Done Building Project &quot;C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\BuildTopics.proj&quot; (default targets).
 
 Build succeeded.
 
-Time Elapsed 00:02:50.29
-    Last step completed in 00:02:50.6540
+Time Elapsed 00:00:11.50
+    Last step completed in 00:00:11.8287
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0156
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -362,11 +220,17 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing Help 1 files in C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\HtmlHelp1
-Processed 281 HTML files
+Processed 292 HTML files
 Sorting keywords and generating See Also indices
 Saving HTML Help 1 keyword index to C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Documentation1.hhk
 Saving HTML Help 1 table of contents to C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Documentation1.hhc
-    Last step completed in 00:00:01.0001
+
+Processing website files in C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website
+Processed 292 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\WebKI.xml
+Saving website table of contents to C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\WebTOC.xml
+    Last step completed in 00:00:01.1578
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -432,7 +296,85 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\HtmlHelp1\styles\branding-zh-CN.css
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\HtmlHelp1\styles\branding-zh-TW.css
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\HtmlHelp1\styles\branding.css
-    Last step completed in 00:00:00.6879
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\search.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\Web.Config
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\GeneralError.htm -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\html\GeneralError.htm
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\PageNotFound.htm -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\html\PageNotFound.htm
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\Search.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\TocClose.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\TocCollapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\TocExpanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\icons\TocOpen.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\scripts\branding-Website.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\scripts\clipboard.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; C:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
+    Last step completed in 00:00:00.6251
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating HTML Help 1 table of contents file...
@@ -444,7 +386,7 @@ Generating HTML Help 1 index file...
 </buildStep>
 <buildStep step="GenerateHelpProject">
 Generating HTML Help 1 project file...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0156
 </buildStep>
 <buildStep step="CompilingHelpFile">
 Compiling HTML Help 1 file...
@@ -459,13 +401,13 @@ Compiling HTML Help 1 file...
   
   
   
-  Compile time: 0 minutes, 5 seconds
+  Compile time: 0 minutes, 9 seconds
   
-  283	Topics
+  294	Topics
   
-  3,167	Local links
+  3,208	Local links
   
-  19,425	Internet links
+  19,224	Internet links
   
   0	Graphics
   
@@ -473,19 +415,36 @@ Compiling HTML Help 1 file...
   
   
   
-  Created c:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\HtmlHelp1\Documentation1.chm, 609,248 bytes
+  Created c:\Users\Dylan Menchetti\Documents\Spring_2018\Computer_Science\Spring2018\Senioritus\PC-Hawk-Customs\Documentation1\Help\Working\Output\HtmlHelp1\Documentation1.chm, 536,668 bytes
   
-  Compression decreased file by 5,012,071 bytes.
+  Compression decreased file by 4,461,389 bytes.
   
-    Last step completed in 00:00:08.5072
+    Last step completed in 00:00:11.9466
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+Adding lightweight search and TOC elements to each topic...
+</plugIn>    Last step completed in 00:00:00.5234
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 478 files for the website content
+    Last step completed in 00:00:01.5002
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.5159
+    Last step completed in 00:00:03.8209
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 4/19/2018 7:55:08 PM.  Total time: 00:03:12.1826
+Build completed successfully at 4/19/2018 8:13:48 PM.  Total time: 00:00:39.9320
 
 </buildStep>
 </shfbBuild>
