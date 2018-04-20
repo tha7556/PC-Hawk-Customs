@@ -125,10 +125,12 @@ namespace PCHawk
         /// <param name="e"></param>
         private void bttnOrdered_Click(object sender, EventArgs e)
         {
+            MyStaticClass.computer.AddToDatabase();
+            int num = int.Parse(Queries.Query("CALL `GetCurrentNum`();")[0].Trim());
+            MyStaticClass.cart.serialNumber = num-1;
             Order order = new Order(MyStaticClass.cart, Employee.Get("josh@uncw.edu"), MyStaticClass.customer);
             order.AddToDatabase();
-            MyStaticClass.computer.AddToDatabase();
-            Queries.Log(Queries.LogLevel.DEBUG, MyStaticClass.computer.serialNumber+", serial num");
+
             const string message = "Thank You for your purchase!";
             const string caption = "Thank You!";
             var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Question);
