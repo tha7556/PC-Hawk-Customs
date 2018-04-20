@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="accountForm class">
+    <HelpKINode Title="accountForm Class" Url="html/cc8d90db-bd66-974d-8b20-c6396255b6f2.htm" />
+    <HelpKINode Title="constructor" Url="html/e45762ff-1574-21e9-d8f7-dd9d3c8ef55d.htm" />
+    <HelpKINode Title="events" Url="html/30d5ab3c-5c3c-e92d-97c0-a9293ec89df0.htm" />
+    <HelpKINode Title="methods" Url="html/40461afc-fc6c-2156-4fcc-289bb110fa88.htm" />
+    <HelpKINode Title="properties" Url="html/d8cf7a85-2570-c0f9-05ed-2defc888ffa4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="accountForm.accountForm constructor" Url="html/e45762ff-1574-21e9-d8f7-dd9d3c8ef55d.htm" />
+  <HelpKINode Title="accountForm.Dispose method" Url="html/025a19b9-e7a0-90ca-c7a1-d2b65cdcc607.htm" />
+  <HelpKINode Title="AddPart method" Url="html/be46986d-c8b1-416a-2b19-5598a92170f7.htm" />
+  <HelpKINode Title="AddToDatabase method">
+    <HelpKINode Title="Case.AddToDatabase Method " Url="html/21974742-b6f9-8cfb-e2a3-8d20182ad47d.htm" />
+    <HelpKINode Title="Computer.AddToDatabase Method " Url="html/c72cdda1-66c8-3175-a75e-f177c529fb65.htm" />
+    <HelpKINode Title="CPU.AddToDatabase Method " Url="html/96ec0675-d448-f151-8ce9-06c08f4c0275.htm" />
+    <HelpKINode Title="Customer.AddToDatabase Method " Url="html/4cd414f7-04f0-8c89-886a-5b74525ee9eb.htm" />
+    <HelpKINode Title="Employee.AddToDatabase Method " Url="html/5740302b-ae6c-e7a1-8408-4eb086bf1343.htm" />
+    <HelpKINode Title="Fan.AddToDatabase Method " Url="html/ec6ed8f7-e41a-0ad0-9d4b-822ba05137cf.htm" />
+    <HelpKINode Title="GraphicsCard.AddToDatabase Method " Url="html/f19b954b-d01f-024a-f939-2f84dabe8e3f.htm" />
+    <HelpKINode Title="Memory.AddToDatabase Method " Url="html/046a33bd-c573-1f13-ec7a-f2eaa9b5d8a7.htm" />
+    <HelpKINode Title="MOBO.AddToDatabase Method " Url="html/a360df79-a918-76a7-c6e7-12bced2f2114.htm" />
+    <HelpKINode Title="Order.AddToDatabase Method " Url="html/d8ecee92-915b-e043-ff7a-1c92cbcbdc7b.htm" />
+    <HelpKINode Title="Part.AddToDatabase Method " Url="html/6cdaa89a-d0a5-c993-e1c8-96b904cd5af3.htm" />
+    <HelpKINode Title="Person.AddToDatabase Method " Url="html/63cfd700-22d5-b506-aff2-6e0602b40670.htm" />
+    <HelpKINode Title="PowerSupply.AddToDatabase Method " Url="html/963a1f23-b9dc-8040-fb8b-c4c9d18ee697.htm" />
+    <HelpKINode Title="Storage.AddToDatabase Method " Url="html/385523d3-1701-ca6e-ec6a-d1194f7c01db.htm" />
+  </HelpKINode>
+  <HelpKINode Title="cache property" Url="html/8f98de3a-8522-42a5-9a95-abe62da3a692.htm" />
+  <HelpKINode Title="CalcPrice method" Url="html/c07227b4-5644-d927-79ec-2b59a28537ee.htm" />
+  <HelpKINode Title="capacity property" Url="html/ad987606-feef-14c2-12c8-3dfd238232ca.htm" />
+  <HelpKINode Title="cartForm class">
+    <HelpKINode Title="cartForm Class" Url="html/218d9c9f-68aa-0be8-bb6f-6f5bd4a6b046.htm" />
+    <HelpKINode Title="constructor" Url="html/45595533-3ab7-10dd-8fba-e5ba20670c73.htm" />
+    <HelpKINode Title="events" Url="html/d36b2510-a37f-3891-e57e-ca629b702232.htm" />
+    <HelpKINode Title="methods" Url="html/72799104-656b-351c-2702-9889a88ad812.htm" />
+    <HelpKINode Title="properties" Url="html/9620131e-6fec-b8c9-e48d-1527a6d15ab1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="cartForm.cartForm constructor" Url="html/45595533-3ab7-10dd-8fba-e5ba20670c73.htm" />
+  <HelpKINode Title="cartForm.Dispose method" Url="html/499694e4-7e35-28cd-9c66-27dea80a9a5d.htm" />
+  <HelpKINode Title="cas property" Url="html/35dd0fc3-c3bc-da44-bf1a-15f1d6ee019e.htm" />
+  <HelpKINode Title="Case class">
+    <HelpKINode Title="Case Class" Url="html/4c3efc1e-8ca8-6211-c998-c87e23487753.htm" />
+    <HelpKINode Title="constructor" Url="html/8a404362-264a-15b3-17b9-7bd86485062e.htm" />
+    <HelpKINode Title="methods" Url="html/e58c1824-c195-5633-041a-9811b82c37a5.htm" />
+    <HelpKINode Title="properties" Url="html/495ca9d3-8f68-2a1d-bbff-393381651c32.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Case.AddToDatabase method" Url="html/21974742-b6f9-8cfb-e2a3-8d20182ad47d.htm" />
+  <HelpKINode Title="Case.Case constructor" Url="html/8a404362-264a-15b3-17b9-7bd86485062e.htm" />
+  <HelpKINode Title="Case.externalSize property" Url="html/5a59c0aa-70fb-8b64-57df-e8f4a858b99f.htm" />
+  <HelpKINode Title="Case.Get method" Url="html/fed34b15-074f-c2b8-a024-a4847a26d2e3.htm" />
+  <HelpKINode Title="Case.GetAll method" Url="html/ff524b4a-2210-e512-bfdf-b29cf4770acf.htm" />
+  <HelpKINode Title="Case.GetAttributes method" Url="html/db06845e-363e-74c8-1781-698205c7f12f.htm" />
+  <HelpKINode Title="Case.GetFromQuery method" Url="html/6dc70d3d-63c3-3bf0-cf3e-33246f1685a7.htm" />
+  <HelpKINode Title="Case.internalSize property" Url="html/27ce2594-7844-3541-2dbf-855ee7fb8fb9.htm" />
+  <HelpKINode Title="Case.powerSupply property" Url="html/acc20b4e-1a85-4a48-f0c3-cb64060a2857.htm" />
+  <HelpKINode Title="Case.type property" Url="html/f926163a-6ca0-a510-bf51-67e1f174b5cf.htm" />
+  <HelpKINode Title="ChangeAddress method" Url="html/6ce15e6c-6d30-4560-725b-44baaf4645bd.htm" />
+  <HelpKINode Title="ChangeEmail method" Url="html/2cacb4e5-5c2e-5ad9-205c-5fb2dd439a19.htm" />
+  <HelpKINode Title="ChangeName method" Url="html/52695e0c-8490-df5f-6f03-b02adf2ee8ca.htm" />
+  <HelpKINode Title="ChangePassword method" Url="html/a8c52a71-be92-3563-35d0-e0cb4572ae91.htm" />
+  <HelpKINode Title="CheckCredentials method" Url="html/73e1d4d5-ecaa-936d-4d1f-eb7d88a74ad6.htm" />
+  <HelpKINode Title="checkOutForm class">
+    <HelpKINode Title="checkOutForm Class" Url="html/eafa459b-3637-5182-384a-8c094897c813.htm" />
+    <HelpKINode Title="constructor" Url="html/176ff54c-95fd-a640-f64e-f537d647cac5.htm" />
+    <HelpKINode Title="events" Url="html/85888318-58ba-718f-7772-1f91c7977b85.htm" />
+    <HelpKINode Title="methods" Url="html/be06a70e-6f68-2003-09da-dc9c01504bd3.htm" />
+    <HelpKINode Title="properties" Url="html/59da34ac-7cf6-c3e8-dd54-3e2260683da9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="checkOutForm.checkOutForm constructor" Url="html/176ff54c-95fd-a640-f64e-f537d647cac5.htm" />
+  <HelpKINode Title="checkOutForm.Dispose method" Url="html/bdb8f702-3df4-fd2d-1ef3-3ee6ae61d904.htm" />
+  <HelpKINode Title="CheckPassword method" Url="html/346d965b-a8e1-f113-7e60-1a0c32998126.htm" />
+  <HelpKINode Title="chipSet property" Url="html/5c233b4c-61fe-17f3-d7ff-cd9c5c10ea1b.htm" />
+  <HelpKINode Title="city property" Url="html/ccc1a97c-1e66-8b92-3b1c-281811588db9.htm" />
+  <HelpKINode Title="CloseLog method" Url="html/16c4811f-9891-3a9a-e531-bcf97f88f5de.htm" />
+  <HelpKINode Title="Computer class">
+    <HelpKINode Title="Computer Class" Url="html/1dce5ad0-3a24-4c3b-ac78-6c54f4f3e8bd.htm" />
+    <HelpKINode Title="constructor" Url="html/ce75ca21-b0d1-f6fb-7764-b1976e7e2d1f.htm" />
+    <HelpKINode Title="methods" Url="html/18ac7265-4ef8-daad-c202-c827f158fcad.htm" />
+    <HelpKINode Title="properties" Url="html/cda53395-0be4-717b-7b96-3d593e625ee6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Computer.AddPart method" Url="html/be46986d-c8b1-416a-2b19-5598a92170f7.htm" />
+  <HelpKINode Title="Computer.AddToDatabase method" Url="html/c72cdda1-66c8-3175-a75e-f177c529fb65.htm" />
+  <HelpKINode Title="Computer.CalcPrice method" Url="html/c07227b4-5644-d927-79ec-2b59a28537ee.htm" />
+  <HelpKINode Title="Computer.Computer constructor" Url="html/ce75ca21-b0d1-f6fb-7764-b1976e7e2d1f.htm" />
+  <HelpKINode Title="Computer.cpu property" Url="html/1b5764e6-2c9d-12e6-24d5-08cafa1a57e6.htm" />
+  <HelpKINode Title="Computer.fan property" Url="html/27e5692e-c851-999a-5443-419980ef54e1.htm" />
+  <HelpKINode Title="Computer.gCard property" Url="html/bf3c2c57-e0e6-80c4-bd94-ae9a160e1573.htm" />
+  <HelpKINode Title="Computer.Get method" Url="html/900f4db0-c6cd-52c7-222b-52ed3ff556a4.htm" />
+  <HelpKINode Title="Computer.GetAll method" Url="html/ef79c5b6-45fe-76f5-918b-17e718ac22db.htm" />
+  <HelpKINode Title="Computer.GetAttributes method" Url="html/2dcc5ebc-8c6c-2a30-5b81-9fdccefae036.htm" />
+  <HelpKINode Title="Computer.GetFromQuery method" Url="html/c142fc05-eae2-fffd-1ea7-78f4d0498fbe.htm" />
+  <HelpKINode Title="Computer.mBoard property" Url="html/b26aba4b-74f2-06a5-a9b7-21d120820e8d.htm" />
+  <HelpKINode Title="Computer.memory property" Url="html/d1be113f-5498-b0c2-93c8-896a8997c2c4.htm" />
+  <HelpKINode Title="Computer.name property" Url="html/23e2b36b-d765-857a-fa67-49482075a68e.htm" />
+  <HelpKINode Title="Computer.pcCase property" Url="html/61ef4857-d6e9-2e32-b774-ba63e9800b3f.htm" />
+  <HelpKINode Title="Computer.power property" Url="html/e6cd341d-24eb-76e1-2503-42bf383ae12e.htm" />
+  <HelpKINode Title="Computer.price property" Url="html/9f6db4d7-ab1c-8b7a-4c60-3b0555d5e116.htm" />
+  <HelpKINode Title="Computer.serialNumber property" Url="html/0ccd655d-5d22-fd34-db3a-a15f4ec9f381.htm" />
+  <HelpKINode Title="Computer.storage property" Url="html/39bd3c2a-ec8d-d37f-6448-9ff66c0ff9cb.htm" />
+  <HelpKINode Title="coreClock property" Url="html/5722003c-75ab-6e14-7e15-7e5be156defa.htm" />
+  <HelpKINode Title="cores property" Url="html/351820d8-ac0d-a3f6-fb7d-bc54d94df662.htm" />
+  <HelpKINode Title="CPU class">
+    <HelpKINode Title="CPU Class" Url="html/63010b76-ff98-65f4-f808-02bd7b82440d.htm" />
+    <HelpKINode Title="constructor" Url="html/94396fa2-5bc2-373d-0bcf-dfadcb43e33d.htm" />
+    <HelpKINode Title="methods" Url="html/8ddb5898-97dd-eac8-775e-3df4db1c50b0.htm" />
+    <HelpKINode Title="properties" Url="html/0c45659c-eef6-8cae-5986-ae7ee33e0efc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="cpu property" Url="html/1b5764e6-2c9d-12e6-24d5-08cafa1a57e6.htm" />
+  <HelpKINode Title="CPU.AddToDatabase method" Url="html/96ec0675-d448-f151-8ce9-06c08f4c0275.htm" />
+  <HelpKINode Title="CPU.cores property" Url="html/351820d8-ac0d-a3f6-fb7d-bc54d94df662.htm" />
+  <HelpKINode Title="CPU.CPU constructor" Url="html/94396fa2-5bc2-373d-0bcf-dfadcb43e33d.htm" />
+  <HelpKINode Title="CPU.Get method" Url="html/27c2336f-17e4-bfa3-be64-cfc9df6a8e4c.htm" />
+  <HelpKINode Title="CPU.GetAll method" Url="html/46e006d1-1d6a-56e5-ea9e-b43006d27e25.htm" />
+  <HelpKINode Title="CPU.GetAttributes method" Url="html/16ef7bbb-eedf-dd17-9266-89b087057e34.htm" />
+  <HelpKINode Title="CPU.GetFromQuery method" Url="html/f1e29408-73e6-c666-f74d-3bd2be801f9d.htm" />
+  <HelpKINode Title="CPU.speed property" Url="html/48649d85-a16c-265e-6bec-cd89a76e8e3d.htm" />
+  <HelpKINode Title="CPU.tdp property" Url="html/2f3bd2a8-5a86-e7af-b9b2-083b7b882b80.htm" />
+  <HelpKINode Title="Customer class">
+    <HelpKINode Title="Customer Class" Url="html/91257529-6923-c1b7-d97d-3499d1af1047.htm" />
+    <HelpKINode Title="constructor" Url="html/75cd8ae7-5385-99b2-103b-d212eb3939a0.htm" />
+    <HelpKINode Title="methods" Url="html/0369b992-0e52-0825-b675-2575311d435a.htm" />
+    <HelpKINode Title="properties" Url="html/34997ae8-83f0-fa1a-c30b-051983a0e3f2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Customer.AddToDatabase method" Url="html/4cd414f7-04f0-8c89-886a-5b74525ee9eb.htm" />
+  <HelpKINode Title="Customer.ChangeAddress method" Url="html/6ce15e6c-6d30-4560-725b-44baaf4645bd.htm" />
+  <HelpKINode Title="Customer.city property" Url="html/ccc1a97c-1e66-8b92-3b1c-281811588db9.htm" />
+  <HelpKINode Title="Customer.Customer constructor" Url="html/75cd8ae7-5385-99b2-103b-d212eb3939a0.htm" />
+  <HelpKINode Title="Customer.DeleteFromDatabase method" Url="html/c0ba7a66-f743-c0d9-25e4-cb9f6250587f.htm" />
+  <HelpKINode Title="Customer.Get method" Url="html/73a6e986-7324-4666-a29f-fed27dbf59b7.htm" />
+  <HelpKINode Title="Customer.GetAll method" Url="html/94363861-2095-f333-b63c-6824e9e99c0a.htm" />
+  <HelpKINode Title="Customer.GetFromQuery method" Url="html/368776c3-7397-5501-0608-c3b9f3af0bff.htm" />
+  <HelpKINode Title="Customer.IsState method" Url="html/79223dc3-efe1-cc75-feb0-a8f1ec11e98a.htm" />
+  <HelpKINode Title="Customer.IsZipcode method" Url="html/7d3c2913-e5fc-3125-9005-5a2c778dac5a.htm" />
+  <HelpKINode Title="Customer.state property" Url="html/ec82480c-9d49-63e6-15a9-ddb9a918986e.htm" />
+  <HelpKINode Title="Customer.streetAddress property" Url="html/8d3380c6-e533-954a-ae92-529e389f4930.htm" />
+  <HelpKINode Title="Customer.zipcode property" Url="html/ab019b93-3721-abfd-3497-760bdc81c9a2.htm" />
+  <HelpKINode Title="DEBUG enumeration member" Url="html/c3e5be21-432a-3b35-151f-1b59b5a8f509.htm" />
+  <HelpKINode Title="DeleteFromDatabase method">
+    <HelpKINode Title="Customer.DeleteFromDatabase Method " Url="html/c0ba7a66-f743-c0d9-25e4-cb9f6250587f.htm" />
+    <HelpKINode Title="Employee.DeleteFromDatabase Method " Url="html/e3ed3fdf-f7a7-bad4-5af3-f72112271170.htm" />
+    <HelpKINode Title="Person.DeleteFromDatabase Method " Url="html/a6994651-9c7c-c3c9-9228-0fe6531108ae.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="accountForm.Dispose Method " Url="html/025a19b9-e7a0-90ca-c7a1-d2b65cdcc607.htm" />
+    <HelpKINode Title="cartForm.Dispose Method " Url="html/499694e4-7e35-28cd-9c66-27dea80a9a5d.htm" />
+    <HelpKINode Title="checkOutForm.Dispose Method " Url="html/bdb8f702-3df4-fd2d-1ef3-3ee6ae61d904.htm" />
+    <HelpKINode Title="freeBuildForm.Dispose Method " Url="html/61229b05-63a2-e3a8-0c50-d0f37c9b60a9.htm" />
+    <HelpKINode Title="frmHome.Dispose Method " Url="html/fcbf618a-6c40-6099-80e4-a60f93f4d6be.htm" />
+    <HelpKINode Title="helpForm.Dispose Method " Url="html/046fbd7f-b9b2-8d47-0da9-cd661efb203b.htm" />
+    <HelpKINode Title="homeScreenControl.Dispose Method " Url="html/0f0f0b1d-078e-9b3c-e3e6-05ab89b44ece.htm" />
+    <HelpKINode Title="preBuildForm.Dispose Method " Url="html/0af9da4a-e5a1-2d5e-cce8-e11a7a617b78.htm" />
+    <HelpKINode Title="SignInForm.Dispose Method " Url="html/b40384a2-6a54-cd21-98a9-d3c9988a2348.htm" />
+    <HelpKINode Title="signUpForm.Dispose Method " Url="html/dbb2f790-70dc-4b53-ea7b-d6e833c590ee.htm" />
+  </HelpKINode>
+  <HelpKINode Title="efficiency property" Url="html/1e5bd34d-f8ba-c6af-bb6c-16dfd1336232.htm" />
+  <HelpKINode Title="email property" Url="html/94419345-e202-9091-8e56-e2ef75ecd321.htm" />
+  <HelpKINode Title="Employee class">
+    <HelpKINode Title="Employee Class" Url="html/ca80432a-8c3e-eb7f-8455-0ae1ead0a1f8.htm" />
+    <HelpKINode Title="constructor" Url="html/09d1b04b-724a-4dfa-1f2c-ef3832a49075.htm" />
+    <HelpKINode Title="methods" Url="html/eb6d243a-59cf-c2f0-3a27-a1a6047a0869.htm" />
+    <HelpKINode Title="properties" Url="html/091e5f11-b4c8-6e90-eb03-c78c36dc9235.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Employee.AddToDatabase method" Url="html/5740302b-ae6c-e7a1-8408-4eb086bf1343.htm" />
+  <HelpKINode Title="Employee.DeleteFromDatabase method" Url="html/e3ed3fdf-f7a7-bad4-5af3-f72112271170.htm" />
+  <HelpKINode Title="Employee.Employee constructor" Url="html/09d1b04b-724a-4dfa-1f2c-ef3832a49075.htm" />
+  <HelpKINode Title="Employee.Get method" Url="html/3a7b27d7-4a9c-f744-2049-40bcfc4048d6.htm" />
+  <HelpKINode Title="Employee.GetAll method" Url="html/dcfd6a48-d3ff-2c48-c0eb-f3ecfa59ceab.htm" />
+  <HelpKINode Title="Employee.GetFromQuery method" Url="html/49df0d28-1b67-cbf6-6964-7f7cfe8554c9.htm" />
+  <HelpKINode Title="EncryptPassword method" Url="html/3a173b21-210a-e7b0-9332-50018bcedc48.htm" />
+  <HelpKINode Title="ERROR enumeration member" Url="html/c3e5be21-432a-3b35-151f-1b59b5a8f509.htm" />
+  <HelpKINode Title="externalSize property" Url="html/5a59c0aa-70fb-8b64-57df-e8f4a858b99f.htm" />
+  <HelpKINode Title="Fan class">
+    <HelpKINode Title="Fan Class" Url="html/17abb32a-131a-a0b7-4e44-c630a1f8a6fc.htm" />
+    <HelpKINode Title="constructor" Url="html/9f0dc9c1-cb3e-eda9-e540-24ef318f61fe.htm" />
+    <HelpKINode Title="methods" Url="html/aac91243-eeae-edd9-56a6-5da7f27c108a.htm" />
+    <HelpKINode Title="properties" Url="html/ed72d0dd-f4be-68a4-c725-3d1c21e0d8ba.htm" />
+  </HelpKINode>
+  <HelpKINode Title="fan property" Url="html/27e5692e-c851-999a-5443-419980ef54e1.htm" />
+  <HelpKINode Title="Fan.AddToDatabase method" Url="html/ec6ed8f7-e41a-0ad0-9d4b-822ba05137cf.htm" />
+  <HelpKINode Title="Fan.Fan constructor" Url="html/9f0dc9c1-cb3e-eda9-e540-24ef318f61fe.htm" />
+  <HelpKINode Title="Fan.Get method" Url="html/12867594-c396-c53a-3832-8ac90a6a470a.htm" />
+  <HelpKINode Title="Fan.GetAll method" Url="html/6ce1d8ca-9c16-6978-ae2c-47b83eb05c25.htm" />
+  <HelpKINode Title="Fan.GetAttributes method" Url="html/433a16c8-932b-b004-5b74-e5ef3979a64a.htm" />
+  <HelpKINode Title="Fan.GetFromQuery method" Url="html/d2c988d3-1aea-3456-ec0d-81839c672d04.htm" />
+  <HelpKINode Title="Fan.nl property" Url="html/70f5baaf-1a73-97f5-e0d7-f07844c2559d.htm" />
+  <HelpKINode Title="Fan.rpm property" Url="html/48b5c17c-c3dc-14b3-79d0-0fefd31365e2.htm" />
+  <HelpKINode Title="firstName property" Url="html/6cbed386-2c5f-eca9-5a2f-8d26bcab5610.htm" />
+  <HelpKINode Title="form property">
+    <HelpKINode Title="MOBO.form Property " Url="html/ce918305-53f2-1e42-3c92-9245aa74fd50.htm" />
+    <HelpKINode Title="PowerSupply.form Property " Url="html/9f13d0c3-c332-8ccd-b47a-7ac315c9204b.htm" />
+    <HelpKINode Title="Storage.form Property " Url="html/c257addd-7941-a2a0-7851-b5d01ec25dfd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="freeBuildForm class">
+    <HelpKINode Title="freeBuildForm Class" Url="html/e445b71f-f47f-1b6e-f3f0-1ae25a49a310.htm" />
+    <HelpKINode Title="constructor" Url="html/96c57983-ae5a-e06a-2cdd-d0296c1f684d.htm" />
+    <HelpKINode Title="events" Url="html/07325dca-35f8-3acd-1da4-2d1c3df363ba.htm" />
+    <HelpKINode Title="methods" Url="html/144ad8d5-f6cb-d38d-dade-d090343c209e.htm" />
+    <HelpKINode Title="properties" Url="html/97ca4979-aa1b-a7b1-52b0-92c3b7cbb311.htm" />
+  </HelpKINode>
+  <HelpKINode Title="freeBuildForm.Dispose method" Url="html/61229b05-63a2-e3a8-0c50-d0f37c9b60a9.htm" />
+  <HelpKINode Title="freeBuildForm.freeBuildForm constructor" Url="html/96c57983-ae5a-e06a-2cdd-d0296c1f684d.htm" />
+  <HelpKINode Title="frmHome class">
+    <HelpKINode Title="frmHome Class" Url="html/9ba2e482-01f4-90bd-718f-cecfa451e951.htm" />
+    <HelpKINode Title="constructor" Url="html/3548c9ba-eb1f-a0c4-ceab-346d6a9d4a2d.htm" />
+    <HelpKINode Title="events" Url="html/e3d11f4a-ac6d-19bc-e24d-42b76c9a2182.htm" />
+    <HelpKINode Title="methods" Url="html/b57b4ac8-6c1e-f72f-f2d8-76e8fe8c1f38.htm" />
+    <HelpKINode Title="properties" Url="html/4890f9e1-7c1e-feb4-a057-180d82b42e3d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmHome.Dispose method" Url="html/fcbf618a-6c40-6099-80e4-a60f93f4d6be.htm" />
+  <HelpKINode Title="frmHome.frmHome constructor" Url="html/3548c9ba-eb1f-a0c4-ceab-346d6a9d4a2d.htm" />
+  <HelpKINode Title="gCard property" Url="html/bf3c2c57-e0e6-80c4-bd94-ae9a160e1573.htm" />
+  <HelpKINode Title="Get method">
+    <HelpKINode Title="Case.Get Method " Url="html/fed34b15-074f-c2b8-a024-a4847a26d2e3.htm" />
+    <HelpKINode Title="Computer.Get Method " Url="html/900f4db0-c6cd-52c7-222b-52ed3ff556a4.htm" />
+    <HelpKINode Title="CPU.Get Method " Url="html/27c2336f-17e4-bfa3-be64-cfc9df6a8e4c.htm" />
+    <HelpKINode Title="Customer.Get Method " Url="html/73a6e986-7324-4666-a29f-fed27dbf59b7.htm" />
+    <HelpKINode Title="Employee.Get Method " Url="html/3a7b27d7-4a9c-f744-2049-40bcfc4048d6.htm" />
+    <HelpKINode Title="Fan.Get Method " Url="html/12867594-c396-c53a-3832-8ac90a6a470a.htm" />
+    <HelpKINode Title="GraphicsCard.Get Method " Url="html/8957e0d1-7b80-1585-75b9-daec8621fc12.htm" />
+    <HelpKINode Title="Memory.Get Method " Url="html/5f5bad77-c836-ff49-d91b-6454fe8035bc.htm" />
+    <HelpKINode Title="MOBO.Get Method " Url="html/f3c128ba-86a0-6fac-6d2b-3fcad880bffe.htm" />
+    <HelpKINode Title="PowerSupply.Get Method " Url="html/72799a19-bfe8-d4fd-946c-7ba67e52103f.htm" />
+    <HelpKINode Title="Storage.Get Method " Url="html/5b6e48e5-4cb3-7dad-4cb5-e216489a284a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetAll method">
+    <HelpKINode Title="Case.GetAll Method " Url="html/ff524b4a-2210-e512-bfdf-b29cf4770acf.htm" />
+    <HelpKINode Title="Computer.GetAll Method " Url="html/ef79c5b6-45fe-76f5-918b-17e718ac22db.htm" />
+    <HelpKINode Title="CPU.GetAll Method " Url="html/46e006d1-1d6a-56e5-ea9e-b43006d27e25.htm" />
+    <HelpKINode Title="Customer.GetAll Method " Url="html/94363861-2095-f333-b63c-6824e9e99c0a.htm" />
+    <HelpKINode Title="Employee.GetAll Method " Url="html/dcfd6a48-d3ff-2c48-c0eb-f3ecfa59ceab.htm" />
+    <HelpKINode Title="Fan.GetAll Method " Url="html/6ce1d8ca-9c16-6978-ae2c-47b83eb05c25.htm" />
+    <HelpKINode Title="GraphicsCard.GetAll Method " Url="html/42dcbec2-9d43-3ba6-ecc2-b298894c26ce.htm" />
+    <HelpKINode Title="Memory.GetAll Method " Url="html/1558b8e1-d361-3bfc-e649-108c0c07b1f5.htm" />
+    <HelpKINode Title="MOBO.GetAll Method " Url="html/0b26f42e-91f8-77ca-99df-10da30873f5c.htm" />
+    <HelpKINode Title="PowerSupply.GetAll Method " Url="html/80a94adb-eed6-377d-0246-633d717092a5.htm" />
+    <HelpKINode Title="Storage.GetAll Method " Url="html/7a3c9a7c-3a48-2eda-7c67-96f5ec02c82c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetAllParts method" Url="html/dc22e003-4c60-363c-0349-df39c6112bcf.htm" />
+  <HelpKINode Title="GetAttributes method">
+    <HelpKINode Title="Case.GetAttributes Method " Url="html/db06845e-363e-74c8-1781-698205c7f12f.htm" />
+    <HelpKINode Title="Computer.GetAttributes Method " Url="html/2dcc5ebc-8c6c-2a30-5b81-9fdccefae036.htm" />
+    <HelpKINode Title="CPU.GetAttributes Method " Url="html/16ef7bbb-eedf-dd17-9266-89b087057e34.htm" />
+    <HelpKINode Title="Fan.GetAttributes Method " Url="html/433a16c8-932b-b004-5b74-e5ef3979a64a.htm" />
+    <HelpKINode Title="GraphicsCard.GetAttributes Method " Url="html/62841881-639b-c7e1-c3e8-c949754de2dc.htm" />
+    <HelpKINode Title="Memory.GetAttributes Method " Url="html/1be6d6cb-db32-734d-ee84-655972b710f5.htm" />
+    <HelpKINode Title="MOBO.GetAttributes Method " Url="html/45915978-705e-e9f6-54ea-2461fbd0a4dc.htm" />
+    <HelpKINode Title="Part.GetAttributes Method " Url="html/63f0cafc-e2e0-e63f-6536-84b729a760ec.htm" />
+    <HelpKINode Title="PowerSupply.GetAttributes Method " Url="html/22d87752-42cf-682e-1c1a-63f6ded4ba81.htm" />
+    <HelpKINode Title="Storage.GetAttributes Method " Url="html/79619b62-97de-9478-311c-6d38d460d35a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetCompatableParts method" Url="html/79317ae0-fec6-6df4-da2b-a49ddf2194c2.htm" />
+  <HelpKINode Title="GetFromQuery method">
+    <HelpKINode Title="Case.GetFromQuery Method " Url="html/6dc70d3d-63c3-3bf0-cf3e-33246f1685a7.htm" />
+    <HelpKINode Title="Computer.GetFromQuery Method " Url="html/c142fc05-eae2-fffd-1ea7-78f4d0498fbe.htm" />
+    <HelpKINode Title="CPU.GetFromQuery Method " Url="html/f1e29408-73e6-c666-f74d-3bd2be801f9d.htm" />
+    <HelpKINode Title="Customer.GetFromQuery Method " Url="html/368776c3-7397-5501-0608-c3b9f3af0bff.htm" />
+    <HelpKINode Title="Employee.GetFromQuery Method " Url="html/49df0d28-1b67-cbf6-6964-7f7cfe8554c9.htm" />
+    <HelpKINode Title="Fan.GetFromQuery Method " Url="html/d2c988d3-1aea-3456-ec0d-81839c672d04.htm" />
+    <HelpKINode Title="GraphicsCard.GetFromQuery Method " Url="html/a8d8d1d2-dbfd-fbb4-ad36-b7a19e2757f2.htm" />
+    <HelpKINode Title="Memory.GetFromQuery Method " Url="html/50c85a04-de8d-ea5e-38bd-c6c7258097db.htm" />
+    <HelpKINode Title="MOBO.GetFromQuery Method " Url="html/1c560751-6e61-6ae1-0f0a-51287bd491ab.htm" />
+    <HelpKINode Title="PowerSupply.GetFromQuery Method " Url="html/72a62929-ff86-0041-1598-30198a3ad5a0.htm" />
+    <HelpKINode Title="Storage.GetFromQuery Method " Url="html/0e8f3b0a-ff64-4972-d1ef-2cbf44631d76.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetOrderFromQuery method" Url="html/e2afcca9-de08-5f5b-1b3d-45e4efd3598b.htm" />
+  <HelpKINode Title="GetOrders method" Url="html/8a8491f2-22dc-d966-7f12-2f2939eac821.htm" />
+  <HelpKINode Title="GetPart method" Url="html/9da94ca6-9e5b-729f-6dba-95937828f906.htm" />
+  <HelpKINode Title="GetPartFromQuery method" Url="html/1824034c-c0d8-9880-bc98-ad6325e0ddb2.htm" />
+  <HelpKINode Title="GetPassword method" Url="html/ef7443f0-d7da-d4e8-a0b5-0eae979c18b9.htm" />
+  <HelpKINode Title="GraphicsCard class">
+    <HelpKINode Title="GraphicsCard Class" Url="html/a61706be-efc1-c954-7b2f-ce5a10498398.htm" />
+    <HelpKINode Title="constructor" Url="html/ed6c8159-177a-0e4c-fc6b-849062734efb.htm" />
+    <HelpKINode Title="methods" Url="html/eddc4227-67e6-06d6-19a0-e9dfe4c8ed1a.htm" />
+    <HelpKINode Title="properties" Url="html/c9e04565-227c-e7d7-9723-2e1866ce4e4a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GraphicsCard.AddToDatabase method" Url="html/f19b954b-d01f-024a-f939-2f84dabe8e3f.htm" />
+  <HelpKINode Title="GraphicsCard.chipSet property" Url="html/5c233b4c-61fe-17f3-d7ff-cd9c5c10ea1b.htm" />
+  <HelpKINode Title="GraphicsCard.coreClock property" Url="html/5722003c-75ab-6e14-7e15-7e5be156defa.htm" />
+  <HelpKINode Title="GraphicsCard.Get method" Url="html/8957e0d1-7b80-1585-75b9-daec8621fc12.htm" />
+  <HelpKINode Title="GraphicsCard.GetAll method" Url="html/42dcbec2-9d43-3ba6-ecc2-b298894c26ce.htm" />
+  <HelpKINode Title="GraphicsCard.GetAttributes method" Url="html/62841881-639b-c7e1-c3e8-c949754de2dc.htm" />
+  <HelpKINode Title="GraphicsCard.GetFromQuery method" Url="html/a8d8d1d2-dbfd-fbb4-ad36-b7a19e2757f2.htm" />
+  <HelpKINode Title="GraphicsCard.GraphicsCard constructor" Url="html/ed6c8159-177a-0e4c-fc6b-849062734efb.htm" />
+  <HelpKINode Title="GraphicsCard.memory property" Url="html/4c084a8a-23c3-802b-bd5d-ec6f6cd873d2.htm" />
+  <HelpKINode Title="GraphicsCard.series property" Url="html/449e0d47-f154-2278-9127-84fadc35be6f.htm" />
+  <HelpKINode Title="helpForm class">
+    <HelpKINode Title="helpForm Class" Url="html/7bc83eeb-5345-d1f0-7a38-39c15a40a83a.htm" />
+    <HelpKINode Title="constructor" Url="html/b505b2c2-9170-e33a-df98-a4265527091b.htm" />
+    <HelpKINode Title="events" Url="html/b34f490b-7195-0743-55f3-a2b8e4a2d00e.htm" />
+    <HelpKINode Title="methods" Url="html/ff316823-2430-e46f-3eae-3f7fdc4f6e1b.htm" />
+    <HelpKINode Title="properties" Url="html/38d7add5-a81b-81d9-9598-e83e418d58c8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="helpForm.Dispose method" Url="html/046fbd7f-b9b2-8d47-0da9-cd661efb203b.htm" />
+  <HelpKINode Title="helpForm.helpForm constructor" Url="html/b505b2c2-9170-e33a-df98-a4265527091b.htm" />
+  <HelpKINode Title="homeScreenControl class">
+    <HelpKINode Title="homeScreenControl Class" Url="html/65f50631-4bb3-0d8c-2590-14a24e0b7b4a.htm" />
+    <HelpKINode Title="constructor" Url="html/a4179268-998b-04ff-06cb-43d7f8783e69.htm" />
+    <HelpKINode Title="events" Url="html/b38ee1dd-d826-f589-a249-1565f413b8ae.htm" />
+    <HelpKINode Title="methods" Url="html/5624849a-0f17-a820-b9cd-191cb2df9b09.htm" />
+    <HelpKINode Title="properties" Url="html/4f5221b3-5f16-7c42-f47a-35d5167b3eb5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="homeScreenControl.Dispose method" Url="html/0f0f0b1d-078e-9b3c-e3e6-05ab89b44ece.htm" />
+  <HelpKINode Title="homeScreenControl.homeScreenControl constructor" Url="html/a4179268-998b-04ff-06cb-43d7f8783e69.htm" />
+  <HelpKINode Title="internalSize property" Url="html/27ce2594-7844-3541-2dbf-855ee7fb8fb9.htm" />
+  <HelpKINode Title="IsCustomer method" Url="html/50b0f5a3-5b07-96c9-1d91-531fb51849b4.htm" />
+  <HelpKINode Title="IsEmployee method" Url="html/aabdcd43-d87a-12c5-7d44-b8519014a857.htm" />
+  <HelpKINode Title="IsState method" Url="html/79223dc3-efe1-cc75-feb0-a8f1ec11e98a.htm" />
+  <HelpKINode Title="IsZipcode method" Url="html/7d3c2913-e5fc-3125-9005-5a2c778dac5a.htm" />
+  <HelpKINode Title="lastName property" Url="html/cba0f8a4-5d87-aa7b-a1b4-f9d2d5acb35a.htm" />
+  <HelpKINode Title="Log method" Url="html/bff8ae98-8313-7ea1-5719-f33d56ba3056.htm" />
+  <HelpKINode Title="mBoard property" Url="html/b26aba4b-74f2-06a5-a9b7-21d120820e8d.htm" />
+  <HelpKINode Title="Memory class">
+    <HelpKINode Title="Memory Class" Url="html/698ddf03-3fbd-bb66-7fe8-62fe25e13c12.htm" />
+    <HelpKINode Title="constructor" Url="html/5fd431e9-65b4-d4da-4186-7d0074ac6758.htm" />
+    <HelpKINode Title="methods" Url="html/40efa0c7-0751-346f-082b-14a37e0af17c.htm" />
+    <HelpKINode Title="properties" Url="html/e6819f90-ff0b-02c6-2281-f4ef90b68d54.htm" />
+  </HelpKINode>
+  <HelpKINode Title="memory property">
+    <HelpKINode Title="Computer.memory Property " Url="html/d1be113f-5498-b0c2-93c8-896a8997c2c4.htm" />
+    <HelpKINode Title="GraphicsCard.memory Property " Url="html/4c084a8a-23c3-802b-bd5d-ec6f6cd873d2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Memory.AddToDatabase method" Url="html/046a33bd-c573-1f13-ec7a-f2eaa9b5d8a7.htm" />
+  <HelpKINode Title="Memory.cas property" Url="html/35dd0fc3-c3bc-da44-bf1a-15f1d6ee019e.htm" />
+  <HelpKINode Title="Memory.Get method" Url="html/5f5bad77-c836-ff49-d91b-6454fe8035bc.htm" />
+  <HelpKINode Title="Memory.GetAll method" Url="html/1558b8e1-d361-3bfc-e649-108c0c07b1f5.htm" />
+  <HelpKINode Title="Memory.GetAttributes method" Url="html/1be6d6cb-db32-734d-ee84-655972b710f5.htm" />
+  <HelpKINode Title="Memory.GetFromQuery method" Url="html/50c85a04-de8d-ea5e-38bd-c6c7258097db.htm" />
+  <HelpKINode Title="Memory.Memory constructor" Url="html/5fd431e9-65b4-d4da-4186-7d0074ac6758.htm" />
+  <HelpKINode Title="Memory.modules property" Url="html/40220ef6-e062-b719-7393-1303ba9930eb.htm" />
+  <HelpKINode Title="Memory.size property" Url="html/156cb773-f317-26cc-f106-27946bf6da71.htm" />
+  <HelpKINode Title="Memory.speed property" Url="html/6377c20a-6ff7-7ba5-4e4c-6e6af0ae5314.htm" />
+  <HelpKINode Title="Memory.type property" Url="html/a9d586be-8d49-810c-842a-8e82043eee86.htm" />
+  <HelpKINode Title="MOBO class">
+    <HelpKINode Title="MOBO Class" Url="html/efe2f879-8c37-0564-f710-4bb46063e70e.htm" />
+    <HelpKINode Title="constructor" Url="html/8410821e-7950-c4c3-4d4e-d5874af8764e.htm" />
+    <HelpKINode Title="methods" Url="html/9120dfc6-4769-3d31-4e47-b950d27b8726.htm" />
+    <HelpKINode Title="properties" Url="html/504a635a-0005-1d78-aa28-4b9cc6f92126.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MOBO.AddToDatabase method" Url="html/a360df79-a918-76a7-c6e7-12bced2f2114.htm" />
+  <HelpKINode Title="MOBO.form property" Url="html/ce918305-53f2-1e42-3c92-9245aa74fd50.htm" />
+  <HelpKINode Title="MOBO.Get method" Url="html/f3c128ba-86a0-6fac-6d2b-3fcad880bffe.htm" />
+  <HelpKINode Title="MOBO.GetAll method" Url="html/0b26f42e-91f8-77ca-99df-10da30873f5c.htm" />
+  <HelpKINode Title="MOBO.GetAttributes method" Url="html/45915978-705e-e9f6-54ea-2461fbd0a4dc.htm" />
+  <HelpKINode Title="MOBO.GetFromQuery method" Url="html/1c560751-6e61-6ae1-0f0a-51287bd491ab.htm" />
+  <HelpKINode Title="MOBO.MOBO constructor" Url="html/8410821e-7950-c4c3-4d4e-d5874af8764e.htm" />
+  <HelpKINode Title="MOBO.mRAM property" Url="html/a0fb8f97-ceba-46ec-f1ef-80d3276a12dc.htm" />
+  <HelpKINode Title="MOBO.rAMSlots property" Url="html/ce304961-5dd2-36f8-9799-dbafc1f752bb.htm" />
+  <HelpKINode Title="MOBO.socket property" Url="html/bcfe65ea-6141-83c5-888b-7e91b023f21a.htm" />
+  <HelpKINode Title="modular property" Url="html/0e80c9ed-f300-d61b-1fb9-53b4f497afaf.htm" />
+  <HelpKINode Title="modules property" Url="html/40220ef6-e062-b719-7393-1303ba9930eb.htm" />
+  <HelpKINode Title="mRAM property" Url="html/a0fb8f97-ceba-46ec-f1ef-80d3276a12dc.htm" />
+  <HelpKINode Title="name property">
+    <HelpKINode Title="Computer.name Property " Url="html/23e2b36b-d765-857a-fa67-49482075a68e.htm" />
+    <HelpKINode Title="Part.name Property " Url="html/e9e1c830-8e84-09cb-d3ad-8fd110e936d2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="nl property" Url="html/70f5baaf-1a73-97f5-e0d7-f07844c2559d.htm" />
+  <HelpKINode Title="Order class">
+    <HelpKINode Title="Order Class" Url="html/80ab9162-71a2-f72c-9856-618abf39a530.htm" />
+    <HelpKINode Title="constructor" Url="html/77442380-c672-f6e1-0b59-67bf57ae6054.htm" />
+    <HelpKINode Title="methods" Url="html/83c07a3f-e47a-8145-71ff-172a695e31c5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Order.AddToDatabase method" Url="html/d8ecee92-915b-e043-ff7a-1c92cbcbdc7b.htm" />
+  <HelpKINode Title="Order.GetOrderFromQuery method" Url="html/e2afcca9-de08-5f5b-1b3d-45e4efd3598b.htm" />
+  <HelpKINode Title="Order.Order constructor" Url="html/77442380-c672-f6e1-0b59-67bf57ae6054.htm" />
+  <HelpKINode Title="Part class">
+    <HelpKINode Title="Part Class" Url="html/676c146d-90a6-6a9d-b9fb-e6f8d606a923.htm" />
+    <HelpKINode Title="constructor" Url="html/e58e41e9-57b2-887a-f30c-baae2f7f1610.htm" />
+    <HelpKINode Title="methods" Url="html/099a9bd0-0fb2-0b40-b50b-7ff35aed044c.htm" />
+    <HelpKINode Title="properties" Url="html/6ddbdf74-3a22-6adb-ca19-76e84495a419.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Part.AddToDatabase method" Url="html/6cdaa89a-d0a5-c993-e1c8-96b904cd5af3.htm" />
+  <HelpKINode Title="Part.GetAllParts method" Url="html/dc22e003-4c60-363c-0349-df39c6112bcf.htm" />
+  <HelpKINode Title="Part.GetAttributes method" Url="html/63f0cafc-e2e0-e63f-6536-84b729a760ec.htm" />
+  <HelpKINode Title="Part.GetCompatableParts method" Url="html/79317ae0-fec6-6df4-da2b-a49ddf2194c2.htm" />
+  <HelpKINode Title="Part.GetPart method" Url="html/9da94ca6-9e5b-729f-6dba-95937828f906.htm" />
+  <HelpKINode Title="Part.GetPartFromQuery method" Url="html/1824034c-c0d8-9880-bc98-ad6325e0ddb2.htm" />
+  <HelpKINode Title="Part.name property" Url="html/e9e1c830-8e84-09cb-d3ad-8fd110e936d2.htm" />
+  <HelpKINode Title="Part.Part constructor" Url="html/e58e41e9-57b2-887a-f30c-baae2f7f1610.htm" />
+  <HelpKINode Title="Part.partNumber property" Url="html/df3fdbfa-9b07-2309-d8a5-3b3d0fc31909.htm" />
+  <HelpKINode Title="Part.price property" Url="html/d33e6606-74c1-86b0-b365-014ae29b0188.htm" />
+  <HelpKINode Title="Part.Search method" Url="html/483cdae3-a71e-cd4b-f83d-e1748d1c7aaa.htm" />
+  <HelpKINode Title="Part.SetCompatableWith method" Url="html/02ab592e-f21c-2978-ac8a-d2f49e99b445.htm" />
+  <HelpKINode Title="Part.SetPrice method" Url="html/f6b1d314-45b6-6ec4-aa2b-11427b5ddbec.htm" />
+  <HelpKINode Title="Part.table property" Url="html/a454cd60-be9d-e5a2-0494-af5405d1f123.htm" />
+  <HelpKINode Title="Part.ToString method" Url="html/b2979543-0b1a-da1b-d976-a3e257b7bcf7.htm" />
+  <HelpKINode Title="partNumber property" Url="html/df3fdbfa-9b07-2309-d8a5-3b3d0fc31909.htm" />
+  <HelpKINode Title="password property" Url="html/6d4cb6f5-b65f-d163-d7ed-c645403b1e00.htm" />
+  <HelpKINode Title="pcCase property" Url="html/61ef4857-d6e9-2e32-b774-ba63e9800b3f.htm" />
+  <HelpKINode Title="PCHawk namespace" Url="html/24eed734-fb98-3dc1-74b2-a69864ab1855.htm" />
+  <HelpKINode Title="PCHawk.accountForm class" Url="html/cc8d90db-bd66-974d-8b20-c6396255b6f2.htm" />
+  <HelpKINode Title="PCHawk.cartForm class" Url="html/218d9c9f-68aa-0be8-bb6f-6f5bd4a6b046.htm" />
+  <HelpKINode Title="PCHawk.checkOutForm class" Url="html/eafa459b-3637-5182-384a-8c094897c813.htm" />
+  <HelpKINode Title="PCHawk.freeBuildForm class" Url="html/e445b71f-f47f-1b6e-f3f0-1ae25a49a310.htm" />
+  <HelpKINode Title="PCHawk.frmHome class" Url="html/9ba2e482-01f4-90bd-718f-cecfa451e951.htm" />
+  <HelpKINode Title="PCHawk.helpForm class" Url="html/7bc83eeb-5345-d1f0-7a38-39c15a40a83a.htm" />
+  <HelpKINode Title="PCHawk.homeScreenControl class" Url="html/65f50631-4bb3-0d8c-2590-14a24e0b7b4a.htm" />
+  <HelpKINode Title="PCHawk.preBuildForm class" Url="html/e89acd51-f1bc-9dd4-5f13-448e275db67c.htm" />
+  <HelpKINode Title="PCHawk.SignInForm class" Url="html/f5cf1e9c-17b7-ed95-e1f5-61fdc40afe47.htm" />
+  <HelpKINode Title="PCHawk.signUpForm class" Url="html/d67f0222-341d-85ab-d8d4-403fbcbb64ac.htm" />
+  <HelpKINode Title="Person class">
+    <HelpKINode Title="Person Class" Url="html/68b878f4-ddf4-ebb5-f0a9-3a67a97f58f9.htm" />
+    <HelpKINode Title="constructor" Url="html/56e878f0-0837-bcd0-4286-9347d5169d9b.htm" />
+    <HelpKINode Title="methods" Url="html/38fb00f5-dd81-17aa-63c3-969aeec275b8.htm" />
+    <HelpKINode Title="properties" Url="html/53992e6d-44c8-a457-ec83-b20fd3ce139f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Person.AddToDatabase method" Url="html/63cfd700-22d5-b506-aff2-6e0602b40670.htm" />
+  <HelpKINode Title="Person.ChangeEmail method" Url="html/2cacb4e5-5c2e-5ad9-205c-5fb2dd439a19.htm" />
+  <HelpKINode Title="Person.ChangeName method" Url="html/52695e0c-8490-df5f-6f03-b02adf2ee8ca.htm" />
+  <HelpKINode Title="Person.ChangePassword method" Url="html/a8c52a71-be92-3563-35d0-e0cb4572ae91.htm" />
+  <HelpKINode Title="Person.CheckCredentials method" Url="html/73e1d4d5-ecaa-936d-4d1f-eb7d88a74ad6.htm" />
+  <HelpKINode Title="Person.CheckPassword method" Url="html/346d965b-a8e1-f113-7e60-1a0c32998126.htm" />
+  <HelpKINode Title="Person.DeleteFromDatabase method" Url="html/a6994651-9c7c-c3c9-9228-0fe6531108ae.htm" />
+  <HelpKINode Title="Person.email property" Url="html/94419345-e202-9091-8e56-e2ef75ecd321.htm" />
+  <HelpKINode Title="Person.EncryptPassword method" Url="html/3a173b21-210a-e7b0-9332-50018bcedc48.htm" />
+  <HelpKINode Title="Person.firstName property" Url="html/6cbed386-2c5f-eca9-5a2f-8d26bcab5610.htm" />
+  <HelpKINode Title="Person.GetOrders method" Url="html/8a8491f2-22dc-d966-7f12-2f2939eac821.htm" />
+  <HelpKINode Title="Person.GetPassword method" Url="html/ef7443f0-d7da-d4e8-a0b5-0eae979c18b9.htm" />
+  <HelpKINode Title="Person.IsCustomer method" Url="html/50b0f5a3-5b07-96c9-1d91-531fb51849b4.htm" />
+  <HelpKINode Title="Person.IsEmployee method" Url="html/aabdcd43-d87a-12c5-7d44-b8519014a857.htm" />
+  <HelpKINode Title="Person.lastName property" Url="html/cba0f8a4-5d87-aa7b-a1b4-f9d2d5acb35a.htm" />
+  <HelpKINode Title="Person.password property" Url="html/6d4cb6f5-b65f-d163-d7ed-c645403b1e00.htm" />
+  <HelpKINode Title="Person.Person constructor" Url="html/56e878f0-0837-bcd0-4286-9347d5169d9b.htm" />
+  <HelpKINode Title="Person.table property" Url="html/7b85c11e-312c-0b0f-2188-f8cbe8367568.htm" />
+  <HelpKINode Title="Person.ToString method" Url="html/794f7826-c636-0fe0-83b8-1f71df0bb362.htm" />
+  <HelpKINode Title="PopulateTables method" Url="html/bb948604-f473-06ab-3f4d-87e88469b2b6.htm" />
+  <HelpKINode Title="power property" Url="html/e6cd341d-24eb-76e1-2503-42bf383ae12e.htm" />
+  <HelpKINode Title="PowerSupply class">
+    <HelpKINode Title="PowerSupply Class" Url="html/38a46bdb-be97-51f2-1238-d3030149fd81.htm" />
+    <HelpKINode Title="constructor" Url="html/9ff0ea48-c8e5-06d9-30a0-08c20aa1ea24.htm" />
+    <HelpKINode Title="methods" Url="html/6538c89e-d3f4-6d5c-d0af-a7b585de5dc7.htm" />
+    <HelpKINode Title="properties" Url="html/c6e14850-18b1-0050-7ee3-1e68e2b99d16.htm" />
+  </HelpKINode>
+  <HelpKINode Title="powerSupply property" Url="html/acc20b4e-1a85-4a48-f0c3-cb64060a2857.htm" />
+  <HelpKINode Title="PowerSupply.AddToDatabase method" Url="html/963a1f23-b9dc-8040-fb8b-c4c9d18ee697.htm" />
+  <HelpKINode Title="PowerSupply.efficiency property" Url="html/1e5bd34d-f8ba-c6af-bb6c-16dfd1336232.htm" />
+  <HelpKINode Title="PowerSupply.form property" Url="html/9f13d0c3-c332-8ccd-b47a-7ac315c9204b.htm" />
+  <HelpKINode Title="PowerSupply.Get method" Url="html/72799a19-bfe8-d4fd-946c-7ba67e52103f.htm" />
+  <HelpKINode Title="PowerSupply.GetAll method" Url="html/80a94adb-eed6-377d-0246-633d717092a5.htm" />
+  <HelpKINode Title="PowerSupply.GetAttributes method" Url="html/22d87752-42cf-682e-1c1a-63f6ded4ba81.htm" />
+  <HelpKINode Title="PowerSupply.GetFromQuery method" Url="html/72a62929-ff86-0041-1598-30198a3ad5a0.htm" />
+  <HelpKINode Title="PowerSupply.modular property" Url="html/0e80c9ed-f300-d61b-1fb9-53b4f497afaf.htm" />
+  <HelpKINode Title="PowerSupply.PowerSupply constructor" Url="html/9ff0ea48-c8e5-06d9-30a0-08c20aa1ea24.htm" />
+  <HelpKINode Title="PowerSupply.series property" Url="html/acfc4df5-4776-032a-73ed-d9a34302a9a8.htm" />
+  <HelpKINode Title="PowerSupply.watts property" Url="html/2352c9d5-1eda-e310-6343-2b678e634847.htm" />
+  <HelpKINode Title="preBuildForm class">
+    <HelpKINode Title="preBuildForm Class" Url="html/e89acd51-f1bc-9dd4-5f13-448e275db67c.htm" />
+    <HelpKINode Title="constructor" Url="html/17099d38-ae21-e10d-fda6-7d58c8e69107.htm" />
+    <HelpKINode Title="events" Url="html/649b440e-f807-eb4d-5fa2-817a73bb68b8.htm" />
+    <HelpKINode Title="methods" Url="html/73f556b8-ff7e-849d-852e-fd7ea2b08e42.htm" />
+    <HelpKINode Title="properties" Url="html/71fb9999-d03b-ff50-8353-1651417fc5fe.htm" />
+  </HelpKINode>
+  <HelpKINode Title="preBuildForm.Dispose method" Url="html/0af9da4a-e5a1-2d5e-cce8-e11a7a617b78.htm" />
+  <HelpKINode Title="preBuildForm.preBuildForm constructor" Url="html/17099d38-ae21-e10d-fda6-7d58c8e69107.htm" />
+  <HelpKINode Title="price property">
+    <HelpKINode Title="Computer.price Property " Url="html/9f6db4d7-ab1c-8b7a-4c60-3b0555d5e116.htm" />
+    <HelpKINode Title="Part.price Property " Url="html/d33e6606-74c1-86b0-b365-014ae29b0188.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PrimaryQueries namespace" Url="html/1ad20aee-d484-dcac-75ca-fed5ad116866.htm" />
+  <HelpKINode Title="PrimaryQueries.Case class" Url="html/4c3efc1e-8ca8-6211-c998-c87e23487753.htm" />
+  <HelpKINode Title="PrimaryQueries.Computer class" Url="html/1dce5ad0-3a24-4c3b-ac78-6c54f4f3e8bd.htm" />
+  <HelpKINode Title="PrimaryQueries.CPU class" Url="html/63010b76-ff98-65f4-f808-02bd7b82440d.htm" />
+  <HelpKINode Title="PrimaryQueries.Customer class" Url="html/91257529-6923-c1b7-d97d-3499d1af1047.htm" />
+  <HelpKINode Title="PrimaryQueries.Employee class" Url="html/ca80432a-8c3e-eb7f-8455-0ae1ead0a1f8.htm" />
+  <HelpKINode Title="PrimaryQueries.Fan class" Url="html/17abb32a-131a-a0b7-4e44-c630a1f8a6fc.htm" />
+  <HelpKINode Title="PrimaryQueries.GraphicsCard class" Url="html/a61706be-efc1-c954-7b2f-ce5a10498398.htm" />
+  <HelpKINode Title="PrimaryQueries.Memory class" Url="html/698ddf03-3fbd-bb66-7fe8-62fe25e13c12.htm" />
+  <HelpKINode Title="PrimaryQueries.MOBO class" Url="html/efe2f879-8c37-0564-f710-4bb46063e70e.htm" />
+  <HelpKINode Title="PrimaryQueries.Order class" Url="html/80ab9162-71a2-f72c-9856-618abf39a530.htm" />
+  <HelpKINode Title="PrimaryQueries.Part class" Url="html/676c146d-90a6-6a9d-b9fb-e6f8d606a923.htm" />
+  <HelpKINode Title="PrimaryQueries.Person class" Url="html/68b878f4-ddf4-ebb5-f0a9-3a67a97f58f9.htm" />
+  <HelpKINode Title="PrimaryQueries.PowerSupply class" Url="html/38a46bdb-be97-51f2-1238-d3030149fd81.htm" />
+  <HelpKINode Title="PrimaryQueries.Queries class" Url="html/3093c562-b816-f06d-fa5a-4e53efd0280a.htm" />
+  <HelpKINode Title="PrimaryQueries.Queries.LogLevel enumeration" Url="html/c3e5be21-432a-3b35-151f-1b59b5a8f509.htm" />
+  <HelpKINode Title="PrimaryQueries.Storage class" Url="html/c0b76fc8-6036-f1aa-a9c1-3f31738aebdf.htm" />
+  <HelpKINode Title="Queries class">
+    <HelpKINode Title="Queries Class" Url="html/3093c562-b816-f06d-fa5a-4e53efd0280a.htm" />
+    <HelpKINode Title="constructor" Url="html/a927f91b-b313-072b-083d-0c9c1d0b2823.htm" />
+    <HelpKINode Title="methods" Url="html/deac80a6-84bf-adc9-082c-15da3b2b14a0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Queries.CloseLog method" Url="html/16c4811f-9891-3a9a-e531-bcf97f88f5de.htm" />
+  <HelpKINode Title="Queries.Log method" Url="html/bff8ae98-8313-7ea1-5719-f33d56ba3056.htm" />
+  <HelpKINode Title="Queries.LogLevel enumeration" Url="html/c3e5be21-432a-3b35-151f-1b59b5a8f509.htm" />
+  <HelpKINode Title="Queries.PopulateTables method" Url="html/bb948604-f473-06ab-3f4d-87e88469b2b6.htm" />
+  <HelpKINode Title="Queries.Queries constructor" Url="html/a927f91b-b313-072b-083d-0c9c1d0b2823.htm" />
+  <HelpKINode Title="Queries.Query method" Url="html/af7e80bc-e1d4-2646-6d65-4672d7036ae6.htm" />
+  <HelpKINode Title="Query method" Url="html/af7e80bc-e1d4-2646-6d65-4672d7036ae6.htm" />
+  <HelpKINode Title="rAMSlots property" Url="html/ce304961-5dd2-36f8-9799-dbafc1f752bb.htm" />
+  <HelpKINode Title="rpm property" Url="html/48b5c17c-c3dc-14b3-79d0-0fefd31365e2.htm" />
+  <HelpKINode Title="Search method" Url="html/483cdae3-a71e-cd4b-f83d-e1748d1c7aaa.htm" />
+  <HelpKINode Title="serialNumber property" Url="html/0ccd655d-5d22-fd34-db3a-a15f4ec9f381.htm" />
+  <HelpKINode Title="series property">
+    <HelpKINode Title="GraphicsCard.series Property " Url="html/449e0d47-f154-2278-9127-84fadc35be6f.htm" />
+    <HelpKINode Title="PowerSupply.series Property " Url="html/acfc4df5-4776-032a-73ed-d9a34302a9a8.htm" />
+    <HelpKINode Title="Storage.series Property " Url="html/0671e83f-3697-3e53-ae6c-b596e7d54420.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SetCompatableWith method" Url="html/02ab592e-f21c-2978-ac8a-d2f49e99b445.htm" />
+  <HelpKINode Title="SetPrice method" Url="html/f6b1d314-45b6-6ec4-aa2b-11427b5ddbec.htm" />
+  <HelpKINode Title="SignInForm class">
+    <HelpKINode Title="SignInForm Class" Url="html/f5cf1e9c-17b7-ed95-e1f5-61fdc40afe47.htm" />
+    <HelpKINode Title="constructor" Url="html/6329f6d0-266c-77f0-0b2c-b914aec63f85.htm" />
+    <HelpKINode Title="events" Url="html/17c745b7-ed0d-59f1-5ef7-8bf67a7de772.htm" />
+    <HelpKINode Title="methods" Url="html/bac176b1-dd16-b93e-0c76-c0cbac6c8250.htm" />
+    <HelpKINode Title="properties" Url="html/1b67ae2b-8eff-b5f0-d29a-7d1fc0f249ad.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SignInForm.Dispose method" Url="html/b40384a2-6a54-cd21-98a9-d3c9988a2348.htm" />
+  <HelpKINode Title="SignInForm.SignInForm constructor" Url="html/6329f6d0-266c-77f0-0b2c-b914aec63f85.htm" />
+  <HelpKINode Title="signUpForm class">
+    <HelpKINode Title="signUpForm Class" Url="html/d67f0222-341d-85ab-d8d4-403fbcbb64ac.htm" />
+    <HelpKINode Title="constructor" Url="html/dd5f4e97-ed29-3911-b1bf-e4520127e67b.htm" />
+    <HelpKINode Title="events" Url="html/b1463d43-5d22-d907-f1db-c276c38d5f5f.htm" />
+    <HelpKINode Title="methods" Url="html/86cea43e-4680-3195-ac7d-b765b39b4a6c.htm" />
+    <HelpKINode Title="properties" Url="html/6c530e80-e418-c571-d898-9c3c969e9681.htm" />
+  </HelpKINode>
+  <HelpKINode Title="signUpForm.Dispose method" Url="html/dbb2f790-70dc-4b53-ea7b-d6e833c590ee.htm" />
+  <HelpKINode Title="signUpForm.signUpForm constructor" Url="html/dd5f4e97-ed29-3911-b1bf-e4520127e67b.htm" />
+  <HelpKINode Title="size property" Url="html/156cb773-f317-26cc-f106-27946bf6da71.htm" />
+  <HelpKINode Title="socket property" Url="html/bcfe65ea-6141-83c5-888b-7e91b023f21a.htm" />
+  <HelpKINode Title="speed property">
+    <HelpKINode Title="CPU.speed Property " Url="html/48649d85-a16c-265e-6bec-cd89a76e8e3d.htm" />
+    <HelpKINode Title="Memory.speed Property " Url="html/6377c20a-6ff7-7ba5-4e4c-6e6af0ae5314.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SQLQUERY enumeration member" Url="html/c3e5be21-432a-3b35-151f-1b59b5a8f509.htm" />
+  <HelpKINode Title="state property" Url="html/ec82480c-9d49-63e6-15a9-ddb9a918986e.htm" />
+  <HelpKINode Title="Storage class">
+    <HelpKINode Title="Storage Class" Url="html/c0b76fc8-6036-f1aa-a9c1-3f31738aebdf.htm" />
+    <HelpKINode Title="constructor" Url="html/d5958549-a43d-5a69-583a-66780ac8de99.htm" />
+    <HelpKINode Title="methods" Url="html/7ef43cd1-75ec-3625-bbd5-6fdd344131c3.htm" />
+    <HelpKINode Title="properties" Url="html/15ece54b-d614-4792-fb57-eb6cc115d3c2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="storage property" Url="html/39bd3c2a-ec8d-d37f-6448-9ff66c0ff9cb.htm" />
+  <HelpKINode Title="Storage.AddToDatabase method" Url="html/385523d3-1701-ca6e-ec6a-d1194f7c01db.htm" />
+  <HelpKINode Title="Storage.cache property" Url="html/8f98de3a-8522-42a5-9a95-abe62da3a692.htm" />
+  <HelpKINode Title="Storage.capacity property" Url="html/ad987606-feef-14c2-12c8-3dfd238232ca.htm" />
+  <HelpKINode Title="Storage.form property" Url="html/c257addd-7941-a2a0-7851-b5d01ec25dfd.htm" />
+  <HelpKINode Title="Storage.Get method" Url="html/5b6e48e5-4cb3-7dad-4cb5-e216489a284a.htm" />
+  <HelpKINode Title="Storage.GetAll method" Url="html/7a3c9a7c-3a48-2eda-7c67-96f5ec02c82c.htm" />
+  <HelpKINode Title="Storage.GetAttributes method" Url="html/79619b62-97de-9478-311c-6d38d460d35a.htm" />
+  <HelpKINode Title="Storage.GetFromQuery method" Url="html/0e8f3b0a-ff64-4972-d1ef-2cbf44631d76.htm" />
+  <HelpKINode Title="Storage.series property" Url="html/0671e83f-3697-3e53-ae6c-b596e7d54420.htm" />
+  <HelpKINode Title="Storage.Storage constructor" Url="html/d5958549-a43d-5a69-583a-66780ac8de99.htm" />
+  <HelpKINode Title="Storage.type property" Url="html/839352d4-899c-89fe-86ba-0e89a97094b6.htm" />
+  <HelpKINode Title="streetAddress property" Url="html/8d3380c6-e533-954a-ae92-529e389f4930.htm" />
+  <HelpKINode Title="table property">
+    <HelpKINode Title="Part.table Property " Url="html/a454cd60-be9d-e5a2-0494-af5405d1f123.htm" />
+    <HelpKINode Title="Person.table Property " Url="html/7b85c11e-312c-0b0f-2188-f8cbe8367568.htm" />
+  </HelpKINode>
+  <HelpKINode Title="tdp property" Url="html/2f3bd2a8-5a86-e7af-b9b2-083b7b882b80.htm" />
+  <HelpKINode Title="ToString method">
+    <HelpKINode Title="Part.ToString Method " Url="html/b2979543-0b1a-da1b-d976-a3e257b7bcf7.htm" />
+    <HelpKINode Title="Person.ToString Method " Url="html/794f7826-c636-0fe0-83b8-1f71df0bb362.htm" />
+  </HelpKINode>
+  <HelpKINode Title="type property">
+    <HelpKINode Title="Case.type Property " Url="html/f926163a-6ca0-a510-bf51-67e1f174b5cf.htm" />
+    <HelpKINode Title="Memory.type Property " Url="html/a9d586be-8d49-810c-842a-8e82043eee86.htm" />
+    <HelpKINode Title="Storage.type Property " Url="html/839352d4-899c-89fe-86ba-0e89a97094b6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="version">
+    <HelpKINode Title="1.0.0.0" Url="html/fb46dc17-c14e-488d-b8f0-314659721567.htm" />
+    <HelpKINode Title="history" Url="html/c55fe442-88da-4d3d-8d03-6c0133b944d6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WARNING enumeration member" Url="html/c3e5be21-432a-3b35-151f-1b59b5a8f509.htm" />
+  <HelpKINode Title="watts property" Url="html/2352c9d5-1eda-e310-6343-2b678e634847.htm" />
+  <HelpKINode Title="Welcome" Url="html/d098dbc0-a177-4ce8-80b2-fbbda8015117.htm" />
+  <HelpKINode Title="zipcode property" Url="html/ab019b93-3721-abfd-3497-760bdc81c9a2.htm" />
+</HelpKI>
