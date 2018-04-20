@@ -33,17 +33,17 @@
             this.bttnHelp = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bttnCreateAcc = new System.Windows.Forms.Button();
-            this.txtBoxPass = new System.Windows.Forms.TextBox();
-            this.txtBoxEmail = new System.Windows.Forms.TextBox();
-            this.txtBoxLast = new System.Windows.Forms.TextBox();
             this.txtBoxFirst = new System.Windows.Forms.TextBox();
-            this.welcomeLab = new System.Windows.Forms.Label();
-            this.toolTipExit = new System.Windows.Forms.ToolTip(this.components);
+            this.txtBoxLast = new System.Windows.Forms.TextBox();
+            this.txtBoxEmail = new System.Windows.Forms.TextBox();
+            this.txtBoxPass = new System.Windows.Forms.TextBox();
             this.txtBoxAddress = new System.Windows.Forms.TextBox();
             this.txtBoxCity = new System.Windows.Forms.TextBox();
             this.txtBoxState = new System.Windows.Forms.TextBox();
             this.txtBoxZip = new System.Windows.Forms.TextBox();
+            this.bttnCreateAcc = new System.Windows.Forms.Button();
+            this.welcomeLab = new System.Windows.Forms.Label();
+            this.toolTipExit = new System.Windows.Forms.ToolTip(this.components);
             this.chkBoxPass = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -117,7 +117,7 @@
             this.bttnCreateAcc.Location = new System.Drawing.Point(235, 422);
             this.bttnCreateAcc.Name = "bttnCreateAcc";
             this.bttnCreateAcc.Size = new System.Drawing.Size(426, 61);
-            this.bttnCreateAcc.TabIndex = 1;
+            this.bttnCreateAcc.TabIndex = 10;
             this.bttnCreateAcc.Text = "Create Account";
             this.bttnCreateAcc.UseVisualStyleBackColor = true;
             this.bttnCreateAcc.Click += new System.EventHandler(this.bttnCreateAcc_Click);
@@ -128,7 +128,7 @@
             this.txtBoxPass.Location = new System.Drawing.Point(235, 290);
             this.txtBoxPass.Name = "txtBoxPass";
             this.txtBoxPass.Size = new System.Drawing.Size(426, 26);
-            this.txtBoxPass.TabIndex = 2;
+            this.txtBoxPass.TabIndex = 5;
             // 
             // txtBoxEmail
             // 
@@ -136,7 +136,7 @@
             this.txtBoxEmail.Location = new System.Drawing.Point(235, 240);
             this.txtBoxEmail.Name = "txtBoxEmail";
             this.txtBoxEmail.Size = new System.Drawing.Size(426, 26);
-            this.txtBoxEmail.TabIndex = 3;
+            this.txtBoxEmail.TabIndex = 4;
             // 
             // txtBoxLast
             // 
@@ -144,7 +144,7 @@
             this.txtBoxLast.Location = new System.Drawing.Point(442, 190);
             this.txtBoxLast.Name = "txtBoxLast";
             this.txtBoxLast.Size = new System.Drawing.Size(219, 26);
-            this.txtBoxLast.TabIndex = 4;
+            this.txtBoxLast.TabIndex = 3;
             // 
             // txtBoxFirst
             // 
@@ -152,7 +152,7 @@
             this.txtBoxFirst.Location = new System.Drawing.Point(235, 190);
             this.txtBoxFirst.Name = "txtBoxFirst";
             this.txtBoxFirst.Size = new System.Drawing.Size(201, 26);
-            this.txtBoxFirst.TabIndex = 5;
+            this.txtBoxFirst.TabIndex = 2;
             this.txtBoxFirst.TextChanged += new System.EventHandler(this.txtBoxFirst_TextChanged);
             // 
             // welcomeLab
@@ -163,7 +163,7 @@
             this.welcomeLab.Location = new System.Drawing.Point(13, 163);
             this.welcomeLab.Name = "welcomeLab";
             this.welcomeLab.Size = new System.Drawing.Size(173, 38);
-            this.welcomeLab.TabIndex = 6;
+            this.welcomeLab.TabIndex = 11;
             this.welcomeLab.Text = "Welcome!";
             // 
             // txtBoxAddress
@@ -172,7 +172,7 @@
             this.txtBoxAddress.Location = new System.Drawing.Point(235, 340);
             this.txtBoxAddress.Name = "txtBoxAddress";
             this.txtBoxAddress.Size = new System.Drawing.Size(426, 26);
-            this.txtBoxAddress.TabIndex = 7;
+            this.txtBoxAddress.TabIndex = 6;
             // 
             // txtBoxCity
             // 
@@ -180,7 +180,7 @@
             this.txtBoxCity.Location = new System.Drawing.Point(235, 390);
             this.txtBoxCity.Name = "txtBoxCity";
             this.txtBoxCity.Size = new System.Drawing.Size(166, 26);
-            this.txtBoxCity.TabIndex = 8;
+            this.txtBoxCity.TabIndex = 7;
             // 
             // txtBoxState
             // 
@@ -188,7 +188,7 @@
             this.txtBoxState.Location = new System.Drawing.Point(407, 390);
             this.txtBoxState.Name = "txtBoxState";
             this.txtBoxState.Size = new System.Drawing.Size(124, 26);
-            this.txtBoxState.TabIndex = 9;
+            this.txtBoxState.TabIndex = 8;
             // 
             // txtBoxZip
             // 
@@ -196,7 +196,7 @@
             this.txtBoxZip.Location = new System.Drawing.Point(537, 390);
             this.txtBoxZip.Name = "txtBoxZip";
             this.txtBoxZip.Size = new System.Drawing.Size(124, 26);
-            this.txtBoxZip.TabIndex = 10;
+            this.txtBoxZip.TabIndex = 9;
             // 
             // chkBoxPass
             // 
@@ -344,18 +344,18 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button bttnCreateAcc;
-        private System.Windows.Forms.TextBox txtBoxPass;
-        private System.Windows.Forms.TextBox txtBoxEmail;
-        private System.Windows.Forms.TextBox txtBoxLast;
         private System.Windows.Forms.TextBox txtBoxFirst;
-        private System.Windows.Forms.Label welcomeLab;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ToolTip toolTipExit;
+        private System.Windows.Forms.TextBox txtBoxLast;
+        private System.Windows.Forms.TextBox txtBoxEmail;
+        private System.Windows.Forms.TextBox txtBoxPass;
         private System.Windows.Forms.TextBox txtBoxAddress;
         private System.Windows.Forms.TextBox txtBoxCity;
         private System.Windows.Forms.TextBox txtBoxState;
         private System.Windows.Forms.TextBox txtBoxZip;
+        private System.Windows.Forms.Button bttnCreateAcc;
+        private System.Windows.Forms.Label welcomeLab;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip toolTipExit;
         private System.Windows.Forms.Button bttnHelp;
         private System.Windows.Forms.CheckBox chkBoxPass;
         private System.Windows.Forms.Label label1;
