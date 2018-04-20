@@ -1,61 +1,37 @@
-    <DEBUG 0:0:18>: 	Start Program
-<SQLQUERY 0:3:695>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:3:847>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:3:847>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:3:856>: 	Customer(this,is,test,BallSack,city,NC,42069,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 0:3:859>: 	SELECT encryptPassword('*****')
-<SQLQUERY 0:7:912>: 	SELECT * FROM `computers` WHERE `serialNumber` = 6
-<SQLQUERY 0:7:930>: 	SELECT * FROM `storage` WHERE `part number` = 1389
-<SQLQUERY 0:7:940>: 	SELECT * FROM `fan` WHERE `part number` = 1488
-<SQLQUERY 0:7:956>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
-<SQLQUERY 0:7:971>: 	SELECT * FROM `memory` WHERE `part number` = 1582
-<SQLQUERY 0:7:984>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
-<SQLQUERY 0:7:996>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
- <SQLQUERY 0:8:19>: 	SELECT * FROM `powersupply` WHERE `part number` = 1295
- <SQLQUERY 0:8:41>: 	SELECT * FROM `storage` WHERE `part number` = 1000
- <SQLQUERY 0:8:68>: 	SELECT * FROM `computers` WHERE `serialNumber` = 6
- <SQLQUERY 0:8:76>: 	SELECT * FROM `storage` WHERE `part number` = 1389
- <SQLQUERY 0:8:84>: 	SELECT * FROM `fan` WHERE `part number` = 1488
- <SQLQUERY 0:8:91>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
- <SQLQUERY 0:8:99>: 	SELECT * FROM `memory` WHERE `part number` = 1582
-<SQLQUERY 0:8:107>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
-<SQLQUERY 0:8:114>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
-<SQLQUERY 0:8:123>: 	SELECT * FROM `powersupply` WHERE `part number` = 1295
-<SQLQUERY 0:8:130>: 	SELECT * FROM `storage` WHERE `part number` = 1000
-<SQLQUERY 0:8:138>: 	SELECT * FROM `computers` WHERE `serialNumber` = 6
-<SQLQUERY 0:8:146>: 	SELECT * FROM `storage` WHERE `part number` = 1389
-<SQLQUERY 0:8:154>: 	SELECT * FROM `fan` WHERE `part number` = 1488
-<SQLQUERY 0:8:161>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
-<SQLQUERY 0:8:169>: 	SELECT * FROM `memory` WHERE `part number` = 1582
-<SQLQUERY 0:8:191>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
-<SQLQUERY 0:8:199>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
-<SQLQUERY 0:8:208>: 	SELECT * FROM `powersupply` WHERE `part number` = 1295
-<SQLQUERY 0:8:215>: 	SELECT * FROM `storage` WHERE `part number` = 1000
-<SQLQUERY 0:28:17>: 	SELECT * FROM `computers` WHERE `serialNumber` = 7
-<SQLQUERY 0:28:35>: 	SELECT * FROM `storage` WHERE `part number` = 1428
-<SQLQUERY 0:28:42>: 	SELECT * FROM `fan` WHERE `part number` = 1488
-<SQLQUERY 0:28:48>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1101
-<SQLQUERY 0:28:55>: 	SELECT * FROM `memory` WHERE `part number` = 1581
-<SQLQUERY 0:28:62>: 	SELECT * FROM `motherboard` WHERE `part number` = 1765
-<SQLQUERY 0:28:69>: 	SELECT * FROM `pc case` WHERE `part number` = 1194
-<SQLQUERY 0:28:77>: 	SELECT * FROM `powersupply` WHERE `part number` = 1312
-<SQLQUERY 0:28:84>: 	SELECT * FROM `storage` WHERE `part number` = 1000
-<SQLQUERY 0:28:95>: 	SELECT * FROM `computers` WHERE `serialNumber` = 7
-<SQLQUERY 0:28:106>: 	SELECT * FROM `storage` WHERE `part number` = 1428
-<SQLQUERY 0:28:116>: 	SELECT * FROM `fan` WHERE `part number` = 1488
-<SQLQUERY 0:28:123>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1101
-<SQLQUERY 0:28:130>: 	SELECT * FROM `memory` WHERE `part number` = 1581
-<SQLQUERY 0:28:142>: 	SELECT * FROM `motherboard` WHERE `part number` = 1765
-<SQLQUERY 0:28:150>: 	SELECT * FROM `pc case` WHERE `part number` = 1194
-<SQLQUERY 0:28:160>: 	SELECT * FROM `powersupply` WHERE `part number` = 1312
-<SQLQUERY 0:28:171>: 	SELECT * FROM `storage` WHERE `part number` = 1000
-<SQLQUERY 0:28:179>: 	SELECT * FROM `computers` WHERE `serialNumber` = 7
-<SQLQUERY 0:28:189>: 	SELECT * FROM `storage` WHERE `part number` = 1428
-<SQLQUERY 0:28:205>: 	SELECT * FROM `fan` WHERE `part number` = 1488
-<SQLQUERY 0:28:215>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1101
-<SQLQUERY 0:28:223>: 	SELECT * FROM `memory` WHERE `part number` = 1581
-<SQLQUERY 0:28:230>: 	SELECT * FROM `motherboard` WHERE `part number` = 1765
-<SQLQUERY 0:28:237>: 	SELECT * FROM `pc case` WHERE `part number` = 1194
-<SQLQUERY 0:28:245>: 	SELECT * FROM `powersupply` WHERE `part number` = 1312
-<SQLQUERY 0:28:256>: 	SELECT * FROM `storage` WHERE `part number` = 1000
-   <DEBUG 4:28:73>: 	Finished Program
+     <DEBUG 0:0:6>: 	Start Program
+<SQLQUERY 0:2:105>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:2:676>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:2:676>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:2:680>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:2:684>: 	SELECT encryptPassword('*****')
+<SQLQUERY 0:5:334>: 	SELECT * FROM `computers` WHERE `serialNumber` = 6
+<SQLQUERY 0:5:343>: 	SELECT * FROM `cpu` WHERE `part number` = 1389
+   <DEBUG 0:5:354>: 	Intel Core i7-8700K
+<SQLQUERY 0:5:354>: 	SELECT * FROM `fan` WHERE `part number` = 1488
+<SQLQUERY 0:5:363>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
+<SQLQUERY 0:5:371>: 	SELECT * FROM `memory` WHERE `part number` = 1582
+<SQLQUERY 0:5:382>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
+<SQLQUERY 0:5:394>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
+<SQLQUERY 0:5:407>: 	SELECT * FROM `powersupply` WHERE `part number` = 1295
+<SQLQUERY 0:5:423>: 	SELECT * FROM `storage` WHERE `part number` = 1000
+<SQLQUERY 0:5:450>: 	SELECT * FROM `computers` WHERE `serialNumber` = 6
+<SQLQUERY 0:5:462>: 	SELECT * FROM `cpu` WHERE `part number` = 1389
+   <DEBUG 0:5:475>: 	Intel Core i7-8700K
+<SQLQUERY 0:5:475>: 	SELECT * FROM `fan` WHERE `part number` = 1488
+<SQLQUERY 0:5:490>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
+<SQLQUERY 0:5:507>: 	SELECT * FROM `memory` WHERE `part number` = 1582
+<SQLQUERY 0:5:523>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
+<SQLQUERY 0:5:542>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
+<SQLQUERY 0:5:559>: 	SELECT * FROM `powersupply` WHERE `part number` = 1295
+<SQLQUERY 0:5:572>: 	SELECT * FROM `storage` WHERE `part number` = 1000
+<SQLQUERY 0:5:596>: 	SELECT * FROM `computers` WHERE `serialNumber` = 6
+<SQLQUERY 0:5:616>: 	SELECT * FROM `cpu` WHERE `part number` = 1389
+   <DEBUG 0:5:633>: 	Intel Core i7-8700K
+<SQLQUERY 0:5:637>: 	SELECT * FROM `fan` WHERE `part number` = 1488
+<SQLQUERY 0:5:657>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
+<SQLQUERY 0:5:677>: 	SELECT * FROM `memory` WHERE `part number` = 1582
+<SQLQUERY 0:5:685>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
+<SQLQUERY 0:5:693>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
+<SQLQUERY 0:5:701>: 	SELECT * FROM `powersupply` WHERE `part number` = 1295
+<SQLQUERY 0:5:705>: 	SELECT * FROM `storage` WHERE `part number` = 1000
+  <DEBUG 0:13:798>: 	Finished Program

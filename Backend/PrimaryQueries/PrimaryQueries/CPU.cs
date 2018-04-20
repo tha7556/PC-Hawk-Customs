@@ -76,10 +76,11 @@ namespace PrimaryQueries {
         /// <param name="partNumber">The part number</param>
         /// <returns>The CPU from the part number</returns>
         public static CPU Get(int partNumber) {
-            string[] result = Queries.Query("SELECT * FROM `storage` WHERE `part number` = " + partNumber);
+            string[] result = Queries.Query("SELECT * FROM `cpu` WHERE `part number` = " + partNumber);
             if (result.Length > 0) {
                 return GetFromQuery(result[0]);
             }
+            Queries.Log(Queries.LogLevel.ERROR, "CPU with part number: " + partNumber + " could not be found");
             return null;
         }
         /// <summary>
