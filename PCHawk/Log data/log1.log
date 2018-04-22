@@ -1,8 +1,57 @@
     <DEBUG 0:0:21>: 	Start Program
-<SQLQUERY 0:9:761>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:10:63>: 	Customer(this,is,test,tester,city,NC,42069,*****);
-<SQLQUERY 0:10:63>: 	SELECT * FROM `customer` WHERE `email`='test'
-  <DEBUG 0:10:139>: 	Customer(this,is,test,tester,city,NC,42069,*****);
-<SQLQUERY 0:10:141>: 	SELECT encryptPassword('*****')
-  <DEBUG 1:40:319>: 	Home Button clicked
-  <DEBUG 3:47:241>: 	Finished Program
+<SQLQUERY 0:3:952>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:4:205>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:4:205>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:4:285>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:4:287>: 	SELECT encryptPassword('*****')
+<SQLQUERY 0:6:413>: 	CALL getOrdersFromCustomer(test)
+   <ERROR 0:6:507>: 	Unknown column 'test' in 'field list'
+<SQLQUERY 0:40:713>: 	SELECT * FROM `customer` WHERE `email`='jDawg69@gmail.com'
+  <DEBUG 0:40:863>: 	Customer(Jason,Clemms,jDawg69@gmail.com,HELL,Raleigh,NC,27666,*****);
+<SQLQUERY 0:40:863>: 	SELECT * FROM `customer` WHERE `email`='jDawg69@gmail.com'
+  <DEBUG 0:40:938>: 	Customer(Jason,Clemms,jDawg69@gmail.com,HELL,Raleigh,NC,27666,*****);
+<SQLQUERY 0:40:938>: 	SELECT encryptPassword('*****')
+  <DEBUG 0:48:935>: 	Selected : Cooling
+<SQLQUERY 0:48:936>: 	SELECT * FROM `fan`
+  <DEBUG 0:49:145>: 	Selected Cooling: Cooler Master Hyper 212 EVO
+  <DEBUG 0:51:133>: 	Adding: Fan to build
+  <DEBUG 0:56:561>: 	Selected : CPU
+<SQLQUERY 0:56:562>: 	SELECT * FROM `cpu`
+  <DEBUG 0:56:769>: 	Selected CPU: Intel Core i7-8700K
+  <DEBUG 0:57:933>: 	Adding: CPU to build
+   <DEBUG 1:2:194>: 	Selected : Case
+<SQLQUERY 1:2:195>: 	SELECT * FROM `pc case`
+   <DEBUG 1:2:453>: 	Selected Case: NZXT S340 (Black)
+   <DEBUG 1:3:378>: 	Adding: Case to build
+   <DEBUG 1:6:777>: 	Selected : Graphics Card
+<SQLQUERY 1:6:778>: 	SELECT * FROM `graphicscard`
+   <DEBUG 1:6:989>: 	Selected Graphics Card: MSI GEFORCE GTX 1060 GAMING X 6G
+   <DEBUG 1:8:115>: 	Adding: GraphicsCard to build
+  <DEBUG 1:10:511>: 	Selected : Power Supply
+<SQLQUERY 1:10:512>: 	SELECT * FROM `powersupply`
+  <DEBUG 1:10:693>: 	Selected Power Supply: Corsair CX450M (2015)
+  <DEBUG 1:11:477>: 	Adding: PowerSupply to build
+   <DEBUG 1:16:12>: 	Selected : Motherboard
+<SQLQUERY 1:16:13>: 	SELECT * FROM `motherboard`
+  <DEBUG 1:16:301>: 	Selected Motherboard: Asus ROG STRIX Z370-E GAMING
+  <DEBUG 1:17:167>: 	Adding: MOBO to build
+  <DEBUG 1:19:534>: 	Selected : Memory
+<SQLQUERY 1:19:535>: 	SELECT * FROM `memory`
+  <DEBUG 1:19:742>: 	Selected Memory: G.Skill Aegis
+  <DEBUG 1:21:274>: 	Adding: Memory to build
+  <DEBUG 1:23:433>: 	Selected : Storage
+<SQLQUERY 1:23:434>: 	SELECT * FROM `storage`
+  <DEBUG 1:23:618>: 	Selected Storage: Western Digital WD10EZEX
+  <DEBUG 1:24:616>: 	Adding: Storage to build
+  <DEBUG 1:34:625>: 	Add to Cart Button clicked
+  <DEBUG 1:35:834>: 	Cart Button clicked
+  <DEBUG 1:44:267>: 	num: 0
+<SQLQUERY 1:44:267>: 	INSERT INTO `computers` (`serialNumber`, `name`, `cpu`, `fan`, `graphicsCard`, `memory`, `motherboard`, `pcCase`, `powerSupply`, `storage`) VALUES (NULL, 'test build', 1389, 1488, 1100, 1581, 1679, 1193, 1291,1000);
+<SQLQUERY 1:44:458>: 	CALL `GetCurrentNum`();
+<SQLQUERY 1:44:538>: 	SELECT * FROM `employee` WHERE `email` = 'josh@uncw.edu'
+<SQLQUERY 1:44:615>: 	SELECT encryptPassword('*****')
+  <DEBUG 1:44:689>: 	Employee(Josh,Humphrey,josh@uncw.edu,da39a3ee5e6b4b0d3255bfef95601890afd80709);
+<SQLQUERY 1:44:692>: 	INSERT INTO `order` (`order number`, `employee email`, `computer number`, `customer email`) VALUES (NULL, 'josh@uncw.edu', 11, 'jDawg69@gmail.com');
+<SQLQUERY 1:50:51>: 	CALL getOrdersFromCustomer(jDawg69@gmail.com)
+  <ERROR 1:50:173>: 	You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com)' at line 1
+   <DEBUG 1:54:11>: 	Finished Program

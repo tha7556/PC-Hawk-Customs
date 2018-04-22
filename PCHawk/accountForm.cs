@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PrimaryQueries;
 
 namespace PCHawk
 {
@@ -29,7 +30,9 @@ namespace PCHawk
             txtBoxCity.Text = MyStaticClass.customer.city;
             txtBoxState.Text = MyStaticClass.customer.state;
             txtBoxZip.Text = MyStaticClass.customer.zipcode.ToString();
-            
+            //Order[] orders = MyStaticClass.customer.GetOrders();
+            historyBox.DataSource = MyStaticClass.customer.GetOrders();
+
         }
         /// <summary>
         /// Allows user to exit the application
