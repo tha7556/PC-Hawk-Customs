@@ -198,7 +198,7 @@
             this.DescriptionBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DescriptionBox.Location = new System.Drawing.Point(50, 272);
             this.DescriptionBox.Name = "DescriptionBox";
-            this.DescriptionBox.Size = new System.Drawing.Size(257, 238);
+            this.DescriptionBox.Size = new System.Drawing.Size(257, 225);
             this.DescriptionBox.TabIndex = 5;
             this.DescriptionBox.Text = "Product Description";
             // 
@@ -217,9 +217,9 @@
             this.bttnAddCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnAddCart.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnAddCart.ForeColor = System.Drawing.Color.Yellow;
-            this.bttnAddCart.Location = new System.Drawing.Point(389, 531);
+            this.bttnAddCart.Location = new System.Drawing.Point(589, 499);
             this.bttnAddCart.Name = "bttnAddCart";
-            this.bttnAddCart.Size = new System.Drawing.Size(314, 44);
+            this.bttnAddCart.Size = new System.Drawing.Size(201, 44);
             this.bttnAddCart.TabIndex = 8;
             this.bttnAddCart.Text = "Add To Cart";
             this.bttnAddCart.UseVisualStyleBackColor = true;

@@ -78,6 +78,7 @@ namespace PCHawk
             const string EmailCaption = "Email Error!";
             const string PassMessage = "The password you have entered is incorrect!";
             const string PassCaption = "Password Error!";
+            string admin = "test";
            
             //checking customer email
             if (Customer.IsCustomer(email) == true)
@@ -90,6 +91,12 @@ namespace PCHawk
                     //login stuff
                     this.Hide();
                     frmHome home = new frmHome();
+                    if(MyStaticClass.customer.email == admin)
+                    {
+                        queryForm sqlForm = new queryForm();
+                        sqlForm.Show();
+                    }
+
                     home.Show();
                 }
                 else

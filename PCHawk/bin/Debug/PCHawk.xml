@@ -563,6 +563,40 @@
             The main entry point for the application.
             </summary>
         </member>
+        <member name="T:PCHawk.queryForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PCHawk.queryForm.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PCHawk.queryForm.bttnExit_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PCHawk.queryForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.queryForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.queryForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="T:PCHawk.signUpForm">
             <summary>
             sign up

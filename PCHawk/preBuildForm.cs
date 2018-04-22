@@ -84,8 +84,11 @@ namespace PCHawk
                 buildNameBox.Text = Computer.Get(7).name;
                 totalBox.Text = "$" + Computer.Get(7).price;
             }
-            else if(pd1.name == "HTPC")
+            else if(pd1.name == "Home Theatre")
             {
+                componentBox.DataSource = Computer.Get(10).GetAttributes();
+                buildNameBox.Text = Computer.Get(10).name;
+                totalBox.Text = "$" + Computer.Get(10).price;
 
             }
 
