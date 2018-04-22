@@ -1,2 +1,8 @@
-    <DEBUG 0:0:20>: 	Start Program
-  <DEBUG 0:10:218>: 	Finished Program
+    <DEBUG 0:0:21>: 	Start Program
+<SQLQUERY 0:9:761>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:10:63>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:10:63>: 	SELECT * FROM `customer` WHERE `email`='test'
+  <DEBUG 0:10:139>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:10:141>: 	SELECT encryptPassword('*****')
+  <DEBUG 1:40:319>: 	Home Button clicked
+  <DEBUG 3:47:241>: 	Finished Program

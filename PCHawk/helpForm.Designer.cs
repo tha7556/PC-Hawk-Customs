@@ -261,9 +261,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(456, 351);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(182, 23);
+            this.label5.Size = new System.Drawing.Size(245, 23);
             this.label5.TabIndex = 15;
-            this.label5.Text = "Front End Develper";
+            this.label5.Text = "Lead Front End Developer";
             // 
             // label6
             // 
@@ -272,9 +272,9 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(456, 380);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(280, 23);
+            this.label6.Size = new System.Drawing.Size(253, 23);
             this.label6.TabIndex = 16;
-            this.label6.Text = "Quality Assurance/Marketing";
+            this.label6.Text = "Quality Assurance/Control";
             // 
             // label7
             // 
@@ -283,9 +283,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(456, 412);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(197, 23);
+            this.label7.Size = new System.Drawing.Size(248, 23);
             this.label7.TabIndex = 17;
-            this.label7.Text = "Back End Developer";
+            this.label7.Text = "Lead Back End Developer";
             // 
             // label8
             // 
