@@ -1,7 +1,2 @@
-    <DEBUG 0:0:14>: 	Start Program
-<SQLQUERY 0:6:276>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:6:530>: 	Customer(this,is,test,tester,city,NC,42069,*****);
-<SQLQUERY 0:6:530>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:6:607>: 	Customer(this,is,test,tester,city,NC,42069,*****);
-<SQLQUERY 0:6:608>: 	SELECT encryptPassword('*****')
-  <DEBUG 0:29:190>: 	Finished Program
+    <DEBUG 0:0:20>: 	Start Program
+  <DEBUG 0:10:218>: 	Finished Program

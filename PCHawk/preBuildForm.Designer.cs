@@ -223,6 +223,7 @@
             this.bttnAddCart.TabIndex = 8;
             this.bttnAddCart.Text = "Add To Cart";
             this.bttnAddCart.UseVisualStyleBackColor = true;
+            this.bttnAddCart.Click += new System.EventHandler(this.bttnAddCart_Click);
             // 
             // componentBox
             // 

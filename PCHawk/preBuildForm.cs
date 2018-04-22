@@ -16,6 +16,7 @@ namespace PCHawk
     /// </summary>
     public partial class preBuildForm : Form
     {
+        string build = "";
         /// <summary>
         /// pre build class
         /// </summary>
@@ -74,18 +75,21 @@ namespace PCHawk
             DescriptionBox.Text = Convert.ToString(pd1.descrip);
             if(pd1.name == "Gaming")
             {
+                build = "Gaming";
                 componentBox.DataSource = Computer.Get(6).GetAttributes();
                 buildNameBox.Text = Computer.Get(6).name;
                 totalBox.Text = "$" + Computer.Get(6).price;
             }
             else if(pd1.name == "Home Office")
             {
+                build = "Home Office";
                 componentBox.DataSource = Computer.Get(7).GetAttributes();
                 buildNameBox.Text = Computer.Get(7).name;
                 totalBox.Text = "$" + Computer.Get(7).price;
             }
             else if(pd1.name == "Home Theatre")
             {
+                build = "Home Theatre";
                 componentBox.DataSource = Computer.Get(10).GetAttributes();
                 buildNameBox.Text = Computer.Get(10).name;
                 totalBox.Text = "$" + Computer.Get(10).price;
@@ -118,6 +122,32 @@ namespace PCHawk
             cartForm cart = new cartForm();
             cart.Show();
             this.Close();
+        }
+
+        private void bttnAddCart_Click(object sender, EventArgs e)
+        {
+            if(build == "Gaming")
+            {
+                MyStaticClass.cart = Computer.Get(6);
+
+            }else if(build == "Home Office")
+            {
+                MyStaticClass.cart = Computer.Get(7);
+
+            }
+            else if(build == "Home Theatre")
+            {
+                MyStaticClass.cart = Computer.Get(10);
+
+            }
+            else if(build == "")
+            {
+                //error for not adding anything to cart
+                const string message = "Please select a build to add to your cart!";
+                const string caption = "No build selected!";
+                var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+           
         }
     }
 }
