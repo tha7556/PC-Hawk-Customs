@@ -30,8 +30,7 @@ namespace PCHawk
             txtBoxCity.Text = MyStaticClass.customer.city;
             txtBoxState.Text = MyStaticClass.customer.state;
             txtBoxZip.Text = MyStaticClass.customer.zipcode.ToString();
-            //Order[] orders = MyStaticClass.customer.GetOrders();
-            historyBox.DataSource = MyStaticClass.customer.GetOrders();
+           
 
         }
         /// <summary>
