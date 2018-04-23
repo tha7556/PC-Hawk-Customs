@@ -1,99 +1,117 @@
-    <DEBUG 0:0:19>: 	Start Program
-<SQLQUERY 0:20:543>: 	SELECT * FROM `customer` WHERE `email`='ninala@gmail.com'
-   <DEBUG 1:6:422>: 	Customer(another,test,tester,aaa,place,NC,34,*****);
-<SQLQUERY 1:6:425>: 	SELECT encryptPassword('*****')
-<SQLQUERY 1:6:461>: 	INSERT INTO `customer` (`email`, `first name`, `last name`, `street addess`, `city`, `state`, `zipcode`, `password`) VALUES ('tester', 'another', 'test', 'aaa', 'place', 'NC', 34,'da39a3ee5e6b4b0d3255bfef95601890afd80709');
-   <ERROR 1:6:470>: 	Unknown column 'street addess' in 'field list'
-<SQLQUERY 1:6:470>: 	SELECT * FROM `customer` WHERE `email`='tester'
-<SQLQUERY 1:23:835>: 	SELECT * FROM `computers` WHERE `serialNumber` = 6
-<SQLQUERY 1:23:853>: 	SELECT * FROM `cpu` WHERE `part number` = 1389
-<SQLQUERY 1:23:868>: 	SELECT * FROM `fan` WHERE `part number` = 1488
-<SQLQUERY 1:23:878>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
-<SQLQUERY 1:23:889>: 	SELECT * FROM `memory` WHERE `part number` = 1582
-<SQLQUERY 1:23:900>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
-<SQLQUERY 1:23:914>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
-<SQLQUERY 1:23:928>: 	SELECT * FROM `powersupply` WHERE `part number` = 1295
-<SQLQUERY 1:23:950>: 	SELECT * FROM `storage` WHERE `part number` = 1000
-<SQLQUERY 1:23:973>: 	SELECT * FROM `computers` WHERE `serialNumber` = 6
-<SQLQUERY 1:23:980>: 	SELECT * FROM `cpu` WHERE `part number` = 1389
-<SQLQUERY 1:23:992>: 	SELECT * FROM `fan` WHERE `part number` = 1488
-<SQLQUERY 1:23:999>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
- <SQLQUERY 1:24:8>: 	SELECT * FROM `memory` WHERE `part number` = 1582
-<SQLQUERY 1:24:16>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
-<SQLQUERY 1:24:25>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
-<SQLQUERY 1:24:32>: 	SELECT * FROM `powersupply` WHERE `part number` = 1295
-<SQLQUERY 1:24:39>: 	SELECT * FROM `storage` WHERE `part number` = 1000
-<SQLQUERY 1:24:48>: 	SELECT * FROM `computers` WHERE `serialNumber` = 6
-<SQLQUERY 1:24:61>: 	SELECT * FROM `cpu` WHERE `part number` = 1389
-<SQLQUERY 1:24:73>: 	SELECT * FROM `fan` WHERE `part number` = 1488
-<SQLQUERY 1:24:104>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
-<SQLQUERY 1:24:111>: 	SELECT * FROM `memory` WHERE `part number` = 1582
-<SQLQUERY 1:24:158>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
-<SQLQUERY 1:24:165>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
-<SQLQUERY 1:24:175>: 	SELECT * FROM `powersupply` WHERE `part number` = 1295
-<SQLQUERY 1:24:191>: 	SELECT * FROM `storage` WHERE `part number` = 1000
-<SQLQUERY 1:25:62>: 	SELECT * FROM `computers` WHERE `serialNumber` = 6
-<SQLQUERY 1:25:75>: 	SELECT * FROM `cpu` WHERE `part number` = 1389
-<SQLQUERY 1:25:97>: 	SELECT * FROM `fan` WHERE `part number` = 1488
-<SQLQUERY 1:25:127>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
-<SQLQUERY 1:25:142>: 	SELECT * FROM `memory` WHERE `part number` = 1582
-<SQLQUERY 1:25:168>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
-<SQLQUERY 1:25:176>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
-<SQLQUERY 1:25:194>: 	SELECT * FROM `powersupply` WHERE `part number` = 1295
-<SQLQUERY 1:25:215>: 	SELECT * FROM `storage` WHERE `part number` = 1000
-  <DEBUG 1:29:610>: 	num: 6
-<SQLQUERY 1:29:610>: 	INSERT INTO `computers` (`serialNumber`, `name`, `cpu`, `fan`, `graphicsCard`, `memory`, `motherboard`, `pcCase`, `powerSupply`, `storage`) VALUES (NULL, 'Gaming Build', 1389, 1488, 1100, 1582, 1679, 1193, 1295,1000);
-<SQLQUERY 1:29:623>: 	CALL `GetCurrentNum`();
-<SQLQUERY 1:29:636>: 	SELECT * FROM `employee` WHERE `email` = 'josh@uncw.edu'
-<SQLQUERY 1:29:649>: 	SELECT encryptPassword('*****')
-  <DEBUG 1:29:658>: 	Employee(Josh,Humphrey,josh@uncw.edu,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 1:43:147>: 	SELECT * FROM `customer` WHERE `email`='tester'
-<SQLQUERY 1:49:132>: 	SELECT * FROM `customer` WHERE `email`='test'
-  <DEBUG 1:49:158>: 	Customer(this,is,test,tester,city,NC,42069,*****);
-<SQLQUERY 1:49:158>: 	SELECT * FROM `customer` WHERE `email`='test'
-  <DEBUG 1:49:173>: 	Customer(this,is,test,tester,city,NC,42069,*****);
-<SQLQUERY 1:49:174>: 	SELECT encryptPassword('*****')
-<SQLQUERY 1:53:148>: 	CALL getOrdersFromCustomer('test')
-<SQLQUERY 1:53:224>: 	SELECT * FROM `computers` WHERE `serialNumber` = 9
-<SQLQUERY 1:53:237>: 	SELECT * FROM `cpu` WHERE `part number` = 1389
-<SQLQUERY 1:53:247>: 	SELECT * FROM `fan` WHERE `part number` = 1488
-<SQLQUERY 1:53:260>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
-<SQLQUERY 1:53:267>: 	SELECT * FROM `memory` WHERE `part number` = 1581
-<SQLQUERY 1:53:274>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
-<SQLQUERY 1:53:286>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
-<SQLQUERY 1:53:296>: 	SELECT * FROM `powersupply` WHERE `part number` = 1291
-<SQLQUERY 1:53:317>: 	SELECT * FROM `storage` WHERE `part number` = 1000
-<SQLQUERY 1:53:334>: 	SELECT * FROM `employee` WHERE `email` = 'josh@uncw.edu'
-<SQLQUERY 1:53:349>: 	SELECT encryptPassword('*****')
-  <DEBUG 1:53:359>: 	Employee(Josh,Humphrey,josh@uncw.edu,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 1:53:360>: 	SELECT * FROM `customer` WHERE `email`='test'
-  <DEBUG 1:53:372>: 	Customer(this,is,test,tester,city,NC,42069,*****);
-<SQLQUERY 1:53:373>: 	SELECT * FROM `computers` WHERE `serialNumber` = 9
-<SQLQUERY 1:53:396>: 	SELECT * FROM `cpu` WHERE `part number` = 1389
-<SQLQUERY 1:53:401>: 	SELECT * FROM `fan` WHERE `part number` = 1488
-<SQLQUERY 1:53:409>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
-<SQLQUERY 1:53:415>: 	SELECT * FROM `memory` WHERE `part number` = 1581
-<SQLQUERY 1:53:421>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
-<SQLQUERY 1:53:428>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
-<SQLQUERY 1:53:434>: 	SELECT * FROM `powersupply` WHERE `part number` = 1291
-<SQLQUERY 1:53:441>: 	SELECT * FROM `storage` WHERE `part number` = 1000
-<SQLQUERY 1:53:450>: 	SELECT * FROM `employee` WHERE `email` = 'josh@uncw.edu'
-<SQLQUERY 1:53:496>: 	SELECT encryptPassword('*****')
-  <DEBUG 1:53:504>: 	Employee(Josh,Humphrey,josh@uncw.edu,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 1:53:504>: 	SELECT * FROM `customer` WHERE `email`='test'
-  <DEBUG 1:53:510>: 	Customer(this,is,test,tester,city,NC,42069,*****);
-<SQLQUERY 1:53:510>: 	SELECT * FROM `computers` WHERE `serialNumber` = 10
-<SQLQUERY 1:53:519>: 	SELECT * FROM `cpu` WHERE `part number` = 1437
-<SQLQUERY 1:53:530>: 	SELECT * FROM `fan` WHERE `part number` = 1578
-<SQLQUERY 1:53:619>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1178
-<SQLQUERY 1:53:629>: 	SELECT * FROM `memory` WHERE `part number` = 1589
-<SQLQUERY 1:53:641>: 	SELECT * FROM `motherboard` WHERE `part number` = 1729
-<SQLQUERY 1:53:647>: 	SELECT * FROM `pc case` WHERE `part number` = 1227
-<SQLQUERY 1:53:654>: 	SELECT * FROM `powersupply` WHERE `part number` = 1305
-<SQLQUERY 1:53:673>: 	SELECT * FROM `storage` WHERE `part number` = 1002
-<SQLQUERY 1:53:679>: 	SELECT * FROM `employee` WHERE `email` = 'josh@uncw.edu'
-<SQLQUERY 1:53:692>: 	SELECT encryptPassword('*****')
-  <DEBUG 1:53:748>: 	Employee(Josh,Humphrey,josh@uncw.edu,da39a3ee5e6b4b0d3255bfef95601890afd80709);
-<SQLQUERY 1:53:748>: 	SELECT * FROM `customer` WHERE `email`='test'
-  <DEBUG 1:53:785>: 	Customer(this,is,test,tester,city,NC,42069,*****);
-   <DEBUG 2:1:290>: 	Finished Program
+    <DEBUG 0:0:12>: 	Start Program
+<SQLQUERY 0:11:624>: 	SELECT * FROM `customer` WHERE `email`='ninala@gmail.com'
+<SQLQUERY 0:21:49>: 	SELECT * FROM `customer` WHERE `email`='tester'
+<SQLQUERY 0:25:127>: 	SELECT * FROM `customer` WHERE `email`='tester'
+<SQLQUERY 0:28:824>: 	SELECT * FROM `customer` WHERE `email`='test'
+  <DEBUG 0:28:834>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:28:834>: 	SELECT * FROM `customer` WHERE `email`='test'
+  <DEBUG 0:28:845>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:28:847>: 	SELECT encryptPassword('*****')
+<SQLQUERY 0:31:387>: 	CALL getOrdersFromCustomer('test')
+<SQLQUERY 0:31:396>: 	SELECT * FROM `computers` WHERE `serialNumber` = 9
+<SQLQUERY 0:31:408>: 	SELECT * FROM `cpu` WHERE `part number` = 1389
+<SQLQUERY 0:31:417>: 	SELECT * FROM `fan` WHERE `part number` = 1488
+<SQLQUERY 0:31:427>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
+<SQLQUERY 0:31:438>: 	SELECT * FROM `memory` WHERE `part number` = 1581
+<SQLQUERY 0:31:448>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
+<SQLQUERY 0:31:458>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
+<SQLQUERY 0:31:479>: 	SELECT * FROM `powersupply` WHERE `part number` = 1291
+<SQLQUERY 0:31:494>: 	SELECT * FROM `storage` WHERE `part number` = 1000
+<SQLQUERY 0:31:510>: 	SELECT * FROM `employee` WHERE `email` = 'josh@uncw.edu'
+  <DEBUG 0:31:529>: 	Employee(Josh,Humphrey,josh@uncw.edu,*****);
+<SQLQUERY 0:31:529>: 	SELECT * FROM `customer` WHERE `email`='test'
+  <DEBUG 0:31:536>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:31:538>: 	SELECT * FROM `computers` WHERE `serialNumber` = 9
+<SQLQUERY 0:31:545>: 	SELECT * FROM `cpu` WHERE `part number` = 1389
+<SQLQUERY 0:31:555>: 	SELECT * FROM `fan` WHERE `part number` = 1488
+<SQLQUERY 0:31:563>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1100
+<SQLQUERY 0:31:573>: 	SELECT * FROM `memory` WHERE `part number` = 1581
+<SQLQUERY 0:31:582>: 	SELECT * FROM `motherboard` WHERE `part number` = 1679
+<SQLQUERY 0:31:588>: 	SELECT * FROM `pc case` WHERE `part number` = 1193
+<SQLQUERY 0:31:595>: 	SELECT * FROM `powersupply` WHERE `part number` = 1291
+<SQLQUERY 0:31:606>: 	SELECT * FROM `storage` WHERE `part number` = 1000
+<SQLQUERY 0:31:613>: 	SELECT * FROM `employee` WHERE `email` = 'josh@uncw.edu'
+  <DEBUG 0:31:620>: 	Employee(Josh,Humphrey,josh@uncw.edu,*****);
+<SQLQUERY 0:31:620>: 	SELECT * FROM `customer` WHERE `email`='test'
+  <DEBUG 0:31:630>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:31:630>: 	SELECT * FROM `computers` WHERE `serialNumber` = 10
+<SQLQUERY 0:31:636>: 	SELECT * FROM `cpu` WHERE `part number` = 1437
+<SQLQUERY 0:31:642>: 	SELECT * FROM `fan` WHERE `part number` = 1578
+<SQLQUERY 0:31:657>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1178
+<SQLQUERY 0:31:670>: 	SELECT * FROM `memory` WHERE `part number` = 1589
+<SQLQUERY 0:31:678>: 	SELECT * FROM `motherboard` WHERE `part number` = 1729
+<SQLQUERY 0:31:691>: 	SELECT * FROM `pc case` WHERE `part number` = 1227
+<SQLQUERY 0:31:713>: 	SELECT * FROM `powersupply` WHERE `part number` = 1305
+<SQLQUERY 0:31:721>: 	SELECT * FROM `storage` WHERE `part number` = 1002
+<SQLQUERY 0:31:737>: 	SELECT * FROM `employee` WHERE `email` = 'josh@uncw.edu'
+  <DEBUG 0:31:745>: 	Employee(Josh,Humphrey,josh@uncw.edu,*****);
+<SQLQUERY 0:31:745>: 	SELECT * FROM `customer` WHERE `email`='test'
+  <DEBUG 0:31:756>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+  <DEBUG 1:40:637>: 	Customer(Just,Another,theTest@uncw.edu,dddd,dddd,NC,24567,*****);
+<SQLQUERY 1:40:638>: 	SELECT encryptPassword('*****')
+<SQLQUERY 1:40:656>: 	INSERT INTO `customer` (`email`, `first name`, `last name`, `street address`, `city`, `state`, `zipcode`, `password`) VALUES ('theTest@uncw.edu', 'Just', 'Another', 'dddd', 'dddd', 'NC', 24567,'71f8e7976e4cbc4561c9d62fb283e7f788202acb');
+<SQLQUERY 1:40:669>: 	SELECT * FROM `customer` WHERE `email`='theTest@uncw.edu'
+  <DEBUG 1:40:678>: 	Customer(Just,Another,theTest@uncw.edu,dddd,dddd,NC,24567,*****);
+<SQLQUERY 1:59:494>: 	SELECT * FROM `customer` WHERE `email`='theTest@uncw.edu'
+  <DEBUG 1:59:534>: 	Customer(Just,Another,theTest@uncw.edu,dddd,dddd,NC,24567,*****);
+<SQLQUERY 1:59:534>: 	SELECT * FROM `customer` WHERE `email`='theTest@uncw.edu'
+  <DEBUG 1:59:556>: 	Customer(Just,Another,theTest@uncw.edu,dddd,dddd,NC,24567,*****);
+<SQLQUERY 1:59:556>: 	SELECT encryptPassword('*****')
+<SQLQUERY 2:3:474>: 	CALL getOrdersFromCustomer('theTest@uncw.edu')
+<SQLQUERY 2:13:51>: 	SELECT * FROM `computers` WHERE `serialNumber` = 10
+<SQLQUERY 2:13:73>: 	SELECT * FROM `cpu` WHERE `part number` = 1437
+<SQLQUERY 2:13:86>: 	SELECT * FROM `fan` WHERE `part number` = 1578
+<SQLQUERY 2:13:94>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1178
+<SQLQUERY 2:13:106>: 	SELECT * FROM `memory` WHERE `part number` = 1589
+<SQLQUERY 2:13:126>: 	SELECT * FROM `motherboard` WHERE `part number` = 1729
+<SQLQUERY 2:13:141>: 	SELECT * FROM `pc case` WHERE `part number` = 1227
+<SQLQUERY 2:13:176>: 	SELECT * FROM `powersupply` WHERE `part number` = 1305
+<SQLQUERY 2:13:192>: 	SELECT * FROM `storage` WHERE `part number` = 1002
+<SQLQUERY 2:13:211>: 	SELECT * FROM `computers` WHERE `serialNumber` = 10
+<SQLQUERY 2:13:225>: 	SELECT * FROM `cpu` WHERE `part number` = 1437
+<SQLQUERY 2:13:232>: 	SELECT * FROM `fan` WHERE `part number` = 1578
+<SQLQUERY 2:13:242>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1178
+<SQLQUERY 2:13:250>: 	SELECT * FROM `memory` WHERE `part number` = 1589
+<SQLQUERY 2:13:258>: 	SELECT * FROM `motherboard` WHERE `part number` = 1729
+<SQLQUERY 2:13:266>: 	SELECT * FROM `pc case` WHERE `part number` = 1227
+<SQLQUERY 2:13:274>: 	SELECT * FROM `powersupply` WHERE `part number` = 1305
+<SQLQUERY 2:13:283>: 	SELECT * FROM `storage` WHERE `part number` = 1002
+<SQLQUERY 2:13:293>: 	SELECT * FROM `computers` WHERE `serialNumber` = 10
+<SQLQUERY 2:13:300>: 	SELECT * FROM `cpu` WHERE `part number` = 1437
+<SQLQUERY 2:13:316>: 	SELECT * FROM `fan` WHERE `part number` = 1578
+<SQLQUERY 2:13:323>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1178
+<SQLQUERY 2:13:332>: 	SELECT * FROM `memory` WHERE `part number` = 1589
+<SQLQUERY 2:13:343>: 	SELECT * FROM `motherboard` WHERE `part number` = 1729
+<SQLQUERY 2:13:363>: 	SELECT * FROM `pc case` WHERE `part number` = 1227
+<SQLQUERY 2:13:373>: 	SELECT * FROM `powersupply` WHERE `part number` = 1305
+<SQLQUERY 2:13:391>: 	SELECT * FROM `storage` WHERE `part number` = 1002
+<SQLQUERY 2:14:603>: 	SELECT * FROM `computers` WHERE `serialNumber` = 10
+<SQLQUERY 2:14:618>: 	SELECT * FROM `cpu` WHERE `part number` = 1437
+<SQLQUERY 2:14:624>: 	SELECT * FROM `fan` WHERE `part number` = 1578
+<SQLQUERY 2:14:638>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1178
+<SQLQUERY 2:14:645>: 	SELECT * FROM `memory` WHERE `part number` = 1589
+<SQLQUERY 2:14:651>: 	SELECT * FROM `motherboard` WHERE `part number` = 1729
+<SQLQUERY 2:14:660>: 	SELECT * FROM `pc case` WHERE `part number` = 1227
+<SQLQUERY 2:14:668>: 	SELECT * FROM `powersupply` WHERE `part number` = 1305
+<SQLQUERY 2:14:677>: 	SELECT * FROM `storage` WHERE `part number` = 1002
+  <DEBUG 2:19:505>: 	num: 10
+<SQLQUERY 2:19:506>: 	INSERT INTO `computers` (`serialNumber`, `name`, `cpu`, `fan`, `graphicsCard`, `memory`, `motherboard`, `pcCase`, `powerSupply`, `storage`) VALUES (NULL, 'HTPC', 1437, 1578, 1178, 1589, 1729, 1227, 1305,1002);
+<SQLQUERY 2:19:521>: 	CALL `GetCurrentNum`();
+<SQLQUERY 2:19:534>: 	SELECT * FROM `employee` WHERE `email` = 'josh@uncw.edu'
+  <DEBUG 2:19:540>: 	Employee(Josh,Humphrey,josh@uncw.edu,*****);
+<SQLQUERY 2:19:542>: 	INSERT INTO `order` (`order number`, `employee email`, `computer number`, `customer email`) VALUES (NULL, 'josh@uncw.edu', 15, 'theTest@uncw.edu');
+<SQLQUERY 2:22:218>: 	CALL getOrdersFromCustomer('theTest@uncw.edu')
+<SQLQUERY 2:22:240>: 	SELECT * FROM `computers` WHERE `serialNumber` = 15
+<SQLQUERY 2:22:253>: 	SELECT * FROM `cpu` WHERE `part number` = 1437
+<SQLQUERY 2:22:272>: 	SELECT * FROM `fan` WHERE `part number` = 1578
+<SQLQUERY 2:22:278>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1178
+<SQLQUERY 2:22:286>: 	SELECT * FROM `memory` WHERE `part number` = 1589
+<SQLQUERY 2:22:306>: 	SELECT * FROM `motherboard` WHERE `part number` = 1729
+<SQLQUERY 2:22:317>: 	SELECT * FROM `pc case` WHERE `part number` = 1227
+<SQLQUERY 2:22:329>: 	SELECT * FROM `powersupply` WHERE `part number` = 1305
+<SQLQUERY 2:22:335>: 	SELECT * FROM `storage` WHERE `part number` = 1002
+<SQLQUERY 2:22:343>: 	SELECT * FROM `employee` WHERE `email` = 'josh@uncw.edu'
+  <DEBUG 2:22:352>: 	Employee(Josh,Humphrey,josh@uncw.edu,*****);
+<SQLQUERY 2:22:352>: 	SELECT * FROM `customer` WHERE `email`='theTest@uncw.edu'
+  <DEBUG 2:22:386>: 	Customer(Just,Another,theTest@uncw.edu,dddd,dddd,NC,24567,*****);
+  <DEBUG 2:27:744>: 	Finished Program
