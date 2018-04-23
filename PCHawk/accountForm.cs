@@ -33,12 +33,15 @@ namespace PCHawk
             txtBoxCity.Text = MyStaticClass.customer.city;
             txtBoxState.Text = MyStaticClass.customer.state;
             txtBoxZip.Text = MyStaticClass.customer.zipcode.ToString();
-            for(int i = 0; i < orders.Length; i++)
+            if(orders.Length != 0)
             {
-                string o = orders[i].ToString();
-                orderNames.Add(o);
+                for (int i = 0; i < orders.Length; i++)
+                {
+                    string o = orders[i].ToString();
+                    orderNames.Add(o);
+                }
+                historyBox.DataSource = orderNames;
             }
-            historyBox.DataSource = orderNames;
 
         }
         /// <summary>
