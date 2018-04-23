@@ -51,7 +51,7 @@ namespace PrimaryQueries {
         /// <returns>An Order made from the query</returns>
         public static Order GetOrderFromQuery(string result) {
             string[] line = result.Split('\0');
-            return new Order (int.Parse(line[0]),Computer.Get(int.Parse(line[1])),Employee.Get(line[2]),Customer.Get(line[3]));
+            return new Order (int.Parse(line[0]),Computer.Get(int.Parse(line[2])),Employee.Get(line[1]),Customer.Get(line[3]));
         }
     }
 }

@@ -79,10 +79,10 @@ namespace PrimaryQueries {
         public Order[] GetOrders() {
             string[] result = { };
             if (this is Employee) {
-                result = Queries.Query("CALL getOrdersFromEmployee(" + email + ")");
+                result = Queries.Query("CALL getOrdersFromEmployee('" + email + "')");
             }
             else if(this is Customer) {
-                result = Queries.Query("CALL getOrdersFromCustomer(" + email + ")");
+                result = Queries.Query("CALL getOrdersFromCustomer('" + email + "')");
             }
             else {
                 System.Console.WriteLine("Can only call GetOrders() on a Customer or Employee object");
