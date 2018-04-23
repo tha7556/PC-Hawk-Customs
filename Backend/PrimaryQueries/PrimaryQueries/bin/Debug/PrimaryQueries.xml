@@ -719,6 +719,12 @@
             <param name="result">The MySql query result</param>
             <returns>An Order made from the query</returns>
         </member>
+        <member name="M:PrimaryQueries.Order.ToString">
+            <summary>
+            Returns Order name
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:PrimaryQueries.Person">
             <summary>
             An abstract Person to represent either an Employee or a Customer

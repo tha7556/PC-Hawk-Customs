@@ -53,5 +53,13 @@ namespace PrimaryQueries {
             string[] line = result.Split('\0');
             return new Order (int.Parse(line[0]),Computer.Get(int.Parse(line[2])),Employee.Get(line[1]),Customer.Get(line[3]));
         }
+        /// <summary>
+        /// Returns Order name
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return this.computer.name;
+        }
     }
 }

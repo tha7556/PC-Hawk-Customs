@@ -128,16 +128,19 @@ namespace PCHawk
         {
             if(build == "Gaming")
             {
-                MyStaticClass.cart = Computer.Get(6);
+                MyStaticClass.computer = Computer.Get(6);
+                MyStaticClass.cart = MyStaticClass.computer;
 
             }else if(build == "Home Office")
             {
-                MyStaticClass.cart = Computer.Get(7);
+                MyStaticClass.computer = Computer.Get(7);
+                MyStaticClass.cart = MyStaticClass.computer;
 
             }
             else if(build == "Home Theatre")
             {
-                MyStaticClass.cart = Computer.Get(10);
+                MyStaticClass.computer = Computer.Get(10);
+                MyStaticClass.cart = MyStaticClass.computer;
 
             }
             else if(build == "")

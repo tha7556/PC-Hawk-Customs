@@ -16,6 +16,9 @@ namespace PCHawk
     /// </summary>
     public partial class accountForm : Form
     {
+        Order[] orders = MyStaticClass.customer.GetOrders();
+        List<string> orderNames = new List<string>();
+
         /// <summary>
         /// initialization of form
         /// </summary>
@@ -30,7 +33,12 @@ namespace PCHawk
             txtBoxCity.Text = MyStaticClass.customer.city;
             txtBoxState.Text = MyStaticClass.customer.state;
             txtBoxZip.Text = MyStaticClass.customer.zipcode.ToString();
-           
+            for(int i = 0; i < orders.Length; i++)
+            {
+                string o = orders[i].ToString();
+                orderNames.Add(o);
+            }
+            historyBox.DataSource = orderNames;
 
         }
         /// <summary>
