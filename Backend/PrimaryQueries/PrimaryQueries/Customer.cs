@@ -67,7 +67,7 @@ namespace PrimaryQueries {
         /// </summary>
         override
         public void AddToDatabase() {
-            Queries.Query("INSERT INTO `customer` (`email`, `first name`, `last name`, `street addess`, `city`, `state`, `zipcode`, `password`) " +
+            Queries.Query("INSERT INTO `customer` (`email`, `first name`, `last name`, `street address`, `city`, `state`, `zipcode`, `password`) " +
                 "VALUES ('"+email+"', '"+firstName+"', '"+lastName+"', '"+streetAddress+"', '"+city+"', '"+state+"', "+zipcode+",'"+EncryptPassword(password)+"');");
         }
         /// <summary>
