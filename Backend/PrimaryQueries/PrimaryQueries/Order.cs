@@ -61,5 +61,14 @@ namespace PrimaryQueries {
         {
             return this.computer.name;
         }
+        /// <summary>
+        /// Finds part ids that have been ordered multiple times
+        /// </summary>
+        /// <param name="part">The type of part</param>
+        /// <returns>A string id of all the parts ordered multiple times</returns>
+        public static string[] DuplicateFinder(string part) {
+            string[] result = Queries.Query("SELECT" + part + " FROM `computers` GROUP BY" + part + " HAVING COUNT("+part+") > 1 ");
+            return result;
+        }
     }
 }
