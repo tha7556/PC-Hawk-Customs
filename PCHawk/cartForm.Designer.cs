@@ -41,7 +41,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bttnContinue = new System.Windows.Forms.Button();
-            this.bttnEdit = new System.Windows.Forms.Button();
             this.bttnClear = new System.Windows.Forms.Button();
             this.bttnCheckOut = new System.Windows.Forms.Button();
             this.toolTipHelp = new System.Windows.Forms.ToolTip(this.components);
@@ -209,24 +208,12 @@
             this.bttnContinue.UseVisualStyleBackColor = true;
             this.bttnContinue.Click += new System.EventHandler(this.bttnContinue_Click);
             // 
-            // bttnEdit
-            // 
-            this.bttnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnEdit.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnEdit.ForeColor = System.Drawing.Color.White;
-            this.bttnEdit.Location = new System.Drawing.Point(337, 302);
-            this.bttnEdit.Name = "bttnEdit";
-            this.bttnEdit.Size = new System.Drawing.Size(253, 60);
-            this.bttnEdit.TabIndex = 7;
-            this.bttnEdit.Text = "Edit Cart";
-            this.bttnEdit.UseVisualStyleBackColor = true;
-            // 
             // bttnClear
             // 
             this.bttnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnClear.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnClear.ForeColor = System.Drawing.Color.White;
-            this.bttnClear.Location = new System.Drawing.Point(337, 368);
+            this.bttnClear.Location = new System.Drawing.Point(337, 414);
             this.bttnClear.Name = "bttnClear";
             this.bttnClear.Size = new System.Drawing.Size(253, 60);
             this.bttnClear.TabIndex = 8;
@@ -239,7 +226,7 @@
             this.bttnCheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCheckOut.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCheckOut.ForeColor = System.Drawing.Color.Yellow;
-            this.bttnCheckOut.Location = new System.Drawing.Point(337, 434);
+            this.bttnCheckOut.Location = new System.Drawing.Point(337, 480);
             this.bttnCheckOut.Name = "bttnCheckOut";
             this.bttnCheckOut.Size = new System.Drawing.Size(253, 60);
             this.bttnCheckOut.TabIndex = 9;
@@ -266,7 +253,6 @@
             this.Controls.Add(this.CartContentsBox);
             this.Controls.Add(this.bttnCheckOut);
             this.Controls.Add(this.bttnClear);
-            this.Controls.Add(this.bttnEdit);
             this.Controls.Add(this.bttnContinue);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -298,7 +284,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button bttnContinue;
-        private System.Windows.Forms.Button bttnEdit;
         private System.Windows.Forms.Button bttnClear;
         private System.Windows.Forms.Button bttnCheckOut;
         private System.Windows.Forms.ToolTip toolTipHome;
