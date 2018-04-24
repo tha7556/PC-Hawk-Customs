@@ -42,27 +42,29 @@
             // bttnTwoTable
             // 
             this.bttnTwoTable.Location = new System.Drawing.Point(16, 246);
-            this.bttnTwoTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bttnTwoTable.Margin = new System.Windows.Forms.Padding(4);
             this.bttnTwoTable.Name = "bttnTwoTable";
             this.bttnTwoTable.Size = new System.Drawing.Size(169, 92);
             this.bttnTwoTable.TabIndex = 0;
             this.bttnTwoTable.Text = "Two Table Join";
             this.bttnTwoTable.UseVisualStyleBackColor = true;
+            this.bttnTwoTable.Click += new System.EventHandler(this.bttnTwoTable_Click);
             // 
             // bttnThreeTable
             // 
             this.bttnThreeTable.Location = new System.Drawing.Point(16, 346);
-            this.bttnThreeTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bttnThreeTable.Margin = new System.Windows.Forms.Padding(4);
             this.bttnThreeTable.Name = "bttnThreeTable";
             this.bttnThreeTable.Size = new System.Drawing.Size(169, 92);
             this.bttnThreeTable.TabIndex = 1;
             this.bttnThreeTable.Text = "Three Table Join";
             this.bttnThreeTable.UseVisualStyleBackColor = true;
+            this.bttnThreeTable.Click += new System.EventHandler(this.bttnThreeTable_Click);
             // 
             // bttnExit
             // 
             this.bttnExit.Location = new System.Drawing.Point(16, 52);
-            this.bttnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bttnExit.Margin = new System.Windows.Forms.Padding(4);
             this.bttnExit.Name = "bttnExit";
             this.bttnExit.Size = new System.Drawing.Size(169, 79);
             this.bttnExit.TabIndex = 3;
@@ -73,7 +75,7 @@
             // displayBox
             // 
             this.displayBox.Location = new System.Drawing.Point(193, 52);
-            this.displayBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.displayBox.Margin = new System.Windows.Forms.Padding(4);
             this.displayBox.Name = "displayBox";
             this.displayBox.Size = new System.Drawing.Size(736, 500);
             this.displayBox.TabIndex = 4;
@@ -92,10 +94,11 @@
             "Memory",
             "Storage"});
             this.partBox.Location = new System.Drawing.Point(17, 462);
-            this.partBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.partBox.Margin = new System.Windows.Forms.Padding(4);
             this.partBox.Name = "partBox";
             this.partBox.Size = new System.Drawing.Size(160, 24);
             this.partBox.TabIndex = 5;
+            this.partBox.SelectedIndexChanged += new System.EventHandler(this.partBox_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -121,10 +124,11 @@
             "Memory",
             "Storage"});
             this.comboBox1.Location = new System.Drawing.Point(17, 511);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 24);
             this.comboBox1.TabIndex = 7;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -146,6 +150,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Self-Join";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // queryForm
             // 
@@ -163,7 +168,7 @@
             this.Controls.Add(this.bttnThreeTable);
             this.Controls.Add(this.bttnTwoTable);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "queryForm";
             this.Text = "queryForm";
             this.ResumeLayout(false);

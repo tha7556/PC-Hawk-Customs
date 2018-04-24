@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PrimaryQueries;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,26 @@ namespace PCHawk
         private void bttnExit_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            string[] result = Queries.Query("SELECT m.email , e.email, m.state FROM customer e JOIN customer m ON m.state = e.state AND NOT e.email = m.email AND m.email < e.email ORDER BY m.state");
+        }
+
+        private void bttnTwoTable_Click(object sender, EventArgs e) {
+            string[] result = Queries.Query("call twoTable()");
+        }
+
+        private void bttnThreeTable_Click(object sender, EventArgs e) {
+            string[] result = Queries.Query("call threeTable()");
+        }
+
+        private void partBox_SelectedIndexChanged(object sender, EventArgs e) {
+            int index = partBox.SelectedIndex;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) {
+            int index = comboBox1.SelectedIndex;
         }
     }
 }
