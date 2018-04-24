@@ -70,7 +70,7 @@ namespace PrimaryQueries {
         /// <param name="newPassword">The new Password to change to</param>
         public void ChangePassword(string newPassword) {
             password = EncryptPassword(newPassword);
-            Queries.Query("UPDATE `" + table + "` SET `password` = '" + password + "' WHERE `" + table + "`.`email` = " + email + ";");
+            Queries.Query("UPDATE `" + table + "` SET `password` = '" + password + "' WHERE `" + table + "`.`email` = '" + email + "';");
         }
         /// <summary>
         /// Gets all orders from the Person it is called from. Can only be called for either Employee or Customer 
