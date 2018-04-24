@@ -46,7 +46,9 @@ namespace PCHawk
         }
 
         private void partBox_SelectedIndexChanged(object sender, EventArgs e) {
+            string[] tables = new string[] {"cpu","`pc case`","fan","graphicscard","powersupply","motherboard","memory","storage" };
             int index = partBox.SelectedIndex;
+            string[] result = Queries.Query("SELECT AVG(price) FROM "+tables[index]);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) {
