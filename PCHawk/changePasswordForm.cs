@@ -23,7 +23,7 @@ namespace PCHawk
             InitializeComponent();
         }
         /// <summary>
-        /// 
+        /// occurs when user cancles password change
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -32,7 +32,7 @@ namespace PCHawk
             this.Close();
         }
         /// <summary>
-        /// 
+        /// hide/shows password
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -52,7 +52,11 @@ namespace PCHawk
             }
             passTxtBox.Refresh();
         }
-
+        /// <summary>
+        /// hides/shows password
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if(checkBox1.Checked == true)
@@ -69,7 +73,11 @@ namespace PCHawk
             }
             passwordVerifyTxt.Refresh();
         }
-
+        /// <summary>
+        /// actions to occur when user clicks confirm
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bttnConfirm_Click(object sender, EventArgs e)
         {
             string a = passTxtBox.Text;
@@ -91,6 +99,16 @@ namespace PCHawk
                 const string caption = "Error Error Error!";
                 var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+        /// <summary>
+        /// hides password char's on load
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void changePasswordForm_Load(object sender, EventArgs e)
+        {
+            passTxtBox.PasswordChar = '*';
+            passwordVerifyTxt.PasswordChar = '*';
         }
     }
 }

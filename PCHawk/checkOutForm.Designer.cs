@@ -414,16 +414,16 @@
             this.txtBoxExpiration.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxExpiration.Location = new System.Drawing.Point(743, 278);
             this.txtBoxExpiration.Name = "txtBoxExpiration";
-            this.txtBoxExpiration.Size = new System.Drawing.Size(145, 26);
+            this.txtBoxExpiration.Size = new System.Drawing.Size(160, 26);
             this.txtBoxExpiration.TabIndex = 29;
-            this.txtBoxExpiration.Text = "Expriation Date";
+            this.txtBoxExpiration.Text = "Expriation Date ddyy";
             // 
             // txtBoxSvv
             // 
             this.txtBoxSvv.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxSvv.Location = new System.Drawing.Point(894, 278);
+            this.txtBoxSvv.Location = new System.Drawing.Point(921, 278);
             this.txtBoxSvv.Name = "txtBoxSvv";
-            this.txtBoxSvv.Size = new System.Drawing.Size(145, 26);
+            this.txtBoxSvv.Size = new System.Drawing.Size(118, 26);
             this.txtBoxSvv.TabIndex = 30;
             this.txtBoxSvv.Text = "SVV ";
             // 

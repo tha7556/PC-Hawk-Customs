@@ -147,14 +147,35 @@
         </member>
         <member name="M:PCHawk.changePasswordForm.bttnCancel_Click(System.Object,System.EventArgs)">
             <summary>
-            
+            occurs when user cancles password change
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
         </member>
         <member name="M:PCHawk.changePasswordForm.passShowChkBox_CheckedChanged(System.Object,System.EventArgs)">
             <summary>
-            
+            hide/shows password
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.changePasswordForm.checkBox1_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            hides/shows password
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.changePasswordForm.bttnConfirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            actions to occur when user clicks confirm
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.changePasswordForm.changePasswordForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            hides password char's on load
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
