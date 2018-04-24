@@ -1,49 +1,8 @@
-    <DEBUG 0:0:40>: 	Start Program
-<SQLQUERY 0:3:836>: 	SELECT * FROM `customer` WHERE `email`='test'
-    <DEBUG 0:4:76>: 	Customer(this,is,test,tester,city,NC,42069,*****);
- <SQLQUERY 0:4:76>: 	SELECT * FROM `customer` WHERE `email`='test'
-    <DEBUG 0:4:91>: 	Customer(this,is,test,tester,city,NC,42069,*****);
- <SQLQUERY 0:4:95>: 	SELECT encryptPassword('*****')
-<SQLQUERY 0:10:670>: 	SELECT * FROM `computers` WHERE `serialNumber` = 10
-<SQLQUERY 0:10:696>: 	SELECT * FROM `cpu` WHERE `part number` = 1437
-<SQLQUERY 0:10:712>: 	SELECT * FROM `fan` WHERE `part number` = 1578
-<SQLQUERY 0:10:722>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1178
-<SQLQUERY 0:10:733>: 	SELECT * FROM `memory` WHERE `part number` = 1589
-<SQLQUERY 0:10:745>: 	SELECT * FROM `motherboard` WHERE `part number` = 1729
-<SQLQUERY 0:10:757>: 	SELECT * FROM `pc case` WHERE `part number` = 1227
-<SQLQUERY 0:10:769>: 	SELECT * FROM `powersupply` WHERE `part number` = 1305
-<SQLQUERY 0:10:781>: 	SELECT * FROM `storage` WHERE `part number` = 1002
-<SQLQUERY 0:10:810>: 	SELECT * FROM `computers` WHERE `serialNumber` = 10
-<SQLQUERY 0:10:819>: 	SELECT * FROM `cpu` WHERE `part number` = 1437
-<SQLQUERY 0:10:829>: 	SELECT * FROM `fan` WHERE `part number` = 1578
-<SQLQUERY 0:10:837>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1178
-<SQLQUERY 0:10:844>: 	SELECT * FROM `memory` WHERE `part number` = 1589
-<SQLQUERY 0:10:851>: 	SELECT * FROM `motherboard` WHERE `part number` = 1729
-<SQLQUERY 0:10:864>: 	SELECT * FROM `pc case` WHERE `part number` = 1227
-<SQLQUERY 0:10:875>: 	SELECT * FROM `powersupply` WHERE `part number` = 1305
-<SQLQUERY 0:10:883>: 	SELECT * FROM `storage` WHERE `part number` = 1002
-<SQLQUERY 0:10:892>: 	SELECT * FROM `computers` WHERE `serialNumber` = 10
-<SQLQUERY 0:10:900>: 	SELECT * FROM `cpu` WHERE `part number` = 1437
-<SQLQUERY 0:10:911>: 	SELECT * FROM `fan` WHERE `part number` = 1578
-<SQLQUERY 0:10:919>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1178
-<SQLQUERY 0:10:927>: 	SELECT * FROM `memory` WHERE `part number` = 1589
-<SQLQUERY 0:10:934>: 	SELECT * FROM `motherboard` WHERE `part number` = 1729
-<SQLQUERY 0:10:942>: 	SELECT * FROM `pc case` WHERE `part number` = 1227
-<SQLQUERY 0:10:950>: 	SELECT * FROM `powersupply` WHERE `part number` = 1305
-<SQLQUERY 0:10:961>: 	SELECT * FROM `storage` WHERE `part number` = 1002
-<SQLQUERY 0:15:177>: 	SELECT * FROM `computers` WHERE `serialNumber` = 10
-<SQLQUERY 0:15:185>: 	SELECT * FROM `cpu` WHERE `part number` = 1437
-<SQLQUERY 0:15:193>: 	SELECT * FROM `fan` WHERE `part number` = 1578
-<SQLQUERY 0:15:208>: 	SELECT * FROM `graphicscard` WHERE `part number` = 1178
-<SQLQUERY 0:15:218>: 	SELECT * FROM `memory` WHERE `part number` = 1589
-<SQLQUERY 0:15:230>: 	SELECT * FROM `motherboard` WHERE `part number` = 1729
-<SQLQUERY 0:15:240>: 	SELECT * FROM `pc case` WHERE `part number` = 1227
-<SQLQUERY 0:15:264>: 	SELECT * FROM `powersupply` WHERE `part number` = 1305
-<SQLQUERY 0:15:301>: 	SELECT * FROM `storage` WHERE `part number` = 1002
-   <DEBUG 1:7:731>: 	num: 10
-<SQLQUERY 1:7:731>: 	INSERT INTO `computers` (`serialNumber`, `name`, `cpu`, `fan`, `graphicsCard`, `memory`, `motherboard`, `pcCase`, `powerSupply`, `storage`) VALUES (NULL, 'HTPC', 1437, 1578, 1178, 1589, 1729, 1227, 1305,1002);
-<SQLQUERY 1:7:749>: 	CALL `GetCurrentNum`();
-<SQLQUERY 1:7:761>: 	SELECT * FROM `employee` WHERE `email` = 'josh@uncw.edu'
-   <DEBUG 1:7:771>: 	Employee(Josh,Humphrey,josh@uncw.edu,*****);
-<SQLQUERY 1:7:775>: 	INSERT INTO `order` (`order number`, `employee email`, `computer number`, `customer email`) VALUES (NULL, 'josh@uncw.edu', 17, 'test');
-   <DEBUG 1:12:44>: 	Finished Program
+    <DEBUG 0:0:13>: 	Start Program
+<SQLQUERY 0:3:599>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:3:847>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:3:847>: 	SELECT * FROM `customer` WHERE `email`='test'
+   <DEBUG 0:3:855>: 	Customer(this,is,test,tester,city,NC,42069,*****);
+<SQLQUERY 0:3:857>: 	SELECT encryptPassword('*****')
+<SQLQUERY 0:6:868>: 	SELECT m.email , e.email, m.state FROM customer e JOIN customer m ON m.state = e.state AND NOT e.email = m.email AND m.email < e.email ORDER BY m.state
+  <DEBUG 0:38:694>: 	Finished Program

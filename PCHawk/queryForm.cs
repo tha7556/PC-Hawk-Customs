@@ -35,7 +35,9 @@ namespace PCHawk
 
         private void button1_Click(object sender, EventArgs e) {
             string[] result = Queries.Query("SELECT m.email , e.email, m.state FROM customer e JOIN customer m ON m.state = e.state AND NOT e.email = m.email AND m.email < e.email ORDER BY m.state");
+            displayBox.DataSource = result;
         }
+
 
         private void bttnTwoTable_Click(object sender, EventArgs e) {
             string[] result = Queries.Query("call twoTable()");
