@@ -77,6 +77,13 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="M:PCHawk.accountForm.bttnPassChange_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
         <member name="F:PCHawk.accountForm.components">
             <summary>
             Required designer variable.
@@ -123,6 +130,47 @@
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:PCHawk.cartForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PCHawk.changePasswordForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PCHawk.changePasswordForm.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PCHawk.changePasswordForm.bttnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:PCHawk.changePasswordForm.passShowChkBox_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:PCHawk.changePasswordForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PCHawk.changePasswordForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PCHawk.changePasswordForm.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.

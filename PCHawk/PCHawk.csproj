@@ -68,6 +68,12 @@
     <Compile Include="cartForm.Designer.cs">
       <DependentUpon>cartForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="changePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changePasswordForm.Designer.cs">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="checkOutForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="cartForm.resx">
       <DependentUpon>cartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePasswordForm.resx">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="checkOutForm.resx">
       <DependentUpon>checkOutForm.cs</DependentUpon>

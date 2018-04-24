@@ -249,6 +249,7 @@
             this.bttnPassChange.TabIndex = 10;
             this.bttnPassChange.Text = "Change Password";
             this.bttnPassChange.UseVisualStyleBackColor = true;
+            this.bttnPassChange.Click += new System.EventHandler(this.bttnPassChange_Click);
             // 
             // historyBox
             // 

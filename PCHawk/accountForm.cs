@@ -176,5 +176,15 @@ namespace PCHawk
         {
 
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bttnPassChange_Click(object sender, EventArgs e)
+        {
+            changePasswordForm change = new changePasswordForm();
+            change.Show();
+        }
     }
 }
