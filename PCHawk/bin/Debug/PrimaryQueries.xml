@@ -725,6 +725,13 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:PrimaryQueries.Order.DuplicateFinder(System.String)">
+            <summary>
+            Finds part ids that have been ordered multiple times
+            </summary>
+            <param name="part">The type of part</param>
+            <returns>A string id of all the parts ordered multiple times</returns>
+        </member>
         <member name="T:PrimaryQueries.Person">
             <summary>
             An abstract Person to represent either an Employee or a Customer
