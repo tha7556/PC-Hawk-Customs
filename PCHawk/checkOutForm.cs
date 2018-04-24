@@ -141,5 +141,32 @@ namespace PCHawk
                 this.Close();
             }
         }
+
+        private void txtBoxCardNum_TextChanged(object sender, EventArgs e)
+        {
+            if(System.Text.RegularExpressions.Regex.IsMatch(txtBoxCardNum.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                txtBoxCardNum.Text = txtBoxCardNum.Text.Remove(txtBoxCardNum.Text.Length - 1);
+            }
+        }
+
+        private void txtBoxExpiration_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(txtBoxExpiration.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                txtBoxExpiration.Text = txtBoxExpiration.Text.Remove(txtBoxExpiration.Text.Length - 1);
+            }
+        }
+
+        private void txtBoxSvv_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(txtBoxSvv.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                txtBoxSvv.Text = txtBoxSvv.Text.Remove(txtBoxSvv.Text.Length - 1);
+            }
+        }
     }
 }

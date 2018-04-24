@@ -71,6 +71,11 @@
             this.toolTipHome = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipAccount = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipLogOut = new System.Windows.Forms.ToolTip(this.components);
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -384,55 +389,53 @@
             // txtBoxFirstPay
             // 
             this.txtBoxFirstPay.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxFirstPay.Location = new System.Drawing.Point(743, 214);
+            this.txtBoxFirstPay.Location = new System.Drawing.Point(743, 235);
             this.txtBoxFirstPay.Name = "txtBoxFirstPay";
             this.txtBoxFirstPay.ReadOnly = true;
             this.txtBoxFirstPay.Size = new System.Drawing.Size(145, 26);
             this.txtBoxFirstPay.TabIndex = 26;
-            this.txtBoxFirstPay.Text = "First Name";
             // 
             // txtBoxLastPay
             // 
             this.txtBoxLastPay.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxLastPay.Location = new System.Drawing.Point(894, 214);
+            this.txtBoxLastPay.Location = new System.Drawing.Point(894, 235);
             this.txtBoxLastPay.Name = "txtBoxLastPay";
             this.txtBoxLastPay.Size = new System.Drawing.Size(145, 26);
             this.txtBoxLastPay.TabIndex = 27;
-            this.txtBoxLastPay.Text = "Last Name";
             // 
             // txtBoxCardNum
             // 
             this.txtBoxCardNum.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxCardNum.Location = new System.Drawing.Point(743, 246);
+            this.txtBoxCardNum.Location = new System.Drawing.Point(743, 299);
             this.txtBoxCardNum.Name = "txtBoxCardNum";
             this.txtBoxCardNum.Size = new System.Drawing.Size(296, 26);
             this.txtBoxCardNum.TabIndex = 28;
-            this.txtBoxCardNum.Text = "Card Number";
+            this.txtBoxCardNum.TextChanged += new System.EventHandler(this.txtBoxCardNum_TextChanged);
             // 
             // txtBoxExpiration
             // 
             this.txtBoxExpiration.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxExpiration.Location = new System.Drawing.Point(743, 278);
+            this.txtBoxExpiration.Location = new System.Drawing.Point(743, 358);
             this.txtBoxExpiration.Name = "txtBoxExpiration";
-            this.txtBoxExpiration.Size = new System.Drawing.Size(160, 26);
+            this.txtBoxExpiration.Size = new System.Drawing.Size(170, 26);
             this.txtBoxExpiration.TabIndex = 29;
-            this.txtBoxExpiration.Text = "Expriation Date ddyy";
+            this.txtBoxExpiration.TextChanged += new System.EventHandler(this.txtBoxExpiration_TextChanged);
             // 
             // txtBoxSvv
             // 
             this.txtBoxSvv.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxSvv.Location = new System.Drawing.Point(921, 278);
+            this.txtBoxSvv.Location = new System.Drawing.Point(922, 358);
             this.txtBoxSvv.Name = "txtBoxSvv";
             this.txtBoxSvv.Size = new System.Drawing.Size(118, 26);
             this.txtBoxSvv.TabIndex = 30;
-            this.txtBoxSvv.Text = "SVV ";
+            this.txtBoxSvv.TextChanged += new System.EventHandler(this.txtBoxSvv_TextChanged);
             // 
             // bttnOrdered
             // 
             this.bttnOrdered.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnOrdered.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnOrdered.ForeColor = System.Drawing.Color.Yellow;
-            this.bttnOrdered.Location = new System.Drawing.Point(743, 310);
+            this.bttnOrdered.Location = new System.Drawing.Point(743, 390);
             this.bttnOrdered.Name = "bttnOrdered";
             this.bttnOrdered.Size = new System.Drawing.Size(296, 62);
             this.bttnOrdered.TabIndex = 31;
@@ -440,12 +443,72 @@
             this.bttnOrdered.UseVisualStyleBackColor = true;
             this.bttnOrdered.Click += new System.EventHandler(this.bttnOrdered_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Yellow;
+            this.label6.Location = new System.Drawing.Point(740, 337);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(173, 18);
+            this.label6.TabIndex = 32;
+            this.label6.Text = "Expiration Date mmyy:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Yellow;
+            this.label7.Location = new System.Drawing.Point(919, 337);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 18);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "CVV:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Yellow;
+            this.label8.Location = new System.Drawing.Point(740, 278);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(161, 18);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Credit Card Number:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Yellow;
+            this.label9.Location = new System.Drawing.Point(743, 214);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 18);
+            this.label9.TabIndex = 35;
+            this.label9.Text = "First Name:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Yellow;
+            this.label10.Location = new System.Drawing.Point(891, 211);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(88, 18);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Last Name:";
+            // 
             // checkOutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1054, 600);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.bttnOrdered);
             this.Controls.Add(this.txtBoxSvv);
             this.Controls.Add(this.txtBoxExpiration);
@@ -526,5 +589,10 @@
         private System.Windows.Forms.ToolTip toolTipHome;
         private System.Windows.Forms.ToolTip toolTipAccount;
         private System.Windows.Forms.ToolTip toolTipLogOut;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
