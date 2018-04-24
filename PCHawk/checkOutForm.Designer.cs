@@ -391,7 +391,6 @@
             this.txtBoxFirstPay.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxFirstPay.Location = new System.Drawing.Point(743, 235);
             this.txtBoxFirstPay.Name = "txtBoxFirstPay";
-            this.txtBoxFirstPay.ReadOnly = true;
             this.txtBoxFirstPay.Size = new System.Drawing.Size(145, 26);
             this.txtBoxFirstPay.TabIndex = 26;
             // 

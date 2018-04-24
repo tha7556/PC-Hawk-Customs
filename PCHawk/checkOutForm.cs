@@ -125,21 +125,29 @@ namespace PCHawk
         /// <param name="e"></param>
         private void bttnOrdered_Click(object sender, EventArgs e)
         {
-            MyStaticClass.computer.AddToDatabase();
-            int num = int.Parse(Queries.Query("CALL `GetCurrentNum`();")[0].Trim());
-            MyStaticClass.cart.serialNumber = num-1;
-            Order order = new Order(MyStaticClass.cart, Employee.Get("josh@uncw.edu"), MyStaticClass.customer);
-            order.AddToDatabase();
-
-            const string message = "Thank You for your purchase!";
-            const string caption = "Thank You!";
-            var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Question);
-            if(result == DialogResult.OK)
+            if(txtBoxCardNum.Text.Length == 16 && txtBoxExpiration.Text.Length == 4 && txtBoxSvv.Text.Length == 3)
             {
-                frmHome home = new frmHome();
-                home.Show();
-                this.Close();
+                MyStaticClass.computer.AddToDatabase();
+                int num = int.Parse(Queries.Query("CALL `GetCurrentNum`();")[0].Trim());
+                MyStaticClass.cart.serialNumber = num - 1;
+                Order order = new Order(MyStaticClass.cart, Employee.Get("josh@uncw.edu"), MyStaticClass.customer);
+                order.AddToDatabase();
+
+                const string message = "Thank You for your purchase!";
+                const string caption = "Thank You!";
+                var result = MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
+                {
+                    frmHome home = new frmHome();
+                    home.Show();
+                    this.Close();
+                }
             }
+            else
+            {
+                MessageBox.Show("Incorrect Credit Card Information");
+            }
+           
         }
 
         private void txtBoxCardNum_TextChanged(object sender, EventArgs e)
