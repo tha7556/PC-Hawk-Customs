@@ -1,8 +1,1 @@
-    <DEBUG 0:0:13>: 	Start Program
-<SQLQUERY 0:3:599>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:3:847>: 	Customer(this,is,test,tester,city,NC,42069,*****);
-<SQLQUERY 0:3:847>: 	SELECT * FROM `customer` WHERE `email`='test'
-   <DEBUG 0:3:855>: 	Customer(this,is,test,tester,city,NC,42069,*****);
-<SQLQUERY 0:3:857>: 	SELECT encryptPassword('*****')
-<SQLQUERY 0:6:868>: 	SELECT m.email , e.email, m.state FROM customer e JOIN customer m ON m.state = e.state AND NOT e.email = m.email AND m.email < e.email ORDER BY m.state
-  <DEBUG 0:38:694>: 	Finished Program
+     <DEBUG 0:0:7>: 	Start Program
