@@ -67,10 +67,8 @@ namespace PCHawk
             string[] parts = new string[] { "cpu", "pcCase", "fan", "graphicsCard", "powerSupply", "motherboard", "memory", "storage" };
             string[] result = Order.DuplicateFinder(parts[index]);
             for(int i = 0; i < result.Length; i++) {
-                string temp = "";
-                foreach (string s in result[i].Split('\0'))
-                    temp += s + " ";
-                result[i] = temp;
+                Part p = Part.GetPart(int.Parse(result[i].Split('\0')[0]));
+                result[i] = p.ToString();
             }
             displayBox.DataSource = result;
         }
