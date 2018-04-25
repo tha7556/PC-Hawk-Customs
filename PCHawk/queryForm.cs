@@ -34,8 +34,9 @@ namespace PCHawk
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            string[] result = Queries.Query("SELECT DISTINCT m.email , e.email, m.state FROM customer e JOIN customer m ON m.state = e.state AND NOT e.email = m.email AND m.email < e.email ORDER BY m.state");           
-                for (int i = 0; i < result.Length; i++) {
+            string[] result = Queries.Query("SELECT DISTINCT m.email , e.email, m.state FROM customer e JOIN customer m ON m.state = e.state AND NOT e.email = m.email AND m.email < e.email ORDER BY m.state");
+            Queries.Log(Queries.LogLevel.DEBUG, "len: "+result.Length);
+            for (int i = 0; i < result.Length; i++) {
                     string temp = "";
                     foreach (string s in result[i].Split('\0'))
                         temp += s + " ";
