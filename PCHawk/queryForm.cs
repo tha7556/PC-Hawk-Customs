@@ -61,7 +61,6 @@ namespace PCHawk
 
         private void bttnThreeTable_Click(object sender, EventArgs e) {
             string[] result = Queries.Query("call threeTable()");
-<<<<<<< HEAD
             for (int i = 0; i < result.Length; i++) {
                 string temp = "";
                 foreach (string s in result[i].Split('\0'))
@@ -69,9 +68,6 @@ namespace PCHawk
                 result[i] = temp;
             }
             displayBox.DataSource = result;
-=======
-
->>>>>>> DylanBranch
         }
 
         private void partBox_SelectedIndexChanged(object sender, EventArgs e) {
