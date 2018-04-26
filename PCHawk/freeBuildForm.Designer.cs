@@ -74,6 +74,7 @@
             this.panel1.Controls.Add(this.bttnCart);
             this.panel1.Controls.Add(this.btnHelp);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.priceSortchk);
             this.panel1.Location = new System.Drawing.Point(0, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1152, 192);
@@ -343,7 +344,7 @@
             this.priceSortchk.AutoSize = true;
             this.priceSortchk.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceSortchk.ForeColor = System.Drawing.Color.White;
-            this.priceSortchk.Location = new System.Drawing.Point(480, 223);
+            this.priceSortchk.Location = new System.Drawing.Point(374, 57);
             this.priceSortchk.Name = "priceSortchk";
             this.priceSortchk.Size = new System.Drawing.Size(117, 24);
             this.priceSortchk.TabIndex = 24;
@@ -382,7 +383,6 @@
             this.ClientSize = new System.Drawing.Size(1080, 622);
             this.Controls.Add(this.searchResultsBox);
             this.Controls.Add(this.searchBoxbttn);
-            this.Controls.Add(this.priceSortchk);
             this.Controls.Add(this.labelS);
             this.Controls.Add(this.searchTxtBox);
             this.Controls.Add(this.txtBoxTotal);
@@ -403,6 +403,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "freeBuildForm";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
