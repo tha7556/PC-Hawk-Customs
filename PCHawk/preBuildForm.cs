@@ -76,23 +76,26 @@ namespace PCHawk
             if(pd1.name == "Gaming")
             {
                 build = "Gaming";
-                componentBox.DataSource = Computer.Get(6).GetAttributes();
-                buildNameBox.Text = Computer.Get(6).name;
-                totalBox.Text = "$" + Computer.Get(6).price;
+                Computer c = Computer.Get(13);
+                componentBox.DataSource = c.GetAttributes();
+                buildNameBox.Text = c.name;
+                totalBox.Text = "$" + c.price;
             }
             else if(pd1.name == "Home Office")
             {
                 build = "Home Office";
-                componentBox.DataSource = Computer.Get(7).GetAttributes();
-                buildNameBox.Text = Computer.Get(7).name;
-                totalBox.Text = "$" + Computer.Get(7).price;
+                Computer c = Computer.Get(7);
+                componentBox.DataSource = c.GetAttributes();
+                buildNameBox.Text = c.name;
+                totalBox.Text = "$" + c.price;
             }
             else if(pd1.name == "Home Theatre")
             {
                 build = "Home Theatre";
-                componentBox.DataSource = Computer.Get(10).GetAttributes();
-                buildNameBox.Text = Computer.Get(10).name;
-                totalBox.Text = "$" + Computer.Get(10).price;
+                Computer c = Computer.Get(10);
+                componentBox.DataSource = c.GetAttributes();
+                buildNameBox.Text = c.name;
+                totalBox.Text = "$" + c.price;
 
             }
 
@@ -128,7 +131,7 @@ namespace PCHawk
         {
             if(build == "Gaming")
             {
-                MyStaticClass.computer = Computer.Get(6);
+                MyStaticClass.computer = Computer.Get(13);
                 MyStaticClass.cart = MyStaticClass.computer;
 
             }else if(build == "Home Office")
